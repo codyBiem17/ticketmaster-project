@@ -1,0 +1,337 @@
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.blue-div a em, .home-div-concert, a.slide-captions, 
+.concert-category, .sell {
+   font-weight: 600;
+}
+
+.hide-and-show{
+  color: #4e4d4d;
+  font-size: 19px;
+  background-color: white;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
+  margin: -20px 0px;
+  /* padding: 5px 0px; */
+}
+
+ul li.nav-item.user-sell-white-nav a{
+  color: #4e4d4d;
+  font-weight: 600;
+}
+
+a.white-ticket-brand em{
+  font-weight: 700;
+  color: rgb(2, 108, 223);
+  font-size: 45px;
+}
+
+.white-div a:hover, .blue-div a:hover{
+  text-decoration: none;
+}
+
+.user-sell-white-nav:hover{
+  background: rgb(230, 230, 230);
+}
+
+.blue-div{
+  color: white;
+  font-size: 20px;
+  background: rgb(1,56,172);
+  background: linear-gradient(90deg, rgba(1,56,172,1) 0%, rgba(16,106,215,1) 56%, rgba(1,52,165,1) 100%);
+}
+
+.blue-div-nav{
+  /* margin-bottom: -5px; */
+}
+
+.blue-div a em{
+  color: white;
+  font-size: 25px;
+}
+
+.user-sell-blue-nav:hover{
+  background: rgba(38, 38, 38, 0.1);
+}
+
+.user-icon{
+  cursor: pointer;
+}
+
+ul li.nav-item.user-sell-blue-nav a{
+  color: white;
+  font-weight: 600;
+}
+
+div.white-icons.user-icon{
+  /* padding: 19px 8px; */
+}
+
+.sell{
+  /* cursor: default; */
+}
+
+
+.home-div-concert{
+  margin-top: -15px;
+  font-size: 12px;
+}
+
+div.white-icons{
+  /* padding: 10px; */
+}
+
+.concert-ticket{
+  font-size: 24px;
+}
+
+.carousel-item a img{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+a.slide-captions{
+  color: rgb(1, 80, 167);
+  font-size: 20px;
+}
+
+a.slide-captions:hover{
+  text-decoration: none;
+  color: rgb(2, 108, 223);
+}
+
+.caption-text{
+  font-weight: 400;
+}
+
+.caption-text, .concert-category{
+  /* font-size: 16px; */
+  /* color: #262626; */
+}
+
+.concert-category a {
+  text-decoration: underline;
+}
+
+.concert-category a:hover {
+  color: rgb(2, 108, 223);
+}
+  
+.concert-event-forms select:hover, #sort-date:hover{
+  border: 2px solid rgb(2, 108, 223);
+  cursor: pointer;
+}
+
+#sort-date{
+  border: none;
+}
+
+.footer{
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  background: #1f262d;
+}
+
+.terms-policy{
+  font-weight: 600;
+  color: white;
+}
+
+.sticky-nav{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* .white-div */
+  #white-navbar-input-field{
+    background-color: white;
+    border-color: #bfbfbf;
+  }
+
+  #white-navbar-input-field:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 2px solid blue;
+  }
+
+   #white-navbar-input-field::-webkit-input-placeholder, 
+  #white-navbar-input-field::placeholder{
+    color: #4e4d4d;
+    position: relative;
+    left: 15px;
+  }
+
+   .white-div-form i.input-search-icon{
+    z-index: 1;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: #757070;
+    width: 0;
+  }
+
+
+   a.white-div-input em{
+    font-weight: 600;
+    font-size: 25px;
+    color: #026cdf;
+  }
+
+
+/* blue div */
+#blue-navbar-input-field{
+    background-color: #3578d5;
+    border-color: #3578d5;
+  }
+
+#blue-navbar-input-field:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 2px solid white;
+}
+
+.blue-div-form i.input-search-icon{
+    z-index: 1;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 0;
+}
+
+ #blue-navbar-input-field::-webkit-input-placeholder, 
+  #blue-navbar-input-field::placeholder{
+    color: white;
+    position: relative;
+    left: 15px;
+  }
+
+
+
+
+/* media queries */
+@media only screen and (max-width: 767px){
+  .blue-div-form, .white-div-form, .white-div-input, 
+  .help, ul.large-screen-menulinks{
+    display: none;
+  }
+
+  .user-sell-white-nav:hover{
+    padding: 30px 10px;
+    text-align: center;
+  }
+
+  .user-sell-blue-nav:hover{
+    padding: 30px 10px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:991px) and (min-width: 768px) {
+  .search-icon, ul.large-screen-menulinks{
+    display: none;
+  }
+
+  .concert-ticket{
+    font-size: 32px;
+    font-weight: 600px;
+  }
+
+  div.user-sell-blue-nav:hover{
+    padding: 50px 40px;
+    text-align: center;
+  }
+  .hide-and-show{
+    padding-top: 10px;
+  }
+  .white-div-form{
+    margin-top: 15px;
+  }
+
+  input[type="text"].search{
+    /* font-family: "Font Awesome 5 Free", Roboto, sans-serif;
+    font-size: 1.3333333333333333em;
+    font-weight: 900; */
+  }
+
+  /* for white div */
+  .white-ticket-brand{
+    display: none;
+  }
+
+ 
+  /* for blue div */
+ 
+#blue-div-nav{
+    padding-top: 10px;
+    padding-bottom: 60px;
+  }
+
+
+  .carousel-item a img {
+    width:93%;
+    height: auto;
+    border-radius: 4px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .carousel-item a img#image-slide2, .carousel-item a img#image-slide3 {
+    /* width:41.66%;
+    height: auto;
+    border-radius: 4px;
+    margin-left: 25px;
+    margin-right: 25px; */
+  }
+
+  main{
+    position: relative;
+    top: 20px;
+  }
+}
+
+/* media queries for large devices */
+@media only screen and (min-width: 992px) {
+ .concert-ticket{
+   font-size: 46px;
+ }
+  .search-icon, .white-ticket-brand, .menu-items{
+    display: none;
+  }
+  
+  #blue-div-nav{
+    padding-top: 10px;
+    padding-bottom: 60px;
+  }
+
+  .carousel-item a img {
+    max-width:70%;
+    height: auto;
+    border-radius: 4px;
+    margin: 30px 130px;
+  }
+
+  .carousel-item .captions{
+    text-align: center;
+  }
+
+  .menu-items{
+    display: none;
+  }
+
+  .hide-and-show{
+    padding-top: 20px;
+  }
+  .white-div-form{
+    padding-top: 10px;
+  }
+}
+
+
