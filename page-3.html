@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketmaster: Buy Verified Tickets for Concerts, Sports, Theatre and Events</title>
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-theme  fixed-top ">
+        <a class="navbar-brand" href="#"><img class="img-fluid" src="https://via.placeholder.com/200x50" alt=""></a>
+        <button class="navbar-toggler white bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon white"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link p-3 nav-text-color" href="#">Concerts <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-3 nav-text-color" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-3 nav-text-color" href="#">Art & Theatre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-3 nav-text-color" href="#">Family</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link p-3 nav-text-color dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item bg-dropdown-theme" href="#">Arts & Theatre</a>
+                        <a class="dropdown-item bg-dropdown-theme" href="#">Family</a>
+                        <a class="dropdown-item bg-dropdown-theme" href="#">VIP</a>
+                        <a class="dropdown-item bg-dropdown-theme" href="#">Deals</a>
+                        <a class="dropdown-item bg-dropdown-theme" href="#">Entertainment Guides</a>
+                        <a class="dropdown-item bg-dropdown-theme" href="#">For You</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-fluid bg-theme pb-3">
+            <div class="row">
+                <div class="col-7">
+                    <!-- <nav aria-label="breadcrumb bg-theme">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        </ol>
+                      </nav> -->
+                      
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                      </nav>
+                      
+                      <nav aria-label="breadcrumb ">
+                        <ol class="breadcrumb grey-theme">
+                          <li class="breadcrumb-item white"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">Library</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Data</li>
+                          <span class="badge badge-primary ml-2">4.7</span>
+                        </ol>
+                      </nav>
+                      <span class="h1">John Doe Tickets</span>
+                </div>
+                <div class="col-5 text-right">
+                    <div class="relative">
+                        <img class="img-fluid" src="https://via.placeholder.com/250" alt="">
+                        <div class="top-right-3 rounded">
+                            &hearts;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-none d-lg-block">
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <img class="img-fluid" src="https://via.placeholder.com/700x100" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="#" class="btn border border-primary bg-theme event-info size ">A</a>
+                            <a href="#" class="btn border border-primary color-theme event-info ml-n2 size">B</a>
+                        </div>
+                        <div class="col-4 text-left">
+                            <div class="dropdown">
+                                <button class="h-46 btn dropdown-toggle text-left w-100 border border-primary" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Select Your Dates
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdown">
+                                  <a class="dropdown-item" href="#">All Dates</a>
+                                  <a class="dropdown-item" href="#">This Weekend</a>
+                                  <a class="dropdown-item" href="#">Date Range</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-6 text-left mt-2">
+                           <span class="color-theme ml-n3 h5 mt-2">Reset</span> 
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-8">
+                            <input type="checkbox"><span> Events Only</span>
+                        </div>
+                        <div class="col-4">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle w-100 text-right border border-primary" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Sort By: Date
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdown">
+                                  <a class="dropdown-item" href="#">Date</a>
+                                  <a class="dropdown-item" href="#">Distance</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="h3">All Events</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-3 line-h-7">
+                            <p class="color-theme">JUN 24</p>
+                            <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00pm</p>
+                        </div>
+                        <div class="col-6 line-h-7">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Lorem ipsum dolor sit amet adipisicing.</p>
+                                    <p class="grey-theme font-14">Lorem ipsum dolor sit amet adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col color-theme my-2">
+                                    ADD-ON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3 line-h-7">
+                            <p class="color-theme">JUN 24</p>
+                            <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00pm</p>
+                        </div>
+                        <div class="col-6 line-h-7">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Lorem ipsum dolor sit amet adipisicing.</p>
+                                    <p class="grey-theme font-14">Lorem ipsum dolor sit amet adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col color-theme my-2">
+                                    ADD-ON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3 line-h-7">
+                            <p class="color-theme">JUN 24</p>
+                            <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00pm</p>
+                        </div>
+                        <div class="col-6 line-h-7">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Lorem ipsum dolor sit amet adipisicing.</p>
+                                    <p class="grey-theme font-14">Lorem ipsum dolor sit amet adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col color-theme my-2">
+                                    ADD-ON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3 line-h-7">
+                            <p class="color-theme">JUN 24</p>
+                            <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00pm</p>
+                        </div>
+                        <div class="col-6 line-h-7">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Lorem ipsum dolor sit amet adipisicing.</p>
+                                    <p class="grey-theme font-14">Lorem ipsum dolor sit amet adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col color-theme my-2">
+                                    ADD-ON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3 line-h-7">
+                            <p class="color-theme">JUN 24</p>
+                            <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00pm</p>
+                        </div>
+                        <div class="col-6 line-h-7">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Lorem ipsum dolor sit amet adipisicing.</p>
+                                    <p class="grey-theme font-14">Lorem ipsum dolor sit amet adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col color-theme my-2">
+                                    ADD-ON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3 line-h-7">
+                            <p class="color-theme">JUN 24</p>
+                            <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00pm</p>
+                        </div>
+                        <div class="col-6 line-h-7">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Lorem ipsum dolor sit amet adipisicing.</p>
+                                    <p class="grey-theme font-14">Lorem ipsum dolor sit amet adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col color-theme my-2">
+                                    ADD-ON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3 line-h-7">
+                            <p class="color-theme">JUN 24</p>
+                            <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00pm</p>
+                        </div>
+                        <div class="col-6 line-h-7">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Lorem ipsum dolor sit amet adipisicing.</p>
+                                    <p class="grey-theme font-14">Lorem ipsum dolor sit amet adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col color-theme my-2">
+                                    ADD-ON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3 line-h-7">
+                            <p class="color-theme">JUN 24</p>
+                            <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00pm</p>
+                        </div>
+                        <div class="col-6 line-h-7">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Lorem ipsum dolor sit amet adipisicing.</p>
+                                    <p class="grey-theme font-14">Lorem ipsum dolor sit amet adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col color-theme my-2">
+                                    ADD-ON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3 line-h-7">
+                            <p class="color-theme">JUN 24</p>
+                            <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00pm</p>
+                        </div>
+                        <div class="col-6 line-h-7">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Lorem ipsum dolor sit amet adipisicing.</p>
+                                    <p class="grey-theme font-14">Lorem ipsum dolor sit amet adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col color-theme my-2">
+                                    ADD-ON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3 line-h-7">
+                            <p class="color-theme">JUN 24</p>
+                            <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00pm</p>
+                        </div>
+                        <div class="col-6 line-h-7">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Lorem ipsum dolor sit amet adipisicing.</p>
+                                    <p class="grey-theme font-14">Lorem ipsum dolor sit amet adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col color-theme my-2">
+                                    ADD-ON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-3 line-h-7">
+                            <p class="color-theme">JUN 24</p>
+                            <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00pm</p>
+                        </div>
+                        <div class="col-6 line-h-7">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Lorem ipsum dolor sit amet adipisicing.</p>
+                                    <p class="grey-theme font-14">Lorem ipsum dolor sit amet adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col color-theme my-2">
+                                    ADD-ON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <a href="#" class="btn border border-primary color-theme event-info w-100">Load More</a>
+                        </div>
+                    </div>
+            
+
+                </div>
+                <div class="col-4">
+                    <p class="font-w font-16">From the Artiste</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="img-fluid" src="https://via.placeholder.com/250x150" alt="">
+                        </div>
+                        <div class="col-6">
+                            <span class="color-theme">Get Exclusive Perks</span><br> 
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <img class="img-fluid" src="https://via.placeholder.com/250x150" alt="">
+                        </div>
+                        <div class="col-6">
+                            <span class="color-theme">Event Information</span><br> 
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <img class="img-fluid" src="https://via.placeholder.com/300x250" alt="">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <img class="img-fluid" src="https://via.placeholder.com/300x500" alt="">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <img class="img-fluid" src="https://via.placeholder.com/300x250" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-3">
+            <div class="row mb-3 mt-5">
+                <div class="col">
+                    <h4>Fans Also Viewed</h4>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-lg-3 col-md-4 relative">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
+                    <div class="bottom-left ml-2 mb-2 rounded">
+                        <p class="font-w text-left mt-2">John Doe</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 relative">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
+                    <div class="bottom-left ml-2 mb-2 rounded">
+                        <p class="font-w text-left mt-2">John Doe</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 relative">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
+                    <div class="bottom-left ml-2 mb-2 rounded">
+                        <p class="font-w text-left mt-2">John Doe</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 relative  d-none d-lg-block">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
+                    <div class="bottom-left ml-2 mb-2 rounded">
+                        <p class="font-w text-left mt-2">John Doe</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mt-4">
+                <div class="col-lg-3 col-md-4 relative">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
+                    <div class="bottom-left ml-2 mb-2 rounded">
+                        <p class="font-w text-left mt-2">John Doe</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 relative">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
+                    <div class="bottom-left ml-2 mb-2 rounded">
+                        <p class="font-w text-left mt-2">John Doe</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 relative">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
+                    <div class="bottom-left ml-2 mb-2 rounded">
+                        <p class="font-w text-left mt-2">John Doe</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 relative  d-none d-lg-block">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
+                    <div class="bottom-left ml-2 mb-2 rounded">
+                        <p class="font-w text-left mt-2">John Doe</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="py-1 col-4 fixed-bottom bg-theme rounded-top top-width text-center">
+                   <a href="#" class="white blue"> Help Us Improve</a>
+                </div>
+                <div class="col-8"></div>
+
+            </div>
+        </div>
+    </main>
+    
+    <!-- Links to other pages -->
+    <div class="container-fluid fixed-bottom">
+        <div class="row text-center">
+            <div class="col">
+                <a href="page-1.html" class="btn mt-5 border border-primary color-theme event-info ">1</a>
+                <a href="#" class="btn mt-5 border border-primary color-theme event-info">2</a>
+                <a href="page-3.html" class="btn mt-5 border border-primary color-theme event-info">3</a>
+                <a href="#" class="btn mt-5 border border-primary color-theme event-info">4</a>
+                <a href="#" class="btn mt-5 border border-primary color-theme event-info">5</a>
+                <a href="#" class="btn mt-5 border border-primary color-theme event-info">6</a>
+                <a href="#" class="btn mt-5 border border-primary color-theme event-info">7</a>
+                <a href="#" class="btn mt-5 border border-primary color-theme event-info">8</a>
+                <a href="#" class="btn mt-5 border border-primary color-theme event-info">9</a>
+                <a href="#" class="btn mt-5 border border-primary color-theme event-info">10</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center font-12 py-4 mt-5">
+        <p>By continuing past this page, you agree to our <a href="#">Terms of Use.</a></p>
+        <p> <a href="#">Privacy Policy</a> | © 1999-2020 Ticketmaster. All rights reserved.</p>
+        <a href="#">Do Not Sell My Information</a>
+    </footer>
+    <script src="assets/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.js"></script>
+</body>
+</html>

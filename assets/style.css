@@ -1,0 +1,263 @@
+.bg-theme {
+    background-color: #0165D4;
+    color: white;
+}
+
+.color-theme {
+    color: #0165D4;
+}
+
+.grey-theme {
+    color: gray;
+}
+
+.options a {
+    color: white;
+    border: white 1px solid;
+    padding: 10px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.font-w {
+    font-weight: bolder;
+}
+
+.options a:hover {
+    opacity: 0.5;
+    color: white;
+}
+
+.top-width {
+    width: 200px;
+}
+
+
+.wide {
+    display: inline-block;
+    /* width: 1100px; */
+    width: 80vw;
+    height: 60px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+.font-11 {
+    font-size: 11px;
+}
+.font-10 {
+    font-size: 10px;
+}
+
+.font-5 {
+    font-size: 5px;
+    display: inline-block;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.line-h-7 {
+    line-height: 7px;
+}
+
+input {
+    width: 30px;
+    height: 30px;
+}
+
+.size {
+    width: 50px;
+    height: 46px;
+}
+
+.h-46 {
+    height: 46px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.bg-dropdown-theme:hover {
+    background-color: #0136AA;
+    color: white;
+}
+
+.navbar-collapse .nav-text-color, .navbar-toggler-icon {
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-link:hover {
+    background-color: #1148AC;
+}
+
+.reverse-theme {
+    background-color: white;
+    color: #0165D4;
+}
+
+.event-info:hover {
+    background-color: #D6E7FA;
+    color: #0165D4;
+}
+
+footer {
+    background-color: #1F262D;
+    color: #9DB4B6;
+    line-height: 7px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.relative {
+    position: relative;
+    text-align: center;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0.4vw;
+    left: 1.5vw;
+    padding: 0.5vw;
+    background-color: #5A646C;
+    color: white;
+    line-height: 0.5vw;
+    width: 11vw;
+}
+
+.top-right {
+    position: absolute;
+    top: 0.7vw;
+    right: 1.8vw;
+    padding: 0.5vw;
+    background-color: #5A646C;
+    color: white;
+    line-height: 0.6vw;
+    width: 2.5vw;
+}
+
+.top-right-3 {
+    position: absolute;
+    top: 8vw;
+    right: 12vw;
+    padding: 0.5vw;
+    background-color: #5A646C;
+    color: white;
+    line-height: 0.6vw;
+    width: 2.5vw;
+}
+
+.less-md {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .less-md {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .less-md-block {
+      display: block;
+    }
+    .experience-block {
+        display: block;
+        text-align: left;
+    }
+
+    .sign-width {
+        width: 100px;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    .less-md-block {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1140px) {
+    .drop-1 {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1141px) {
+    .drop-1 {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 910px) {
+    .drop-2 {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .drop-3 {
+      display: none;
+    }
+  }
+
+  .blue:hover {
+      color: #0165D4;
+  }
+
+  .dropdown-item:hover {
+      background-color: #0165D4;
+  }
+
+
+  /* Maryam styles */
+  
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators .active{
+    background: rgb(2, 108, 223);
+}
+.carousel-indicators li{
+    background: rgb(191, 191, 191);
+}
+
+/* .navbar-light .navbar-toggler {
+
+    border-color: rgba(255, 255,255, 1);
+
+} */
+#white-div-nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(38, 38, 38)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
+#blue-div-nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
