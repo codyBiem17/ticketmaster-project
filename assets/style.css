@@ -1,7 +1,16 @@
 .bg-theme {
-    background-color: #0165D4;
+    /* background-color: #0165D4; */
     color: white;
+    background: rgb(1,56,172);
+    background: linear-gradient(90deg, rgba(1,56,172,1) 0%, rgba(16,106,215,1) 56%, rgba(1,52,165,1) 100%);
 }
+
+/* .blue-div{
+    color: white;
+    font-size: 20px;
+    background: rgb(1,56,172);
+    background: linear-gradient(90deg, rgba(1,56,172,1) 0%, rgba(16,106,215,1) 56%, rgba(1,52,165,1) 100%);
+  } */
 
 .color-theme {
     color: #0165D4;
@@ -34,7 +43,7 @@
 
 
 .wide {
-    display: inline-block;
+    /* display: inline-block; */
     /* width: 1100px; */
     width: 80vw;
     height: 60px;
@@ -81,6 +90,10 @@ img {
     border-radius: 5px;
 }
 
+a img {
+    border-radius: 0px;
+}
+
 .bg-dropdown-theme:hover {
     background-color: #0136AA;
     color: white;
@@ -100,6 +113,7 @@ body {
 
 .nav-link:hover {
     background-color: #1148AC;
+    color: white;
 }
 
 .reverse-theme {

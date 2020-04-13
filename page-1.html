@@ -5,47 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticketmaster: Buy Verified Tickets for Concerts, Sports, Theatre and Events</title>
     <link rel="stylesheet" href="assets/bootstrap.css">
-    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/fontawesome5/css/all.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <!-- <nav class="navbar navbar-expand-lg bg-theme  fixed-top ">
-        <a class="navbar-brand" href="#"><img class="img-fluid" src="https://via.placeholder.com/200x50" alt=""></a>
-        <button class="navbar-toggler white bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon white"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link p-3 nav-text-color" href="#">Concerts <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-3 nav-text-color" href="#">Sports</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-3 nav-text-color" href="#">Art & Theatre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-3 nav-text-color" href="#">Family</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link p-3 nav-text-color dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item bg-dropdown-theme" href="#">VIP</a>
-                        <a class="dropdown-item bg-dropdown-theme" href="#">Deals</a>
-                        <a class="dropdown-item bg-dropdown-theme" href="#">Entertainment Guides</a>
-                        <a class="dropdown-item bg-dropdown-theme" href="#">For You</a>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-    </nav> -->
-
     <div class="row white-div">
         <div class="col-12 hide-and-show" id="white-div-nav">
             <nav class="navbar navbar-expand-lg row">
@@ -78,7 +42,7 @@
                     </div>
                     <!-- hide and show this header on >=medium devices -->
                     
-                    <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons">
+                    <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons mt-3">
                         <div class="row">
                             <div class="col-3 p-2 search-icon">
                                 <i class="fas fa-search"></i>
@@ -112,12 +76,40 @@
                 <!-- hide and show this header on >=medium devices -->
                 <div class="col-sm-6 col-md-7 col-lg-8 blue-div-form">
                     <form class="form-group row" action="">
-                        <div class="col-11 col-md-7 col-lg-6 col-xl-5">
-                            <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
+                        <div class="">
+                            <!-- <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
                                 placeholder="Find millions of live experiences">
-                            <i class="fas fa-search input-search-icon"></i>
+                            <i class="fas fa-search input-search-icon"></i> -->
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link p-3 nav-text-color white" href="#">Concerts <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-3 nav-text-color white" href="#">Sports</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-3 nav-text-color white" href="#">Art & Theatre</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-3 nav-text-color white" href="#">Family</a>
+                                </li>
+                
+                                <li class="nav-item dropdown white">
+                                    <a class="nav-link p-3 nav-text-color dropdown-toggle white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    More
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item bg-dropdown-theme" href="#">VIP</a>
+                                        <a class="dropdown-item bg-dropdown-theme" href="#">Deals</a>
+                                        <a class="dropdown-item bg-dropdown-theme" href="#">Entertainment Guides</a>
+                                        <a class="dropdown-item bg-dropdown-theme" href="#">For You</a>
+                                    </div>
+                                </li>
+                
+                            </ul>
+                
                         </div>
-                        <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
+                        <!-- <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
                             <li class="nav-item user-sell-blue-nav mr-3">
                                 <a class="nav-link" href="#">Concert</a>
                             </li>
@@ -127,7 +119,7 @@
                             <li class="nav-item user-sell-blue-nav">
                                 <a class="nav-link" href="#">More</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </form>
                     
                 </div>
@@ -176,7 +168,20 @@
             </div>
             <div class="row mt-3">
                 <div class="col text-center">
-                    <input class="form-control  wide" type="search" placeholder="Search" aria-label="Search">
+                    <div class="row text-center mx-5">
+                        <div class="col-3 ml-5">
+                            <input type="text" class="form-control" placeholder="City or Zip Code">
+                            <!-- <i class="far fa-map-marker-alt"></i> -->
+                        </div>
+                        <div class="col-3 mx-n5">
+                            <input type="text" class="form-control"  placeholder="All Dates">
+                            <!-- <i class="far fa-angle-down"></i> -->
+                        </div>
+                        <div class="col-6">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <!-- <i class="far fa-search"></i> -->
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -199,45 +204,53 @@
             </div>
         </div>
 
-        <div class="container-fluid  d-md-none mt-5">
-            <div class="row">
-                <div class="col">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators ">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://via.placeholder.com/500x350" alt="First slide" width="100%">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="https://via.placeholder.com/500x350" alt="Second slide" width="100%">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="https://via.placeholder.com/500x350" alt="Third slide" width="100%">
-                          </div>
+        <div class="container-fluid  d-md-none">
+            <div id="slides-indicators" class="carousel slide" data-ride="carousel">
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#"> <img src="https://www.ticketmaster.com/api/native/image/60e7eb7641044ff6b5a4274de5b547a5.png" alt="live-image"
+                            width="485" height="264"  id="image-slide1"> </a> 
+                        <div class="row">
+                            <div class="col-11 mb-5 mx-auto pt-3 captions">
+                                <a href="#" class="slide-captions">Live From Home</a>
+                                <p class="caption-text"> Your virtual hub updated daily with live streams from your favorite artists and more. </p>
+                            </div>
                         </div>
-                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"> <img src="https://s1.ticketm.net/dam/a/f19/6811475b-29a2-4be3-927f-9fd5ff1d9f19_1202251_RETINA_PORTRAIT_16_9.jpg"
+                            alt="artist1" width="500" height="264" id="image-slide2"> </a> 
+                        <div class="row">
+                            <div class="col-11 mb-5 mx-auto pt-3 captions">
+                                <a href="#" class="slide-captions">Kane Brown</a>
+                                <p class="caption-text"> Worldwide Beautiful Tour - tickets on sale! </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href=""> <img src="https://s1.ticketm.net/dam/a/17d/8a37fd67-784c-40e8-b46d-c6f0ee59317d_1287541_RETINA_PORTRAIT_16_9.jpg"
+                            alt="artist2" width="500" height="264" id="image-slide3"> 
+                        </a> 
+                        <div class="row">
+                            <div class="col-11 mb-5 mx-auto pt-3 captions">
+                                <a href="#" class="slide-captions">Tim McGraw</a>
+                                <p class="caption-text"> Here On Earth Tour is here! </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row mt-4">
-                <div class="col">
-                    <span class="color-theme h5">Event Information</span><br> 
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col text-center">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                </div>
+                <!-- Indicators -->
+                <!-- <div class="row">
+                    <div class="col-12 my-3"> -->
+                        <ul class="carousel-indicators my-3">
+                            <li data-target="#slides-indicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#slides-indicators" data-slide-to="1"></li>
+                            <li data-target="#slides-indicators" data-slide-to="2"></li>
+                        </ul>
+                    <!-- </div>
+                </div> -->
             </div>
         </div>
 
