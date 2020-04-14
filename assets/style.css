@@ -241,6 +241,17 @@ footer a:hover {
       background-color: #0165D4;
   }
 
+  @media screen and (max-width: 992px) {
+    .lg-view {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .lg-lower-view {
+      display: none;
+    }
+  }
 
   /* Maryam styles */
   
