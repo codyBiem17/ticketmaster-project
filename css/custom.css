@@ -286,8 +286,8 @@ select.concert-event-forms:hover,
 @media only screen and (max-width: 767px) {
   .blue-div-form,
   .white-div-form,
-  .white-div-input,
-  .help,
+  .white-div-input, #hide-div,
+  .help, #placeholder-side-image,
   ul.large-screen-menulinks,
   #img-gallery, .advert-section {
     display: none;
@@ -307,7 +307,7 @@ select.concert-event-forms:hover,
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .search-icon,
   ul.large-screen-menulinks,
-  .carousel, .static-image3, .advert-section {
+  .carousel, .static-image3, .advert-section, #placeholder-side-image {
     display: none;
   }
 
@@ -373,7 +373,7 @@ select.concert-event-forms:hover,
 @media only screen and (min-width: 992px) {
    .search-icon,
   .white-ticket-brand,
-  .menu-items, .carousel {
+  .menu-items, .carousel, #hide-div {
     display: none;
   }
 
@@ -467,10 +467,15 @@ select.concert-event-forms:hover,
     /* margin-right: 20px; */
   }
 
+  select#sort-date{
+    /* margin-left: 10px; */
+  }
+
   #placeholder-side-image{
     position: relative;
-    bottom: 70px;
-    left: 30px;
+    bottom: 120px;
+    /* left: 30px; */
+
   }
 
   
@@ -495,9 +500,7 @@ select.concert-event-forms:hover,
 
    #placeholder-side-image{
     position: relative;
-    bottom: 70px;
-    left: 70px;
-    /* margin: 0 auto; */
+    left: 40px;
   }
 
 

@@ -382,9 +382,10 @@
                     </div>
                     
                     <div class="form-group row">
-                        <div class="col-4 col-lg-3 mb-2 "></div>
-                        <div class="col-4 col-lg-3 mb-2 "></div>
-                        <select class="col-4 col-lg-3 mb-2 concert-event-forms form-control" id="sort-date">
+                        <div class="col-4 col-md-3 mb-2 "></div>
+                        <div class="col-4 col-md-3 mb-2 "></div>
+                        <div class="col-md-3 mb-2" id="hide-div"></div>
+                        <select class="col-4 col-md-3 mb-2 concert-event-forms form-control" id="sort-date">
                             <option hidden>Sort By: Date</option>
                             <option>Most Popular</option>
                             <option>Date</option>
@@ -392,10 +393,6 @@
                             <option>Name A-Z</option>
                             <option>Name Z-A</option>
                         </select>
-
-                        <div class="col-lg-3" id="placeholder-side-image">
-                            <img src="images/business-cards-right.jpg" alt="">
-                        </div>
                     </div>
                     <!-- <div class="form-group row ">
                         
@@ -408,15 +405,14 @@
                         
                     </div> -->
                 </form>
-
-                <div class="col-lg-4">
-                    <img src="" alt="" width="" height="">
-                </div>
             </div>
 
-            <div class="row">
-                <div class="col-11 mx-auto my-3 sorry-text">
+            <div class="row mx-auto">
+                <div class="col-11 col-lg-8 my-3 sorry-text">
                     Sorry... there are currently no upcoming events.
+                </div>
+                <div class="col-lg-4" id="placeholder-side-image">
+                    <img src="images/business-cards-right.jpg" alt="">
                 </div>
             </div>
         </main>
