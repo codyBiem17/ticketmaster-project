@@ -8,12 +8,12 @@ $(document).ready(function () {
       
         if (scrollTop > offsetBlueDiv) {
             $('.hide-and-show').css({ display: "block" });
-            $('#blue-div-nav').css({ display: "none" });
+            $('#blue-div-nav').css({marginTop: '-50px'});
             $('.white-div').addClass('sticky-nav');
         }
         else {
             $('.hide-and-show').css({ display: "none" });
-            $('#blue-div-nav').css({ display: "block" });
+            $('#blue-div-nav').css({ marginTop: '0px' });
             $('.white-div').removeClass('sticky-nav');
         }
     };
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     
 
-    function stopCarousel() {
+    // function stopCarousel() {
         // var windowIsThin = window.matchMedia("(min-width:768px)").matches;
 
         // if (windowIsThin) {
@@ -34,14 +34,14 @@ $(document).ready(function () {
         //         interval: false
         //     });
         // }; 
-        if ($(window).width() > 767) {
-            // disable carousel
-            $('.carousel').carousel({
-                interval: false
-            });
-        }
+    //     if ($(window).width() > 767) {
+    //         // disable carousel
+    //         $('.carousel').carousel({
+    //             interval: false
+    //         });
+    //     }
 
-    }
-    stopCarousel()
+    // }
+    // stopCarousel()
   
 });

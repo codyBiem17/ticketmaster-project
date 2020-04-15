@@ -1,114 +1,135 @@
-body{
+body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 
-.blue-div a em, .home-div-concert, a.slide-captions, 
-.concert-category, .sell {
-   font-weight: 600;
+.blue-div a em,
+.home-div-concert,
+a.slide-captions,
+.concert-category,
+.sell {
+  font-weight: 600;
 }
 
-.hide-and-show{
+.hide-and-show {
   color: #4e4d4d;
   font-size: 19px;
   background-color: white;
   display: none;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
-  margin: -20px 0px;
+  height: 60px;
+  /* margin: -20px 0px; */
   /* padding: 5px 0px; */
 }
 
-ul li.nav-item.user-sell-white-nav a{
+#white-div-nav .navbar-icons {
+  margin-right: -20px;
+  /* border: 1px solid red; */
+}
+
+.white-div-tee {
+  /* border: 1px solid red; */
+  margin: -20px 0px 5px -20px;
+}
+
+ul li.nav-item.user-sell-white-nav a {
   color: #4e4d4d;
   font-weight: 600;
 }
 
-a.white-ticket-brand em{
+a.white-ticket-brand em {
   font-weight: 700;
   color: rgb(2, 108, 223);
   font-size: 45px;
 }
 
-.white-div a:hover, .blue-div a:hover{
+.white-div a:hover,
+.blue-div a:hover {
   text-decoration: none;
 }
 
-.user-sell-white-nav:hover{
+.user-sell-white-nav:hover {
   background: rgb(230, 230, 230);
 }
 
-.blue-div{
+.blue-div {
   color: white;
   font-size: 20px;
-  background: rgb(1,56,172);
-  background: linear-gradient(90deg, rgba(1,56,172,1) 0%, rgba(16,106,215,1) 56%, rgba(1,52,165,1) 100%);
+  background: rgb(1, 56, 172);
+  background: linear-gradient(
+    90deg,rgba(1, 56, 172, 1) 0%,rgba(16, 106, 215, 1) 56%,
+    rgba(1, 52, 165, 1) 100%
+  );
 }
 
-.blue-div-nav{
+.blue-div-nav {
   /* margin-bottom: -5px; */
 }
 
-.blue-div a em{
+.blue-div a em {
   color: white;
   font-size: 25px;
 }
 
-.user-sell-blue-nav:hover{
+.user-sell-blue-nav:hover {
   background: rgba(38, 38, 38, 0.1);
+  /* padding: 10px; */
 }
 
-.user-icon{
+.user-icon {
   cursor: pointer;
 }
 
-ul li.nav-item.user-sell-blue-nav a{
+ul li.nav-item.user-sell-blue-nav a {
   color: white;
   font-weight: 600;
 }
 
-div.white-icons.user-icon{
+div.white-icons.user-icon {
   /* padding: 19px 8px; */
 }
 
-.sell{
+.sell {
   /* cursor: default; */
 }
 
-
-.home-div-concert{
+.home-div-concert {
   margin-top: -15px;
   font-size: 12px;
 }
 
-div.white-icons{
+div.white-icons {
   /* padding: 10px; */
 }
 
-.concert-ticket{
+.concert-ticket {
   font-size: 24px;
 }
 
-.carousel-item a img{
+.carousel-item a img {
   max-width: 100%;
   width: 100%;
   height: auto;
 }
 
-a.slide-captions{
+
+
+a.slide-captions {
   color: rgb(1, 80, 167);
   font-size: 20px;
 }
 
-a.slide-captions:hover{
+a.slide-captions:hover {
   text-decoration: none;
   color: rgb(2, 108, 223);
 }
 
-.caption-text{
+.caption-text {
   font-weight: 400;
 }
 
-.caption-text, .concert-category{
+.caption-text,
+.concert-category {
   /* font-size: 16px; */
   /* color: #262626; */
 }
@@ -120,29 +141,30 @@ a.slide-captions:hover{
 .concert-category a:hover {
   color: rgb(2, 108, 223);
 }
-  
-.concert-event-forms select:hover, #sort-date:hover{
+
+select.concert-event-forms:hover,
+#sort-date:hover {
   border: 2px solid rgb(2, 108, 223);
   cursor: pointer;
 }
 
-#sort-date{
+#sort-date {
   border: none;
 }
 
-.footer{
+.footer {
   text-align: center;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.7);
   background: #1f262d;
 }
 
-.terms-policy{
+.terms-policy {
   font-weight: 600;
   color: white;
 }
 
-.sticky-nav{
+.sticky-nav {
   position: sticky;
   top: 0;
   left: 0;
@@ -151,46 +173,52 @@ a.slide-captions:hover{
 }
 
 /* .white-div */
-  #white-navbar-input-field{
-    background-color: white;
-    border-color: #bfbfbf;
-  }
+#white-navbar-input-field {
+  background-color: white;
+  border-color: #bfbfbf;
+  width: 300px;
+}
 
-  #white-navbar-input-field:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 2px solid blue;
-  }
+#white-navbar-input-field:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 2px solid blue;
+}
 
-   #white-navbar-input-field::-webkit-input-placeholder, 
-  #white-navbar-input-field::placeholder{
-    color: #4e4d4d;
-    position: relative;
-    left: 15px;
-  }
+#white-navbar-input-field::-webkit-input-placeholder,
+#white-navbar-input-field::placeholder {
+  color: #4e4d4d;
+  position: relative;
+  left: 15px;
+}
 
-   .white-div-form i.input-search-icon{
-    z-index: 1;
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    color: #757070;
-    width: 0;
-  }
+.white-div-form{
+  position: relative;
+  left: 40px;
+  bottom: 15px;
+}
 
+.white-div-form i.input-search-icon {
+  z-index: 1;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  color: #757070;
+  width: 0;
+}
 
-   a.white-div-input em{
-    font-weight: 600;
-    font-size: 25px;
-    color: #026cdf;
-  }
-
+.white-div a.white-div-input em {
+  font-weight: 600;
+  font-size: 25px;
+  color: #026cdf;
+}
 
 /* blue div */
-#blue-navbar-input-field{
-    background-color: #3578d5;
-    border-color: #3578d5;
-  }
+#blue-navbar-input-field {
+  background-color: #3578d5;
+  border-color: #3578d5;
+  width: 300px;
+}
 
 #blue-navbar-input-field:focus {
   -webkit-box-shadow: none;
@@ -198,100 +226,144 @@ a.slide-captions:hover{
   border: 2px solid white;
 }
 
-.blue-div-form i.input-search-icon{
-    z-index: 1;
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    width: 0;
+.blue-div-form {
+  position: relative;
+  left: 40px;
+  top: 2px;
 }
 
- #blue-navbar-input-field::-webkit-input-placeholder, 
-  #blue-navbar-input-field::placeholder{
-    color: white;
-    position: relative;
-    left: 15px;
-  }
+.blue-div-form i.input-search-icon {
+  z-index: 1;
+  position: absolute;
+  left: 25px;
+  top: 10px;
+  width: 0;
+}
+
+#blue-navbar-input-field::-webkit-input-placeholder,
+#blue-navbar-input-field::placeholder {
+  color: white;
+  position: relative;
+  left: 20px;
+}
+
+#img-gallery{
+  padding: 0px 30px;
+}
 
 
 
+#img-gallery .static-image1 img, #img-gallery .static-image2 img{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.category-form-fields{
+  padding-left: 40px;
+  /* padding-right: 20px; */
+}
 
 /* media queries */
-@media only screen and (max-width: 767px){
-  .blue-div-form, .white-div-form, .white-div-input, 
-  .help, ul.large-screen-menulinks{
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .blue-div a em{
+    font-size: 30px;
+    /* border: 1px solid red; */
+  }
+
+  #white-div-nav .navbar-icons {
+    /* margin-right: -30px; */
+    /* border: 1px solid red; */
+  }
+
+  #blue-div-nav .navbar-icons {
+    /* margin-right: -15px; */
+    /* border: 1px solid red; */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .blue-div-form,
+  .white-div-form,
+  .white-div-input,
+  .help,
+  ul.large-screen-menulinks,
+  #img-gallery, .advert-section {
     display: none;
   }
 
-  .user-sell-white-nav:hover{
-    padding: 30px 10px;
+  .user-sell-white-nav:hover {
+    /* padding: 30px 10px; */
     text-align: center;
   }
 
-  .user-sell-blue-nav:hover{
-    padding: 30px 10px;
+  .user-sell-blue-nav:hover {
+    /* padding: 30px 10px; */
     text-align: center;
   }
 }
 
-@media only screen and (max-width:991px) and (min-width: 768px) {
-  .search-icon, ul.large-screen-menulinks{
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .search-icon,
+  ul.large-screen-menulinks,
+  .carousel, .static-image3, .advert-section {
     display: none;
   }
 
-  .concert-ticket{
+  .concert-ticket {
     font-size: 32px;
     font-weight: 600px;
   }
 
-  div.user-sell-blue-nav:hover{
-    padding: 50px 40px;
-    text-align: center;
+  #blue-div-nav .navbar-icons {
+    position: relative;
+    left: 15px;
+    /* border: 1px solid red; */
   }
-  .hide-and-show{
-    padding-top: 10px;
+  div.blue-nav-right-content {
+    /* margin-left: 5px; */
+    /* padding-right: 2px; */
+    /* border: 1px solid red; */
+    /* text-align: center; */
   }
-  .white-div-form{
+  .hide-and-show {
+    /* padding-top: 10px; */
+  }
+  .white-div-form {
     margin-top: 15px;
   }
 
-  input[type="text"].search{
-    /* font-family: "Font Awesome 5 Free", Roboto, sans-serif;
-    font-size: 1.3333333333333333em;
-    font-weight: 900; */
+  .white-div-tee {
+    /* border: 1px solid red; */
+    margin: 0px 0px 0px -20px;
   }
 
   /* for white div */
-  .white-ticket-brand{
+  .white-ticket-brand {
     display: none;
   }
 
- 
   /* for blue div */
- 
-#blue-div-nav{
-    padding-top: 10px;
+
+  #blue-div-nav {
+    /* padding-top: 5px; */
     padding-bottom: 60px;
   }
 
-
   .carousel-item a img {
-    width:93%;
-    height: auto;
-    border-radius: 4px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-
-  .carousel-item a img#image-slide2, .carousel-item a img#image-slide3 {
-    /* width:41.66%;
+    /* width:93%;
     height: auto;
     border-radius: 4px;
     margin-left: 25px;
     margin-right: 25px; */
   }
 
-  main{
+  #img-gallery div.captions{
+    padding: 15px;
+  }
+
+  main {
     position: relative;
     top: 20px;
   }
@@ -299,19 +371,32 @@ a.slide-captions:hover{
 
 /* media queries for large devices */
 @media only screen and (min-width: 992px) {
- .concert-ticket{
-   font-size: 46px;
- }
-  .search-icon, .white-ticket-brand, .menu-items{
+   .search-icon,
+  .white-ticket-brand,
+  .menu-items, .carousel {
     display: none;
   }
-  
-  #blue-div-nav{
-    padding-top: 10px;
-    padding-bottom: 60px;
+
+  .concert-ticket {
+    position: relative;
+    bottom: 10px;
+    font-size: 46px;
+    font-weight: 600;
+  }
+ 
+  #blue-div-nav {
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 
-  .carousel-item a img {
+  #blue-div-nav .navbar-icons {
+    position: relative;
+    left: -15px;
+    top: -5px;
+    /* border: 1px solid red; */
+  }
+
+  /* .carousel-item a img {
     max-width:70%;
     height: auto;
     border-radius: 4px;
@@ -320,18 +405,100 @@ a.slide-captions:hover{
 
   .carousel-item .captions{
     text-align: center;
-  }
+  } */
 
-  .menu-items{
+  .menu-items {
     display: none;
   }
 
-  .hide-and-show{
+  .white-div-tee {
     padding-top: 20px;
   }
-  .white-div-form{
-    padding-top: 10px;
+  .white-div-form {
+    position: relative;
+    top: 5px;
+    /* left: -10px; */
   }
+
+  #white-div-nav .navbar-icons {
+    position: relative;
+    left: 25px;
+    /* border: 1px solid red; */
+  }
+
+  #white-div-nav .large-screen-menulinks{
+    margin-left: 10px;
+  }
+
+  div.advert-section{
+    background-color: #f6f6f6;
+    padding: 10px 150px;
+  }
+
+  .static-image1 p.caption-text{
+    word-spacing: 0.7em;
+    font-size: 18px;
+  }
+
+  span button{
+    position: relative;
+    left: 280px;
+    top: 5px;
+  }
+
+  div.advert-section img{
+    /* margin: 0px auto; */
+    /* width: 100%;
+    height: auto; */
+  }
+
+  #img-gallery{
+    margin-top: 30px;
+  }
+
+ #img-gallery div.captions{
+    /* padding: 25px; */
+  }
+
+  .category-form-fields{
+    /* border: 1px solid red; */
+    padding-left: 30px;
+    /* width: 100%; */
+    /* margin-right: 20px; */
+  }
+
+  #placeholder-side-image{
+    position: relative;
+    bottom: 70px;
+    left: 30px;
+  }
+
+  
+
 }
 
+@media only screen and (min-width: 1199px) {
+ 
+  #blue-navbar-input-field {
+    width: 400px;
+  }
 
+  .blue-div-form {
+    position: relative;
+    left: 10px;
+    top: 2px;
+  }
+
+  #blue-div-nav .large-screen-menulinks{
+    margin-left: -60px;
+  }
+
+   #placeholder-side-image{
+    position: relative;
+    bottom: 70px;
+    left: 70px;
+    /* margin: 0 auto; */
+  }
+
+
+}
