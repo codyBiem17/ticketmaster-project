@@ -34,17 +34,34 @@
         .carousel-indicators li{
             background: rgb(191, 191, 191);
         }
+/* 
+        #white-div-nav .navbar-toggler-icon {
 
-        /* .navbar-light .navbar-toggler {
-
-            border-color: rgba(255, 255,255, 1);
+            border-color: rgba(0, 0,0);
 
         } */
-        #white-div-nav .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(38, 38, 38)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        #white-div-nav .menu-items{
+            margin: 8px 0px;
+        }
+
+        #white-div-nav .toggler-icon {
+            /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
+            width: 20px;
+            height: 3px;
+            background-color: black;
+            margin-bottom: 3px;
+            /* border: 1px solid red; */
         } 
-        #blue-div-nav .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+        #blue-div-nav .menu-items{
+            margin: 8px 0px;
+        } 
+        #blue-div-nav .toggler-icon {
+            width: 20px;
+            height: 3px;
+            background-color: white;
+            margin-bottom: 3px;
+            /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
         } 
 
     </style>
@@ -54,20 +71,28 @@
         <div class="row white-div">
             <div class="col-12 hide-and-show" id="white-div-nav">
                 <nav class="navbar navbar-expand-lg row">
-                    <!-- <a href="#" class="navbar-brand"> <em>t</em> </a> -->
-                    <!-- <div class="row"> -->
-                    <a href="#" class="col-8 white-ticket-brand"> <em>t</em> </a>
-
-                        <a href="#" class="col-sm-2 mb-3 white-div-input"> <em>ticketmaster</em> </a>
-                        <!-- hide and show this header on >=medium devices -->
-                        <div class="col-sm-6 col-md-7 col-lg-8 white-div-form">
-                            <form class="form-group row" action="">
-                                <div class="col-11 col-md-7 col-lg-6 col-xl-5">
-                                    <input class="form-control search" type="text" name="" id="white-navbar-input-field"
-                                        placeholder="Find millions of live experiences">
-                                    <i class="fas fa-search input-search-icon"></i>
-                                </div>
-                                <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
+                    
+                    <!-- first column of blue nav -->
+                    <div class="col-7 col-sm-8 col-lg-10">
+                        <div class="row">
+                            <div class="col-7 col-md-3 col-lg-2 white-div-tee">
+                                <a href="#" class="white-ticket-brand"> <em>t</em> </a>
+                                <a href="#" class="white-div-input"> <em>ticketmaster</em> </a>
+                            </div>
+                            
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-md-9 col-lg-5 white-div-form">
+                                <form class="form-group row" action="">
+                                    <div class="col-md-8 col-lg-6 col-xl-5">
+                                        <input class="form-control search" type="text" name="" id="white-navbar-input-field"
+                                            placeholder="Find millions of live experiences">
+                                        <i class="fas fa-search input-search-icon"></i>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <div class="col-lg-5 ">
+                                <ul class="navbar-nav large-screen-menulinks">
                                     <li class="nav-item user-sell-white-nav mr-3">
                                         <a class="nav-link" href="#">Concert</a>
                                     </li>
@@ -78,86 +103,107 @@
                                         <a class="nav-link" href="#">More</a>
                                     </li>
                                 </ul>
-                            </form>
+                            </div>
                         
+                            <!-- hide and show this header on >=medium devices -->
+
                         </div>
-                        <!-- hide and show this header on >=medium devices -->
+                    </div>
                         
-                        <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons">
-                            <div class="row">
-                                <div class="col-3 p-2 search-icon">
-                                    <i class="fas fa-search"></i>
-                                </div>
-                                <div class="col-3 p-2 user-sell-blue-nav user-icon">
-                                    <i class="far fa-user-circle"></i>
-                                </div>
-                                <div class="col-3 p-2 user-sell-blue-nav sell">
-                                    Sell
-                                </div>
-                                <div class="col-3 p-2 user-sell-blue-nav help">
-                                    Help
-                                </div>
-                                <div class="col-3 p-2 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
-                                    <span class="navbar-toggler-icon"></span>
-                                </div>
+                        
+                    <!-- second column of white nav -->
+                    <div class="col-5 col-sm-4 col-lg-2 mb-3 navbar-icons">
+                        <div class="row">
+                            <div class="col-3 search-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="col-3 user-sell-white-nav user-icon">
+                                <i class="far fa-user-circle"></i>
+                            </div>
+                            <div class="col-3 user-sell-white-nav sell">
+                                <span>Sell</span> 
+                            </div>
+                            <div class="col-3 user-sell-white-nav help">
+                                Help
+                            </div>
+                            <div class="col-3 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
+                                <!-- <div class="row"> -->
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                <!-- </div> -->
                             </div>
                         </div>
-                    <!-- hide and show this header on >=medium devices -->
-                     
-                
+                    </div>
                 </nav>
             </div>
         </div>
+        <!-- white nav ends here -->
 
+        <!-- blue navbar -->
         <div class="row blue-div">
             <div class="col-12" id="blue-div-nav">
                 <nav class="navbar navbar-expand-lg row">
-                    <a href="#" class="col-8 col-sm-2 mb-3"> <em>ticketmaster</em> </a>
                     
-                    <!-- hide and show this header on >=medium devices -->
-                    <div class="col-sm-6 col-md-7 col-lg-8 blue-div-form">
-                        <form class="form-group row" action="">
-                            <div class="col-11 col-md-7 col-lg-6 col-xl-5">
-                                <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
-                                    placeholder="Find millions of live experiences">
-                                <i class="fas fa-search input-search-icon"></i>
-                            </div>
-                            <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
-                                <li class="nav-item user-sell-blue-nav mr-3">
-                                    <a class="nav-link" href="#">Concert</a>
-                                </li>
-                                <li class="nav-item user-sell-blue-nav mr-3">
-                                    <a class="nav-link" href="#">Sports</a>
-                                </li>
-                                <li class="nav-item user-sell-blue-nav">
-                                    <a class="nav-link" href="#">More</a>
-                                </li>
-                            </ul>
-                        </form>
-                        
-                    </div>
-                    <!-- hide and show this header on >=medium devices -->
-                    
-                    <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons">
+                    <!-- first column of blue nav-->
+                    <div class="col-7 col-sm-8 col-lg-10 mb-3">
                         <div class="row">
-                            <div class="col-3 p-2 search-icon">
+                            <div class="col-7 col-md-3 col-lg-2 blue-div-tee">
+                                <a href="#"> <em>ticketmaster</em> </a>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-md-9 col-lg-5 col-xl-6 blue-div-form">
+                                <form class="form-group row" action="">
+                                    <div class="col-md-8 col-lg-6 col-xl-5">
+                                        <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
+                                            placeholder="Find millions of live experiences">
+                                        <i class="fas fa-search input-search-icon"></i>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-5 col-xl-4">
+                                <ul class="navbar-nav large-screen-menulinks">
+                                    <li class="nav-item user-sell-blue-nav mr-3">
+                                        <a class="nav-link" href="#">Concert</a>
+                                    </li>
+                                    <li class="nav-item user-sell-blue-nav mr-3">
+                                        <a class="nav-link" href="#">Sports</a>
+                                    </li>
+                                    <li class="nav-item user-sell-blue-nav">
+                                        <a class="nav-link" href="#">More</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- hide and show this header on >=medium devices -->
+                    </div>
+                    
+                    <!-- second column of blue nav-->
+                    <div class="col-5 col-sm-4 col-lg-2 mb-3 navbar-icons">
+                        <div class="row">
+                            <div class="col-3 search-icon blue-nav-right-content">
                                 <i class="fas fa-search"></i>
                             </div>
-                            <div class="col-3 p-2 user-sell-blue-nav user-icon">
+                            <div class="col-3 col-lg-4 user-sell-blue-nav user-icon blue-nav-right-content">
                                 <i class="far fa-user-circle"></i>
                             </div>
-                            <div class="col-3 p-2 user-sell-blue-nav sell">
-                                Sell
+                            <div class="col-3 col-lg-4 user-sell-blue-nav sell blue-nav-right-content">
+                                <span>Sell</span> 
                             </div>
-                            <div class="col-3 p-2 user-sell-blue-nav help">
+                            <div class="col-3 col-lg-4 user-sell-blue-nav help blue-nav-right-content">
                                 Help
                             </div>
-                            <div class="col-3 p-2 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
-                                <span class="navbar-toggler-icon"></span>
+                            <div class="col-3 menu-items blue-nav-right-content" type="button" data-toggle="collapse" data-target="#menu-items">
+                                <!-- <div class="row"> -->
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <!-- </div> -->
                             </div>
                         </div>
                     </div> 
-                
                 </nav>
             </div>
 
@@ -165,7 +211,7 @@
             <div class="col-12 mx-3 pb-2 home-div-concert">
                 Home / Concert Tickets
             </div>
-            <div class="col-12 mx-3 pb-2  concert-ticket">
+            <div class="col-12 mx-3  concert-ticket">
                 Concerts <span style="font-weight: 300;"> Tickets </span>
             </div>
            
@@ -173,64 +219,140 @@
         </div>
         
         <main>
-            <div id="slides-indicators" class="carousel slide" data-ride="carousel">
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="#"> <img src="https://www.ticketmaster.com/api/native/image/60e7eb7641044ff6b5a4274de5b547a5.png" alt="live-image"
-                            width="485" height="264"  id="image-slide1"> </a> 
-                        <div class="row">
-                            <div class="col-11 mb-5 mx-auto pt-3 captions">
-                                <a href="#" class="slide-captions">Live From Home</a>
-                                <p class="caption-text"> Your virtual hub updated daily with live streams from your favorite artists and more. </p>
+            <div class="row">
+                <div class="col-lg-12 advert-section">
+                    <img src="https://tpc.googlesyndication.com/simgad/3861415721932990274" 
+                    alt="" width="728" height="90">
+                </div>
+                <div id="slides-indicators" class="col-12 carousel slide" data-ride="carousel">
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#"> <img src="https://www.ticketmaster.com/api/native/image/0b1f9545332f4d5cb473f85a5bea3df1.jpg"
+                                    alt="artist2" width="826" height="464" id="image-slide3">
+                            </a>
+                            <div class="row">
+                                <div class="col-11 mb-5 mx-auto pt-3 captions">
+                                    <a href="#" class="slide-captions">Live From Home</a>
+                                    <p class="caption-text"> Your virtual hub updated daily with 
+                                        live streams from your favorite artists and more </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"> <img
+                                    src="https://s1.ticketm.net/dam/a/f19/6811475b-29a2-4be3-927f-9fd5ff1d9f19_1202251_RETINA_PORTRAIT_16_9.jpg"
+                                    alt="artist1" width="826" height="464" id="image-slide2"> </a>
+                            <div class="row">
+                                <div class="col-11 mb-5 mx-auto pt-3 captions">
+                                    <a href="#" class="slide-captions">Kane Brown</a>
+                                    <p class="caption-text"> Worldwide Beautiful Tour - tickets on sale! </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href=""> <img
+                                    src="https://s1.ticketm.net/dam/a/17d/8a37fd67-784c-40e8-b46d-c6f0ee59317d_1287541_RETINA_PORTRAIT_16_9.jpg"
+                                    alt="artist2" width="826" height="464" id="image-slide3">
+                            </a>
+                            <div class="row">
+                                <div class="col-11 mb-5 mx-auto pt-3 captions">
+                                    <a href="#" class="slide-captions">Tim McGraw</a>
+                                    <p class="caption-text"> Here On Earth Tour is here! </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <a href="#"> <img src="https://s1.ticketm.net/dam/a/f19/6811475b-29a2-4be3-927f-9fd5ff1d9f19_1202251_RETINA_PORTRAIT_16_9.jpg"
-                            alt="artist1" width="500" height="264" id="image-slide2"> </a> 
-                        <div class="row">
-                            <div class="col-11 mb-5 mx-auto pt-3 captions">
-                                <a href="#" class="slide-captions">Kane Brown</a>
-                                <p class="caption-text"> Worldwide Beautiful Tour - tickets on sale! </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href=""> <img src="https://s1.ticketm.net/dam/a/17d/8a37fd67-784c-40e8-b46d-c6f0ee59317d_1287541_RETINA_PORTRAIT_16_9.jpg"
-                            alt="artist2" width="500" height="264" id="image-slide3"> 
-                        </a> 
-                        <div class="row">
-                            <div class="col-11 mb-5 mx-auto pt-3 captions">
-                                <a href="#" class="slide-captions">Tim McGraw</a>
-                                <p class="caption-text"> Here On Earth Tour is here! </p>
-                            </div>
-                        </div>
-                    </div>
+                
+                    <!-- Indicators -->
+                    <!-- <div class="row">
+                                    <div class="col-12 my-3"> -->
+                    <ul class="carousel-indicators my-3">
+                        <li data-target="#slides-indicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#slides-indicators" data-slide-to="1"></li>
+                        <li data-target="#slides-indicators" data-slide-to="2"></li>
+                    </ul>
+                    <!-- </div>
+                    </div> -->
                 </div>
 
-                <!-- Indicators -->
-                <!-- <div class="row">
-                    <div class="col-12 my-3"> -->
-                        <ul class="carousel-indicators my-3">
-                            <li data-target="#slides-indicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#slides-indicators" data-slide-to="1"></li>
-                            <li data-target="#slides-indicators" data-slide-to="2"></li>
-                        </ul>
-                    <!-- </div>
-                </div> -->
-            </div>
+                <div class="col-md-12" id="img-gallery">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-8 static-image1">
+                            <div class="row">
 
+                                <div class="col-md-12">
+                                    <a href="#"> <img src="https://www.ticketmaster.com/api/native/image/0b1f9545332f4d5cb473f85a5bea3df1.jpg" alt="artist2"
+                                            width="926" height="464" id="image-slide3">
+                                    </a>
+                                </div>
+    
+                                <div class="col-md-12 mb-5 captions">
+                                    <a href="#" class="slide-captions">Live From Home</a>
+                                    <p class="caption-text"> Your virtual hub updated daily with live streams from your
+                                         <br> favorite artists and more 
+                                        <span>
+                                            <button class="btn btn-primary" type="button">
+                                                Go Live now
+                                            </button>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 static-image2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+
+                                        <div class="col-md-12 col-lg-7">
+                                            <a href="#"> <img
+                                                src="https://s1.ticketm.net/dam/a/f19/6811475b-29a2-4be3-927f-9fd5ff1d9f19_1202251_RETINA_PORTRAIT_16_9.jpg"
+                                                alt="artist1" width="926" height="464" id="image-slide2"> 
+                                            </a>
+                                        </div>
+
+                                        <div class="col-md-11 col-lg-5 mb-5 captions">
+                                            <a href="#" class="slide-captions">Kane Brown</a>
+                                            <p class="caption-text"> Worldwide Beautiful Tour - tickets on sale! </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 static-image3">
+                                    <div class="row">
+                                        <div class="col-lg-7">
+                                            <a href="#"> <img
+                                                src="https://s1.ticketm.net/dam/a/17d/8a37fd67-784c-40e8-b46d-c6f0ee59317d_1287541_RETINA_PORTRAIT_16_9.jpg"
+                                                alt="artist2" width="926" height="464" id="image-slide3">
+                                            </a>
+                                        </div>
+                                    
+                                        <div class="col-lg-5 mb-5 captions">
+                                            <a href="#" class="slide-captions">Tim McGraw</a>
+                                            <p class="caption-text"> Here On Earth Tour is here! </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
             <div class="row">
                 <div class="col-11 mx-auto my-3 concert-category">
                     All Concerts Events 
                     <a href="#">(select your city)</a> (0)
                 </div>
             </div>
-            <div class="row">
-                <form class="col-11 mx-auto">
-                    <div class="form-group row concert-event-forms">
-                        <select class="col-12 col-md-3 mb-2 mr-2 form-control" id="genre">
+            <div class="row category-form-fields">
+                <form class="col-11 col-lg-10">
+                    <div class="form-group row">
+                        <select class="col-12 col-md-3 mb-2 mr-2 form-control concert-event-forms" id="genre">
                             <option hidden>Select Your Genre</option>
                             <option>All Genres</option>
                             <option>Alternative</option>
@@ -249,7 +371,7 @@
                             <option>Date Range</option>
                         </select>
 
-                        <select class="col-12 col-md-3 mb-3 concert-event-forms form-control" id="distance">
+                        <select class="col-12 col-md-3 mb-2 concert-event-forms form-control" id="distance">
                             <option hidden>Select Your Distance</option>
                             <option>10 mi</option>
                             <option>25 mi</option>
@@ -257,8 +379,13 @@
                             <option>75 mi</option>
                             <option>100 mi</option>
                         </select>
-
-                        <select class="col-3 offset-9  concert-event-forms form-control" id="sort-date">
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-4 col-md-3 mb-2 "></div>
+                        <div class="col-4 col-md-3 mb-2 "></div>
+                        <div class="col-md-3 mb-2" id="hide-div"></div>
+                        <select class="col-4 col-md-3 mb-2 concert-event-forms form-control" id="sort-date">
                             <option hidden>Sort By: Date</option>
                             <option>Most Popular</option>
                             <option>Date</option>
@@ -280,9 +407,12 @@
                 </form>
             </div>
 
-            <div class="row">
-                <div class="col-11 mx-auto my-3 sorry-text">
+            <div class="row mx-auto">
+                <div class="col-11 col-lg-8 my-3 sorry-text">
                     Sorry... there are currently no upcoming events.
+                </div>
+                <div class="col-lg-4" id="placeholder-side-image">
+                    <img src="images/business-cards-right.jpg" alt="">
                 </div>
             </div>
         </main>
