@@ -32,10 +32,16 @@
     font-weight: bolder;
 }
 
+.font-w-l {
+    font-weight: lighter;
+}
+
 .options a:hover {
     opacity: 0.5;
     color: white;
 }
+
+
 
 .top-width {
     width: 200px;
@@ -48,6 +54,8 @@
     width: 80vw;
     height: 60px;
 }
+
+
 
 .font-14 {
     font-size: 14px;
@@ -169,14 +177,28 @@ footer a:hover {
 }
 
 .top-right-3 {
+    text-align: center;
     position: absolute;
-    top: 8vw;
-    right: 12vw;
-    padding: 0.5vw;
+    top: 35px;
+    right: 10vw;
+    padding: 0.8vw;
     background-color: #5A646C;
     color: white;
     line-height: 0.6vw;
     width: 2.5vw;
+}
+
+.border-down{
+    border-width: 38px;
+    border-bottom-width: 50px;
+    border-color: red;
+    border-bottom: white solid 6px;
+    color: red;
+}
+
+#event-line:after {
+    content: "";
+    border-bottom: white 3px solid;
 }
 
 .less-md {
@@ -235,6 +257,11 @@ footer a:hover {
 
   .blue:hover {
       color: #0165D4;
+  }
+
+  .bg-primary:hover {
+      background-color: #026CDF;
+      color: white;
   }
 
   .dropdown-item:hover {

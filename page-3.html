@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticketmaster: Buy Verified Tickets for Concerts, Sports, Theatre and Events</title>
     <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/fontawesome5/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-theme  fixed-top ">
+    <!-- <nav class="navbar navbar-expand-lg bg-theme  fixed-top ">
         <a class="navbar-brand" href="#"><img class="img-fluid" src="https://via.placeholder.com/200x50" alt=""></a>
         <button class="navbar-toggler white bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon white"></span>
@@ -45,38 +47,145 @@
 
             </ul>
         </div>
-    </nav>
+    </nav> -->
+    <div class="row white-div">
+        <div class="col-12 hide-and-show" id="white-div-nav">
+            <nav class="navbar navbar-expand-lg row">
+                <!-- <a href="#" class="navbar-brand"> <em>t</em> </a> -->
+                <!-- <div class="row"> -->
+                <a href="#" class="col-8 white-ticket-brand"> <em>t</em> </a>
 
+                    <a href="#" class="col-sm-2 mb-3 white-div-input"> <em>ticketmaster</em> </a>
+                    <!-- hide and show this header on >=medium devices -->
+                    <div class="col-sm-6 col-md-7 col-lg-8 white-div-form">
+                        <form class="form-group row" action="">
+                            <div class="col-11 col-md-7 col-lg-6 col-xl-5">
+                                <input class="form-control search" type="text" name="" id="white-navbar-input-field"
+                                    placeholder="Find millions of live experiences">
+                                <i class="fas fa-search input-search-icon"></i>
+                            </div>
+                            <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
+                                <li class="nav-item user-sell-white-nav mr-3">
+                                    <a class="nav-link" href="#">Concert</a>
+                                </li>
+                                <li class="nav-item user-sell-white-nav mr-3">
+                                    <a class="nav-link" href="#">Sports</a>
+                                </li>
+                                <li class="nav-item user-sell-white-nav">
+                                    <a class="nav-link" href="#">More</a>
+                                </li>
+                            </ul>
+                        </form>
+                    
+                    </div>
+                    <!-- hide and show this header on >=medium devices -->
+                    
+                    <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons">
+                        <div class="row">
+                            <div class="col-3 p-2 search-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="col-3 p-2 user-sell-blue-nav user-icon">
+                                <i class="far fa-user-circle"></i>
+                            </div>
+                            <div class="col-3 p-2 user-sell-blue-nav sell">
+                                Sell
+                            </div>
+                            <div class="col-3 p-2 user-sell-blue-nav help">
+                                Help
+                            </div>
+                            <div class="col-3 p-2 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
+                                <span class="navbar-toggler-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                <!-- hide and show this header on >=medium devices -->
+                 
+            
+            </nav>
+        </div>
+    </div>
+
+    <div class="row blue-div">
+        <div class="col-12" id="blue-div-nav">
+            <nav class="navbar navbar-expand-lg row">
+                <a href="#" class="col-8 col-sm-2 mb-3"> <em>ticketmaster</em> </a>
+                
+                <!-- hide and show this header on >=medium devices -->
+                <div class="col-sm-6 col-md-7 col-lg-8 blue-div-form">
+                    <form class="form-group row" action="">
+                        <div class="col-11 col-md-7 col-lg-6 col-xl-5">
+                            <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
+                                placeholder="Find millions of live experiences">
+                            <i class="fas fa-search input-search-icon"></i>
+                        </div>
+                        <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
+                            <li class="nav-item user-sell-blue-nav mr-3">
+                                <a class="nav-link" href="#">Concert</a>
+                            </li>
+                            <li class="nav-item user-sell-blue-nav mr-3">
+                                <a class="nav-link" href="#">Sports</a>
+                            </li>
+                            <li class="nav-item user-sell-blue-nav">
+                                <a class="nav-link" href="#">More</a>
+                            </li>
+                        </ul>
+                    </form>
+                    
+                </div>
+                <!-- hide and show this header on >=medium devices -->
+                
+                <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons">
+                    <div class="row">
+                        <div class="col-3 p-2 search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="col-3 p-2 user-sell-blue-nav user-icon">
+                            <i class="far fa-user-circle"></i>
+                        </div>
+                        <div class="col-3 p-2 user-sell-blue-nav sell">
+                            Sell
+                        </div>
+                        <div class="col-3 p-2 user-sell-blue-nav help">
+                            Help
+                        </div>
+                        <div class="col-3 p-2 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
+                            <span class="navbar-toggler-icon"></span>
+                        </div>
+                    </div>
+                </div> 
+            
+            </nav>
+        </div>
+
+<!--         
+        <div class="col-12 mx-3 pb-2 home-div-concert">
+            Home / Concert Tickets
+        </div> -->
+       
+
+    </div>
     <main>
-        <div class="container-fluid bg-theme pb-3">
+        <div class="container-fluid bg-theme pb-3 px-5">
             <div class="row">
                 <div class="col-7">
-                    <!-- <nav aria-label="breadcrumb bg-theme">
-                        <ol class="breadcrumb">
-                          <li class="breadcrumb-item active" aria-current="page">Home</li>
-                        </ol>
-                      </nav> -->
-                      
-                      <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="#">Home</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Library</li>
-                        </ol>
-                      </nav>
-                      
-                      <nav aria-label="breadcrumb ">
-                        <ol class="breadcrumb grey-theme">
-                          <li class="breadcrumb-item white"><a href="#">Home</a></li>
-                          <li class="breadcrumb-item"><a href="#">Library</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Data</li>
-                          <span class="badge badge-primary ml-2">4.7</span>
-                        </ol>
-                      </nav>
-                      <span class="h1">John Doe Tickets</span>
+                      <span class="d-block  font-14 mb-5">Home / Concert Tickets / Rock / John Doe Tickets <span class="badge ml-2 p-1 border border-white"> <i class="fa fa-star"></i> 4.5</span></span>
+                      <span class="h1">John Doe <span class="font-w-l">Tickets</span></span>
+
+                      <div class="row mt-5">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-3 .border-down pb-2  h5" id="event-line">Events (33)</div>
+                                <div class="col-3 h5">Reviews (4261)</div>
+                                <div class="col-2 h5">Bio</div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-2"></div> -->
+                      </div>
                 </div>
-                <div class="col-5 text-right">
+                <div class="col-5 text-right mt-n5">
                     <div class="relative">
-                        <img class="img-fluid" src="https://via.placeholder.com/250" alt="">
+                        <img class="img-fluid" src="https://via.placeholder.com/300x200" alt="">
                         <div class="top-right-3 rounded">
                             &hearts;
                         </div>
@@ -100,7 +209,7 @@
                 <div class="col-8">
                     <div class="row">
                         <div class="col-2">
-                            <a href="#" class="btn border border-primary bg-theme event-info size ">A</a>
+                            <a href="#" class="btn border border-primary bg-primary event-info size ">A</a>
                             <a href="#" class="btn border border-primary color-theme event-info ml-n2 size">B</a>
                         </div>
                         <div class="col-4 text-left">
@@ -159,7 +268,7 @@
                             </div>
                         </div>
                         <div class="col-3 text-center">
-                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                            <button class="btn mt-2 border border-primary bg-primary white event-info">See Tickets</button>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -181,7 +290,7 @@
                             </div>
                         </div>
                         <div class="col-3 text-center">
-                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                            <button class="btn mt-2 border border-primary bg-primary white event-info">See Tickets</button>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -203,7 +312,7 @@
                             </div>
                         </div>
                         <div class="col-3 text-center">
-                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                            <button class="btn mt-2 border border-primary bg-primary white event-info">See Tickets</button>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -225,7 +334,7 @@
                             </div>
                         </div>
                         <div class="col-3 text-center">
-                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                            <button class="btn mt-2 border border-primary bg-primary white event-info">See Tickets</button>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -247,7 +356,7 @@
                             </div>
                         </div>
                         <div class="col-3 text-center">
-                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                            <button class="btn mt-2 border border-primary bg-primary white event-info">See Tickets</button>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -269,7 +378,7 @@
                             </div>
                         </div>
                         <div class="col-3 text-center">
-                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                            <button class="btn mt-2 border border-primary bg-primary white event-info">See Tickets</button>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -291,7 +400,7 @@
                             </div>
                         </div>
                         <div class="col-3 text-center">
-                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                            <button class="btn mt-2 border border-primary bg-primary white event-info">See Tickets</button>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -313,7 +422,7 @@
                             </div>
                         </div>
                         <div class="col-3 text-center">
-                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                            <button class="btn mt-2 border border-primary bg-primary white event-info">See Tickets</button>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -335,7 +444,7 @@
                             </div>
                         </div>
                         <div class="col-3 text-center">
-                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                            <button class="btn mt-2 border border-primary bg-primary white event-info">See Tickets</button>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -357,7 +466,7 @@
                             </div>
                         </div>
                         <div class="col-3 text-center">
-                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                            <button class="btn mt-2 border border-primary bg-primary white event-info">See Tickets</button>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -379,7 +488,7 @@
                             </div>
                         </div>
                         <div class="col-3 text-center">
-                            <button class="btn mt-2 border border-primary bg-theme event-info">See Tickets</button>
+                            <button class="btn mt-2 border border-primary bg-primary white event-info">See Tickets</button>
                         </div>
                     </div>
                     <div class="row mt-4">
@@ -494,7 +603,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="py-1 col-4 fixed-bottom bg-theme rounded-top top-width text-center">
+                <div class="py-1 col-4 fixed-bottom bg-primary rounded-top top-width text-center">
                    <a href="#" class="white blue"> Help Us Improve</a>
                 </div>
                 <div class="col-8"></div>
@@ -519,6 +628,20 @@
                 <a href="#" class="btn mt-5 border border-primary color-theme event-info">10</a>
             </div>
         </div>
+        <div class="row text-center">
+            <div class="col">
+                <a href="https://www.ticketmaster.com/" class="btn mt-5 border border-primary color-theme event-info ">1</a>
+                <a href="https://www.ticketmaster.com/discover/concerts" class="btn mt-5 border border-primary color-theme event-info">2</a>
+                <a href="https://www.ticketmaster.com/janet-jackson-tickets/artist/735353?site=10085&pageType=178234&nativePromo=3389&slot=1&campaign=732282&flight=11293300&nativeId=19380789&ac_link=ntm_JanetJackson2020_spotlight" class="btn mt-5 border border-primary color-theme event-info">3</a>
+                <a href="https://www1.ticketmaster.com/janet-jackson-black-diamond-tour/event/0D00583E1609E897" class="btn mt-5 border border-primary color-theme event-info">4</a>
+                <a href="https://my.ticketmaster.com/account" class="btn mt-5 border border-primary color-theme event-info">5</a>
+                <a href="https://my.ticketmaster.com/orders" class="btn mt-5 border border-primary color-theme event-info">6</a>
+                <a href="https://my.ticketmaster.com/listings" class="btn mt-5 border border-primary color-theme event-info">7</a>
+                <a href="https://www.ticketmaster.com/member/addfavs?_ga=2.253135947.358875054.1585578646-1557405097.1585175406" class="btn mt-5 border border-primary color-theme event-info">8</a>
+                <a href="https://my.ticketmaster.com/settings" class="btn mt-5 border border-primary color-theme event-info">9</a>
+                <a href="https://my.ticketmaster.com/settings/subscriptions" class="btn mt-5 border border-primary color-theme event-info">10</a>
+            </div>
+        </div>
     </div>
 
     <footer class="text-center font-12 py-4 mt-5">
@@ -528,6 +651,7 @@
     </footer>
     <script src="assets/jquery-3.4.1.min.js"></script>
     <script src="assets/bootstrap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.js"></script> -->
+    <script src="js/custom.js"></script>
 </body>
 </html>
