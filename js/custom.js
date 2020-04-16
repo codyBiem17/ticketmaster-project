@@ -8,7 +8,7 @@ $(document).ready(function () {
       
         if (scrollTop > offsetBlueDiv) {
             $('.hide-and-show').css({ display: "block" });
-            $('#blue-div-nav').css({marginTop: '-50px'});
+            $('#blue-div-nav').css({marginTop: '-70px'});
             $('.white-div').addClass('sticky-nav');
         }
         else {
