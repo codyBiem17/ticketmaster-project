@@ -23,7 +23,7 @@ a.slide-captions,
 }
 
 #white-div-nav .navbar-icons {
-  margin-right: -20px;
+  /* margin-right: -20px; */
   /* border: 1px solid red; */
 }
 
@@ -266,6 +266,35 @@ select.concert-event-forms:hover,
 }
 
 /* media queries */
+@media only screen and (max-width: 375px){
+  #blue-div-nav{
+   /* margin-top: 30px; */
+  }
+
+  #blue-div-nav .navbar-icons, #white-div-nav .navbar-icons {
+    position: relative;
+    right: 20px;
+    /* border: 1px solid red; */
+    /* width: 200px; */
+  }
+
+  #blue-div-nav .menu-items, #white-div-nav .menu-items{
+      /* padding-left: 5px; */
+      position: relative;
+      left: 10px;
+      /* border: 1px solid green; */
+  } 
+
+  #white-div-nav .navbar-icons {
+    /* margin-right: -30px; */
+    /* border: 1px solid red; */
+  }
+
+  .hide-and-show {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+}
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .blue-div a em{
     font-size: 30px;
