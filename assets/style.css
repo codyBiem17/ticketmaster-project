@@ -69,13 +69,14 @@
 }
 .ticket-div .first {
     color: #59656E;
-    transform: rotate(130deg);
+    transform: rotate(140deg);
 }
 
 .ticket-div .second {
     color: #768692;
-    transform: rotate(130deg);
+    transform: rotate(140deg);
 }
+
 
 .wide {
     display: inline-block;
@@ -83,8 +84,46 @@
     height: 60px;
 }
 
+.w-80 {
+    width: 80%;
+}
 
+.black {
+color: #000;
+}
+.w-17 {
+    width: 90px;
+}
 
+#locationDropdown {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: black solid 1px;
+    border-radius: 3px;
+}
+
+#locationDropdown:hover {
+    text-decoration: none;
+    border: #0150A7 solid 2px;
+    color: black
+}
+.account-bg {
+    background-color: #0150A7;
+}
+
+.account-bg:hover {
+    color: white;
+}
+
+input[type='radio'] {
+    transform: scale(0.5);
+}
+.pass-hint {
+    margin-left: 3px;
+}
+.font-15 {
+    font-size: 15px;
+}
 .font-14 {
     font-size: 14px;
 }
