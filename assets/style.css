@@ -16,6 +16,10 @@
     color: #0165D4;
 }
 
+.color-theme:hover {
+    color: #0165D4;
+}
+
 .grey-theme {
     color: gray;
 }
@@ -47,10 +51,34 @@
     width: 200px;
 }
 
+.ticket-listing {
+    padding: 30px 0px;
+}
+
+.ticket-div {
+    height: 180px;
+    background-color: #DFE4E7;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 40px;
+    /* margin-top: -50px;     */
+}
+
+.ticket-container {
+    background-color: #F6F6F6;
+}
+.ticket-div .first {
+    color: #59656E;
+    transform: rotate(130deg);
+}
+
+.ticket-div .second {
+    color: #768692;
+    transform: rotate(130deg);
+}
 
 .wide {
     display: inline-block;
-    /* width: 1100px; */
     width: 80vw;
     height: 60px;
 }
@@ -276,6 +304,12 @@ footer a:hover {
 
   @media screen and (min-width: 992px) {
     .lg-lower-view {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hide-view {
       display: none;
     }
   }
