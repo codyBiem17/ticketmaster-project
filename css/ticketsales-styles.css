@@ -1,0 +1,464 @@
+.ticket-sales-header {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  background: rgb(1, 56, 172);
+  background: linear-gradient(
+    90deg,rgba(1, 56, 172, 1) 0%,rgba(16, 106, 215, 1) 56%,
+    rgba(1, 52, 165, 1) 100%
+  );
+  height: 180px;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; */
+}
+
+.ticketmaster a:hover, p#diamond-tour a:hover{
+  text-decoration: none;
+}
+
+.hamburger-icon{
+  padding-top: 12px;
+  /* border: 1px solid red; */
+}
+
+.toggler-icons{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 3px;
+    /* border: 1px solid maroon; */
+}
+
+.ticketmaster{
+  position: relative;
+  right: 10px;
+}
+
+.ticketmaster a em {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  /* border: 1px solid red; */
+}
+
+small#copy{
+  font-size: 10px;
+}
+
+#ticket-sales-icons{
+  position: relative;
+  left: 10px;
+}
+
+#sync-icon a, span#signin a, p#diamond-tour a{
+  color: white;
+}
+
+#sell-ticket, span#signin a{
+  font-size: 16px;
+}
+
+
+.artist-schedule{
+  background-color: #0256b2;
+  color: white;
+  height: 100px;
+  border-top: 1px solid #014085;
+  position: absolute;
+  top: 60px;
+  z-index: 2;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+div#artist-img{
+  position: relative;
+  top: 7px;
+  left: 15px;
+  /* padding: 5px; */
+}
+
+p#diamond-tour{
+  font-size: 16px;
+  position: relative;
+  top: 5px;
+  font-weight: 500;
+}
+
+button#more-info{
+  border-radius: 30px;
+  padding: 0px 18px;
+  position: relative;
+  /* top: 2px; */
+  left: 7px;
+}
+
+p#date-time{
+  font-size: 14px;
+  position: relative;
+  /* bottom: 25px; */
+}
+
+#spinner{
+  background: #e8ecf2;
+}
+
+#spinner img{
+  position: relative;
+  left: 70px;
+}
+
+.spinner-icons i.fas{
+  border: 1px solid white;
+  border-radius: 3px;
+  background: white;
+  padding: 10px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+
+.spinner-icons i.fas.fa-undo, i.fas.fa-minus{
+  color: #c1dbf7;
+  font-size: 20px;
+}
+
+.spinner-icons i.fas.fa-plus{
+  color: #046ddf;
+  font-size: 20px;
+}
+
+.spinner-footer{
+  color: #8e8f90;
+  font-size: 12px;
+}
+
+.spinner-footer a{
+  color: #848485;
+  font-weight: 600;
+}
+
+.spinner-footer a:hover{
+  color: #848485;
+}
+
+form select option[value="*"]{
+  color: #026ce5;
+}
+
+div select{
+  position: relative;
+  /* left: -12px; */
+}
+div button#filters{
+  position: relative;
+  /* left: -30px; */
+}
+
+button#filters::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f1de";
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+#seat-calculator{
+  border-left: 1px solid #dbe2e8;
+  /* background: white; */
+}
+/* ==============================================
+      slider section for purchasing tool
+==============================================*/
+.labels{
+    font-size: 25px
+}
+.range-slider{
+    width: 70%;
+    position: relative;
+    margin-top: 5px;
+}
+input[type="range"]{
+  -webkit-appearance:none;
+  width: 100%;
+  height: 10px;
+  border-radius:5px;
+  background: rgb(2, 108, 223);
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+   -webkit-appearance:none;
+    appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  /* border: 1px solid #f77ade;; */
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+
+input[type='range']:nth-child(1)::-webkit-slider-thumb{
+  z-index: 2;
+}
+
+input[type='range']:nth-child(2)::-webkit-slider-runnable-track{
+  background: none;
+}
+
+.range-slider span {
+    /* border: 1px solid #f77ade;; */
+    position: absolute;
+    /* right: 100px; */
+    top: 47px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    /* text-align: center;
+    color: red;
+    line-height: 30px;
+    font-size: 25px;
+    pointer-events: none; */
+  }
+
+  .range-slider .slider-right-span{
+   position: absolute;
+   float: right;
+   margin-right: -5px;
+}
+  
+  .slider-span-lease::before {
+    content: attr(data-val) " ";
+  }
+  /* ==============================================
+        Slider section end
+==============================================*/
+
+/* table styling */
+li a.active{
+  color: black;
+  font-weight: 700;
+  border-bottom: 3px solid #026cdf;
+}
+
+li a#price-link.active{
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 80%;
+}
+
+li a#seat-link.active{
+  /* width: 50%; */
+  /* margin-left: -20px;
+  margin-right: 20px; */
+}
+
+.none-active{
+  color: #0056b3;
+  font-weight: 400;
+}
+
+tr.table-head{
+  background: #fdf1e7;
+}
+
+tr.table-head:hover{
+  background-color: #f1f1f1;
+}
+
+td a {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+i.fa-star{
+  text-align: center;
+  border: 2px solid #eb730a;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 10px;
+  color: #eb730a;
+  background: white;
+  /* width: 23px; */
+}
+
+.vip-package{
+  color: #262626;
+}
+
+.money-range{
+  font-size: 10px;
+  color: #727272;
+}
+
+.number-rows, .zero-limit, footer button.btn-success{
+  font-weight: 700;
+}
+
+.admission{
+  font-size: 14px;
+  color: #727272;
+}
+
+footer .footer-section{
+  background: #f6f6f6;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  font-weight: 700;
+}
+
+footer .ticket-limit{
+  color: #919191;
+  font-size: 12px;
+}
+
+footer button{
+  position: relative;
+  left: 15px;
+}
+
+.active-tab-links{
+  color: black;
+}
+
+
+@media only screen and (min-width:370px) and (max-width: 600px){
+  div button#filters{
+    position: relative;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width:767px){
+  div#artist-tour{
+    position: relative;
+    left: 20px;
+  }
+
+  .sell-signin, #artist-img, #spinner{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width:767px){
+  .ticketmaster{
+    position: relative;
+    right: 20px;
+  }
+
+  footer button{
+    position: relative;
+    left: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .footer-section, #spinner{
+    display: none;
+  }
+
+  .ticketmaster{
+    position: relative;
+    right: 35px;
+  }
+
+  i.fas, i.far{
+    font-size: 16px;
+  }
+
+  div#artist-tour{
+    position: relative;
+    left: -10px;
+  }
+
+  #sync-icon{
+    position: relative;
+    left: 20px;
+  }
+
+  table{
+    /* border: 1px solid red; */
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+  body{
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  #spinner{
+    display: inline-block;
+  }
+
+  .ticketmaster{
+    position: relative;
+    right: 50px;
+  }
+
+  #ticket-sales-icons{
+    position: relative;
+    left: 60px;
+    /* border: 1px solid red; */
+  }
+
+  #sync-icon{
+    position: relative;
+    left: 40px;
+    /* border: 1px solid red; */
+  }
+
+  div#artist-tour{
+    position: relative;
+    left: -70px;
+  }
+
+  .spinner-icons{
+    position: relative;
+    left: 40px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px){
+   #sync-icon{
+    position: relative;
+    left: 60px;
+    /* border: 1px solid yellow; */
+  }
+
+  .ticketmaster{
+    position: relative;
+    right: 70px;
+  }
+
+  #ticket-sales-icons{
+    position: relative;
+    left: 90px;
+    /* border: 1px solid red; */
+  }
+
+  div#artist-tour{
+    position: relative;
+    left: -120px;
+    /* border: 1px solid red; */
+  }
+
+  .spinner-icons{
+    position: relative;
+    left: 60px;
+  }
+}
