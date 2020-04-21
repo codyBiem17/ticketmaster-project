@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .ticket-sales-header {
   color: white;
   font-size: 20px;
