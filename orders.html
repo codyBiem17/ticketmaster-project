@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Details</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
+
+    <style>
+        body {
+            /* overflow-x: hidden; */
+            /* text-align: center;
+            font-family: "Open Sans", sans-serif; */
+        }
+
+        .container-fluid {
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+
+        /* 
+        #white-div-nav .navbar-toggler-icon {
+
+            border-color: rgba(0, 0,0);
+
+        } */
+
+        #blue-div-nav .navbar-icons{
+            font-weight: 600;
+        }
+
+        #white-div-nav .menu-items {
+            margin: 8px 0px;
+        }
+
+        #white-div-nav .toggler-icon {
+            /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
+            width: 16px;
+            height: 3px;
+            background-color: black;
+            margin-bottom: 3px;
+            /* border: 1px solid red; */
+        }
+
+        #blue-div-nav a em{
+            font-size: 25px;
+        }
+
+        #blue-div-nav .menu-items {
+            margin: 8px 0px;
+            /* padding-left: 5px; */
+
+        }
+
+        #blue-div-nav .toggler-icon {
+            width: 16px;
+            height: 3px;
+            background-color: white;
+            margin-bottom: 3px;
+            /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
+        }
+
+        .white-div-tee{
+            position: relative;
+            left: 15px;
+        }
+
+        #white-div-nav .navbar-icons{
+            position: relative;
+            left: 15px;
+        }
+
+         #blue-div-nav{
+            height: 60px !important
+        }
+
+        .blue-div-form{
+            position: relative;
+            left: -30px !important;
+        }
+
+        .white-div-form{
+            position: relative;
+            left: -20px;
+        }
+
+
+        #white-div-nav ul.large-screen-menulinks{
+            position: relative;
+            left: -50px;
+        }
+
+        .user-icon{
+            position: relative;
+            left: 10px;
+        }
+
+
+        @media only screen and (min-width: 768px) and (max-width:991px) {
+            .white-div-input, .white-div-form, .blue-div-form, .help{
+                display: none;
+            }
+
+            .search-icon, .white-ticket-brand{
+                display: inline-block;
+            }
+
+            .white-div-tee{
+                margin-top: -15px;
+            }
+
+            #white-div-nav .navbar-icons{
+                position: relative;
+                left: 27px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+           
+            .navbar-icons, ul.large-screen-menulinks{
+                font-size: 16px;
+            }
+
+            #blue-div-nav .navbar-icons{
+                margin-top: -10px;
+                /* border: 1px solid red; */
+            }
+
+            #blue-div-nav{
+                height: 30px !important;
+                /* margin-bottom: 10px; */
+            }
+
+            
+            #white-div-nav .navbar-icons, #blue-div-nav .navbar-icons{
+                position: relative;
+                left: -25px;
+            }
+
+            #blue-div-nav ul.large-screen-menulinks{
+                position: relative;
+                left: -60px !important;
+            }
+
+             .acct-events{
+                padding-top: 15px;
+            }
+
+            #nav-tabs ul li a {
+                font-size: 20px;
+            }
+
+            #nav-tabs{
+                padding: 0 10px;
+            }
+        }
+
+         @media only screen and (min-width: 1200px) {
+            .blue-div-form{
+                position: relative;
+                left: -80px !important;
+            }
+
+            #blue-div-nav ul.large-screen-menulinks{
+                position: relative;
+                left: -110px !important;
+            }
+
+            .acct-events{
+               margin: 0 30px;
+            }
+
+            #my-events{
+                padding: 0 40px;
+            }
+         }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row white-div">
+            <div class="col-12 hide-and-show" id="white-div-nav">
+                <nav class="navbar navbar-expand-lg row">
+
+                    <!-- first column of blue nav -->
+                    <div class="col-8 col-sm-9 col-lg-10">
+                        <div class="row">
+                            <div class="col-7 col-md-12 col-lg-3 white-div-tee">
+                                <a href="#" class="white-ticket-brand"> <em>t</em> </a>
+                                <a href="#" class="white-div-input"> <em>ticketmaster <sup> <small id="copy">&copy;</small></sup> </em> </a>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-lg-5 white-div-form">
+                                <form class="form-group row" action="">
+                                    <div class="col-md-8 col-lg-6 col-xl-5">
+                                        <input class="form-control search" type="text" name=""
+                                            id="white-navbar-input-field"
+                                            placeholder="Find millions of live experiences">
+                                        <i class="fas fa-search input-search-icon"></i>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-4 ">
+                                <ul class="navbar-nav large-screen-menulinks">
+                                    <li class="nav-item user-sell-white-nav mr-3">
+                                        <a class="nav-link" href="#">Concert</a>
+                                    </li>
+                                    <li class="nav-item user-sell-white-nav mr-3">
+                                        <a class="nav-link" href="#">Sports</a>
+                                    </li>
+                                    <li class="nav-item user-sell-white-nav">
+                                        <a class="nav-link" href="#">More</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+
+                        </div>
+                    </div>
+
+
+                    <!-- second column of white nav -->
+                    <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons">
+                        <div class="row">
+                            <div class="col-4 search-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="col-4 col-lg-9 user-sell-white-nav user-icon">
+                                <i class="far fa-user-circle"></i>
+                                <span id="username">Maryam</span>
+                            </div>
+                            <div class="col-lg-3 user-sell-white-nav help">
+                                Help
+                            </div>
+                            <div class="col-4 menu-items" type="button" data-toggle="collapse"
+                                data-target="#menu-items">
+                                <!-- <div class="row"> -->
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- white nav ends here -->
+
+        <!-- blue navbar -->
+        <div class="row blue-div">
+            <div class="col-12" id="blue-div-nav">
+                <nav class="navbar navbar-expand-lg row">
+
+                    <!-- first column of blue nav-->
+                    <div class="col-8 col-sm-9 col-lg-10 mb-3">
+                        <div class="row">
+                            <div class="col-7 col-md-12 col-lg-3 blue-div-tee">
+                                <a href="#"> <em>ticketmaster <sup> <small id="copy">&copy;</small></sup> </em> </a>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-lg-5 blue-div-form">
+                                <form class="form-group row" action="">
+                                    <div class="col-md-8 col-lg-6 col-xl-5">
+                                        <input class="form-control search" type="text" name=""
+                                            id="blue-navbar-input-field"
+                                            placeholder="Search for artist, event or venue">
+                                        <i class="fas fa-search input-search-icon"></i>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <ul class="navbar-nav large-screen-menulinks">
+                                    <li class="nav-item user-sell-blue-nav mr-3">
+                                        <a class="nav-link" href="#">Concert</a>
+                                    </li>
+                                    <li class="nav-item user-sell-blue-nav mr-3">
+                                        <a class="nav-link" href="#">Sports</a>
+                                    </li>
+                                    <li class="nav-item user-sell-blue-nav">
+                                        <a class="nav-link" href="#">More</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- hide and show this header on >=medium devices -->
+                    </div>
+
+                    <!-- second column of blue nav-->
+                    <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons">
+                        <div class="row">
+                            <div class="col-4 search-icon blue-nav-right-content">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="col-4 col-lg-9 user-sell-blue-nav user-icon blue-nav-right-content">
+                                <i class="far fa-user-circle"></i>
+                                <span id="username">Maryam</span>
+                            </div>
+
+                            <div class="col-lg-3 user-sell-blue-nav help blue-nav-right-content">
+                                Help
+                            </div>
+                            <div class="col-4 menu-items blue-nav-right-content" type="button" data-toggle="collapse"
+                                data-target="#menu-items">
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <main>
+            <div class="row">
+                <div class="col-11 acct-events">
+                    <a href="#" class="my-account"> <span>My Account</span> </a>
+                    <span>My Events</span>
+                </div>
+            </div>
+
+            <div class="row" id="my-events-listing">
+                <div class="col-8 col-md-9 col-lg-10" id="my-events">
+                    <h2>My Events</h2> 
+                </div>
+                <div class="col-4 col-md-3 col-lg-2" id="listing-div">
+                    <a href="#" class="my-listings"> <span>View My Listings</span> </a>
+                </div>
+            </div>
+
+            <!-- nav tabs -->
+            <div id="nav-tabs">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="row nav" role="tablist">
+                            <li class="col-3 col-sm-2 nav-item">
+                                <a href="#upcoming" data-toggle="tab" class="nav-link active" id="upcoming-event">Upcoming</a>
+                            </li>
+                            <li class="col-9 col-sm-10 nav-item">
+                                <a href="#pasts" data-toggle="tab" class="nav-link" id="past-events">Past Events</a>
+                            </li>
+                            <li class="col-12">
+                
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-11 mx-auto">
+                        <hr id="order-page-line">
+                    </div>
+                </div>
+                
+                <div class="row tab-content">
+                    <div class="col-12 active tab-pane text-center" id="upcoming">
+                        <div class="row">
+                            <div class="col-12" id="svg-img">
+                                <img src="images/card-img.svg" alt="" width="160" height="160">
+                            </div>
+                
+                            <div class="col-12">
+                                <p id="page-load-event">No Upcoming Events</p>
+                            </div>
+                
+                            <div class="col-12">
+                                Not seeing something? <a href="#">Try our quick tips</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-12 tab-pane text-center" id="pasts">
+                        <div class="row">
+                            <div class="col-12" id="svg-img">
+                                <img src="images/card-img.svg" alt="" width="160" height="160">
+                            </div>
+                
+                            <div class="col-12">
+                                <p id="page-load-event">No Past Events</p>
+                            </div>
+                
+                            <div class="col-11 mx-auto">
+                                If your event happened in the past 90 days, you'll
+                                see it here. For more info, please <a href="#">contact Fan Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- nav tabs end here -->
+
+            </div>
+            
+        </main>
+
+        <footer class="footer mt-5 py-4">
+            <div class="row">
+                <div class="col-12 ">
+                    By continuing past this page, you agree to our <span class="terms-policy"> Terms of Use. <br>
+        
+                        Privacy Policy</span> | © 1999-2020 Ticketmaster. All rights reserved. <br>
+        
+                    <span class="terms-policy">Do Not Sell My Information</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrapjs/bootstrap.min.js"></script>
+
+</body>
+
+</html>

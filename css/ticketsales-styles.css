@@ -49,6 +49,8 @@ body {
 
 small#copy{
   font-size: 10px;
+  position: relative;
+  right: 5px;
 }
 
 #ticket-sales-icons{
