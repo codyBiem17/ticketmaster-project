@@ -80,7 +80,7 @@ a.white-ticket-brand em {
   cursor: pointer;
 }
 
-ul li.nav-item.user-sell-blue-nav a {
+ul li.nav-item.user-sell-blue-nav a.nav-link {
   color: white;
   font-weight: 600;
 }
@@ -658,12 +658,30 @@ hr#order-page-line{
   left: 5px;
 }
 
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+.dropdown-menu{
+  width: 255px;
+}
+
+.dropdown-menu a{
+  padding-bottom: 15px;
+  color: #525151;;
+}
+
+.dropdown-menu a:hover{
+  background: #026ce5; 
+  color: white;
+}
+
 @media only screen and (max-width:767px){
   #username{
     display: none;
   }
 
-  .user-sell-blue-nav:hover{
+  .user-sell-blue-nav:hover, .user-sell-white-nav:hover{
       background: none;
   }
 
@@ -685,7 +703,7 @@ hr#order-page-line{
     display: none;
   }
 
-  .user-sell-blue-nav:hover{
+  .user-sell-blue-nav:hover, .user-sell-white-nav:hover{
       background: none;
   }
 

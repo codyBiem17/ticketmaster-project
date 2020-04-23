@@ -66,6 +66,10 @@
             /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
         } 
 
+        .dropdown-menu{
+            width: 200px;
+        }
+
     </style>
 </head>
 <body>
@@ -173,8 +177,16 @@
                                     <li class="nav-item user-sell-blue-nav mr-3">
                                         <a class="nav-link" href="#">Sports</a>
                                     </li>
-                                    <li class="nav-item user-sell-blue-nav">
-                                        <a class="nav-link" href="#">More</a>
+                                    <li class="nav-item dropdown user-sell-blue-nav">
+                                        <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <a class="dropdown-item" href="#">Arts & Theater</a>
+                                            <a class="dropdown-item" href="#">Family</a>
+                                            <a class="dropdown-item" href="#">VIP</a>
+                                            <a class="dropdown-item" href="#">Deals</a>
+                                            <a class="dropdown-item" href="#">Entertainment Guides</a>
+                                            <a class="dropdown-item" href="#">For You</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>

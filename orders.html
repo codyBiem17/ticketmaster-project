@@ -80,23 +80,23 @@
             height: 60px !important
         }
 
-       #blue-div-nav ul li{
+       #blue-div-nav ul li, #white-div-nav ul li{
             height: 100%;
             display: inline-block;
             margin-top: -7px;
             margin-bottom: -7px;
         }
 
-        #blue-div-nav ul li a{
+        #blue-div-nav ul li a, #white-div-nav ul li a{
             padding: 17px 10px;
         }
 
-        /* #blue-div-nav .user-icon{
-            height: 60px;
-            display: block;
-            margin-top: -7px;
-            margin-bottom: -7px;
-        } */
+        .navbar-icons .user-sell-white-nav{
+            /* height: 100%;
+            display: inline-block; */
+            /* padding-top: 10px;
+            padding: 10px; */
+        }
 
         .blue-div-form{
             position: relative;
@@ -147,7 +147,6 @@
 
             #blue-div-nav{
                 height: 30px !important;
-                /* margin-bottom: 10px; */
             }
 
             .navbar-icons .user-sell-blue-nav{
@@ -245,8 +244,14 @@
                                     <li class="nav-item user-sell-white-nav mr-3">
                                         <a class="nav-link" href="#">Sports</a>
                                     </li>
-                                    <li class="nav-item user-sell-white-nav">
-                                        <a class="nav-link" href="#">More</a>
+                                    <li class="nav-item dropdown user-sell-white-nav">
+                                        <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <a class="dropdown-item" href="#">Arts & Theater</a>
+                                            <a class="dropdown-item" href="#">Family</a>
+                                            <a class="dropdown-item" href="#">VIP</a>
+                                            <a class="dropdown-item" href="#">Deals</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -263,13 +268,26 @@
                             <div class="col-4 search-icon">
                                 <i class="fas fa-search"></i>
                             </div>
-                            <div class="col-4 col-lg-9 user-sell-white-nav user-icon">
-                                <i class="far fa-user-circle"></i>
-                                <span id="username">Maryam</span>
+
+                            <div class="col-4 col-lg-9 dropdown user-sell-white-nav user-icon">
+                                <div class="" data-toggle="dropdown">
+                                    <i class="far fa-user-circle"></i>
+                                    <span id="username">Maryam</span>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">My Account</a>
+                                    <a class="dropdown-item" href="#">My Tickets</a>
+                                    <a class="dropdown-item" href="#">My Listings</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Sell</a>
+                                    <a class="dropdown-item" href="#">Sign Out</a>
+                                </div>
                             </div>
+
                             <div class="col-lg-3 user-sell-white-nav help">
                                 Help
                             </div>
+
                             <div class="col-4 menu-items" type="button" data-toggle="collapse"
                                 data-target="#menu-items">
                                 <!-- <div class="row"> -->
@@ -278,6 +296,7 @@
                                 <div class="toggler-icon"></div>
                                 <!-- </div> -->
                             </div>
+
                         </div>
                     </div>
                 </nav>
@@ -317,8 +336,14 @@
                                     <li class="nav-item user-sell-blue-nav mr-3">
                                         <a class="nav-link" href="#">Sports</a>
                                     </li>
-                                    <li class="nav-item user-sell-blue-nav">
-                                        <a class="nav-link" href="#">More</a>
+                                    <li class="nav-item dropdown user-sell-blue-nav">
+                                        <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <a class="dropdown-item" href="#">Arts & Theater</a>
+                                            <a class="dropdown-item" href="#">Family</a>
+                                            <a class="dropdown-item" href="#">VIP</a>
+                                            <a class="dropdown-item" href="#">Deals</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -332,14 +357,26 @@
                             <div class="col-4 search-icon blue-nav-right-content">
                                 <i class="fas fa-search"></i>
                             </div>
-                            <div class="col-4 col-lg-9 user-sell-blue-nav user-icon blue-nav-right-content">
-                                <i class="far fa-user-circle"></i>
-                                <span id="username">Maryam</span>
+
+                            <div class="col-4 col-lg-9 dropdown user-sell-blue-nav user-icon blue-nav-right-content">
+                                <div class="" data-toggle="dropdown">
+                                    <i class="far fa-user-circle"></i>
+                                    <span id="username">Maryam</span>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">My Account</a>
+                                    <a class="dropdown-item" href="#">My Tickets</a>
+                                    <a class="dropdown-item" href="#">My Listings</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Sell</a>
+                                    <a class="dropdown-item" href="#">Sign Out</a>
+                                </div>
                             </div>
 
                             <div class="col-lg-3 user-sell-blue-nav help blue-nav-right-content">
                                 Help
                             </div>
+
                             <div class="col-4 menu-items blue-nav-right-content" type="button" data-toggle="collapse"
                                 data-target="#menu-items">
                                 <div class="toggler-icon"></div>
