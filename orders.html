@@ -80,6 +80,24 @@
             height: 60px !important
         }
 
+       #blue-div-nav ul li{
+            height: 100%;
+            display: inline-block;
+            margin-top: -7px;
+            margin-bottom: -7px;
+        }
+
+        #blue-div-nav ul li a{
+            padding: 17px 10px;
+        }
+
+        /* #blue-div-nav .user-icon{
+            height: 60px;
+            display: block;
+            margin-top: -7px;
+            margin-bottom: -7px;
+        } */
+
         .blue-div-form{
             position: relative;
             left: -30px !important;
@@ -108,7 +126,7 @@
             }
 
             .search-icon, .white-ticket-brand{
-                display: inline-block;
+                display: inline-block !important;
             }
 
             .white-div-tee{
@@ -122,14 +140,9 @@
         }
 
         @media only screen and (min-width: 992px) {
-           
+
             .navbar-icons, ul.large-screen-menulinks{
                 font-size: 16px;
-            }
-
-            #blue-div-nav .navbar-icons{
-                margin-top: -10px;
-                /* border: 1px solid red; */
             }
 
             #blue-div-nav{
@@ -137,6 +150,12 @@
                 /* margin-bottom: 10px; */
             }
 
+            .navbar-icons .user-sell-blue-nav{
+                height: 100%;
+                display: inline-block;
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
             
             #white-div-nav .navbar-icons, #blue-div-nav .navbar-icons{
                 position: relative;
@@ -155,10 +174,6 @@
             #nav-tabs ul li a {
                 font-size: 20px;
             }
-
-            #nav-tabs{
-                padding: 0 10px;
-            }
         }
 
          @media only screen and (min-width: 1200px) {
@@ -176,8 +191,20 @@
                margin: 0 30px;
             }
 
-            #my-events{
-                padding: 0 40px;
+            #my-events-listing{
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            #my-events h2{
+                padding: 0 30px;
+                font-size: 41px;
+            }
+
+
+
+            #nav-tabs{
+                padding: 0 10px 120px;
             }
          }
 
@@ -282,7 +309,7 @@
                                 </form>
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
                                     <li class="nav-item user-sell-blue-nav mr-3">
                                         <a class="nav-link" href="#">Concert</a>
@@ -353,9 +380,6 @@
                             </li>
                             <li class="col-9 col-sm-10 nav-item">
                                 <a href="#pasts" data-toggle="tab" class="nav-link" id="past-events">Past Events</a>
-                            </li>
-                            <li class="col-12">
-                
                             </li>
                         </ul>
                     </div>

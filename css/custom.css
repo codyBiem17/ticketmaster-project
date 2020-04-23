@@ -574,12 +574,12 @@ a.my-account::after, a.my-listings::after{
   padding-bottom: 15px;
 }
 
-#my-events{
+#my-events h2{
   font-size: 32px;
   line-height: 45px;
   color: #262626;
   font-weight: 600;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 a.my-listings{
@@ -636,7 +636,7 @@ hr#order-page-line{
 }
 
 .tab-pane #svg-img{
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
@@ -663,6 +663,11 @@ hr#order-page-line{
     display: none;
   }
 
+  .user-sell-blue-nav:hover{
+      background: none;
+  }
+
+
   .acct-events{
     padding-top: 15px;
   }
@@ -679,6 +684,11 @@ hr#order-page-line{
   #username{
     display: none;
   }
+
+  .user-sell-blue-nav:hover{
+      background: none;
+  }
+
 
   #nav-tabs ul li a {
     font-size: 20px;
