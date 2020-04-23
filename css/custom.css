@@ -718,8 +718,3 @@ hr#order-page-line{
   }
 }
 
-@media only screen and (min-width:992px) and (max-width: 1199px) {
-  .tab-content{
-    /* border: 1px solid red; */
-  }
-}
