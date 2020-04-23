@@ -18,6 +18,43 @@
           left: -1.0vw;
           bottom: 5.5vw;
       }
+
+      @media screen and (max-width: 992px) {
+        .bottom-left {
+            bottom: 8vw;
+        }   
+        .wed-margin {
+            margin-left: -10.5vw;
+        } 
+      }
+
+      @media screen and (max-width: 768px) {
+        .bottom-left {
+            bottom: 10vw;
+        }   
+        .wed-margin {
+            margin-left: -23vw;
+        } 
+      }
+
+      @media screen and (max-width: 757px) {
+        .bottom-left {
+            bottom: 12vw;
+            width: 15vw;
+        }
+        .wed-margin {
+            margin-left: -15vw;
+        }     
+      }
+      @media screen and (max-width: 576px) {
+        .bottom-left {
+            bottom: 16vw;
+            width: 20vw;
+        }
+        .wed-margin {
+            margin-left: -10vw;
+        }   
+      }
     
     </style>
 </head>
@@ -137,29 +174,63 @@
         <div class="container-fluid px-5 my-5">
             <h1 class="h1 font-w">Account Overview</h1>
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3 col-md-4">
                     <div class="shadow rounded mt-4">
-                        <div class="text-center">
-                            <h2 class="h2 font-w  pt-3">John <br> Doe</h2>
-                            <small class=" pt-3 small-color">Fan since 2020</small><br>
-                            <button class="rounded my-3 border border-primary color-theme event-info font-12">Event Profile</button>
+                        <div class="d-md-none">
+                            <div class="row">
+                                <div class="col-sm-9 col-8 pl-5">
+                                    <h2 class="h5 font-w  pt-3">John Doe</h2>
+                                    <small class=" pt-3 small-color">Fan since 2020</small>    
+                                </div>
+                                <div class="col-sm-3 col-4 pl-3">
+                                    <button class="rounded btn  bg-white my-3 color-theme event-info font-12">Event Profile</button>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="row">
+                                <div class="col-9 pl-5">
+                                    <small class="grey-theme">Email Address</small><br>
+                                    <p>john.doe@example.com </p>   
+                                </div>
+                                <div class="col-3 text-right pr-5">
+                                    <small class="color-theme">Edit</small>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="row">
+                                <div class="col-sm-8 col-6 pl-5">
+                                    <small class="grey-theme">Phone Number</small><br>
+                                    <p>***-***-1234</p>   
+                                </div>
+                                <div class="col-sm-4 col-6 text-right pr-5">
+                                    <small class="color-theme">Edit Phone Number</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="dropdown-divider"></div>
-                        <div class="text-left pl-4 py-1">
-                            <small>Email Address</small><br>
-                            <p>john.doe@example.com <br>
-                            <small class="color-theme">Edit</small>
-                            </p>
+                        <div class="d-none d-md-block">
+                            <div class="text-center">
+                                <h2 class="h2 font-w  pt-3">John <br> Doe</h2>
+                                <small class=" pt-3 small-color">Fan since 2020</small><br>
+                                <button class="rounded  bg-white my-3 border border-primary color-theme event-info font-12">Event Profile</button>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="text-left pl-4 py-1">
+                                <small class="grey-theme">Email Address</small><br>
+                                <p>john.doe@example.com <br>
+                                <small class="color-theme">Edit</small>
+                                </p>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="text-left pl-4 py-1">
+                                <small class="grey-theme">Phone Number</small><br>
+                                <p>***-***-1234 <br>
+                                <small class="color-theme">Edit Phone Number</small>
+                                </p>
+                            </div>
                         </div>
-                        <div class="dropdown-divider"></div>
-                        <div class="text-left pl-4 py-1">
-                            <small>Phone Number</small><br>
-                            <p>***-***-1234 <br>
-                            <small class="color-theme">Edit Phone Number</small>
-                            </p>
-                        </div>
+
                     </div>
-                    <div class="shadow rounded mt-4">
+                    <div class="shadow rounded mt-4 d-none d-md-block">
                         <p class="color-theme pl-4"><a href="#"> My Tickets</a></p>
                         <div class="dropdown-divider"></div>
                         <p class="color-theme pl-4"><a href="#"> My Listings</a></p>
@@ -173,84 +244,107 @@
                         <p class="color-theme pl-4"><a href="#"> Vouchers & Codes</a></p>
                         <div class="dropdown-divider"></div>
                     </div>
-                    <div class="shadow mt-4 p-4">
+                    <div class="shadow mt-4 p-4 rounded d-none d-md-block">
                         <h5 class="h5 pb-3">We're here to help</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, aut consequatur pariatur necessitatibus.</p>
                     </div>
                 </div>
-                <div class="col-9 pl-5">
+                <div class="col-lg-9 col-md-8 pl-5">
                     <h5 class="my-4">Quick Tips</h5>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-12">
                             <div class="row">
                                 <div class="col-2">
                                     <i class="color-theme fa fa-user fa-3x"></i>
                                 </div>
-                                <div class="col-10 pl-5">
+                                <div class="col-10 pl-4">
                                     <h6>Account Health Check-Up</h6>
-                                    <small class="line-h-17">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet.</small>
-                                    <button class="rounded my-3 border border-primary color-theme event-info font-12">Update Password</button>
+                                    <small class="line-h-17 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet.</small>
+                                    <button class="rounded  bg-white my-3 border border-primary color-theme event-info font-12">Update Password</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-12">
                             <div class="row">
                                 <div class="col-2">
                                     <i class="color-theme fa fa-heart fa-3x"></i>
                                 </div>
-                                <div class="col-10 pl-5">
+                                <div class="col-10 pl-4">
                                     <h6>Pick Your Favorites</h6>
                                     <small class="line-h-17">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet.</small>
-                                    <button class="rounded my-3 border border-primary color-theme event-info font-12">Pick Favorites</button>
+                                    <button class="rounded my-3 border border-primary color-theme event-info font-12  bg-white">Pick Favorites</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-12">
                             <div class="row">
                                 <div class="col-2">
                                     <i class="color-theme fa fa-id-card fa-3x"></i>
                                 </div>
-                                <div class="col-10 pl-5">
+                                <div class="col-10 pl-4">
                                     <h6>Fast and Easy Checkout</h6>
                                     <small class="line-h-17">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet.</small>
-                                    <button class="rounded my-3 border border-primary color-theme event-info font-12">Update Payment</button>
+                                    <button class="rounded my-3 border border-primary color-theme event-info font-12 bg-white">Update Payment</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="row mt-5">
-                        <div class="col-9">
+                        <div class="col-lg-10 col-md-12 pl-4">
                             <h4>Sell Your Tickets</h4>
                         </div>
-                        <div class="col-3 text-right">
+                        <div class="col-lg-2 col-md-12">
                             <a href="#" class="btn color-theme">View All</a>
                         </div>
                     </div>
 
                     <div class="shadow mt-4 p-4">
                         <div class="row">
-                            <div class="col-10">
-                                <p class="h2 font-w-l">The Safest Way to Sell Tickets</p>
-                                <small class="h5 font-w-l">Sell your tickets in a safe and simple way, and instantly reach millions of fans who need seats.</small>
+                            <div class="col-lg-10 col-md-12">
+                                <p class="font-27">The Safest Way to Sell Tickets. Only With Lorem.</p>
+                                <p class="font-18 grey-theme">Sell your tickets in a safe and simple way, and instantly reach millions of fans who need seats.</p>
                             </div>
-                            <div class="col-2">
-                                <a href="#" class="btn bg-primary white font-14 font-w">Learn More</a>
+                            <div class="col-lg-2 col-md-12">
+                                <a href="#" class="btn mt-5 bg-primary white font-14 font-w">Learn More</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="row mt-5">
-                        <div class="col-9">
+                        <div class="col-lg-9 col-md-12 pl-4">
                             <h4 class="d-inline-block">Events We Think You’ll Love  </h4> <i class="fa fa-info color-theme"></i>
                         </div>
-                        <div class="col-3 text-right">
+                        <div class="col-lg-3 col-md-12">
                             <a href="#" class="btn color-theme">Add Favorites</a>
                         </div>
                     </div>
 
                     <div class="row mt-4">
-                        <div class="col-md-4 col-sm-6  col-12 ">
+                        <div class="col-lg-4 col-md-12  col-12 ">
+                            <div class="card">
+                                <img class="card-img-top" src="https://via.placeholder.com/100x80" alt="Card image cap">
+                                <div class="card-body">
+                                  <div class="card-text relative">
+                                    <div class="row line-h-7">
+                                        <div class="col-6">
+                                        <p class="text-left pl-2 color-theme">Jun 11</p>
+                                        <p class="grey-theme font-14 wed-margin">Wed <span class="font-5"> &#9899;  </span> 8:00PM</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p>Lorem ipsum.</p>
+                                            <p class="grey-theme font-14">Lorem ipsuddm.</p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-left ml-2 mb-2 rounded">
+                                        <p class="font-w text-left mt-2">John Doe</p>
+                                        <p class="font-14 text-left">10 Events</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6  col-12 d-none d-lg-block">
                             <div class="card">
                                 <img class="card-img-top" src="https://via.placeholder.com/100x80" alt="Card image cap">
                                 <div class="card-body">
@@ -273,30 +367,7 @@
                                 </div>
                               </div>
                         </div>
-                        <div class="col-md-4 col-sm-6  col-12 ">
-                            <div class="card">
-                                <img class="card-img-top" src="https://via.placeholder.com/100x80" alt="Card image cap">
-                                <div class="card-body">
-                                  <div class="card-text relative">
-                                    <div class="row line-h-7">
-                                        <div class="col-6">
-                                        <p class="text-left pl-2 color-theme">Jun 11</p>
-                                        <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00PM</p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p>Lorem ipsum.</p>
-                                            <p class="grey-theme font-14">Lorem ipsuddm.</p>
-                                        </div>
-                                    </div>
-                                    <div class="bottom-left ml-2 mb-2 rounded">
-                                        <p class="font-w text-left mt-2">John Doe</p>
-                                        <p class="font-14 text-left">10 Events</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6  col-12 ">
+                        <div class="col-lg-4 col-sm-6  col-12 d-none d-lg-block">
                             <div class="card">
                                 <img class="card-img-top" src="https://via.placeholder.com/100x80" alt="Card image cap">
                                 <div class="card-body">
@@ -321,27 +392,32 @@
                         </div>
                     </div>
 
-                    <div class="shadow mt-4 p-4">
+                    <div class="shadow my-5 p-4 rounded">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-lg-2 d-none d-lg-block text-center pl-4">
                                 <i class="fa fa-envelope fa-6x color-theme"></i>
                             </div>
-                            <div class="col-8">
-                                <p class="h2 font-w-l">The Safest Way to Sell Tickets</p>
-                                <small class="h5 font-w-l">Sell your tickets in a safe and simple way, and instantly reach millions of fans who need seats.</small>
+                            <div class="col-lg-7 col-md-12">
+                                <small class="small-color">GET EVENT NEWS YOU WANT</small><br>
+                                <p class="">When you tell us who you love, we can tell you what they’re up to. Customize your subscriptions to get the latest, breaking news about all things live.</p>
                             </div>
-                            <div class="col-2">
-                                <a href="#" class="btn bg-primary white font-14 font-w">Learn More</a>
+                            <div class="col-lg-3 col-md-12 mt-4">
+                                <a href="#" class="btn reverse-theme border border-primary font-14 font-w">Customize Subscription</a>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="shadow mt-4 p-4 rounded d-md-none">
+                        <h5 class="h5 pb-3">We're here to help</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, aut consequatur pariatur necessitatibus.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container d-none d-lg-block">
-            <div class="row mt-4">
-                <div class="col-3"></div>
-                <div class="col-9 text-center">
+            <div class="row mt-5">
+                <div class="col-4"></div>
+                <div class="col-8 text-center">
                     <img class="img-fluid" src="https://via.placeholder.com/700x100" alt="">
                 </div>
             </div>
