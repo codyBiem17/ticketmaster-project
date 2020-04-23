@@ -280,11 +280,6 @@ footer a:hover {
     color: red;
 }
 
-#event-line:after {
-    content: "";
-    border-bottom: white 3px solid;
-}
-
 .less-md {
     display: none;
 }

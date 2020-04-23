@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/fontawesome5/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
+    <style>
+      @media screen and (max-width: 768px) {
+        .bottom-left {
+            left: 6vw;
+            bottom: 1vw;
+        }   
+      }
+      @media screen and (max-width: 757px) {
+        .bottom-left {
+            left: 3vw;
+            width: 15vw;
+        }
+        .top-right-3 {
+            top: 25vw;
+            right: 5.5vw;
+            padding: 2.5vw;
+        }
+        img.top {
+            margin-top: 20vw;
+            /* width: 400px; */
+            height: 150px;
+        }
+        
+      }
+      @media screen and (max-width: 576px) {
+        .bottom-left {
+            bottom: 1vw;
+            left: 3vw;
+            width: 20vw;
+        }
+        .top-right-3 {
+            top: 35vw;
+            right: 5.5vw;
+            padding: 2.5vw;
+        }
+        img.top {
+            margin-top: 30vw;
+            /* width: 400px; */
+            height: 150px;
+        }
+      }
+    
+    </style>
 </head>
 <body>
     <div class="row white-div">
@@ -131,26 +174,24 @@
         <div class="container-fluid bg-theme pb-3 px-5">
             <div class="row">
                 <div class="col-7">
-                      <span class="d-block  font-14 mb-5">Home / Concert Tickets / Rock / John Doe Tickets <span class="badge ml-2 p-1 border border-white"> <i class="fa fa-star"></i> 4.5</span></span>
-                      <span class="h1">John Doe <span class="font-w-l">Tickets</span></span>
-
-                      <div class="row mt-5">
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-3 .border-down pb-2  h5" id="event-line">Events (33)</div>
-                                <div class="col-3 h5">Reviews (4261)</div>
-                                <div class="col-2 h5">Bio</div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-2"></div> -->
-                      </div>
+                    <span class="d-block  font-14 mb-5">Home / Concert Tickets / Rock / John Doe Tickets <span class="badge ml-2 p-1 border border-white"> <i class="fa fa-star"></i> 4.5</span></span>
+                    <span class="h1">John Doe <span class="font-w-l">Tickets</span></span>
                 </div>
                 <div class="col-5 text-right mt-n5">
                     <div class="relative">
-                        <img class="img-fluid" src="https://via.placeholder.com/300x200" alt="">
+                        <img class="img-fluid top" src="https://via.placeholder.com/300x200" alt="">
                         <div class="top-right-3 rounded">
                             &hearts;
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pb-2">
+                <div class="col-12">
+                    <div class="row">
+                        <a class="btn">Events (33)</a>
+                        <a class="btn">Reviews (4261)</a>
+                        <a class="btn">Bio</a>
                     </div>
                 </div>
             </div>
@@ -176,7 +217,7 @@
                         </div>
                         <div class="col-lg-4 col-md-5 text-left">
                             <div class="dropdown">
-                                <button class="h-46 btn dropdown-toggle text-left w-100 border border-primary" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="h-46 btn dropdown-toggle text-left w-100 border border-primary event-info" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Select Your Dates
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdown">
@@ -186,15 +227,15 @@
                                 </div>
                               </div>
                         </div>
-                        <div class="col-lg-5 col-md-5 text-left mt-2">
+                        <div class="col-lg-5 col-md-5 text-left mt-2 d-none d-md-block">
                            <span class="color-theme ml-n3 h5 mt-2">Reset</span> 
                         </div>
                     </div>
                     <div class="row my-4">
                         <div class="col-8">
-                            <input type="checkbox"><span> Events Only</span>
+                            <input type="checkbox"><span class="btn mt-n4"> Events Only</span>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 d-none d-md-block">
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle w-100 text-right border border-primary" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Sort By: Date
@@ -208,7 +249,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <h3 class="h3">All Events</h3>
+                            <h4 class="h5">All Events</h4>
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -544,19 +585,19 @@
                 <div class="col-lg-4 col-md-12">
                     <p class="font-w font-16">From the Artiste</p>
                     <div class="row">
-                        <div class="col-lg-6 col-md-3">
+                        <div class="col-lg-6 col-4">
                             <img class="img-fluid" src="https://via.placeholder.com/250x150" alt="">
                         </div>
-                        <div class="col-lg-6 col-md-9">
+                        <div class="col-lg-6 col-8">
                             <span class="color-theme">Get Exclusive Perks</span><br> 
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-lg-6 col-md-3">
+                        <div class="col-lg-6 col-4">
                             <img class="img-fluid" src="https://via.placeholder.com/250x150" alt="">
                         </div>
-                        <div class="col-lg-6 col-md-9">
+                        <div class="col-lg-6 col-8">
                             <span class="color-theme">Event Information</span><br> 
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         </div>
