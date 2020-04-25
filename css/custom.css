@@ -273,10 +273,10 @@ select.concert-event-forms:hover,
 }
 
 /* media queries */
-@media only screen and (max-width: 375px){
-  #blue-div-nav{
-   /* margin-top: 30px; */
-  }
+@media only screen and (min-width: 320px) and (max-width: 375px){
+ body{
+   overflow-x: hidden;
+ }
 
   #blue-div-nav .navbar-icons, #white-div-nav .navbar-icons {
     position: relative;
