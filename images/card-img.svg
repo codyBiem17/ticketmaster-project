@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160">
+    <defs>
+        <path id="a" d="M4.455 29.956l58.865-4.293a4 4 0 0 0 3.705-4.182L66.44 9.323l-2.86-.728A8.731 8.731 0 0 1 57.007.292L.62 26.585a3.58 3.58 0 0 0 3.835 3.371z"/>
+        <filter id="c" width="138.5%" height="168.6%" x="-19.2%" y="-34.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <path id="d" d="M88.145 18.303l2.112-.352V4.368a4 4 0 0 0-4-4H4.316a4 4 0 0 0-4 4v42.043a4 4 0 0 0 4 4h81.94a4 4 0 0 0 4-4V32.828l-2.11-.352a7.185 7.185 0 0 1 0-14.173z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="80" cy="80" r="80" fill="#EBF4FD" fill-opacity=".5"/>
+        <path d="M21 29h100.761v100.761H21z"/>
+        <g transform="scale(-1 1) rotate(-83 23.058 98.864)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#D6E7FA" xlink:href="#a"/>
+            <path stroke="#FFF" stroke-linecap="square" stroke-width="6" d="M45.688 4.823l.933 21.204" mask="url(#b)"/>
+        </g>
+        <g filter="url(#c)" transform="rotate(-72 106.169 26.638)">
+            <mask id="e" fill="#fff">
+                <use xlink:href="#d"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#d"/>
+            <path fill="#026CDF" d="M88.145 18.303l2.112-.352V4.368a4.006 4.006 0 0 0-4-4.002L66.013.356l-.06 50.149 20.32-.079a4 4 0 0 0 3.984-4V32.828l-2.112-.352a7.185 7.185 0 0 1 0-14.173z" mask="url(#e)"/>
+            <g mask="url(#e)">
+                <g stroke="#1F262D">
+                    <path stroke-width="2" d="M19.882 10.512h-9.378"/>
+                    <path stroke-width="4" d="M19.882 13.893h-9.378"/>
+                    <path stroke-width="2" d="M19.882 17.275h-9.378M19.882 19.98h-9.378M19.882 22.685h-9.378M19.882 25.39h-9.378"/>
+                    <path stroke-width="4" d="M19.882 28.77h-9.378"/>
+                    <path stroke-width="2" d="M19.882 40.267h-9.378M19.882 32.152h-9.378"/>
+                    <path stroke-width="4" d="M19.882 36.21h-9.378"/>
+                </g>
+                <path fill="#EBEBEB" d="M44.272 13.188v24.403a2 2 0 0 1-2 2h-1.41a2 2 0 0 1-2-2V13.188a2 2 0 0 1 2-2h1.41a2 2 0 0 1 2 2zM56.444 7.778v35.223a2 2 0 0 1-2 2h-1.41a2 2 0 0 1-2-2V7.778a2 2 0 0 1 2-2h1.41a2 2 0 0 1 2 2z"/>
+            </g>
+        </g>
+    </g>
+</svg>

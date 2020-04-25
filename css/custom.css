@@ -80,7 +80,7 @@ a.white-ticket-brand em {
   cursor: pointer;
 }
 
-ul li.nav-item.user-sell-blue-nav a {
+ul li.nav-item.user-sell-blue-nav a.nav-link {
   color: white;
   font-weight: 600;
 }
@@ -189,7 +189,7 @@ select.concert-event-forms:hover,
 #white-navbar-input-field::placeholder {
   color: #4e4d4d;
   position: relative;
-  left: 15px;
+  left: 25px;
 }
 
 .white-div-form{
@@ -201,7 +201,7 @@ select.concert-event-forms:hover,
 .white-div-form i.input-search-icon {
   z-index: 1;
   position: absolute;
-  left: 20px;
+  left: 25px;
   top: 10px;
   color: #757070;
   width: 0;
@@ -232,6 +232,7 @@ select.concert-event-forms:hover,
   top: 2px;
 }
 
+
 .blue-div-form i.input-search-icon {
   z-index: 1;
   position: absolute;
@@ -244,7 +245,7 @@ select.concert-event-forms:hover,
 #blue-navbar-input-field::placeholder {
   color: white;
   position: relative;
-  left: 20px;
+  left: 25px;
 }
 
 #img-gallery{
@@ -513,10 +514,6 @@ select.concert-event-forms:hover,
 
 @media only screen and (min-width: 1199px) {
  
-  #blue-navbar-input-field {
-    width: 400px;
-  }
-
   .blue-div-form {
     position: relative;
     left: 10px;
@@ -532,5 +529,192 @@ select.concert-event-forms:hover,
     left: 40px;
   }
 
-
 }
+
+/* 
+---------------------------------------------
+styling for orders page
+--------------------------------------------- */
+small#copy{
+  font-size: 10px;
+  position: relative;
+  right: 5px;
+}
+
+.acct-events, #listing-div{
+  word-spacing: 5px;
+}
+
+.acct-events{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+a.my-account{
+  color: #262626;
+  font-size: 13px;
+}
+
+a.my-account:hover{
+  text-decoration: none;
+  color: #262626;
+}
+
+a.my-account::after, a.my-listings::after{
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  content: "\f105";
+  font-weight: 900;
+  display: inline-block;
+}
+
+#my-events-listing{
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#my-events h2{
+  font-size: 32px;
+  line-height: 45px;
+  color: #262626;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+a.my-listings{
+  font-size: 14px;
+  font-weight: 600;
+  color: #026cdf;
+  line-height: 20px;
+  /* color: #262626;
+  word-spacing: 5px;
+  font-size: 13px; */
+}
+
+a.my-listings:hover, .tab-pane a:hover{
+  text-decoration: none;
+  color: #026cdf;
+}
+
+#nav-tabs ul li a{
+  color: #a8a8a8;
+  font-weight: 400;
+}
+
+#nav-tabs li a.active{
+  color: #2d2626;
+  /* border-bottom: 4px solid #026cdf; */
+}
+
+#nav-tabs ul li a:hover{
+  color: #2d2626;
+  text-decoration: none;
+}
+
+#nav-tabs li a.active::after{
+  content: "";
+  border-bottom: 4px solid #026cdf;
+  display: block;
+  width: 80px;
+  position: relative;
+  top: 5px;
+}
+
+hr#order-page-line{
+  position: relative;
+  bottom: 20px;
+}
+
+#nav-tabs{
+  /* border: 1px solid red; */
+  padding-bottom: 100px;
+}
+
+#nav-tabs .tab-content{
+  margin-bottom: -50px;
+}
+
+.tab-pane #svg-img{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#page-load-event{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+#nav-tabs .tab-pane a{
+  font-size: 16px;
+  font-weight: 600;
+  color: #026cdf;
+  line-height: 20px;
+}
+
+#username{
+  position: relative;
+  left: 5px;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+.dropdown-menu{
+  width: 255px;
+}
+
+.dropdown-menu a{
+  padding-bottom: 15px;
+  color: #525151;;
+}
+
+.dropdown-menu a:hover{
+  background: #026ce5; 
+  color: white;
+}
+
+@media only screen and (max-width:767px){
+  #username{
+    display: none;
+  }
+
+  .user-sell-blue-nav:hover, .user-sell-white-nav:hover{
+      background: none;
+  }
+
+
+  .acct-events{
+    padding-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width:767px) {
+  #listing-div{
+    position: relative;
+    left: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #username{
+    display: none;
+  }
+
+  .user-sell-blue-nav:hover, .user-sell-white-nav:hover{
+      background: none;
+  }
+
+
+  #nav-tabs ul li a {
+    font-size: 20px;
+  }
+
+  #listing-div{
+    position: relative;
+    left: 30px;
+  }
+}
+

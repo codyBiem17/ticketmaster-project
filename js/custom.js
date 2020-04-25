@@ -23,25 +23,24 @@ $(document).ready(function () {
         stickyWhiteDiv();
     });
 
-    
 
-    // function stopCarousel() {
-        // var windowIsThin = window.matchMedia("(min-width:768px)").matches;
+    function border() {
+        // alert('fdbg')
+        // $('#past-events').click(function() {
+        //     alert('fdbg')
+        // })
+        // find('hr').addClass('borderBottom')
+        // var tabActive = $('li a.active');
 
-        // if (windowIsThin) {
-        //     //carousel disabled
-        //     $('.carousel').carousel({
-        //         interval: false
-        //     });
-        // }; 
-    //     if ($(window).width() > 767) {
-    //         // disable carousel
-    //         $('.carousel').carousel({
-    //             interval: false
-    //         });
-    //     }
+        if ($('div#pasts').is('.active')) {
+            // if ($('tab-pane').is('.active')) {
+                // $(this).children('hr').css({display: none})
+            // }
+            // alert('fdbg')
+        }
+    }
 
-    // }
-    // stopCarousel()
-  
-});
+    border()
+
+})
+
