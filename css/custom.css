@@ -319,7 +319,7 @@ select.concert-event-forms:hover,
   .white-div-input, #hide-div,
   .help, #placeholder-side-image,
   ul.large-screen-menulinks,
-  #img-gallery, .advert-section {
+  #img-gallery, div.advert-section {
     display: none;
   }
 
@@ -337,7 +337,7 @@ select.concert-event-forms:hover,
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .search-icon,
   ul.large-screen-menulinks,
-  .carousel, .static-image3, .advert-section, #placeholder-side-image {
+  .carousel, .static-image3, div.advert-section, #placeholder-side-image {
     display: none;
   }
 
@@ -461,8 +461,11 @@ select.concert-event-forms:hover,
   }
 
   div.advert-section{
-    background-color: #f6f6f6;
-    padding: 10px 150px;
+    background-color:#f6f6f6;
+  }
+
+  #advert-img-div{
+    padding: 10px 0px;
   }
 
   .static-image1 p.caption-text{
