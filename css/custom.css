@@ -275,12 +275,19 @@ select.concert-event-forms:hover,
 /* media queries */
 @media only screen and (min-width: 320px) and (max-width: 375px){
  body{
-   overflow-x: hidden;
+   overflow-x: hidden !important;
  }
 
-  #blue-div-nav .navbar-icons, #white-div-nav .navbar-icons {
+  #blue-div-nav .navbar-icons{
     position: relative;
     right: 20px;
+    /* border: 1px solid red; */
+    /* width: 200px; */
+  }
+
+  #white-div-nav .navbar-icons {
+    position: relative;
+    right:5px;
     /* border: 1px solid red; */
     /* width: 200px; */
   }
@@ -357,12 +364,12 @@ select.concert-event-forms:hover,
     left: 15px;
     /* border: 1px solid red; */
   }
-  div.blue-nav-right-content {
-    /* margin-left: 5px; */
-    /* padding-right: 2px; */
-    /* border: 1px solid red; */
-    /* text-align: center; */
-  }
+
+  #blue-div-nav .menu-items{
+      margin:8px 10px !important;
+      /* padding-left: 5px; */
+      
+  } 
   .hide-and-show {
     /* padding-top: 10px; */
   }
@@ -530,7 +537,13 @@ select.concert-event-forms:hover,
   }
 
   #blue-div-nav .large-screen-menulinks{
-    margin-left: -60px;
+    /* position: relative;
+    right: 180px; */
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    /* margin-left: 60px; */
   }
 
    #placeholder-side-image{
