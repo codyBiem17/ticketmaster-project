@@ -45,6 +45,10 @@ body {
     margin-bottom: 3px;
 }
 
+#white-div-nav .toggler-icon{
+    width: 18px;
+}
+
 /* .white-div-tee{
     position: relative;
     left: 15px;
@@ -79,6 +83,10 @@ body {
   /* border: 1px solid red; */
   /* margin-left: 1px; */
 } 
+
+.hide-and-show{
+    margin-top: 20px;
+}
 
 /* #blue-div-nav ul li, #white-div-nav ul li{
     height: 100%;
@@ -221,7 +229,7 @@ hr#acct-setting-horizontal{
 }
 
 #phone-number input[type="text"]{
-    border: 1px solid rgb(153, 153, 153);
+    border: 1px solid #999999;
 }
 
 input.form-control:disabled {
@@ -239,6 +247,142 @@ input[type="password"]::-webkit-input-placeholder{
     color: #0a56c5;
     cursor: pointer;
     font-weight: 600;
+}
+
+div.my-sub p{
+    color: #262626;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 15px;
+}
+
+#account-subscription{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#email-account{
+    font-size: 16px;
+}
+
+#nav-tabs a#edit-profile{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #026cdf;
+}
+
+form.form-live-alert{
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0px;
+    /* margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0px; */
+}
+
+form ul.first-checklist{
+    margin-left: -30px;
+    margin-right: 10px;
+}
+
+input.form-check-input{
+    background-color: white;
+    border: 2px solid #a1a1a1;
+    border-radius: 2px;
+    height: 25px;
+    width: 25px;
+}
+
+label a.guide-alerts{
+    /* margin: 10px 15px; */
+    position: relative;
+    top: 5px;
+    left: 10px;
+    font-weight: 500;
+}
+
+#nav-tabs .tab-pane a {
+    color: #262626;;
+}
+
+li p.alerts{
+    padding: 10px 35px 3px 10px;
+    font-weight: 500;
+    /* border: 1px solid red; */
+}
+
+label a#first-guide-alert::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 25px;
+    content: "\f106";
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+    color: #0a56c5;
+}
+
+li.nested-list-alerts{
+    margin-bottom: 20px;
+}
+
+li.nested-list-alerts input.form-check-input{
+    /* position: absolute;
+    left: -2px; */
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+label a.nested-guide-alerts{
+    position: relative;
+    top: 5px;
+    /* left: -10px; */
+    /* margin: 35px 5px 0px; */
+    font-weight: 500;
+    /* border: 1px solid red; */
+}
+
+ul li p.nested-alerts{
+    margin: 10px 30px 3px 0px;
+    font-weight: 500;
+    /* border: 1px solid red; */
+}
+
+.heart-shape-div{
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    background: #fcfcfc;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: -30px;
+    padding: 0px;
+}
+
+#favorite{
+    color: #9d62c2;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.heart-shape-div hr{
+    border: 1px solid #9d62c2;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.manage-team{
+    font-size: 14px;
+}
+
+button.btn-outline-primary{
+   border-color: #026cdf;
+   color: #026cdf;
+   font-weight: 600;
 }
 
 footer.footer{
