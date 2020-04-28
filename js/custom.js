@@ -24,23 +24,11 @@ $(document).ready(function () {
     });
 
 
-    function border() {
-        // alert('fdbg')
-        // $('#past-events').click(function() {
-        //     alert('fdbg')
-        // })
-        // find('hr').addClass('borderBottom')
-        // var tabActive = $('li a.active');
-
-        if ($('div#pasts').is('.active')) {
-            // if ($('tab-pane').is('.active')) {
-                // $(this).children('hr').css({display: none})
-            // }
-            // alert('fdbg')
-        }
+    function phoneContact() {
+    //   $('#phone-number').children('input').attr('disabled', 'disabled').addClass('disable')
     }
 
-    border()
+    phoneContact()
 
 })
 
