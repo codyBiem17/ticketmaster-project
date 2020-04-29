@@ -23,25 +23,12 @@ $(document).ready(function () {
         stickyWhiteDiv();
     });
 
-    
 
-    // function stopCarousel() {
-        // var windowIsThin = window.matchMedia("(min-width:768px)").matches;
+    function phoneContact() {
+    //   $('#phone-number').children('input').attr('disabled', 'disabled').addClass('disable')
+    }
 
-        // if (windowIsThin) {
-        //     //carousel disabled
-        //     $('.carousel').carousel({
-        //         interval: false
-        //     });
-        // }; 
-    //     if ($(window).width() > 767) {
-    //         // disable carousel
-    //         $('.carousel').carousel({
-    //             interval: false
-    //         });
-    //     }
+    phoneContact()
 
-    // }
-    // stopCarousel()
-  
-});
+})
+
