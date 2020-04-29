@@ -81,6 +81,16 @@
     height: 60px;
 }
 
+.wide-top {
+    display: inline-block;
+    width: 330px;
+    height: 40px;
+}
+
+.left-margin {
+    margin-left: 10vw;
+}
+
 .w-80 {
     width: 80%;
 }
