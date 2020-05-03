@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticketmaster: Buy Verified Tickets for Concerts, Sports, Theatre and Events</title>
+    <title>John Doe Tickets</title>
     <link rel="stylesheet" href="assets/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/fontawesome5/css/all.css">
@@ -53,7 +53,66 @@
       .user-sell-white-nav .nav-link:hover {
           background-color: #A5A5A5;
       }
-    
+
+      @media screen and (max-width: 576px) {
+        .padd {
+            padding:0 5px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .padd {
+            padding:0 20px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .custom-ml {
+            margin-left: 50px;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .padd {
+            padding:0 30px;
+        }
+      }
+
+      @media screen and (max-width: 1023px) {
+        .custom-w {
+            width: 100%;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .custom-w {
+            width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 1440px) {
+        .padd {
+            padding:0 40px;
+        }
+      }
+
+      @media screen and (min-width: 1441px) {
+        .padd {
+            padding:0 80px;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .custom-mt {
+            margin-top:60px;
+            /* margin-bottom: -20px; */
+        }
+        .custom-mt-2 {
+            margin-top: -70px;
+            /* color: #000; */
+        }
+      }
+
     </style>
 </head>
 <body>
@@ -66,11 +125,11 @@
 
                     <a href="#" class="col-sm-2 mb-3 white-div-input"> <em>ticketmaster</em> </a>
                     <!-- hide and show this header on >=medium devices -->
-                    <div class="col-sm-6 col-md-7 col-lg-8 white-div-form ">
+                    <div class="col-sm-6 col-md-7 col-lg-8 white-div-form">
                         <form class="form-group row" action="">
-                            <div class="col-11 col-md-11 col-lg-6 col-xl-5 ml-5">
+                            <div class="col-11 col-md-8 col-lg-6 col-xl-5 custom-ml">
                                 <input class="form-control search" type="text" name="" id="white-navbar-input-field"
-                                    placeholder="Find millions of live experiences">
+                                    placeholder="Find  of live experiences">
                                 <i class="fas fa-search input-search-icon"></i>
                             </div>
                             <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
@@ -89,28 +148,26 @@
                     </div>
                     <!-- hide and show this header on >=medium devices -->
                     
-                    <div class="col-6 col-sm-3 col-lg-2  navbar-icons mt-">
+                    <div class="col-6 col-sm-3 col-lg-2  navbar-icons mt-2">
                         <div class="row">
                             <div class="col-3 p-2 search-icon">
                                 <i class="fas fa-search"></i>
                             </div>
-                            <div class="col-3 p-2 user-sell-white-nav user-icon">
+                            <div class="col-3 p-2 user-sell-blue-nav user-icon">
                                 <i class="far fa-user-circle"></i>
                             </div>
-                            <div class="col-3 p-2 user-sell-white-nav sell">
+                            <div class="col-3 p-2 user-sell-blue-nav sell">
                                 Sell
                             </div>
-                            <div class="col-3 p-2 user-sell-white-nav help">
+                            <div class="col-3 p-2 user-sell-blue-nav help">
                                 Help
                             </div>
-                            <div class="col-3 p-2 menu-items d-lg-none" type="button" data-toggle="collapse" data-target="#menu-items">
+                            <div class="col-3 p-2 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
                                 <span class="navbar-toggler-icon"></span>
                             </div>
                         </div>
                     </div>
-                <!-- hide and show this header on >=medium devices -->
-                 
-            
+                <!-- hide and show this header on >=medium devices -->            
             </nav>
         </div>
     </div>
@@ -118,14 +175,14 @@
     <div class="row blue-div">
         <div class="col-12" id="blue-div-nav">
             <nav class="navbar navbar-expand-lg row">
-                <a href="#" class="col-7 col-sm-2 mb-3 col-md-"> <em>ticketmaster</em> </a>
+                <a href="#" class="col-7 col-sm-2 mb-3"> <em>ticketmaster</em> </a>
                 
                 <!-- hide and show this header on >=medium devices -->
-                <div class="col-sm-6 col-md- col-lg-7 blue-div-form">
+                <div class="col-sm-6 col-md-7 col-lg-8 blue-div-form">
                     <form class="form-group row" action="">
-                        <div class="col-11 col-md-11 col-lg-6 col-xl-5 ml-2">
+                        <div class="col-11 col-md-8 col-lg-6 col-xl-5 mt-2 custom-ml">
                             <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
-                                placeholder="Find millions of live experiences" width="100px">
+                                placeholder="Find  of live experiences">
                             <i class="fas fa-search input-search-icon"></i>
                         </div>
                         <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
@@ -135,6 +192,9 @@
                             <li class="nav-item user-sell-blue-nav mr-3">
                                 <a class="nav-link" href="#">Sports</a>
                             </li>
+                            <!-- <li class="nav-item user-sell-blue-nav d-xl-inliine-block">
+                                <a class="nav-link" href="#">Arts & Theater</a>
+                            </li> -->
                             <li class="nav-item user-sell-blue-nav">
                                 <a class="nav-link" href="#">More</a>
                             </li>
@@ -144,7 +204,7 @@
                 </div>
                 <!-- hide and show this header on >=medium devices -->
                 
-                <div class="col-5 col-sm-3 col-lg-2 mb-3 navbar-icon">
+                <div class="col-5 col-sm-3 col-lg-2 mb-3 navbar-icons mt-2">
                     <div class="row">
                         <div class="col-3 p-2 search-icon">
                             <i class="fas fa-search"></i>
@@ -158,7 +218,7 @@
                         <div class="col-3 p-2 user-sell-blue-nav help">
                             Help
                         </div>
-                        <div class="col-3 p-2 menu-item d-lg-none" type="button" data-toggle="collapse" data-target="#menu-items">
+                        <div class="col-3 p-2 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
                             <span class="navbar-toggler-icon"></span>
                         </div>
                     </div>
@@ -166,31 +226,25 @@
             
             </nav>
         </div>
-
-<!--         
-        <div class="col-12 mx-3 pb-2 home-div-concert">
-            Home / Concert Tickets
-        </div> -->
        
-
     </div>
 
-    <div class="container-fluid bg-theme pb-3 px-3">
+    <div class="container-fluid bg-theme pb-3 px- padd">
         <div class="row">
-            <div class="col-12 col-md-7 mt-5">
+            <div class="col-12 col-sm-6 col-md-8 custom-mt col-lg-8 col-xl-9">
                 <span class="d-block  font-14 mb-">Home / Concert Tickets / Rock / John Doe Tickets <span class="badge ml-2 p-1 border border-white"> <i class="fa fa-star"></i> 4.5</span></span>
                 <!-- <span class="d-none d-md-inline-block h1 w-100 text-left mt-3">John Doe <span class="font-w-l">Tickets</span></span> -->
-                <span class="d-none d-md-inline-block h1 w-100 text-left mt-5">John Doe <span class="font-w-l">Tickets</span></span>
+                <span class="d-none d-sm-inline-block h1 w-100 text-left mt-5 custom-mt-2">John Doe <span class="font-w-l">Tickets</span></span>
 
             </div>
-            <div class="col-12 mt-2 col-md-5">
+            <div class="col-12 col-sm-6 mt-2 col-md-4 col-lg-4 col-xl-3">
                 <!-- <div class="relative"> -->
                     <img class="img-fluid" src="https://via.placeholder.com/300x200" alt="" width="100%">
                     <!-- <div class="top-right-3 rounded">
                         &hearts;
                     </div>
                 </div> -->
-                <span class="d-md-none h1 w-100 text-left d-inline-block mt-3">John Doe <span class="font-w-l">Tickets</span></span>
+                <span class="d-sm-none h1 w-100 text-left d-inline-block mt-3">John Doe <span class="font-w-l">Tickets</span></span>
             </div>
         </div>
         <div class="row mt- pb-2">
@@ -214,7 +268,7 @@
 
 
 
-    <div class="container-fluid px-3  my-5">
+    <div class="container-fluid padd my-5">
         <div class="row">
             <div class="col-lg-8 col-md-12 ">
                 <div class="row">
@@ -261,7 +315,7 @@
                 </div>
                 <div class="row mt-3">
                     <!-- <div id="hover-effect"> -->
-                        <div class="col-lg-3 col-sm-6 line-h-10">
+                        <div class="col-lg-3 col-sm-6 col-md-3 line-h-10">
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-4 col-4">
                                     <p class="color-theme">JUN 24</p>
@@ -274,7 +328,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-9 line-h-10">
+                        <div class="col-lg-6 col-md-6 line-h-10">
                             <div class="row">
                                 <div class="col-sm-9 col-9 col-lg-12">
                                     <p class="font-w">Lorem ipsum dolor sit</p>
@@ -295,7 +349,7 @@
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="row mt-5">
-                    <div class="col-lg-3 col-sm-6 line-h-10">
+                    <div class="col-lg-3 col-sm-6 col-md-3 line-h-10">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-4 col-4">
                                 <p class="color-theme">JUN 24</p>
@@ -308,7 +362,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-9 line-h-10">
+                    <div class="col-lg-6 col-md-6 line-h-10">
                         <div class="row">
                             <div class="col-sm-9 col-9 col-lg-12">
                                 <p class="font-w">Lorem ipsum dolor sit</p>
@@ -328,7 +382,7 @@
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="row mt-5">
-                    <div class="col-lg-3 col-sm-6 line-h-10">
+                    <div class="col-lg-3 col-sm-6 col-md-3 line-h-10">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-4 col-4">
                                 <p class="color-theme">JUN 24</p>
@@ -341,7 +395,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-9 line-h-10">
+                    <div class="col-lg-6 col-md-6 line-h-10">
                         <div class="row">
                             <div class="col-sm-9 col-9 col-lg-12">
                                 <p class="font-w">Lorem ipsum dolor sit</p>
@@ -361,7 +415,7 @@
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="row mt-5">
-                    <div class="col-lg-3 col-sm-6 line-h-10">
+                    <div class="col-lg-3 col-sm-6 col-md-3 line-h-10">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-4 col-4">
                                 <p class="color-theme">JUN 24</p>
@@ -374,7 +428,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-9 line-h-10">
+                    <div class="col-lg-6 col-md-6 line-h-10">
                         <div class="row">
                             <div class="col-sm-9 col-9 col-lg-12">
                                 <p class="font-w">Lorem ipsum dolor sit</p>
@@ -394,7 +448,7 @@
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="row mt-5">
-                    <div class="col-lg-3 col-sm-6 line-h-10">
+                    <div class="col-lg-3 col-sm-6 col-md-3 line-h-10">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-4 col-4">
                                 <p class="color-theme">JUN 24</p>
@@ -407,7 +461,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-9 line-h-10">
+                    <div class="col-lg-6 col-md-6 line-h-10">
                         <div class="row">
                             <div class="col-sm-9 col-9 col-lg-12">
                                 <p class="font-w">Lorem ipsum dolor sit</p>
@@ -427,7 +481,7 @@
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="row mt-5">
-                    <div class="col-lg-3 col-sm-6 line-h-10">
+                    <div class="col-lg-3 col-sm-6 col-md-3 line-h-10">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-4 col-4">
                                 <p class="color-theme">JUN 24</p>
@@ -440,7 +494,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-9 line-h-10">
+                    <div class="col-lg-6 col-md-6 line-h-10">
                         <div class="row">
                             <div class="col-sm-9 col-9 col-lg-12">
                                 <p class="font-w">Lorem ipsum dolor sit</p>
@@ -460,7 +514,7 @@
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="row mt-5">
-                    <div class="col-lg-3 col-sm-6 line-h-10">
+                    <div class="col-lg-3 col-sm-6 col-md-3 line-h-10">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-4 col-4">
                                 <p class="color-theme">JUN 24</p>
@@ -473,7 +527,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-9 line-h-10">
+                    <div class="col-lg-6 col-md-6 line-h-10">
                         <div class="row">
                             <div class="col-sm-9 col-9 col-lg-12">
                                 <p class="font-w">Lorem ipsum dolor sit</p>
@@ -493,7 +547,7 @@
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="row mt-5">
-                    <div class="col-lg-3 col-sm-6 line-h-10">
+                    <div class="col-lg-3 col-sm-6 col-md-3 line-h-10">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-4 col-4">
                                 <p class="color-theme">JUN 24</p>
@@ -506,7 +560,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-9 line-h-10">
+                    <div class="col-lg-6 col-md-6 line-h-10">
                         <div class="row">
                             <div class="col-sm-9 col-9 col-lg-12">
                                 <p class="font-w">Lorem ipsum dolor sit</p>
@@ -526,7 +580,7 @@
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="row mt-5">
-                    <div class="col-lg-3 col-sm-6 line-h-10">
+                    <div class="col-lg-3 col-sm-6 col-md-3 line-h-10">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-4 col-4">
                                 <p class="color-theme">JUN 24</p>
@@ -539,7 +593,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-9 line-h-10">
+                    <div class="col-lg-6 col-md-6 line-h-10">
                         <div class="row">
                             <div class="col-sm-9 col-9 col-lg-12">
                                 <p class="font-w">Lorem ipsum dolor sit</p>
@@ -559,7 +613,7 @@
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="row mt-5">
-                    <div class="col-lg-3 col-sm-6 line-h-10">
+                    <div class="col-lg-3 col-sm-6 col-md-3 line-h-10">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-4 col-4">
                                 <p class="color-theme">JUN 24</p>
@@ -572,7 +626,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-9 line-h-10">
+                    <div class="col-lg-6 col-md-6 line-h-10">
                         <div class="row">
                             <div class="col-sm-9 col-9 col-lg-12">
                                 <p class="font-w">Lorem ipsum dolor sit</p>
@@ -592,8 +646,8 @@
                 </div>
 
                 <div class="row mt-4 pb-3">
-                    <div class="col">
-                        <a href="#" class="btn border border-primary color-theme event-info w-100">Load More</a>
+                    <div class="col text-center">
+                        <a href="#" class="btn border border-primary color-theme event-info custom-w">Load More</a>
                     </div>
                 </div>
         
