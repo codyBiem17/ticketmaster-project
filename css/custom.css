@@ -20,10 +20,11 @@ a.slide-captions,
 .hide-and-show {
   color: #4e4d4d;
   font-size: 19px;
-  background-color: white;
-  display: none;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
+  /* display: none; */
   height: 60px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
+  border: 1px solid white;
   /* margin: -20px 0px; */
   /* padding: 5px 0px; */
 }
@@ -287,7 +288,7 @@ select.concert-event-forms:hover,
 
   #white-div-nav .navbar-icons {
     position: relative;
-    right:5px;
+    right:20px;
     /* border: 1px solid red; */
     /* width: 200px; */
   }
@@ -295,7 +296,8 @@ select.concert-event-forms:hover,
   #blue-div-nav .menu-items, #white-div-nav .menu-items{
       /* padding-left: 5px; */
       position: relative;
-      left: 10px;
+      left: 10px; 
+      /* i changed this part for subscription page */
       /* border: 1px solid green; */
   } 
 
@@ -407,8 +409,8 @@ select.concert-event-forms:hover,
   }
 
   main {
-    position: relative;
-    top: 20px;
+    /* position: relative; */
+    /* top: 20px; */
   }
 }
 
@@ -675,9 +677,10 @@ hr#order-page-line{
   line-height: 20px;
 }
 
-#username{
+span.username{
   position: relative;
   left: 5px;
+  font-weight: 800;
 }
 
 .dropdown:hover .dropdown-menu{
@@ -699,7 +702,7 @@ hr#order-page-line{
 }
 
 @media only screen and (max-width:767px){
-  #username{
+  .username{
     display: none;
   }
 
@@ -711,6 +714,10 @@ hr#order-page-line{
   .acct-events{
     padding-top: 15px;
   }
+
+  .dropdown:hover .dropdown-menu{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width:767px) {
@@ -721,7 +728,7 @@ hr#order-page-line{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  #username{
+  .username{
     display: none;
   }
 
@@ -737,6 +744,10 @@ hr#order-page-line{
   #listing-div{
     position: relative;
     left: 30px;
+  }
+
+  .dropdown:hover .dropdown-menu{
+    display: none;
   }
 }
 
