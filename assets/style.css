@@ -5,20 +5,22 @@
     background: linear-gradient(90deg, rgba(1,56,172,1) 0%, rgba(16,106,215,1) 56%, rgba(1,52,165,1) 100%);
 }
 
-/* .blue-div{
-    color: white;
-    font-size: 20px;
-    background: rgb(1,56,172);
-    background: linear-gradient(90deg, rgba(1,56,172,1) 0%, rgba(16,106,215,1) 56%, rgba(1,52,165,1) 100%);
-  } */
+.small-color {
+    color: #9C68BF;
+}
 
 .color-theme {
+    color: #0165D4;
+}
+
+.color-theme:hover {
     color: #0165D4;
 }
 
 .grey-theme {
     color: gray;
 }
+
 
 .options a {
     color: white;
@@ -47,16 +49,100 @@
     width: 200px;
 }
 
+.ticket-listing {
+    padding: 30px 0px;
+}
+
+.ticket-div {
+    height: 180px;
+    background-color: #DFE4E7;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 40px;
+    /* margin-top: -50px;     */
+}
+
+.ticket-container {
+    background-color: #F6F6F6;
+}
+.ticket-div .first {
+    color: #59656E;
+    transform: rotate(140deg);
+}
+
+.ticket-div .second {
+    color: #768692;
+    transform: rotate(140deg);
+}
+
 
 .wide {
     display: inline-block;
-    /* width: 1100px; */
     width: 80vw;
     height: 60px;
 }
 
+.wide-top {
+    display: inline-block;
+    width: 330px;
+    height: 40px;
+}
 
+.left-margin {
+    margin-left: 10vw;
+}
 
+.w-80 {
+    width: 80%;
+}
+
+.black {
+color: #000;
+}
+.w-17 {
+    width: 90px;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+#locationDropdown {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: black solid 1px;
+    border-radius: 3px;
+}
+
+#locationDropdown:hover {
+    text-decoration: none;
+    border: #0150A7 solid 2px;
+    color: black
+}
+.account-bg {
+    background-color: #0150A7;
+}
+
+.account-bg:hover {
+    color: white;
+}
+
+input[type='radio'] {
+    transform: scale(0.5);
+}
+.pass-hint {
+    margin-left: 3px;
+}
+
+.font-27 {
+    font-size: 24px;
+}
+.font-18 {
+    font-size: 17px;
+}
+.font-15 {
+    font-size: 15px;
+}
 .font-14 {
     font-size: 14px;
 }
@@ -78,6 +164,17 @@
 
 .line-h-7 {
     line-height: 7px;
+    /* display: inline-block; */
+}
+
+.line-h-10 {
+    line-height: 10px;
+    /* display: inline-block; */
+}
+
+.line-h-17 {
+    line-height: 17px;
+    display: inline-block;
 }
 
 input {
@@ -96,6 +193,10 @@ input {
 
 img {
     border-radius: 5px;
+}
+
+img.card-img-top {
+    border-radius: 0;
 }
 
 a img {
@@ -164,7 +265,6 @@ footer a:hover {
     line-height: 0.5vw;
     width: 11vw;
 }
-
 .top-right {
     position: absolute;
     top: 0.7vw;
@@ -194,11 +294,6 @@ footer a:hover {
     border-color: red;
     border-bottom: white solid 6px;
     color: red;
-}
-
-#event-line:after {
-    content: "";
-    border-bottom: white 3px solid;
 }
 
 .less-md {
@@ -276,6 +371,12 @@ footer a:hover {
 
   @media screen and (min-width: 992px) {
     .lg-lower-view {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hide-view {
       display: none;
     }
   }
