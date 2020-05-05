@@ -1,11 +1,4 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* overflow-x: hidden; */
-  letter-spacing: 0.3px;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
   font-size: 10px;
 }
 
@@ -47,7 +40,7 @@ body {
 
 .white-div-tee{
    position: relative;
-   left: 20px;
+   /* left: 5px; */
 }
 
 #white-div-nav .navbar-icons{
@@ -413,6 +406,16 @@ footer div#privacy{
 
 
 /* media queries here */
+
+
+@media only screen and (min-width:411px) and (max-width: 599px){
+
+    #blue-div-nav .user-icon, #white-div-nav .user-icon{
+        position: relative;
+        left: -5px;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px){
     .blue-div-form, .white-div-form, .white-div-input, .help{
         display: none;
@@ -430,18 +433,23 @@ footer div#privacy{
 
      .white-div-tee {
        position: relative;
-       left: 20px;
+       /* left: 20px; */
     }
 
 
     #white-div-nav .navbar-icons{
         position: relative;
-        left: 10px;
+        /* left: 10px; */
         padding-top: 20px;
     }
 
-    #white-div-nav .menu-items {
+    #white-div-nav .menu-items, 
+    #blue-div-nav .menu-items {
         padding: 0 15px;
+    }
+
+    #my-events span{
+        font-size: 46px;
     }
 
     #nav-tabs li#profile1 a.active::after{
@@ -490,7 +498,7 @@ footer div#privacy{
 
     #blue-div-nav .large-screen-menulinks{
         position: relative;
-        left: -30px;
+        left: -10px;
     }
 
     #blue-div-nav .navbar-icons {
@@ -510,8 +518,8 @@ footer div#privacy{
     }
 
     .white-div-tee{
-        position: relative;
-        left: 15px;
+        /* position: relative; */
+        /* left: 15px; */
     }
 
     .white-div-form {
@@ -521,12 +529,13 @@ footer div#privacy{
     }
 
     #white-div-nav .large-screen-menulinks{
-       margin-left: -67px;
+       margin-left: -10px;
     }
 
     #white-div-nav .navbar-icons {
         position: relative;
-        left: -50px;
+        left: 35px;
+        top: 10px;
     }
 
     #nav-tabs{
@@ -540,7 +549,7 @@ footer div#privacy{
 
 
     #my-events span{
-        font-size: 45px;
+        font-size: 46px;
     }
 
     .medium-screen-horizontal{
@@ -562,7 +571,7 @@ footer div#privacy{
 
 }
 @media only screen and (min-width: 1200px){
-    .blue-div-tee{
+    /* .blue-div-tee{
         position: relative;
         left: 20px
     }
@@ -570,16 +579,17 @@ footer div#privacy{
     .white-div-tee{
         position: relative;
         left: 40px  
-    }
+    } */
 
     .blue-div-form{
-        /* position: relative; */
-        /* left: 20px */
+        position: relative;
+        left: -70px
     }
 
     .white-div-form{
-        /* position: relative;
-        left: 20px */
+        position: relative;
+        left: -70px
+        /* border: 1px solid red; */
     }
 
     #white-navbar-input-field, #blue-navbar-input-field {
@@ -588,12 +598,12 @@ footer div#privacy{
 
     #blue-div-nav .large-screen-menulinks{
         position: relative;
-        left: -100px;
+        left: -120px;
     }
 
     #white-div-nav .large-screen-menulinks{
         position: relative;
-        left: -85px;
+        left: -110px;
     }
 
     #blue-div-nav .user-icon {
@@ -608,13 +618,13 @@ footer div#privacy{
 
    #blue-div-nav .navbar-icons {
         position: relative;
-        left: 60px;
+        left: 40px;
     }
     
 }
 
 @media only screen and (min-width: 1440px){
-    .blue-div-tee{
+    /* .blue-div-tee{
         position: relative;
         left: 30px
     }
@@ -622,16 +632,16 @@ footer div#privacy{
     .white-div-tee{
         position: relative;
         left: 55px  
-    }
+    } */
 
     .blue-div-form{
         position: relative;
-        left: -70px
+        left: -110px
     }
 
     .white-div-form{
         position: relative;
-        left: -80px
+        left: -110px
     }
 
     #white-navbar-input-field, #blue-navbar-input-field {
@@ -640,12 +650,12 @@ footer div#privacy{
 
     #blue-div-nav .large-screen-menulinks{
         position: relative;
-        left: -200px;
+        left: -230px;
     }
 
     #white-div-nav .large-screen-menulinks{
         position: relative;
-        left: -190px;
+        left: -220px;
     }
 
     #blue-div-nav .user-icon {
@@ -660,7 +670,38 @@ footer div#privacy{
 
    #white-div-nav .navbar-icons {
         position: relative;
-        left: -60px;
+        left: 80px;
+    }
+
+    #blue-div-nav .navbar-icons {
+        position: relative;
+        left: 80px;
+    }
+
+    #white-div-nav a.nav-link.more, #blue-div-nav a.nav-link.more{
+        display: none;
+    }
+
+    #white-div-nav li.nav-item .dropdown-menu, #blue-div-nav li.nav-item .dropdown-menu{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .large-screen-navlinks .dropdown .dropdown-menu {
+        position: absolute;
+        top: -5px;
+        border: none;
+        background-color: transparent;
+    }
+
+    #blue-div-nav .large-screen-navlinks .dropdown .dropdown-menu a{
+        color: white;
+        padding-right: 5px;
+    }
+
+        #white-div-nav .large-screen-navlinks .dropdown .dropdown-menu a{
+        padding-right: 3px;
     }
     
 }
