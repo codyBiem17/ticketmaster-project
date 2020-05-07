@@ -25,9 +25,8 @@ a.slide-captions,
 .hide-and-show {
   color: #4e4d4d;
   font-size: 19px;
-  /* display: none; */
+  display: none;
   height: 60px;
-  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
   border: 1px solid white;
   /* margin: -20px 0px; */
@@ -208,7 +207,7 @@ select.concert-event-forms:hover,
 
 .white-div-form{
   position: relative;
-  left: 20px;
+  left: 40px;
   bottom: 15px;
 }
 
@@ -242,7 +241,7 @@ select.concert-event-forms:hover,
 
 .blue-div-form {
   position: relative;
-  left: 20px;
+  left: 40px;
   top: 2px;
 }
 
@@ -262,12 +261,8 @@ select.concert-event-forms:hover,
   left: 25px;
 }
 
-.arts{
-  display: none;
-}
-
 #img-gallery{
-  padding: 20px 30px;
+  padding: 0px 30px;
 }
 
 
@@ -305,8 +300,6 @@ select.concert-event-forms:hover,
       /* padding-left: 5px; */
       position: relative;
       left: 10px; 
-      /* i changed this part for subscription page */
-      /* border: 1px solid green; */
   } 
 
   #white-div-nav .navbar-icons {
@@ -342,7 +335,7 @@ select.concert-event-forms:hover,
   .white-div-input, #hide-div,
   .help, #placeholder-side-image,
   ul.large-screen-menulinks,
-  #img-gallery, div.advert-section, .captions .live-button {
+  #img-gallery, div.advert-section {
     display: none;
   }
 
@@ -360,8 +353,7 @@ select.concert-event-forms:hover,
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .search-icon,
   ul.large-screen-menulinks,
-  .carousel, .static-image3, div.advert-section, 
-  #placeholder-side-image, .captions .live-button {
+  .carousel, .static-image3, div.advert-section, #placeholder-side-image {
     display: none;
   }
 
@@ -378,35 +370,25 @@ select.concert-event-forms:hover,
     font-size: 22px;
   }
 
-  #blue-div-nav .navbar-icons, 
-  #white-div-nav .navbar-icons {
-    font-size: 16px;
-    position: relative;
-    left: 35px;
+  #blue-div-nav .navbar-icons {
+    /* position: relative; */
+    /* left: 15px; */
     /* border: 1px solid red; */
   }
 
   #blue-div-nav .menu-items, #white-div-nav .menu-items{
       /* margin:8px 10px !important; */
-      /* margin: 8px 10px !important; */
-      /* border: 1px solid red; */
-      /* padding-left: 23px; */
+      /* padding: 0 15px;
+      border: 1px solid red; */
   } 
-
-  .blue-div-form {
-    position: relative;
-    left: -65px;
-  }
   
   .white-div-form {
     margin-top: 15px;
-    position: relative;
-    left: -65px;
   }
 
   .white-div-tee {
     /* border: 1px solid red; */
-    margin: 0;
+    /* margin: 0; */
   }
 
   /* for white div */
@@ -447,14 +429,6 @@ select.concert-event-forms:hover,
     display: none;
   }
 
-  .blue-div a em{
-    font-size: 22px;
-  }
-
-  .white-div a.white-div-input em {
-    font-size: 22px;
-  }
-
   .concert-ticket {
     position: relative;
     bottom: 10px;
@@ -467,17 +441,23 @@ select.concert-event-forms:hover,
     margin-bottom: 30px;
   }
 
-  .blue-div, .hide-and-show{
-    font-size: 16px;
-  }
-
   #blue-div-nav .navbar-icons {
     position: relative;
-    left: -15px;
+    /* left: -15px; */
     top: -5px;
-    /* font-size: 16px; */
     /* border: 1px solid red; */
   }
+
+  /* .carousel-item a img {
+    max-width:70%;
+    height: auto;
+    border-radius: 4px;
+    margin: 30px 130px;
+  }
+
+  .carousel-item .captions{
+    text-align: center;
+  } */
 
   .menu-items {
     display: none;
@@ -487,28 +467,20 @@ select.concert-event-forms:hover,
     padding-top: 20px;
   }
 
-  .blue-div-form {
-    position: relative;
-    left: -75px;
-  }
-
   .white-div-form {
     position: relative;
     top: 5px;
-    left: -75px;
+    /* left: -10px; */
   }
 
   #white-div-nav .navbar-icons {
-   position: relative;
-    left: -15px;
-    /* font-size: 16px; */
+    /* position: relative;
+    left: 25px; */
     /* border: 1px solid red; */
   }
 
-  #white-div-nav .large-screen-menulinks,
-  #blue-div-nav .large-screen-menulinks{
-    position: relative;
-    left: -95px;
+  #white-div-nav .large-screen-menulinks{
+    margin-left: 10px;
   }
 
   div.advert-section{
@@ -520,14 +492,14 @@ select.concert-event-forms:hover,
   }
 
   .static-image1 p.caption-text{
-    /* word-spacing: 0.7em;
-    font-size: 18px; */
+    word-spacing: 0.7em;
+    font-size: 18px;
   }
 
-  .captions .live-button{
+  span button{
     position: relative;
-    left: -30px;
-    top: 35px;
+    left: 280px;
+    top: 5px;
   }
 
   div.advert-section img{
@@ -540,8 +512,8 @@ select.concert-event-forms:hover,
     margin-top: 30px;
   }
 
- #img-gallery .static-image1 div.captions{
-    padding: 20px;
+ #img-gallery div.captions{
+    /* padding: 25px; */
   }
 
   .category-form-fields{
@@ -568,16 +540,20 @@ select.concert-event-forms:hover,
 
 @media only screen and (min-width: 1200px) {
  
-  .blue-div-form, .white-div-form {
-    position: relative;
-    left: -85px;
-    top: 2px;
+  .blue-div-form {
+    /* position: relative;
+    left: 10px;
+    top: 2px; */
   }
 
-  #blue-div-nav .large-screen-menulinks, 
-  #white-div-nav .large-screen-menulinks{
-    position: relative;
-    left: -135px;
+  #blue-div-nav .large-screen-menulinks{
+    /* position: relative;
+    right: 180px; */
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    /* margin-left: 60px; */
   }
 
    #placeholder-side-image{
@@ -585,48 +561,201 @@ select.concert-event-forms:hover,
     left: 40px;
   }
 
-  #blue-div-nav .navbar-icons, 
-  #white-div-nav .navbar-icons{
-    position: relative;
-    left: 140px;
-  }
-
-  .captions .live-button{
-    position: relative;
-    left: -5px;
-    top: 35px;
-  }
-
 }
-@media only screen and (min-width: 1440px){
- .captions .live-button{
-    position: relative;
-    left: 25px;
-    top: 35px;
-  }
 
-   .blue-div-form, .white-div-form {
-    position: relative;
-    left: -115px;
-  }
+/* 
+---------------------------------------------
+styling for subscriptions page
+--------------------------------------------- */
+small#copy{
+  font-size: 10px;
+  position: relative;
+  right: 5px;
+}
 
-  #blue-div-nav .large-screen-menulinks, 
-  #white-div-nav .large-screen-menulinks{
-    position: relative;
-    left: -240px;
-  }
+.acct-events, #listing-div{
+  word-spacing: 5px;
+}
 
-  .arts{
-    display: block;
-  }
-
-  .static-image3{
-    position: relative;
-    top: 30px;
-  }
-
+.acct-events{
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
+a.my-account{
+  color: #262626;
+  font-size: 13px;
+}
 
+a.my-account:hover{
+  text-decoration: none;
+  color: #262626;
+}
+
+a.my-account::after, a.my-listings::after{
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  content: "\f105";
+  font-weight: 900;
+  display: inline-block;
+}
+
+#my-events-listing{
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#my-events h2{
+  font-size: 32px;
+  line-height: 45px;
+  color: #262626;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+a.my-listings{
+  font-size: 14px;
+  font-weight: 600;
+  color: #026cdf;
+  line-height: 20px;
+  /* color: #262626;
+  word-spacing: 5px;
+  font-size: 13px; */
+}
+
+a.my-listings:hover, .tab-pane a:hover{
+  text-decoration: none;
+  color: #026cdf;
+}
+
+#nav-tabs ul li a{
+  color: #a8a8a8;
+  font-weight: 400;
+}
+
+#nav-tabs li a.active{
+  color: #2d2626;
+  /* border-bottom: 4px solid #026cdf; */
+}
+
+#nav-tabs ul li a:hover{
+  color: #2d2626;
+  text-decoration: none;
+}
+
+#nav-tabs li a.active::after{
+  content: "";
+  border-bottom: 4px solid #026cdf;
+  display: block;
+  width: 80px;
+  position: relative;
+  top: 5px;
+}
+
+hr#order-page-line{
+  position: relative;
+  bottom: 20px;
+}
+
+#nav-tabs{
+  /* border: 1px solid red; */
+  padding-bottom: 100px;
+}
+
+#nav-tabs .tab-content{
+  margin-bottom: -50px;
+}
+
+.tab-pane #svg-img{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#page-load-event{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+#nav-tabs .tab-pane a{
+  font-size: 16px;
+  font-weight: 600;
+  color: #026cdf;
+  line-height: 20px;
+}
+
+span.username{
+  position: relative;
+  left: 5px;
+  font-weight: 800;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+.dropdown-menu{
+  width: 255px;
+}
+
+.dropdown-menu a{
+  padding-bottom: 15px;
+  color: #525151;;
+}
+
+.dropdown-menu a:hover{
+  background: #026ce5; 
+  color: white;
+}
+
+@media only screen and (max-width:767px){
+  .username{
+    display: none;
+  }
+
+  .user-sell-blue-nav:hover, .user-sell-white-nav:hover{
+      background: none;
+  }
+
+
+  .acct-events{
+    padding-top: 15px;
+  }
+
+  .dropdown:hover .dropdown-menu{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width:767px) {
+  #listing-div{
+    position: relative;
+    left: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .username{
+    display: none;
+  }
+
+  .user-sell-blue-nav:hover, .user-sell-white-nav:hover{
+      background: none;
+  }
+
+
+  #nav-tabs ul li a {
+    font-size: 20px;
+  }
+
+  #listing-div{
+    position: relative;
+    left: 30px;
+  }
+
+  .dropdown:hover .dropdown-menu{
+    display: none;
+  }
+}
 

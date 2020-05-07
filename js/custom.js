@@ -39,7 +39,13 @@ $(document).ready(function () {
         $('li#subscriptions1 a').click(function () {
             // alert('tutufr')
             $('hr').addClass('medium-screen-horizontal');
-            // $('hr').removeClass('.order-page-line')
+            // $('.medium-screen-horizontal').not(this).removeClass('medium-screen-horizontal')
+        })
+
+        $('li#profile1 a').click(function () {
+            // alert('tutufr')
+            $('hr').removeClass('medium-screen-horizontal');
+            // $('.medium-screen-horizontal').not(this).removeClass('medium-screen-horizontal')
         })
 
         

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subscriptions</title>
 
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/orders.css">
+    <link rel="stylesheet" href="css/sub-style2.css">
+    <link rel="stylesheet" href="css/subscription.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
 
@@ -18,44 +18,6 @@
             margin-right: auto;
             margin-left: auto;
         }
-
-        @media only screen and (min-width:411px) and (max-width: 599px){
-            #blue-div-nav .user-icon, #white-div-nav .user-icon{
-                position: relative;
-                left: -5px;
-            }
-
-            #white-div-nav .navbar-icons{
-                /* position: relative; */
-                /* left: 8px; */
-            }
-        }
-
-        @media only screen and (min-width:1440px){
-               #white-div-nav a.nav-link.more, #blue-div-nav a.nav-link.more{
-                    display: none;
-                }
-
-                 #white-div-nav li.nav-item .dropdown-menu, #blue-div-nav li.nav-item .dropdown-menu{
-                    position: absolute;
-                    display: flex;
-                    flex-direction: row;
-                }
-
-           .large-screen-navlinks .dropdown .dropdown-menu {
-             position: absolute;
-             top: -5px;
-             border: none;
-             
-    background-color: transparent;
-           }
-
-           .large-screen-navlinks .dropdown .dropdown-menu a{
-               color: white;
-               padding-right: 5px;
-           }
-        }
-        
     </style>
 </head>
 
@@ -66,30 +28,35 @@
                 <nav class="navbar navbar-expand-lg row">
 
                     <!-- first column of white nav -->
-                    <div class="col-8 col-sm-9 col-md-10">
+                    <div class="col-8 col-sm-9 col-md-10 col-lg-9">
                         <div class="row">
                             <div class="col-12 col-lg-3 white-div-tee">
-                                <a href="#" class="white-ticket-brand"> <em>t</em> </a>
+                                <a href="#" class="white-ticket-brand"> 
+                                    <!-- <em>t</em>  -->
+                                    <img src="images/tek-tickets.png" alt="logo" width="50" height="50">
+                                </a>
                                 <a href="#" class="white-div-input">
-                                    <em>ticketmaster
+                                <img src="images/tek-tickets.png" alt="logo" width="50" height="50">
+                                    <!-- <em>ticketmaster
                                         <sup> <small id="copy">&copy;</small></sup>
-                                    </em>
+                                    </em> -->
                                 </a>
                             </div>
 
                             <!-- hide and show this header on >=medium devices -->
                             <div class="col-lg-5 white-div-form">
-                                <form class="form-group row" action="">
-                                    <div class="col-md-8 col-lg-6">
-                                        <input class="form-control search" type="text" name=""
-                                            id="white-navbar-input-field"
-                                            placeholder="Find millions of live experiences">
-                                        <i class="fas fa-search input-search-icon"></i>
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-6 col-xl-5">
+                                            <input class="form-control search" type="text" name="" id="white-navbar-input-field"
+                                                placeholder="Find millions of live experiences">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-lg-3 large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
                                     <li class="nav-item user-sell-white-nav mr-3">
                                         <a class="nav-link" href="#">Concert</a>
@@ -166,18 +133,25 @@
                     <div class="col-8 col-sm-9 col-md-10 col-lg-9 mb-3">
                         <div class="row">
                             <div class="col-12 col-lg-3  blue-div-tee">
-                                <a href="#"> <em>ticketmaster <sup> <small id="copy">&copy;</small></sup> </em> </a>
+                                <a href="#"> 
+                                    <img src="images/tek-tickets.jpg" alt="logo" width="50" height="50">
+                                    <!-- <em>ticketmaster <sup> <small id="copy">&copy;</small></sup> </em> -->
+                                 </a>
                             </div>
 
                             <!-- hide and show this header on >=medium devices -->
                             <div class="col-lg-5 blue-div-form">
-                                <form class="form-group row" action="">
-                                    <div class="col-md-8 col-lg-6 col-xl-5">
-                                        <input class="form-control search" type="text" name=""
-                                            id="blue-navbar-input-field"
-                                            placeholder="Search for artist, event or venue">
-                                        <i class="fas fa-search input-search-icon"></i>
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-6 col-xl-5">
+                                            <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
+                                                placeholder="Search for artist, event or venue">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
                                     </div>
+                                    <!-- <div class="">
+                                        
+                                    </div> -->
                                 </form>
                             </div>
 
@@ -528,8 +502,8 @@
                             <!-- first column ends -->
 
                             <!-- second column here -->
-                            <div class="col-10 col-md-3 col-lg-2 mx-auto  heart-shape-div">
-                                <div class="row">
+                            <div class="col-10 col-md-3 mx-auto  heart-shape-div">
+                                <div class="row mx-auto">
                                     <div class="col-12 text-center">
                                         <img src="images/heart-shape.png" alt="" width="150" height="150">
                                     </div>
@@ -551,7 +525,7 @@
                                         artists and more, to personalize your alerts.
                                     </div>
 
-                                    <button class="col-11 col-md-9 mx-auto btn btn-outline-primary my-4" type="button">Add
+                                    <button class="col-11 col-md-9 col-xl-10 mx-auto btn btn-outline-primary my-4" type="button">Add
                                         Favorites</button>
                                 </div>
                             </div>
