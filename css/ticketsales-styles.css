@@ -163,7 +163,7 @@ p#date-time{
 }
 
 .spinner-footer a{
-  color: #848485;
+  color: #414142;
   font-weight: 600;
 }
 
@@ -533,22 +533,22 @@ footer button{
 
   table{
     /* border: 1px solid red; */
-    height: 100%;
+    height: calc(70vh);
     overflow-y: scroll;
   }
 
-  body{
+  html, body{
     overflow-y: hidden;
-  }
-
-  tr.table-head{
-    margin-bottom: -8px;
   }
 }
 
 @media only screen and (min-width: 992px){
   #spinner{
     display: inline-block;
+  }
+
+  .spinner-footer{
+    margin: 170px 0;
   }
 
   .ticket-sales-header{
@@ -592,6 +592,16 @@ footer button{
   div#artist-tour{
     position: relative;
     left: -70px;
+  }
+
+  table{
+    /* border: 1px solid red; */
+    height: calc(71vh);
+    overflow-y: scroll;
+  }
+
+  html, body{
+    overflow-y: hidden;
   }
 
   .spinner-icons{

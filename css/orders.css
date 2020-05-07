@@ -25,10 +25,11 @@ a.slide-captions,
 .hide-and-show {
   color: #4e4d4d;
   font-size: 19px;
-  /* display: none; */
+  display: none;
   height: 60px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
   border: 1px solid white;
+  background-color: white;
   /* margin: -20px 0px; */
   /* padding: 5px 0px; */
 }
@@ -39,8 +40,13 @@ a.slide-captions,
 }
 
 .white-div-tee {
-  /* border: 1px solid red; */
-  margin: -20px 0px 5px 0px;
+  margin: 0px -2px; 
+}
+
+.white-div-tee a img{
+  border: 1px solid rgb(1, 56, 172);
+   position: relative;
+  top: -5px;
 }
 
 #white-div-nav .menu-items {
@@ -92,7 +98,7 @@ a.slide-captions,
     height: 60px !important;
 }
 
-.blue-div-tee{
+.blue-div-tee, .white-div-tee{
     margin: -10px 0;
     /* border: 1px solid red; */
     /* max-width: 50%; */
@@ -192,10 +198,13 @@ div.white-icons.user-icon {
   color: white;
 }
 
-.sticky-nav {
-  position: sticky;
+.row.sticky-nav {
+  position: fixed;
+ margin-left: 0px;
+ margin-right: 0px;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   z-index: 100;
 }
@@ -298,10 +307,15 @@ div.white-icons.user-icon {
     /* width: 200px; */
   }
 
+  .navbar-icons-scroll{
+    position: relative;
+    left: -7px;
+  }
+
   #blue-div-nav .menu-items, #white-div-nav .menu-items{
       /* padding-left: 5px; */
       position: relative;
-      left: 10px; 
+      left: 12px; 
   } 
 
   #white-div-nav .navbar-icons {
@@ -310,8 +324,8 @@ div.white-icons.user-icon {
   }
 
   .hide-and-show {
-    padding-top: 20px;
-    padding-bottom: 50px;
+    /* padding-top: 20px;
+    padding-bottom: 50px; */
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 767px) {
@@ -535,6 +549,11 @@ footer div#privacy{
         position: relative;
         left: -5px;
     }
+
+    .navbar-icons-scroll{
+      position: relative;
+      left: 15px;
+    }
 }
 
 @media only screen and (max-width: 320px){
@@ -562,7 +581,7 @@ footer div#privacy{
         display: none;
     }
 
-    .search-icon, .white-ticket-brand{
+    .search-icon{
         display: inline-block;
     }
 
@@ -595,14 +614,13 @@ footer div#privacy{
 
     footer.footer{
         text-align: center;
-        margin-top: 200px;
+        margin-top: 257px;
     }
 }
 
 /* media queries for large devices */
 @media only screen and (min-width: 992px) {
    .search-icon,
-  .white-ticket-brand,
   .menu-items{
     display: none;
   }
@@ -616,7 +634,7 @@ footer div#privacy{
         font-size: 23px;
     }
 
-    .blue-div-tee{
+    .blue-div-tee, .white-div-tee{
         margin: -5px 0;
     }
  
@@ -692,7 +710,7 @@ footer div#privacy{
 
     footer.footer{
         text-align: center;
-        margin-top: 280px;
+        margin-top: 419px;
     }
 }
 
@@ -765,7 +783,7 @@ footer div#privacy{
 
     footer.footer{
         text-align: center;
-        margin-top: 330px;
+        margin-top: 464px;
     }
 
 }
@@ -852,6 +870,12 @@ footer div#privacy{
     }
     
 }
+
+.white-img-scroll{
+  position: relative;
+  left: -15px;
+}
+
 
 
 

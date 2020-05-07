@@ -25,7 +25,7 @@ a.slide-captions,
 .hide-and-show {
   color: #4e4d4d;
   font-size: 19px;
-  /* display: none; */
+  display: none;
   height: 60px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
@@ -40,8 +40,13 @@ a.slide-captions,
 }
 
 .white-div-tee {
-  /* border: 1px solid red; */
-  margin: -20px 0px 5px 0px;
+  margin: 0px -2px; 
+}
+
+.white-div-tee a img{
+  border: 1px solid rgb(1, 56, 172);
+   position: relative;
+  top: -5px;
 }
 
 ul li.nav-item.user-sell-white-nav a {
@@ -178,10 +183,13 @@ select.concert-event-forms:hover,
   color: white;
 }
 
-.sticky-nav {
-  position: sticky;
+.row.sticky-nav {
+  position: fixed;
+  margin-left: 0px;
+  margin-right: 0px;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   z-index: 100;
 }
@@ -289,16 +297,20 @@ select.concert-event-forms:hover,
 
   #blue-div-nav .navbar-icons{
     position: relative;
-    right: 20px;
+    right: 9px;
     /* border: 1px solid red; */
     /* width: 200px; */
   }
 
   #white-div-nav .navbar-icons {
     position: relative;
-    right:20px;
-    /* border: 1px solid red; */
+    right: 10px;
     /* width: 200px; */
+  }
+
+  .navbaricons-category-scroll{
+    position: relative;
+    left: 2px;
   }
 
   #blue-div-nav .menu-items, #white-div-nav .menu-items{
@@ -315,8 +327,8 @@ select.concert-event-forms:hover,
   }
 
   .hide-and-show {
-    padding-top: 20px;
-    padding-bottom: 50px;
+    /* padding-top: 20px;
+    padding-bottom: 50px; */
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 767px) {
@@ -627,6 +639,9 @@ select.concert-event-forms:hover,
 
 }
 
-
+.white-img-scroll{
+  position: relative;
+  left: -15px;
+}
 
 
