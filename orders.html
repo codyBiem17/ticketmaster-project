@@ -5,207 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orders</title>
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/orders.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
 
     <style>
-        body {
-            /* overflow-x: hidden; */
-            /* text-align: center;
-            font-family: "Open Sans", sans-serif; */
-        }
-
         .container-fluid {
             padding-right: 0;
             padding-left: 0;
             margin-right: auto;
             margin-left: auto;
         }
-
-
-        /* 
-        #white-div-nav .navbar-toggler-icon {
-
-            border-color: rgba(0, 0,0);
-
-        } */
-
-        #blue-div-nav .navbar-icons{
-            font-weight: 600;
-        }
-
-        #white-div-nav .menu-items {
-            margin: 8px 0px;
-        }
-
-        #white-div-nav .toggler-icon {
-            /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
-            width: 16px;
-            height: 3px;
-            background-color: black;
-            margin-bottom: 3px;
-            /* border: 1px solid red; */
-        }
-
-        #blue-div-nav a em{
-            font-size: 25px;
-        }
-
-        #blue-div-nav .menu-items {
-            margin: 8px 0px;
-            /* padding-left: 5px; */
-
-        }
-
-        #blue-div-nav .toggler-icon {
-            width: 16px;
-            height: 3px;
-            background-color: white;
-            margin-bottom: 3px;
-        }
-
-        .white-div-tee{
-            position: relative;
-            left: 15px;
-        }
-
-        #white-div-nav .navbar-icons{
-            position: relative;
-            left: -5px;
-        }
-
-         #blue-div-nav{
-            height: 60px !important
-        }
-
-       #blue-div-nav ul li, #white-div-nav ul li{
-            height: 100%;
-            display: inline-block;
-            margin-top: -7px;
-            margin-bottom: -7px;
-        }
-
-        #blue-div-nav ul li a, #white-div-nav ul li a{
-            padding: 17px 10px;
-        }
-
-        .navbar-icons .user-sell-white-nav{
-            /* height: 100%;
-            display: inline-block; */
-            /* padding-top: 10px;
-            padding: 10px; */
-        }
-
-        .blue-div-form{
-            position: relative;
-            left: -30px !important;
-        }
-
-        .white-div-form{
-            position: relative;
-            left: -20px;
-        }
-
-
-        #white-div-nav ul.large-screen-menulinks{
-            position: relative;
-            left: -50px;
-        }
-
-        .user-icon{
-            position: relative;
-            left: 10px;
-        }
-
-
-        @media only screen and (min-width: 768px) and (max-width:991px) {
-            .white-div-input, .white-div-form, .blue-div-form, .help{
-                display: none;
-            }
-
-            .search-icon, .white-ticket-brand{
-                display: inline-block !important;
-            }
-
-            .white-div-tee{
-                margin-top: -15px;
-            }
-
-            #white-div-nav .navbar-icons{
-                position: relative;
-                left: 27px;
-            }
-        }
-
-        @media only screen and (min-width: 992px) {
-
-            .navbar-icons, ul.large-screen-menulinks{
-                font-size: 16px;
-            }
-
-            #blue-div-nav{
-                height: 30px !important;
-            }
-
-            .navbar-icons .user-sell-blue-nav{
-                height: 100%;
-                display: inline-block;
-                padding-top: 16px;
-                padding-bottom: 16px;
-            }
-            
-            #white-div-nav .navbar-icons, #blue-div-nav .navbar-icons{
-                position: relative;
-                left: -25px;
-            }
-
-            #blue-div-nav ul.large-screen-menulinks{
-                position: relative;
-                left: -60px !important;
-            }
-
-             .acct-events{
-                padding-top: 15px;
-            }
-
-            #nav-tabs ul li a {
-                font-size: 20px;
-            }
-        }
-
-         @media only screen and (min-width: 1200px) {
-            .blue-div-form{
-                position: relative;
-                left: -80px !important;
-            }
-
-            #blue-div-nav ul.large-screen-menulinks{
-                position: relative;
-                left: -110px !important;
-            }
-
-            .acct-events{
-               margin: 0 30px;
-            }
-
-            #my-events-listing{
-                padding-top: 25px;
-                padding-bottom: 25px;
-            }
-
-            #my-events h2{
-                padding: 0 30px;
-                font-size: 41px;
-            }
-
-
-
-            #nav-tabs{
-                padding: 0 10px 120px;
-            }
-         }
-
     </style>
 </head>
 
@@ -215,27 +25,35 @@
             <div class="col-12 hide-and-show" id="white-div-nav">
                 <nav class="navbar navbar-expand-lg row">
 
-                    <!-- first column of blue nav -->
-                    <div class="col-8 col-sm-9 col-lg-10">
+                    <!-- first column of white nav -->
+                    <div class="col-8 col-sm-9 col-md-10 col-lg-9">
                         <div class="row">
                             <div class="col-12 col-lg-3 white-div-tee">
-                                <a href="#" class="white-ticket-brand"> <em>t</em> </a>
-                                <a href="#" class="white-div-input"> <em>ticketmaster <sup> <small id="copy">&copy;</small></sup> </em> </a>
+                                <a href="#" class="white-ticket-brand"> 
+                                    <img src="images/tek-tickets.png" alt="logo" width="50" height="50">
+                                </a>
+                                <!-- <a href="#" class="white-div-input">
+                                    <img src="images/tek-tickets.png" alt="logo" width="50" height="50"> -->
+                                    <!-- <em>ticketmaster
+                                        <sup> <small id="copy">&copy;</small></sup>
+                                    </em> -->
+                                <!-- </a> -->
                             </div>
-
+                    
                             <!-- hide and show this header on >=medium devices -->
                             <div class="col-lg-5 white-div-form">
-                                <form class="form-group row" action="">
-                                    <div class="col-md-8 col-lg-6 col-xl-5">
-                                        <input class="form-control search" type="text" name=""
-                                            id="white-navbar-input-field"
-                                            placeholder="Find millions of live experiences">
-                                        <i class="fas fa-search input-search-icon"></i>
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-6 col-xl-5">
+                                            <input class="form-control search" type="text" name="" id="white-navbar-input-field"
+                                                placeholder="Find millions of live experiences">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
-
-                            <div class="col-lg-4 ">
+                    
+                            <div class="col-lg-3 large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
                                     <li class="nav-item user-sell-white-nav mr-3">
                                         <a class="nav-link" href="#">Concert</a>
@@ -244,7 +62,7 @@
                                         <a class="nav-link" href="#">Sports</a>
                                     </li>
                                     <li class="nav-item dropdown user-sell-white-nav">
-                                        <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                        <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
                                         <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
                                             <a class="dropdown-item" href="#">Arts & Theater</a>
                                             <a class="dropdown-item" href="#">Family</a>
@@ -254,24 +72,24 @@
                                     </li>
                                 </ul>
                             </div>
-
+                    
                             <!-- hide and show this header on >=medium devices -->
-
+                    
                         </div>
                     </div>
-
-
+                    
+                    
                     <!-- second column of white nav -->
-                    <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons">
+                    <div class="col-3 col-md-2 mb-3 navbar-icons">
                         <div class="row">
-                            <div class="col-4 search-icon">
+                            <div class="col-4 col-md-3 search-icon">
                                 <i class="fas fa-search"></i>
                             </div>
-
-                            <div class="col-4 col-lg-9 dropdown user-sell-white-nav user-icon">
+                    
+                            <div class="col-4 col-md-3 col-lg-9 dropdown user-sell-white-nav user-icon">
                                 <div class="" data-toggle="dropdown">
                                     <i class="far fa-user-circle"></i>
-                                    <span id="username">Maryam</span>
+                                    <span class="username">Maryam</span>
                                 </div>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a class="dropdown-item" href="#">My Account</a>
@@ -282,52 +100,60 @@
                                     <a class="dropdown-item" href="#">Sign Out</a>
                                 </div>
                             </div>
-
+                    
                             <div class="col-lg-3 user-sell-white-nav help">
                                 Help
                             </div>
-
-                            <div class="col-4 menu-items" type="button" data-toggle="collapse"
-                                data-target="#menu-items">
+                    
+                            <div class="col-4 col-md-3 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
                                 <!-- <div class="row"> -->
                                 <div class="toggler-icon"></div>
                                 <div class="toggler-icon"></div>
                                 <div class="toggler-icon"></div>
                                 <!-- </div> -->
                             </div>
-
+                    
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
         <!-- white nav ends here -->
-
+                    
         <!-- blue navbar -->
         <div class="row blue-div">
             <div class="col-12" id="blue-div-nav">
                 <nav class="navbar navbar-expand-lg row">
-
+        
                     <!-- first column of blue nav-->
-                    <div class="col-8 col-sm-9 col-lg-10 mb-3">
+                    <div class="col-8 col-sm-9 col-md-10 col-lg-9 mb-3">
                         <div class="row">
-                            <div class="col-12 col-lg-3 blue-div-tee">
-                                <a href="#"> <em>ticketmaster <sup> <small id="copy">&copy;</small></sup> </em> </a>
+                            <div class="col-12 col-lg-3  blue-div-tee">
+                                <a href="#"> 
+                                    <img src="images/tek-tickets.jpg" alt="logo" width="50" height="50">
+                                    <!-- <em>ticketmaster  -->
+                                    <!-- <sup> <small id="copy">&copy;</small> -->
+                                    <!-- </sup> </em>  -->
+                                </a>
                             </div>
-
+        
                             <!-- hide and show this header on >=medium devices -->
                             <div class="col-lg-5 blue-div-form">
-                                <form class="form-group row" action="">
-                                    <div class="col-md-8 col-lg-6 col-xl-5">
-                                        <input class="form-control search" type="text" name=""
-                                            id="blue-navbar-input-field"
-                                            placeholder="Search for artist, event or venue">
-                                        <i class="fas fa-search input-search-icon"></i>
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-6 col-xl-5">
+                                            <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
+                                                placeholder="Search for artist, event or venue">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
                                     </div>
+                                    <!-- <div class="">
+                                                
+                                            </div> -->
                                 </form>
                             </div>
-
-                            <div class="col-lg-4 large-screen-navlinks">
+        
+                            <div id="expand-more" class="col-lg-3  large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
                                     <li class="nav-item user-sell-blue-nav mr-3">
                                         <a class="nav-link" href="#">Concert</a>
@@ -336,7 +162,7 @@
                                         <a class="nav-link" href="#">Sports</a>
                                     </li>
                                     <li class="nav-item dropdown user-sell-blue-nav">
-                                        <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                        <a class="nav-link more" href="#" data-toggle="">More</a>
                                         <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
                                             <a class="dropdown-item" href="#">Arts & Theater</a>
                                             <a class="dropdown-item" href="#">Family</a>
@@ -349,18 +175,18 @@
                         </div>
                         <!-- hide and show this header on >=medium devices -->
                     </div>
-
+        
                     <!-- second column of blue nav-->
-                    <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons">
+                    <div class="col-3 col-md-2 mb-3 navbar-icons">
                         <div class="row">
-                            <div class="col-4 search-icon blue-nav-right-content">
+                            <div class="col-4 col-md-3 search-icon blue-nav-right-content">
                                 <i class="fas fa-search"></i>
                             </div>
-
-                            <div class="col-4 col-lg-9 dropdown user-sell-blue-nav user-icon blue-nav-right-content">
+        
+                            <div class="col-4 col-md-3 col-lg-9 dropdown user-sell-blue-nav user-icon blue-nav-right-content">
                                 <div class="" data-toggle="dropdown">
                                     <i class="far fa-user-circle"></i>
-                                    <span id="username">Maryam</span>
+                                    <span class="username">Maryam</span>
                                 </div>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a class="dropdown-item" href="#">My Account</a>
@@ -371,12 +197,12 @@
                                     <a class="dropdown-item" href="#">Sign Out</a>
                                 </div>
                             </div>
-
+        
                             <div class="col-lg-3 user-sell-blue-nav help blue-nav-right-content">
                                 Help
                             </div>
-
-                            <div class="col-4 menu-items blue-nav-right-content" type="button" data-toggle="collapse"
+        
+                            <div class="col-4 col-md-3 menu-items blue-nav-right-content" type="button" data-toggle="collapse"
                                 data-target="#menu-items">
                                 <div class="toggler-icon"></div>
                                 <div class="toggler-icon"></div>
@@ -386,7 +212,6 @@
                     </div>
                 </nav>
             </div>
-
         </div>
 
         <main>
@@ -398,12 +223,13 @@
             </div>
 
             <div class="row" id="my-events-listing">
-                <div class="col-8 col-md-9 col-lg-10" id="my-events">
+                <div class="col-12" id="my-events">
                     <h2>My Events</h2> 
-                </div>
-                <div class="col-4 col-md-3 col-lg-2" id="listing-div">
                     <a href="#" class="my-listings"> <span>View My Listings</span> </a>
                 </div>
+                <!-- <div class="col-4 col-sm-4 col-md-3 col-lg-2" id="listing-div"> -->
+                    <!-- <a href="#" class="my-listings"> <span>View My Listings</span> </a> -->
+                <!-- </div> -->
             </div>
 
             <!-- nav tabs -->
@@ -464,14 +290,13 @@
             
         </main>
 
-        <footer class="footer mt-5 py-4">
+        <footer class="footer">
             <div class="row">
-                <div class="col-12 ">
-                    By continuing past this page, you agree to our <span class="terms-policy"> Terms of Use. <br>
-        
-                        Privacy Policy</span> | © 1999-2020 Ticketmaster. All rights reserved. <br>
-        
-                    <span class="terms-policy">Do Not Sell My Information</span>
+                <div class="col-12">
+                    By continuing past this page, you agree to our <span class="terms-policy"> Terms of Use. </span>
+                </div>
+                <div class="col-12" id="privacy">
+                    <span class="terms-policy"> Privacy Policy</span> | © 1999-2020 Ticketmaster. All rights reserved.
                 </div>
             </div>
         </footer>

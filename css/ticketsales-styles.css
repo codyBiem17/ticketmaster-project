@@ -1,9 +1,17 @@
 body {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  font: normal 100% "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* overflow-x: hidden; */
+  letter-spacing: 0.3px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  position: relative
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 .ticket-sales-header {
@@ -42,8 +50,7 @@ body {
 }
 
 .ticketmaster{
-  position: relative;
-  /* right: 10px; */
+  margin: 5px 0;
 }
 
 .ticketmaster a em {
@@ -82,7 +89,7 @@ small#copy{
 .artist-schedule{
   background-color: #0256b2;
   color: white;
-  height: 100px;
+  height: 90px;
   border-top: 1px solid #014085;
   position: absolute;
   top: 60px;
@@ -99,18 +106,20 @@ div#artist-img{
 }
 
 p#diamond-tour{
-  font-size: 16px;
+  font-size: 12px;
   position: relative;
   top: 5px;
+  /* left: -5px; */
   font-weight: 500;
 }
 
 button#more-info{
   border-radius: 30px;
-  padding: 0px 18px;
+  padding: 0px 5px;
+  width: 120px;
   position: relative;
-  /* top: 2px; */
-  left: 7px;
+  top: 2px;
+  /* left: 7px; */
 }
 
 p#date-time{
@@ -154,7 +163,7 @@ p#date-time{
 }
 
 .spinner-footer a{
-  color: #848485;
+  color: #414142;
   font-weight: 600;
 }
 
@@ -188,6 +197,35 @@ button#filters::before{
   border-left: 1px solid #dbe2e8;
   /* background: white; */
 }
+
+ul div{
+  display: flex;
+  /* align-content: center; */
+  justify-content: space-between;
+}
+
+li a#seat-link{
+  position: relative;
+  left: 50px;
+}
+
+#input-left-slider{
+  max-width: 100%;
+  width: 50px;
+  position: relative;
+  /* right: 15px; */
+  /* padding-right: 20px; */
+  /* border: 1px solid red; */
+}
+
+#input-right-slider{
+  max-width: 100%;
+  width: 70px;
+  position: relative;
+  /* right: 15px; */
+  /* padding-right: 20px; */
+  /* border: 1px solid red; */
+}
 /* ==============================================
       slider section for purchasing tool
 ==============================================*/
@@ -195,13 +233,14 @@ button#filters::before{
     font-size: 25px
 }
 .range-slider{
-    width: 70%;
+    width: 100%;
     position: relative;
+    left: -30px;
     margin-top: 5px;
 }
 input[type="range"]{
   -webkit-appearance:none;
-  width: 100%;
+  width: 150px;
   height: 10px;
   border-radius:5px;
   background: rgb(2, 108, 223);
@@ -267,13 +306,16 @@ input[type='range']:nth-child(2)::-webkit-slider-runnable-track{
 li a.active{
   color: black;
   font-weight: 700;
-  border-bottom: 3px solid #026cdf;
+  /* border-bottom: 3px solid #026cdf; */
 }
 
 li a#price-link.active{
-  margin-left: -15px;
-  margin-right: -15px;
-  width: 80%;
+  content: "";
+  border-bottom: 3px solid #026cdf;
+  display: block;
+  /* width: 80px; */
+  position: relative;
+  left: -15px;
 }
 
 li a#seat-link.active{
@@ -304,7 +346,7 @@ i.fa-star{
   text-align: center;
   border: 2px solid #eb730a;
   border-radius: 50%;
-  padding: 5px;
+  padding: 5px 5px 7px;
   font-size: 10px;
   color: #eb730a;
   background: white;
@@ -344,7 +386,7 @@ footer .ticket-limit{
 
 footer button{
   position: relative;
-  left: 15px;
+  left: 10px;
 }
 
 .active-tab-links{
@@ -352,11 +394,73 @@ footer button{
 }
 
 
-@media only screen and (min-width:370px) and (max-width: 600px){
+@media only screen and (min-width:360px) and (max-width: 375px){
   div button#filters{
     position: relative;
-    right: 20px;
+    /* right: 20px; */
   }
+
+  #ticket-sales-icons{
+    position: relative;
+    left: 30px;
+  }
+
+  .tickets-selection{
+    margin: 0 8px;
+  }
+
+  .range-slider{
+    position: relative;
+    left: -50px;
+  }
+  input[type="range"]{
+    width: 180px;
+  }
+
+  #input-right-slider{
+    position: relative;
+    right: 10px;
+  }
+
+  footer button{
+    position: relative;
+    left: 25px;
+  }
+}
+
+@media only screen and (min-width: 411px) and (max-width:767px){
+  #ticket-sales-icons{
+    position: relative;
+    left: 40px;
+  }
+
+   .tickets-selection{
+    margin: 0 18px;
+  }
+
+  .range-slider{
+    position: relative;
+    left: -50px;
+  }
+  input[type="range"]{
+    width: 180px;
+  }
+
+  #input-right-slider{
+    position: relative;
+    right: 10px;
+  }
+
+  li a#seat-link{
+    position: relative;
+    left: 120px;
+  }
+
+  footer button{
+    position: relative;
+    left: 25px;
+  }
+
 }
 
 @media only screen and (max-width:767px){
@@ -368,17 +472,15 @@ footer button{
   .sell-signin, #artist-img, #spinner{
     display: none;
   }
-}
-
-@media only screen and (min-width: 600px) and (max-width:767px){
+  
   .ticketmaster{
     position: relative;
-    right: 20px;
+    /* right: 20px; */
   }
 
   footer button{
     position: relative;
-    left: 50px;
+    /* left: 50px; */
   }
 }
 
@@ -392,6 +494,12 @@ footer button{
     right: 35px;
   }
 
+  #ticket-sales-icons{
+    position: relative;
+    left: 60px;
+    /* border: 1px solid red; */
+  }
+  
   i.fas, i.far{
     font-size: 16px;
   }
@@ -406,13 +514,30 @@ footer button{
     left: 20px;
   }
 
+  .tickets-selection{
+    margin: 0 15px;
+  }
+ 
+  .range-slider{
+    position: relative;
+    left: -70px;
+  }
+  input[type="range"]{
+    width: 570px;
+  }
+
+  li a#seat-link{
+    position: relative;
+    left: 330px;
+  }
+
   table{
     /* border: 1px solid red; */
-    height: calc(50vh);
+    height: calc(70vh);
     overflow-y: scroll;
   }
 
-  body{
+  html, body{
     overflow-y: hidden;
   }
 }
@@ -422,6 +547,14 @@ footer button{
     display: inline-block;
   }
 
+  .spinner-footer{
+    margin: 170px 0;
+  }
+
+  .ticket-sales-header{
+    height: 150px;
+  }
+
   .ticketmaster{
     position: relative;
     right: 50px;
@@ -429,7 +562,7 @@ footer button{
 
   #ticket-sales-icons{
     position: relative;
-    left: 60px;
+    left: 80px;
     /* border: 1px solid red; */
   }
 
@@ -439,9 +572,36 @@ footer button{
     /* border: 1px solid red; */
   }
 
+  .tickets-selection{
+    margin: 0 3px;
+  }
+ 
+  .range-slider{
+    position: relative;
+    left: -45px;
+  }
+  input[type="range"]{
+    width: 240px;
+  }
+
+  li a#seat-link{
+    position: relative;
+    left: 130px;
+  }
+
   div#artist-tour{
     position: relative;
     left: -70px;
+  }
+
+  table{
+    /* border: 1px solid red; */
+    height: calc(71vh);
+    overflow-y: scroll;
+  }
+
+  html, body{
+    overflow-y: hidden;
   }
 
   .spinner-icons{
@@ -465,7 +625,7 @@ footer button{
 
   #ticket-sales-icons{
     position: relative;
-    left: 90px;
+    left: 120px;
     /* border: 1px solid red; */
   }
 
@@ -478,5 +638,19 @@ footer button{
   .spinner-icons{
     position: relative;
     left: 60px;
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  .tickets-selection{
+    margin: 0 10px;
+  }
+
+  .range-slider{
+    position: relative;
+    left: -55px;
+  }
+  input[type="range"]{
+    width: 280px;
   }
 }

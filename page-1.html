@@ -9,61 +9,78 @@
     <link rel="stylesheet" href="css/fontawesome5/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
+<style>
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        .top-nav {
+            margin-top: -20px;
+        }
+    }
+</style>
 <body>
     <div class="row white-div">
         <div class="col-12 hide-and-show" id="white-div-nav">
             <nav class="navbar navbar-expand-lg row">
                 <!-- <a href="#" class="navbar-brand"> <em>t</em> </a> -->
                 <!-- <div class="row"> -->
-                <a href="#" class="col-8 white-ticket-brand"> <em>t</em> </a>
+                <a href="#" class="col-8 white-ticket-brand mt-1"> <em>t</em> </a>
 
-                    <a href="#" class="col-sm-2 mb-3 white-div-input"> <em>ticketmaster</em> </a>
+                    <a href="#" class="col-sm-2 mb-3 white-div-input mt-2 col-lg-3"> <em>ticketmaster</em> </a>
                     <!-- hide and show this header on >=medium devices -->
-                    <div class="col-sm-6 col-md-7 col-lg-8 white-div-form">
+                    <div class="col-sm-6 col-md-7 col-lg-7 white-div-form ml-n5 mr-5">
                         <form class="form-group row" action="">
-                            <div class="col-11 col-md-7 col-lg-6 col-xl-5">
-                                <input class="form-control search" type="text" name="" id="white-navbar-input-field"
-                                    placeholder="Find millions of live experiences">
-                                <i class="fas fa-search input-search-icon"></i>
+                            <div class="col-11 col-md-7 col-lg-6 col-xl-4 mt-2 d-none d-lg-block ml-n4">
+                                <input class="form-control search pl-4" type="text" name="" id="white-navbar-input-field"
+                                    placeholder="Find live experience">
+                                <i class="fas fa-search input-search-icon pl-2"></i>
                             </div>
-                            <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
+                            <ul class="col-lg-6 col-xl-6 navbar-nav large-screen-menulinks">
                                 <li class="nav-item user-sell-white-nav mr-3">
-                                    <a class="nav-link" href="#">Concert</a>
+                                    <a class="nav-link bg-grey" href="#">Concert</a>
                                 </li>
                                 <li class="nav-item user-sell-white-nav mr-3">
-                                    <a class="nav-link" href="#">Sports</a>
+                                    <a class="nav-link bg-grey" href="#">Sports</a>
                                 </li>
-                                <li class="nav-item user-sell-white-nav">
-                                    <a class="nav-link" href="#">More</a>
+                                <li class="nav-item user-sell-white-nav d-xl-non">
+                                    <a class="nav-link bg-grey" href="#">More</a>
                                 </li>
+                                <!-- <li class="nav-item user-sell-white-nav d-none d-xl-block">
+                                    <a class="nav-link bg-grey" href="#">Arts &Theater</a>
+                                </li>
+                                <li class="nav-item user-sell-white-nav mr-3 d-none d-xl-block">
+                                    <a class="nav-link bg-grey" href="#">Family</a>
+                                </li>
+                                <li class="nav-item user-sell-white-nav mr-3 d-none d-xl-block">
+                                    <a class="nav-link bg-grey" href="#">VIP</a>
+                                </li>
+                                <li class="nav-item user-sell-white-nav mr-3 d-none d-xl-block">
+                                    <a class="nav-link bg-grey" href="#">Deals</a>
+                                </li> -->
                             </ul>
                         </form>
                     
                     </div>
                     <!-- hide and show this header on >=medium devices -->
                     
-                    <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons mt-3">
+                    <div class="col-4 col-sm-3 col-lg-2 mt- navbar-icons ml-n5">
                         <div class="row">
-                            <div class="col-3 p-2 search-icon">
-                                <i class="fas fa-search"></i>
-                            </div>
-                            <div class="col-3 p-2 user-sell-blue-nav user-icon">
+                            <div class="col-4 p-2 user-sell-blue-nav user-icon">
                                 <i class="far fa-user-circle"></i>
                             </div>
-                            <div class="col-3 p-2 user-sell-blue-nav sell">
+                            <div class="col-4 p-2 d-lg-none">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="col-4 p-2 user-sell-blue-nav sell d-none d-lg-block font-w ml-n3">
                                 Sell
                             </div>
-                            <div class="col-3 p-2 user-sell-blue-nav help">
+                            <div class="col-4 p-2 user-sell-blue-nav help d-none d-lg-block font-w ml-2 ">
                                 Help
                             </div>
-                            <div class="col-3 p-2 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
+                            <div class="col-4 p-2 d-lg-none" type="button" data-toggle="collapse" data-target="#menu-items">
                                 <span class="navbar-toggler-icon"></span>
                             </div>
                         </div>
-                    </div>
-                <!-- hide and show this header on >=medium devices -->
-                 
-            
+                    </div> 
+                <!-- hide and show this header on >=medium devices -->            
             </nav>
         </div>
     </div>
@@ -71,75 +88,59 @@
     <div class="row blue-div">
         <div class="col-12" id="blue-div-nav">
             <nav class="navbar navbar-expand-lg row">
-                <a href="#" class="col-8 col-sm-2 mb-3"> <em>ticketmaster</em> </a>
+                <a href="#" class="col-8 col-sm-2 mb-3 col-lg-3"> <em>ticketmaster</em> </a>
                 
                 <!-- hide and show this header on >=medium devices -->
-                <div class="col-sm-6 col-md-7 col-lg-8 blue-div-form">
+                <div class="col-sm-6 col-md-7 col-lg-7 blue-div-form ml-n5 mr-5">
                     <form class="form-group row" action="">
-                        <div class="">
-                            <!-- <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
-                                placeholder="Find millions of live experiences">
-                            <i class="fas fa-search input-search-icon"></i> -->
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link p-3 nav-text-color white" href="#">Concerts <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link p-3 nav-text-color white" href="#">Sports</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link p-3 nav-text-color white" href="#">Art & Theatre</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link p-3 nav-text-color white" href="#">Family</a>
-                                </li>
-                
-                                <li class="nav-item dropdown white">
-                                    <a class="nav-link p-3 nav-text-color dropdown-toggle white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    More
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item bg-dropdown-theme" href="#">VIP</a>
-                                        <a class="dropdown-item bg-dropdown-theme" href="#">Deals</a>
-                                        <a class="dropdown-item bg-dropdown-theme" href="#">Entertainment Guides</a>
-                                        <a class="dropdown-item bg-dropdown-theme" href="#">For You</a>
-                                    </div>
-                                </li>
-                
-                            </ul>
-                
-                        </div>
-                        <!-- <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
+                        <!-- <div class="col-11 col-md-7 col-lg-6 col-xl-4 mt-2  d-none d-lg-block ml-n5">
+                            <input class="form-control search pl-4" type="text" name="" id="blue-navbar-input-field"
+                                placeholder="Search for artist">
+                            <i class="fas fa-search input-search-icon pl-2"></i>
+                        </div> -->
+                        <ul class="col-lg-10 col-xl-10 navbar-nav large-screen-menulinks">
                             <li class="nav-item user-sell-blue-nav mr-3">
                                 <a class="nav-link" href="#">Concert</a>
                             </li>
                             <li class="nav-item user-sell-blue-nav mr-3">
                                 <a class="nav-link" href="#">Sports</a>
                             </li>
-                            <li class="nav-item user-sell-blue-nav">
+                            <li class="nav-item user-sell-blue-nav d-no">
+                                <a class="nav-link bg-grey" href="#">Arts & Theater</a>
+                            </li>
+                            <li class="nav-item user-sell-blue-nav d-xl-non">
                                 <a class="nav-link" href="#">More</a>
                             </li>
-                        </ul> -->
+                            <!-- <li class="nav-item user-sell-blue-nav mr-3 d-nolock">
+                                <a class="nav-link bg-grey" href="#">Family</a>
+                            </li>
+                            <li class="nav-item user-sell-blue-nav mr-3 d-noock">
+                                <a class="nav-link bg-grey" href="#">VIP</a>
+                            </li>
+                            <li class="nav-item user-sell-blue-nav mr-3 d-noblock">
+                                <a class="nav-link bg-grey" href="#">Deals</a>
+                            </li> -->
+                        </ul>
                     </form>
                     
                 </div>
                 <!-- hide and show this header on >=medium devices -->
                 
-                <div class="col-4 col-sm-3 col-lg-2 mb-3 navbar-icons">
+                <div class="col-4 col-sm-3 col-lg-2 mb- navbar-icons ml-n5">
                     <div class="row">
-                        <div class="col-3 p-2 search-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="col-3 p-2 user-sell-blue-nav user-icon">
+                        <div class="col-4 p-2 user-sell-blue-nav user-icon">
                             <i class="far fa-user-circle"></i>
                         </div>
-                        <div class="col-3 p-2 user-sell-blue-nav sell">
+                        <div class="col-4 p-2 d-lg-none">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="col-4 p-2 user-sell-blue-nav sell d-none d-lg-block font-w ml-n3">
                             Sell
                         </div>
-                        <div class="col-3 p-2 user-sell-blue-nav help">
+                        <div class="col-4 p-2 user-sell-blue-nav help d-none d-lg-block font-w ml-2 ">
                             Help
                         </div>
-                        <div class="col-3 p-2 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
+                        <div class="col-4 p-2 d-lg-none" type="button" data-toggle="collapse" data-target="#menu-items">
                             <span class="navbar-toggler-icon"></span>
                         </div>
                     </div>
@@ -147,60 +148,36 @@
             
             </nav>
         </div>
-
-        
-        <!-- <div class="col-12 mx-3 pb-2 home-div-concert">
-            Home / Concert Tickets
-        </div>
-        <div class="col-12 mx-3 pb-2  concert-ticket">
-            Concerts <span style="font-weight: 300;"> Tickets </span>
-        </div> -->
        
-
     </div>
+
     <main>
         <div class="container-fluid bg-theme pb-3">
-
-            <div class="row pt-5">
-                <div class="col text-center">
-                    <h4>Unforgettable Starts Here</h4>
+            <!-- <div class="row top-nav">
+                <div class="col-5 col-md-3">
+                    <a href="#" class="btn white font-w"><h3><em>ticketmaster</em></h3></a>
                 </div>
-            </div>
-            <!-- <div class="row mt-3">
-                <div class="col text-center">
-                    <div class="row text-center mx-5 lg-view">
-                        <div class="col-lg-3 col-6 ml-5">
-                            <input type="text" class="form-control" placeholder="City or Zip Code">
-                            
-                        </div>
-                        <div class="col-lg-3 col-6 mx-n5">
-                            <input type="text" class="form-control"  placeholder="All Dates">
-                            
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                      
-                        </div>
-                    </div>
-
-                    <div class="row text-center mx-5 lg-lower-view">
-                        <div class="col-6">
-                            <input type="text" class="form-control" placeholder="City or Zip Code">
-                           
-                        </div>
-                        <div class="col-6">
-                            <input type="text" class="form-control"  placeholder="All Dates">
-                          
-                        </div>
-                        <div class="col-12">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                           
-                        </div>
-                    </div>
+                <div class="col-md-6 d-none d-md-inline-block pt-2">
+                    <a href="#" class="btn white font-w">Concerts</a>
+                    <a href="#" class="btn white font-w">Sports</a>
+                    <a href="#" class="btn white font-w">Arts & Theatre</a>
+                    <a href="#" class="btn white d-none d-lg-inline-block font-w">Family</a>
+                    <a href="#" class="btn white font-w">More</a>
+                </div>
+                <div class="col-7 col-md-3 text-right pt-2">
+                    <a href="#" class="btn  white font-w"><i class="fa fa-user-circle"></i></a>
+                    <a href="#" class="btn white font-w">Sell</a>
+                    <a href="#" class="btn white d-none d-md-inline-block font-w">Help</a>
                 </div>
             </div> -->
 
-            <div class="row mt-3 text-center ">
+            <div class="row d-none d-md-block mt-n5">
+                <div class="col text-center font-w">
+                    <h5>Unforgettable Starts Here</h5>
+                </div>
+            </div>
+
+            <div class="row mt-n1 text-center ">
                 <div class="col ">
                     <input type="search" class="form-control wide" placeholder="Search">
                 </div>
@@ -209,7 +186,7 @@
             <div class="row mb-3 text-center options">
                 <div class="col text-center">
                     <a href="#" class="btn border top-width font-14 font-w border-white  white  ml-3">Dashboard Confessional</a>
-                    <a href="#" class="btn border top-width font-14 font-w border-white  white  ml-3">Questlove Presents</a>
+                    <a href="#" class="btn border top-width font-14 font-w border-white d-none d-sm-inline-block  white  ml-3">Questlove Presents</a>
                     <a href="#" class="btn border top-width font-14  font-w border-white white ml-3 drop-3">Lovelytheband</a>
                     <a href="#" class="btn border top-width font-14 font-w border-white white  ml-3 drop-2">Phish</a>
                     <a href="#" class="btn border top-width font-14 font-w border-white white  ml-3 drop-1">Echosmith</a>
@@ -362,7 +339,7 @@
                 <div class="col-lg-2 col-md-6 col-sm-6 col-6">
                     <div class="row">
                         <div class="col">
-                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE: HAPPENING</span>
+                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE</span>
                         </div>
                     </div>
                     <div class="row">
@@ -386,7 +363,7 @@
                 <div class="col-2 d-none d-lg-block">
                     <div class="row">
                         <div class="col">
-                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE: HAPPENING</span>
+                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE</span>
                         </div>
                     </div>
                     <div class="row">
@@ -414,7 +391,7 @@
                 <div class="col-lg-2 col-md-6 col-sm-6 col-6">
                     <div class="row">
                         <div class="col">
-                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE: HAPPENING</span>
+                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE</span>
                         </div>
                     </div>
                     <div class="row">
@@ -438,7 +415,7 @@
                 <div class="col-2 d-none d-lg-block">
                     <div class="row">
                         <div class="col">
-                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE: HAPPENING</span>
+                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE</span>
                         </div>
                     </div>
                     <div class="row">
@@ -466,7 +443,7 @@
                 <div class="col-lg-2 col-md-6 col-sm-6 col-6">
                     <div class="row">
                         <div class="col">
-                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE: HAPPENING</span>
+                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE</span>
                         </div>
                     </div>
                     <div class="row">
@@ -490,7 +467,7 @@
                 <div class="col-2 d-none d-lg-block">
                     <div class="row">
                         <div class="col">
-                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE: HAPPENING</span>
+                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE</span>
                         </div>
                     </div>
                     <div class="row">
@@ -515,7 +492,7 @@
                 <div class="col-lg-2 col-md-6 col-sm-6 col-6">
                     <div class="row">
                         <div class="col">
-                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE: HAPPENING</span>
+                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE</span>
                         </div>
                     </div>
                     <div class="row">
@@ -539,7 +516,7 @@
                 <div class="col-2 d-none d-lg-block">
                     <div class="row">
                         <div class="col">
-                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE: HAPPENING</span>
+                           <span class="bg-success white rounded font-10 font-w p-1">PRESALE</span>
                         </div>
                     </div>
                     <div class="row">
@@ -566,8 +543,8 @@
                 <div class="col">
                     <div>Discover More Events</div>
                     <div class="mt-4">
-                        <a href="#" class="btn border border-primary color-theme event-info ml-3">Concerts</a>
-                        <a href="#" class="btn border border-primary color-theme event-info ml-3">Sports</a>
+                        <a href="#" class="btn border border-primary color-theme event-info ml-3 d-none d-sm-inline-block">Concerts</a>
+                        <a href="#" class="btn border d-none d-sm-inline-block border-primary color-theme event-info ml-3">Sports</a>
                         <a href="#" class="btn border border-primary color-theme event-info ml-3">Arts & Theatre</a>
                         <a href="#" class="btn border border-primary color-theme event-info ml-3">Family</a>
                     </div>
@@ -575,10 +552,10 @@
             </div>
         </div>
 
-        <div class="container-fluid d-lg-none mt-5">
+        <!-- <div class="container-fluid d-lg-none mt-5">
             <div class="row">
                 <div class="col">
-                   <h3>Just For You, Maryam</h3>
+                   <h3>Just For You, John</h3>
                 </div>
             </div>
             <div class="row mt-4">
@@ -704,7 +681,7 @@
                     <a href="#" class="btn border border-primary color-theme event-info w-100">See More Events</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="containe-fluid px-5 less-md-block">
             <div class="row my-4">
@@ -1087,87 +1064,87 @@
 
             <div class="row">
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative d-none d-lg-block">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
             <div class="row mt-4">
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative  d-none d-lg-block">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -1182,87 +1159,87 @@
 
             <div class="row">
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative  d-none d-lg-block">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
             <div class="row mt-4">
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative  d-none d-lg-block">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -1277,87 +1254,87 @@
 
             <div class="row">
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative  d-none d-lg-block">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
             <div class="row mt-4">
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative  d-none d-lg-block">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -1372,87 +1349,87 @@
 
             <div class="row">
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative  d-none d-lg-block">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
             <div class="row mt-4">
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-4 relative  d-none d-lg-block">
-                    <img class="img-fluid" src="https://via.placeholder.com/300x150" alt="">
-                    <div class="bottom-left ml-2 mb-2 rounded">
+                    <img class="img-fluid" width="100%" src="https://via.placeholder.com/300x150" alt="">
+                    <!-- <div class="bottom-left ml-2 mb-2 rounded">
                         <p class="font-w text-left mt-2">Celtic</p>
                         <p class="font-14 text-left">18 Events</p>
-                    </div>
-                    <div class="top-right rounded">
+                    </div> -->
+                    <!-- <div class="top-right rounded">
                         &hearts;
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -1460,6 +1437,7 @@
 
         <div class="container">
             <div class="row">
+                <div class="col-8"></div>
                 <div class="py-1 col-4 fixed-bottom bg-theme rounded-top top-width text-center">
                    <a href="#" class="white blue"> Help Us Improve</a>
                 </div>
@@ -1470,7 +1448,7 @@
     </main>
     
     <!-- Links to other pages -->
-    <div class="container-fluid fixed-top mt-5">
+    <!-- <div class="container-fluid fixed-top mt-5">
         <div class="row text-center">
             <div class="col">
                 <a href="https://www.ticketmaster.com/" class="btn mt-5 border border-primary color-theme event-info ">1</a>
@@ -1487,22 +1465,22 @@
         </div>
     </div>
     
-    <div class="container-fluid fixed-bottom">
+     <div class="container-fluid fixed-bottom">
         <div class="row text-center">
             <div class="col">
                 <a href="page-1.html" class="btn mt-5 border border-primary color-theme event-info ">1</a>
-                <a href="#" class="btn mt-5 border border-primary color-theme event-info">2</a>
+                <a href="index.html" class="btn mt-5 border border-primary color-theme event-info">2</a>
                 <a href="page-3.html" class="btn mt-5 border border-primary color-theme event-info">3</a>
                 <a href="#" class="btn mt-5 border border-primary color-theme event-info">4</a>
-                <a href="#" class="btn mt-5 border border-primary color-theme event-info">5</a>
+                <a href="page-5.html" class="btn mt-5 border border-primary color-theme event-info">5</a>
                 <a href="#" class="btn mt-5 border border-primary color-theme event-info">6</a>
-                <a href="#" class="btn mt-5 border border-primary color-theme event-info">7</a>
+                <a href="page-7.html" class="btn mt-5 border border-primary color-theme event-info">7</a>
                 <a href="#" class="btn mt-5 border border-primary color-theme event-info">8</a>
-                <a href="#" class="btn mt-5 border border-primary color-theme event-info">9</a>
+                <a href="page-9.html" class="btn mt-5 border border-primary color-theme event-info">9</a>
                 <a href="#" class="btn mt-5 border border-primary color-theme event-info">10</a>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <footer class="text-center font-12 py-4 mt-5">
         <p>By continuing past this page, you agree to our <a href="#">Terms of Use.</a></p>
