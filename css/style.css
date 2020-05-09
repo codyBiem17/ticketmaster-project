@@ -1,0 +1,108 @@
+body{
+    background: #E5E5E5;
+    font-family: 'Roboto Slab', serif;
+    overflow: hidden;
+}
+
+.side-nav{
+    /* border: 1px solid blue; */
+    color: #ffffff;
+    background: #4A154B;
+    /* height: 625px; */
+}
+
+.chat-area{
+    /* height: 625px; */
+    /* overflow-y: auto; */
+    /* border: 1px solid red; */
+    /* color: black */
+}
+div i.arrow, .name, .side-list a{
+    color: rgb(204, 195, 195);
+}
+
+.bell{
+    color: rgba(253, 244, 244, 0.253);
+    font-size: 25px
+}
+.plus{
+    color: rgba(253, 244, 244, 0.253);
+}
+div i.arrow:hover, .name:hover, .bell:hover{
+    color: #ffffff;
+}
+
+.team{
+    font-size: 20px
+}
+
+.search-box{
+    background: rgb(103, 34, 104);
+    border: 1px solid rgb(103, 34, 104);
+    color:rgba(253, 244, 244, 0.253);
+}
+
+.buttons{
+    background: rgb(103, 34, 104);
+    border: 1px solid rgb(103, 34, 104);;
+    color:rgba(253, 244, 244, 0.253);
+    padding: 7px 9px;
+}
+
+.buttons:hover{
+    background: rgb(121, 47, 122);
+    border: 1px solid rgb(121, 47, 122);
+}
+
+.buttons-div{
+    /* margin-left: 30px */
+}
+
+a:hover{
+    text-decoration: none
+}
+
+.search{
+    background: #ffffff;
+}
+
+/* ..chat area */
+div.header{
+    /* position: -webkit-sticky; */
+    position: fixed;
+    top: 0;
+    padding: 5px;
+    /* background-color: #cae8ca; */
+    border: 2px solid rgb(83, 80, 80);
+    width: 83%;
+}
+
+.left-content:after{
+    content: '';
+    border-right: 1px solid black;
+    padding-left: 5px;
+}
+
+.body{
+    margin-top: 50px;
+    margin-left: -15px;
+    overflow-y: scroll;
+    height: 625px;
+}
+.list-group-item{
+    background: #E5E5E5;
+    border: none;
+}
+
+.list-group-item:hover{
+    width: 1120px;
+}
+
+img{
+    max-width: 40%;
+    height: auto;
+}
+
+a.name, a.name:hover{
+    color: black;
+}
