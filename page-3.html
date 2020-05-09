@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe Tickets</title>
     <link rel="stylesheet" href="assets/bootstrap.css">
-    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/fontawesome5/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="css/subscriptions.css">
     <style>
       @media screen and (max-width: 768px) {
         .bottom-left {
@@ -116,132 +116,196 @@
     </style>
 </head>
 <body>
-    <div class="row white-div">
-        <div class="col-12 hide-and-show" id="white-div-nav">
-            <nav class="navbar navbar-expand-lg row">
-                <!-- <a href="#" class="navbar-brand"> <em>t</em> </a> -->
-                <!-- <div class="row"> -->
-                <a href="#" class="col-6 white-ticket-brand"> <em>t</em> </a>
+    <div class="container-fluid">
+        <div class="row white-div">
+            <div class="col-12 hide-and-show" id="white-div-nav">
+                <nav class="navbar navbar-expand-lg row">
 
-                    <a href="#" class="col-sm-2 mb-3 white-div-input"> <em>ticketmaster</em> </a>
-                    <!-- hide and show this header on >=medium devices -->
-                    <div class="col-sm-6 col-md-7 col-lg-8 white-div-form">
-                        <form class="form-group row" action="">
-                            <div class="col-11 col-md-8 col-lg-6 col-xl-5 custom-ml">
-                                <input class="form-control search" type="text" name="" id="white-navbar-input-field"
-                                    placeholder="Find  of live experiences">
-                                <i class="fas fa-search input-search-icon"></i>
-                            </div>
-                            <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
-                                <li class="nav-item user-sell-white-nav mr-3">
-                                    <a class="nav-link" href="#">Concert</a>
-                                </li>
-                                <li class="nav-item user-sell-white-nav mr-3">
-                                    <a class="nav-link" href="#">Sports</a>
-                                </li>
-                                <li class="nav-item dropdown user-sell-white-nav">
-                                    <a class="nav-link" href="#" data-toggle="dropdown">More</a>
-                                    <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
-                                        <a class="dropdown-item" href="#">Arts & Theater</a>
-                                        <a class="dropdown-item" href="#">Family</a>
-                                        <a class="dropdown-item" href="#">VIP</a>
-                                        <a class="dropdown-item" href="#">Deals</a>
-                                        <a class="dropdown-item" href="#">Entertainment Guides</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </form>
-                    
-                    </div>
-                    <!-- hide and show this header on >=medium devices -->
-                    
-                    <div class="col-6 col-sm-3 col-lg-2  navbar-icons mt-2">
+                    <!-- first column of white nav -->
+                    <div class="col-8 col-sm-9 col-md-10 col-lg-9">
                         <div class="row">
-                            <div class="col-3 p-2 search-icon">
+                            <div class="col-12 col-lg-3 white-div-tee">
+                                <a href="#" class="white-ticket-brand"> 
+                                    <!-- <em>t</em>  -->
+                                    <img src="images/tek-tickets.png" alt="logo" width="50" height="50">
+                                </a>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-lg-5 white-div-form">
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-6 col-xl-5">
+                                            <input class="form-control search  pl-4 white" type="text" name="" id="white-navbar-input-field"
+                                                placeholder="Find millions of live experiences">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-3 large-screen-navlinks">
+                                <ul class="navbar-nav large-screen-menulinks">
+                                    <li class="nav-item user-sell-white-nav mr-3">
+                                        <a class="nav-link" href="#">Concert</a>
+                                    </li>
+                                    <li class="nav-item user-sell-white-nav mr-3">
+                                        <a class="nav-link" href="#">Sports</a>
+                                    </li>
+                                    <li class="nav-item dropdown user-sell-white-nav">
+                                        <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
+                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <a class="dropdown-item" href="#">Arts & Theater</a>
+                                            <a class="dropdown-item" href="#">Family</a>
+                                            <a class="dropdown-item" href="#">VIP</a>
+                                            <a class="dropdown-item" href="#">Deals</a>
+                                            <a class="dropdown-item" href="#">Entertainment Guides</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+
+                        </div>
+                    </div>
+
+
+                    <!-- second column of white nav -->
+                    <div class="col-3 col-md-2 mb-3 navbar-icons">
+                        <div class="row">
+                            <div class="col-4 col-md-3 search-icon">
                                 <i class="fas fa-search"></i>
                             </div>
-                            <div class="col-3 p-2 user-sell-blue-nav user-icon">
-                                <i class="far fa-user-circle"></i>
+
+                            <div class="col-4 col-md-3 col-lg-9 dropdown user-sell-white-nav user-icon">
+                                <div class="" >
+                                    <i class="far fa-user-circle" data-toggle="dropdown"></i>
+                                    <span class="username pl-4">Sell</span>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">My Account</a>
+                                    <a class="dropdown-item" href="#">My Tickets</a>
+                                    <a class="dropdown-item" href="#">My Listings</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Sell</a>
+                                    <a class="dropdown-item" href="#">Sign Out</a>
+                                </div>
                             </div>
-                            <div class="col-3 p-2 user-sell-blue-nav sell">
-                                Sell
-                            </div>
-                            <div class="col-3 p-2 user-sell-blue-nav help">
+
+                            <div class="col-lg-3 user-sell-white-nav help">
                                 Help
                             </div>
-                            <div class="col-3 p-2 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
-                                <span class="navbar-toggler-icon"></span>
+
+                            <div class="col-4 col-md-3 menu-items" type="button" data-toggle="collapse"
+                                data-target="#menu-items">
+                                <!-- <div class="row"> -->
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <!-- </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- white nav ends here -->
+
+        <!-- blue navbar -->
+        <div class="row blue-div">
+            <div class="col-12" id="blue-div-nav">
+                <nav class="navbar navbar-expand-lg row">
+
+                    <!-- first column of blue nav-->
+                    <div class="col-8 col-sm-9 col-md-10 col-lg-9 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-lg-3  blue-div-tee  mt-">
+                                <a href="#"> 
+                                    <img src="images/tek-tickets.jpg" alt="logo" width="50" height="50">
+                                    <!-- <em>ticketmaster <sup> <small id="copy">&copy;</small></sup> </em> -->
+                                 </a>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-lg-5 blue-div-form">
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-6 col-xl-5  mt-">
+                                            <input class="form-control search pl-4 white" type="text" name="" id="blue-navbar-input-field"
+                                                placeholder="Find millions of live experiences">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="">
+                                        
+                                    </div> -->
+                                </form>
+                            </div>
+
+                            <div id="expand-more" class="col-lg-3  large-screen-navlinks">
+                                <ul class="navbar-nav large-screen-menulinks">
+                                    <li class="nav-item user-sell-blue-nav mr-3">
+                                        <a class="nav-link" href="#">Concert</a>
+                                    </li>
+                                    <li class="nav-item user-sell-blue-nav mr-3">
+                                        <a class="nav-link" href="#">Sports</a>
+                                    </li>
+                                    <li class="nav-item dropdown user-sell-blue-nav">
+                                        <a class="nav-link more" href="#" data-toggle="">More</a>
+                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <a class="dropdown-item" href="#">Arts & Theater</a>
+                                            <a class="dropdown-item" href="#">Family</a>
+                                            <a class="dropdown-item" href="#">VIP</a>
+                                            <a class="dropdown-item" href="#">Deals</a>
+                                            <a class="dropdown-item" href="#">Entertainment Guides</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- hide and show this header on >=medium devices -->
+                    </div>
+
+                    <!-- second column of blue nav-->
+                    <div class="col-3 col-md-2 mb-3 navbar-icons">
+                        <div class="row">
+                            <div class="col-4 col-md-3 search-icon blue-nav-right-content">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <div class="col-4 col-md-3 col-lg-9 dropdown user-sell-blue-nav user-icon blue-nav-right-content">
+                                <div class="" >
+                                    <i class="far fa-user-circle" data-toggle="dropdown"></i>
+                                    <span class="username pl-4">Sell</span>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">My Account</a>
+                                    <a class="dropdown-item" href="#">My Tickets</a>
+                                    <a class="dropdown-item" href="#">My Listings</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Sell</a>
+                                    <a class="dropdown-item" href="#">Sign Out</a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 user-sell-blue-nav help blue-nav-right-content">
+                                Help
+                            </div>
+
+                            <div class="col-4 col-md-3 menu-items blue-nav-right-content" type="button"
+                                data-toggle="collapse" data-target="#menu-items">
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
                             </div>
                         </div>
                     </div>
-                <!-- hide and show this header on >=medium devices -->            
-            </nav>
-        </div>
-    </div>
+                </nav>
+            </div>
 
-    <div class="row blue-div">
-        <div class="col-12" id="blue-div-nav">
-            <nav class="navbar navbar-expand-lg row">
-                <a href="#" class="col-7 col-sm-2 mb-3"> <em>ticketmaster</em> </a>
-                
-                <!-- hide and show this header on >=medium devices -->
-                <div class="col-sm-6 col-md-7 col-lg-8 blue-div-form">
-                    <form class="form-group row" action="">
-                        <div class="col-11 col-md-8 col-lg-6 col-xl-5 mt-2 custom-ml">
-                            <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
-                                placeholder="Find  of live experiences">
-                            <i class="fas fa-search input-search-icon"></i>
-                        </div>
-                        <ul class="col-lg-6 col-xl-5 navbar-nav large-screen-menulinks">
-                            <li class="nav-item user-sell-blue-nav mr-3">
-                                <a class="nav-link" href="#">Concert</a>
-                            </li>
-                            <li class="nav-item user-sell-blue-nav mr-3">
-                                <a class="nav-link" href="#">Sports</a>
-                            </li>
-                            <!-- <li class="nav-item user-sell-blue-nav d-xl-inliine-block">
-                                <a class="nav-link" href="#">Arts & Theater</a>
-                            </li> -->
-                            <li class="nav-item dropdown user-sell-blue-nav">
-                                <a class="nav-link" href="#" data-toggle="dropdown">More</a>
-                                <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
-                                    <a class="dropdown-item black" href="#">Arts & Theater</a>
-                                    <a class="dropdown-item black" href="#">Family</a>
-                                    <a class="dropdown-item black" href="#">VIP</a>
-                                    <a class="dropdown-item black" href="#">Deals</a>
-                                    <a class="dropdown-item black" href="#">Entertainment Guides</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </form>
-                    
-                </div>
-                <!-- hide and show this header on >=medium devices -->
-                
-                <div class="col-5 col-sm-3 col-lg-2 mb-3 navbar-icons mt-2">
-                    <div class="row">
-                        <div class="col-3 p-2 search-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="col-3 p-2 user-sell-blue-nav user-icon">
-                            <i class="far fa-user-circle"></i>
-                        </div>
-                        <div class="col-3 p-2 user-sell-blue-nav sell">
-                            Sell
-                        </div>
-                        <div class="col-3 p-2 user-sell-blue-nav help">
-                            Help
-                        </div>
-                        <div class="col-3 p-2 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
-                            <span class="navbar-toggler-icon"></span>
-                        </div>
-                    </div>
-                </div> 
-            
-            </nav>
         </div>
-       
-    </div>
 
     <div class="container-fluid bg-theme pb-3 px- padd">
         <div class="row">
@@ -287,8 +351,12 @@
             <div class="col-lg-8 col-md-12 ">
                 <div class="row">
                     <div class="col-3 d-none d-lg-block">
-                        <a href="#" class="btn border border-primary bg-primary event-info size ">A</a>
-                        <a href="#" class="btn border border-primary color-theme event-info ml-n2 size">B</a>
+                        <a href="#" class="btn border border-primary bg-primary size white">
+                            <i class="fa fa-list"></i>
+                        </a>
+                        <a href="#" class="btn border border-primary color-theme event-info ml-n2 size">
+                            <i class="fa fa-calendar"></i>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-5 text-left">
                         <div class="dropdown">
@@ -832,7 +900,7 @@
                 <a href="https://my.ticketmaster.com/settings/subscriptions" class="btn mt-5 border border-primary color-theme event-info">10</a>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <footer class="text-center font-12 py-4 mt-5">
         <p>By continuing past this page, you agree to our <br class="d-sm-none"><br class="d-sm-none"><a href="#">Terms of Use.</a></p>
@@ -841,7 +909,6 @@
     </footer>
     <script src="assets/jquery-3.4.1.min.js"></script>
     <script src="assets/bootstrap.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.js"></script> -->
     <script src="js/custom.js"></script>
 </body>
 </html>
