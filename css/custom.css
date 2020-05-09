@@ -39,13 +39,21 @@ a.slide-captions,
   /* border: 1px solid red; */
 }
 
+.blue-div-tee{
+  position: relative;
+  top: -8px;
+  left: -16px;
+}
+
 .white-div-tee {
-  margin: 0px -2px; 
+  position: relative;
+  top: -3px;
+  left: -30px; 
 }
 
 .white-div-tee a img{
-  border: 1px solid rgb(1, 56, 172);
-   position: relative;
+  border: 1px solid #dfa24c;
+  position: relative;
   top: -5px;
 }
 
@@ -72,11 +80,8 @@ a.white-ticket-brand em {
 .blue-div {
   color: white;
   font-size: 20px;
-  background: rgb(1, 56, 172);
-  background: linear-gradient(
-    90deg,rgba(1, 56, 172, 1) 0%,rgba(16, 106, 215, 1) 56%,
-    rgba(1, 52, 165, 1) 100%
-  );
+background: rgb(55,47,201);
+background: linear-gradient(90deg, rgba(55,47,201,1) 4%, rgba(30,56,224,0.7819502801120448) 53%, rgba(55,53,230,1) 97%);
 }
 
 .blue-div-nav {
@@ -270,7 +275,7 @@ select.concert-event-forms:hover,
   left: 25px;
 }
 
-.arts{
+.arts, .family{
   display: none;
 }
 
@@ -413,17 +418,17 @@ select.concert-event-forms:hover,
   .white-div-form {
     margin-top: 15px;
     position: relative;
-    left: -65px;
+    left: -70px;
   }
 
   .white-div-tee {
     /* border: 1px solid red; */
-    margin: 0;
+    /* margin: -3px -30px; */
   }
 
   /* for white div */
   .white-ticket-brand {
-    display: none;
+    /* display: none; */
   }
 
   /* for blue div */
@@ -445,17 +450,15 @@ select.concert-event-forms:hover,
     padding: 15px;
   }
 
-  main {
-    /* position: relative; */
-    /* top: 20px; */
+  .white-img-scroll{
+    position: relative;
+    /* left: -28px; */
   }
 }
 
 /* media queries for large devices */
 @media only screen and (min-width: 992px) {
-   .search-icon,
-  .white-ticket-brand,
-  .menu-items, .carousel, #hide-div {
+   .search-icon, .menu-items, .carousel, #hide-div {
     display: none;
   }
 
@@ -496,7 +499,9 @@ select.concert-event-forms:hover,
   }
 
   .white-div-tee {
-    padding-top: 20px;
+    position: relative;
+    left: -30px;
+    /* padding-top: 20px; */
   }
 
   .blue-div-form {
@@ -507,7 +512,7 @@ select.concert-event-forms:hover,
   .white-div-form {
     position: relative;
     top: 5px;
-    left: -75px;
+    left: -85px;
   }
 
   #white-div-nav .navbar-icons {
@@ -617,9 +622,14 @@ select.concert-event-forms:hover,
     top: 35px;
   }
 
-   .blue-div-form, .white-div-form {
+   .blue-div-form {
     position: relative;
     left: -115px;
+  }
+
+  .white-div-form {
+    position: relative;
+    left: -127px;
   }
 
   #blue-div-nav .large-screen-menulinks, 
@@ -628,7 +638,7 @@ select.concert-event-forms:hover,
     left: -240px;
   }
 
-  .arts{
+  .arts, .family{
     display: block;
   }
 
@@ -641,7 +651,7 @@ select.concert-event-forms:hover,
 
 .white-img-scroll{
   position: relative;
-  left: -15px;
+  /* left: -15px; */
 }
 
 

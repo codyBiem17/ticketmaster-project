@@ -1,8 +1,9 @@
 .bg-theme {
     /* background-color: #0165D4; */
     color: white;
-    background: rgb(1,56,172);
-    background: linear-gradient(90deg, rgba(1,56,172,1) 0%, rgba(16,106,215,1) 56%, rgba(1,52,165,1) 100%);
+    background: rgb(55,47,201);
+    background: linear-gradient(90deg, rgba(55,47,201,1) 4%,
+    rgba(30,56,224,0.7819502801120448) 53%, rgba(55,53,230,1) 97%);
 }
 
 .small-color {
@@ -21,13 +22,19 @@
     color: gray;
 }
 
+.header-search-options{
+    text-align: center;
+}
 
-.options a {
+.header-search-options a {
+    width: 200px;
     color: white;
-    border: white 1px solid;
+    border: 1px solid white;
     padding: 10px;
     margin-top: 40px;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: bolder;
 }
 
 .font-w {
@@ -38,7 +45,7 @@
     font-weight: lighter;
 }
 
-.options a:hover {
+.header-search-options a:hover {
     opacity: 0.5;
     color: white;
 }
@@ -235,7 +242,7 @@ body {
     color: #0165D4;
 }
 
-footer {
+/* footer {
     background-color: #1F262D;
     color: #9DB4B6;
     line-height: 7px;
@@ -248,7 +255,7 @@ footer a {
 footer a:hover {
     color: white;
     text-decoration: none;
-}
+} */
 
 .relative {
     position: relative;
@@ -300,6 +307,22 @@ footer a:hover {
     display: none;
 }
 
+.experience-block {
+    /* display: block; */
+    text-align: justify;
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.experience-block div.bg-theme{
+    padding: 20px;
+}
+
+.sign-width {
+    width: 100px;
+}
+
 @media screen and (max-width: 767px) {
     .less-md {
       display: block;
@@ -307,22 +330,18 @@ footer a:hover {
   }
 
   @media screen and (max-width: 767px) {
-    .less-md-block {
-      display: block;
-    }
-    .experience-block {
-        display: block;
-        text-align: left;
-    }
-
-    .sign-width {
-        width: 100px;
-    }
+   #all-concerts{
+       display: none;
+   }
   }
 
-  @media screen and (min-width: 767px) {
-    .less-md-block {
+  @media screen and (min-width: 768px) {
+    #see-all {
       display: none;
+    }
+
+    .celtic-events > :nth-child(2){
+        display: none;
     }
   }
 
@@ -391,26 +410,234 @@ footer a:hover {
 }
 
 .carousel-indicators li {
+    background: rgb(191, 191, 191);
     width: 10px;
     height: 10px;
     border-radius: 100%;
+    border-bottom: 0;
+    border-top: 0;
 }
 
 .carousel-indicators .active{
     background: rgb(2, 108, 223);
 }
-.carousel-indicators li{
-    background: rgb(191, 191, 191);
+
+/* new styles start below */
+
+ #white-div-nav .menu-items {
+    margin: 8px 0px;
+    /* padding: 0 2px; */
 }
 
-/* .navbar-light .navbar-toggler {
+#white-div-nav .toggler-icon {
+    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
+    width: 18px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 3px;
+    /* border: 1px solid red; */
+}
 
-    border-color: rgba(255, 255,255, 1);
+#blue-div-nav .menu-items {
+    margin: 8px 0px;
+    /* border: 1px solid red; */
+    /* padding: 0 2px; */
 
-} */
-#white-div-nav .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(38, 38, 38)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-} 
-#blue-div-nav .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-} 
+}
+
+#blue-div-nav .toggler-icon {
+    width: 18px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 3px;
+}
+
+.header-search-field{
+    margin-top: -5px;
+    text-align: center;
+}
+
+.container-fluid.announcement-div{
+    margin: 20px 0;
+    text-align: justify;
+    padding: 0px 30px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.announcement-div > div.row:not(:first-child){
+    border: 1px solid rgb(235, 235, 235);
+    padding: 20px 3px;
+    /* margin-bottom: -25px; */
+
+}
+.announcement-div > div.row:nth-of-type(2){
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.presale{
+    background-color: #dfa24c;
+    padding: 3px 8px;
+    /* width: fit-content; */
+    font-size: 10px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 2px;
+}
+
+.inner-text-style{
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.discover-events{
+    text-align: justify;
+    font-weight: 600;
+}
+
+.discover-events a.btn{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.discover-events a.theater{
+    position: relative;
+    top: -37px;
+    left: 182px;
+}
+
+.less-md-block{
+    /* text-align: justify; */
+    font-weight: 600;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.less-md-block #popular{
+    font-size: 24px;
+}
+
+.less-md-block .popular-events{
+    font-size: 20px;
+}
+
+.celtic-events{
+    /* content: ""; */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dfe4e7;
+    width: 95%;
+    margin: 0 -5px;
+}
+
+.hearts{
+    position: relative;
+    left: -40px;
+}
+
+.white-div-tee{
+    /* position: relative;
+    top: -3px;
+    left: -30px; */
+}
+
+#logo{
+    /* position: relative;
+    top: -8px;
+    left: -16px; */
+}
+
+@media only screen and (min-width: 375px) and (max-width: 599px){
+    .discover-events a.theater{
+    position: relative;
+    top: 0px;
+    left: 2px;
+}
+}
+
+@media only screen and (max-width: 767px){
+    .expand-at-medium, .expand-at-large, .questlove, .discover-events a.family{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .expand-at-large{
+        display: none;
+    }
+
+    ul.large-screen-menulinks{
+        /* display: flex; */
+    }
+
+    .unforgettable{
+        /* margin-top: -15px;
+        margin-bottom: -15px; */
+        position: relative;
+        top: -20px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .discover-events{
+        text-align: center;
+    }
+
+    .discover-events a.btn{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .discover-events a.theater{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .family.btn{
+        display: inline-block;
+    }
+
+    .less-md-block {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .celtic-events{
+        /* content: ""; */
+        padding-bottom: 0px;
+        border-bottom: none;
+    }
+    
+    .hearts{
+        position: relative;
+        top: -70px;
+        left: 100px;
+        font-size: 25px;
+    }
+
+    .presale{
+        /* width: 50%; */
+    }
+
+    .announced-events > div:nth-child(2){
+       position: relative;
+       left: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    #white-div-nav ul.large-screen-menulinks{
+        /* display: none; */
+    }
+
+    .discover-events a.btn{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+}
