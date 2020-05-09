@@ -10,6 +10,10 @@
     color: #9C68BF;
 }
 
+i.color-theme{
+    color: #dfa24c;
+}
+
 .color-theme {
     color: #0165D4;
 }
@@ -141,11 +145,11 @@ input[type='radio'] {
     margin-left: 3px;
 }
 
-.font-27 {
+.font-24 {
     font-size: 24px;
 }
 .font-18 {
-    font-size: 17px;
+    font-size: 18px;
 }
 .font-15 {
     font-size: 15px;
@@ -223,10 +227,6 @@ a img {
     color: white;
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 .nav-link:hover {
     background-color: #1148AC;
     color: white;
@@ -241,14 +241,12 @@ body {
     background-color: #D6E7FA;
     color: #0165D4;
 }
+/* 
+footer {
+    margin-top: 20px;
+} */
 
-/* footer {
-    background-color: #1F262D;
-    color: #9DB4B6;
-    line-height: 7px;
-}
-
-footer a {
+/* footer a {
     color: white;
 }
 
@@ -538,16 +536,14 @@ img{
     left: -40px;
 }
 
-.white-div-tee{
-    /* position: relative;
-    top: -3px;
-    left: -30px; */
+.card-divs{
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 4px 0px, rgba(0, 0, 0, 0.12) 0px 0px 4px 0px;
 }
 
-#logo{
-    /* position: relative;
-    top: -8px;
-    left: -16px; */
+div.account-overview{
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 599px){

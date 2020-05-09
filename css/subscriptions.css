@@ -39,17 +39,20 @@ a.slide-captions,
   /* border: 1px solid red; */
 }
 
-.white-div-tee {
-  /* border: 1px solid red; */
-  /* margin: -20px 0px 5px 0px; */
+.blue-div-tee{
+  position: relative;
+  top: -8px;
+  left: -16px;
 }
 
 .white-div-tee {
-  margin: 0px -2px; 
+  position: relative;
+  top: -8px;
+  left: -32px; 
 }
 
 .white-div-tee a img{
-  border: 1px solid rgb(1, 56, 172);
+  border: 1px solid #dfa24c;
   position: relative;
   top: -5px;
 }
@@ -77,11 +80,9 @@ a.white-ticket-brand em {
 .blue-div {
   color: white;
   font-size: 20px;
-  background: rgb(1, 56, 172);
-  background: linear-gradient(
-    90deg,rgba(1, 56, 172, 1) 0%,rgba(16, 106, 215, 1) 56%,
-    rgba(1, 52, 165, 1) 100%
-  );
+  background: rgb(55,47,201);
+  background: linear-gradient(90deg, rgba(55,47,201,1) 4%,
+  rgba(30,56,224,0.7819502801120448) 53%, rgba(55,53,230,1) 97%);
 }
 
 .blue-div-nav {
@@ -221,8 +222,8 @@ select.concert-event-forms:hover,
 
 .white-div-form{
   position: relative;
-  left: 40px;
-  bottom: 15px;
+  left: -130px;
+  /* bottom: 15px; */
 }
 
 .white-div-form i.input-search-icon {
@@ -474,10 +475,6 @@ span.username{
     margin-bottom: 3px;
 }
 
-.white-div-tee{
-   position: relative;
-   /* left: 5px; */
-}
 
 #white-div-nav .navbar-icons{
     /* position: relative; */
@@ -494,13 +491,6 @@ span.username{
 
 #blue-div-nav{
     height: 60px;
-}
-
-.blue-div-tee, .white-div-tee{
-    margin: -7px 0;
-    /* border: 1px solid red; */
-    /* position: relative; */
-    /* left: -10px !important; */
 }
 
 #blue-div-nav .navbar-icons{
@@ -797,14 +787,14 @@ ul li p.nested-alerts{
 }
 
 #favorite{
-    color: #9d62c2;
+    color: #dfa24c;
     font-weight: 500;
     text-transform: uppercase;
     font-size: 12px;
 }
 
 .heart-shape-div hr{
-    border: 1px solid #9d62c2;
+    border: 1px solid #dfa24c;
     margin-top: -5px;
     margin-bottom: -5px;
 }
@@ -848,21 +838,14 @@ footer div#privacy{
 
   #blue-div-nav .navbar-icons{
     position: relative;
-    right: 20px;
+    right: 17px;
     /* border: 1px solid red; */
     /* width: 200px; */
   }
 
   #white-div-nav .navbar-icons {
     position: relative;
-    right:20px;
-    /* border: 1px solid red; */
-    /* width: 200px; */
-  }
-
-  .navbar-icons-scroll{
-    position: relative;
-    left: -7px;
+    right:5px;
   }
 
   #blue-div-nav .menu-items, #white-div-nav .menu-items{
@@ -965,7 +948,7 @@ footer div#privacy{
   } 
   
   .white-div-form {
-    margin-top: 15px;
+    /* margin-top: 15px; */
   }
 
   .white-div-tee{
@@ -1063,13 +1046,9 @@ footer div#privacy{
     display: none;
   }
 
-  .white-div-tee {
-    /* padding-top: 20px; */
-  }
-
   .white-div-form {
     position: relative;
-    top: 5px;
+    /* top: 5px; */
     /* left: -10px; */
   }
 
@@ -1080,7 +1059,7 @@ footer div#privacy{
   }
 
   #white-div-nav .large-screen-menulinks{
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
 
   div.advert-section{
@@ -1172,7 +1151,7 @@ footer div#privacy{
         left: -5px;
     }
 
-    .navbar-icons-scroll{
+     #white-div-nav .navbar-icons {
       position: relative;
       left: 15px;
     }
@@ -1186,12 +1165,6 @@ footer div#privacy{
     .search-icon, .white-ticket-brand{
         display: inline-block;
     }
-
-    .white-div-tee {
-       position: relative;
-       /* left: 20px; */
-    }
-
 
     #white-div-nav .navbar-icons{
         position: relative;
@@ -1273,12 +1246,12 @@ footer div#privacy{
 
     .white-div-form {
         position: relative;
-        left: -120px;
-        bottom: 5px;
+        /* left: -120px;
+        bottom: 5px; */
     }
 
     #white-div-nav .large-screen-menulinks{
-       margin-left: -90px;
+       margin-left: -100px;
     }
 
     #white-div-nav .navbar-icons {
@@ -1320,16 +1293,6 @@ footer div#privacy{
 
 }
 @media only screen and (min-width: 1200px){
-    /* .blue-div-tee{
-        position: relative;
-        left: 20px
-    }
-
-    .white-div-tee{
-        position: relative;
-        left: 40px  
-    } */
-
     .blue-div-form{
         position: relative;
         left: -160px
@@ -1337,7 +1300,7 @@ footer div#privacy{
 
     .white-div-form{
         position: relative;
-        left: -160px
+        left: -170px
         /* border: 1px solid red; */
     }
 
@@ -1373,16 +1336,6 @@ footer div#privacy{
 }
 
 @media only screen and (min-width: 1440px){
-    /* .blue-div-tee{
-        position: relative;
-        left: 30px
-    }
-
-    .white-div-tee{
-        position: relative;
-        left: 55px  
-    } */
-
     .blue-div-form{
         position: relative;
         left: -210px
@@ -1390,7 +1343,7 @@ footer div#privacy{
 
     .white-div-form{
         position: relative;
-        left: -210px
+        left: -220px
     }
 
     #white-navbar-input-field, #blue-navbar-input-field {
@@ -1432,9 +1385,9 @@ footer div#privacy{
     }
 
     #white-div-nav li.nav-item .dropdown-menu, #blue-div-nav li.nav-item .dropdown-menu{
-        position: absolute;
-        display: flex;
-        flex-direction: row;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
     }
 
     .large-screen-navlinks .dropdown .dropdown-menu {
@@ -1456,7 +1409,3 @@ footer div#privacy{
     
 }
 
-.white-img-scroll{
-  position: relative;
-  left: -15px;
-}
