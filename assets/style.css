@@ -224,7 +224,7 @@ a img {
 }
 
 .white {
-    color: white;
+    color: white!important;
 }
 
 .nav-link:hover {

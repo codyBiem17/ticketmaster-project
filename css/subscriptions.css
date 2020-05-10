@@ -420,6 +420,12 @@ span.username{
   font-weight: 800;
 }
 
+.help{
+  position: relative;
+  left: 5px;
+  font-weight: 800;
+}
+
 .dropdown:hover .dropdown-menu{
   display: none;
 }
@@ -435,7 +441,7 @@ span.username{
 
 .dropdown-menu a:hover{
   background: #026ce5; 
-  color: white;
+  color: white!important; 
 }
 
 /* added new css from above here */
