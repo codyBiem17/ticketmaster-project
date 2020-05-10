@@ -34,40 +34,6 @@
         .carousel-indicators li{
             background: rgb(191, 191, 191);
         }
-/* 
-        #white-div-nav .navbar-toggler-icon {
-
-            border-color: rgba(0, 0,0);
-
-        } */
-            
-        #white-div-nav .menu-items {
-            margin: 8px 0px;
-            /* padding: 0 2px; */
-        }
-
-        #white-div-nav .toggler-icon {
-            /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
-            width: 18px;
-            height: 3px;
-            background-color: black;
-            margin-bottom: 3px;
-            /* border: 1px solid red; */
-        }
-
-        #blue-div-nav .menu-items {
-            margin: 8px 0px;
-            /* border: 1px solid red; */
-            /* padding: 0 2px; */
-
-        }
-
-        #blue-div-nav .toggler-icon {
-            width: 18px;
-            height: 3px;
-            background-color: white;
-            margin-bottom: 3px;
-        }
 
         .dropdown-menu{
             width: 200px;
@@ -112,10 +78,21 @@
                                         <a class="nav-link" href="#">Sports</a>
                                     </li>
                                     <li class="nav-item arts user-sell-white-nav mr-3">
-                                        <a class="nav-link" href="#">Arts & Theater</a>
+                                        <a class="nav-link" href="#">Arts</a>
                                     </li>
-                                    <li class="nav-item user-sell-white-nav">
-                                        <a class="nav-link" href="#">More</a>
+                                    <li class="nav-item family user-sell-white-nav mr-3">
+                                        <a class="nav-link" href="#">Family</a>
+                                    </li>
+                                    <li class="nav-item dropdown user-sell-white-nav">
+                                        <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <a class="dropdown-item arts-dropdown" href="#">Arts & Theater</a>
+                                            <a class="dropdown-item family-dropdown" href="#">Family</a>
+                                            <a class="dropdown-item" href="#">VIP</a>
+                                            <a class="dropdown-item" href="#">Deals</a>
+                                            <a class="dropdown-item" href="#">Entertainment Guides</a>
+                                            <!-- <a class="dropdown-item" href="#">For You</a> -->
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -132,8 +109,18 @@
                             <div class="col-3 search-icon">
                                 <i class="fas fa-search"></i>
                             </div>
-                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 user-sell-white-nav user-icon">
-                                <i class="far fa-user-circle"></i>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown user-sell-white-nav user-icon">
+                                    <div class="" data-toggle="dropdown">
+                                        <i class="far fa-user-circle"></i>
+                                    </div>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">My Account</a>
+                                        <a class="dropdown-item" href="#">My Tickets</a>
+                                        <a class="dropdown-item" href="#">My Listings</a>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                        <a class="dropdown-item" href="#">Sell</a>
+                                        <a class="dropdown-item" href="#">Sign Out</a>
+                                    </div>
                             </div>
                             <div class="col-3 col-md-3 col-lg-4 col-xl-3 user-sell-white-nav sell">
                                 <span>Sell</span> 
@@ -166,9 +153,6 @@
                             <div class="col-12 col-md-3 col-lg-2 blue-div-tee">
                                 <a href="#">
                                     <img src="images/tek-tickets.jpg" alt="logo" width="50" height="50">
-                                    <!-- <em>ticketmaster  -->
-                                    <!-- <sup> <small id="copy">&copy;</small> -->
-                                    <!-- </sup> </em>  -->
                                 </a>
                             </div>
 
@@ -194,18 +178,21 @@
                                         <a class="nav-link" href="#">Sports</a>
                                     </li>
                                     <li class="nav-item arts user-sell-blue-nav mr-3">
-                                        <a class="nav-link" href="#">Arts & Theater</a>
+                                        <a class="nav-link" href="#">Arts</a>
+                                    </li>
+                                    <li class="nav-item family user-sell-blue-nav mr-3">
+                                        <a class="nav-link" href="#">Family</a>
                                     </li>
                                     <li class="nav-item dropdown user-sell-blue-nav">
                                         <a class="nav-link" href="#" data-toggle="dropdown">More</a>
-                                        <!-- <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
-                                            <a class="dropdown-item" href="#">Arts & Theater</a>
-                                            <a class="dropdown-item" href="#">Family</a>
+                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <a class="dropdown-item arts-dropdown" href="#">Arts & Theater</a>
+                                            <a class="dropdown-item family-dropdown" href="#">Family</a>
                                             <a class="dropdown-item" href="#">VIP</a>
                                             <a class="dropdown-item" href="#">Deals</a>
                                             <a class="dropdown-item" href="#">Entertainment Guides</a>
-                                            <a class="dropdown-item" href="#">For You</a>
-                                        </div> -->
+                                            <!-- <a class="dropdown-item" href="#">For You</a> -->
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -219,8 +206,18 @@
                             <div class="col-3 search-icon blue-nav-right-content">
                                 <i class="fas fa-search"></i>
                             </div>
-                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 user-sell-blue-nav user-icon blue-nav-right-content">
-                                <i class="far fa-user-circle"></i>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown user-sell-blue-nav user-icon blue-nav-right-content">
+                                <div class="" data-toggle="dropdown">
+                                    <i class="far fa-user-circle"></i>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">My Account</a>
+                                    <a class="dropdown-item" href="#">My Tickets</a>
+                                    <a class="dropdown-item" href="#">My Listings</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Sell</a>
+                                    <a class="dropdown-item" href="#">Sign Out</a>
+                                </div>
                             </div>
                             <div class="col-3 col-md-3 col-lg-4 col-xl-3 user-sell-blue-nav sell blue-nav-right-content">
                                 <span>Sell</span> 
@@ -387,61 +384,63 @@
                 </div>
             </div>
             <div class="row category-form-fields">
-                <form class="col-11 col-lg-10">
-                    <div class="form-group row">
-                        <select class="col-12 col-md-3 mb-2 mr-2 form-control concert-event-forms" id="genre">
-                            <option hidden>Select Your Genre</option>
-                            <option>All Genres</option>
-                            <option>Alternative</option>
-                            <option>Ballads/Romantic</option>
-                            <option>Blues</option>
-                            <option>Chanson Francaise</option>
-                            <option>Children's Music</option>
-                            <option>Classical</option>
-                            <option>Folk</option>
-                        </select>
-
-                        <select class="col-12 col-md-3 mb-2 mr-2 form-control concert-event-forms" id="distance">
-                            <option hidden>Select Your Dates</option>
-                            <option>All Dates</option>
-                            <option>This Weekend</option>
-                            <option>Date Range</option>
-                        </select>
-
-                        <select class="col-12 col-md-3 mb-2 concert-event-forms form-control" id="distance">
-                            <option hidden>Select Your Distance</option>
-                            <option>10 mi</option>
-                            <option>25 mi</option>
-                            <option>50 mi</option>
-                            <option>75 mi</option>
-                            <option>100 mi</option>
-                        </select>
-                    </div>
+                <div class="col-12 col-lg-10">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-12 col-md-3 mb-2 mr-2">
+                                <select class="form-control concert-event-forms" id="genre">
+                                    <option hidden>Select Your Genre</option>
+                                    <option>All Genres</option>
+                                    <option>Alternative</option>
+                                    <option>Ballads/Romantic</option>
+                                    <option>Blues</option>
+                                    <option>Chanson Francaise</option>
+                                    <option>Children's Music</option>
+                                    <option>Classical</option>
+                                    <option>Folk</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-12 col-md-3 mb-2 mr-2">
+                                <select class="form-control concert-event-forms" id="distance">
+                                    <option hidden>Select Your Dates</option>
+                                    <option>All Dates</option>
+                                    <option>This Weekend</option>
+                                    <option>Date Range</option>
+                                </select>
+                            </div>
                     
-                    <div class="form-group row">
-                        <div class="col-3 col-md-3 mb-2 "></div>
-                        <div class="col-3 col-md-3 mb-2 "></div>
-                        <div class="col-md-3 mb-2" id="hide-div"></div>
-                        <select class="col-6 col-md-3 mb-2 concert-event-forms form-control" id="sort-date">
-                            <option hidden>Sort By: Date</option>
-                            <option>Most Popular</option>
-                            <option>Date</option>
-                            <option>Distance</option>
-                            <option>Name A-Z</option>
-                            <option>Name Z-A</option>
-                        </select>
-                    </div>
-                    <!-- <div class="form-group row ">
-                        
-                    </div> -->
-                    <!-- <div class="form-group row ">
-                        
-                    </div>
-                    <div class="form-group row concert-event-forms">
-                        <div class="col-7"></div>
-                        
-                    </div> -->
-                </form>
+                            <div class="col-12 col-md-3 mb-2 ">
+                                <select class="concert-event-forms form-control" id="distance">
+                                    <option hidden>Select Your Distance</option>
+                                    <option>10 mi</option>
+                                    <option>25 mi</option>
+                                    <option>50 mi</option>
+                                    <option>75 mi</option>
+                                    <option>100 mi</option>
+                                </select>
+                            </div>
+                        </div>
+                    
+                        <div class="form-row">
+                            <div class="col-3 col-md-3 mb-2 "></div>
+                            <div class="col-3 col-md-3 mb-2 "></div>
+                            <div class="col-md-3 mb-2" id="hide-div"></div>
+                            <div class="form-group col-12 col-md-3 mb-2">
+                                <select class=" concert-event-forms form-control" id="sort-date">
+                                    <option hidden>Sort By: Date</option>
+                                    <option>Most Popular</option>
+                                    <option>Date</option>
+                                    <option>Distance</option>
+                                    <option>Name A-Z</option>
+                                    <option>Name Z-A</option>
+                                </select>
+                            </div> 
+                        </div>
+                    
+                    </form>
+                </div>
+                
             </div>
 
             <div class="row mx-auto">
@@ -454,23 +453,23 @@
             </div>
         </main>
 
-        <footer class="footer mt-5 py-4">
+        <footer class="footer py-4">
             <div class="row">
                 <div class="col-12 ">
                     By continuing past this page, you agree to our <span class="terms-policy"> Terms of Use. <br>
-                
+            
                         Privacy Policy</span> | © 1999-2020 Ticketmaster. All rights reserved. <br>
-                
+            
                     <span class="terms-policy">Do Not Sell My Information</span>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-12">
                     <div class="text-right fixed-bottom">
                         <button type="button" class="btn btn-primary">Help Us Improve</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </footer>
     </div>
     

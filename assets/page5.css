@@ -224,12 +224,12 @@ a img {
 }
 
 .white {
-    color: white!important;
+    color: white;
 }
 
 .nav-link:hover {
-    /* background-color: #1148AC;
-    color: white; */
+    background-color: #1148AC;
+    color: white;
 }
 
 .reverse-theme {
@@ -325,7 +325,9 @@ footer a:hover {
     .less-md {
       display: block;
     }
+}
 
+@media screen and (max-width: 767px) {
     #all-concerts{
         display: none;
     }
@@ -397,30 +399,6 @@ footer a:hover {
 }
 
   /* Maryam styles */
-  
-.container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.carousel-indicators li {
-    background: rgb(191, 191, 191);
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    border-bottom: 0;
-    border-top: 0;
-}
-
-.carousel-indicators .active{
-    background: rgb(2, 108, 223);
-}
-
-.dropdown-menu{
-    width: 200px;
-}
 
 /* new styles start below */
 
@@ -529,7 +507,7 @@ div.account-overview{
 }
 
 @media only screen and (max-width: 767px){
-    .expand-at-medium, .expand-at-large, .questlove, .family.btn{
+    .expand-at-medium, .expand-at-large, .questlove, .discover-events a.family{
         display: none;
     }
 }
@@ -537,6 +515,10 @@ div.account-overview{
 @media only screen and (min-width: 768px){
     .expand-at-large{
         display: none;
+    }
+
+    ul.large-screen-menulinks{
+        /* display: flex; */
     }
 
     .unforgettable{
@@ -568,7 +550,7 @@ div.account-overview{
     }
 
     .less-md-block {
-        margin-left: 20px;
+        margin-left: 30px;
         margin-right: 30px;
     }
 
@@ -577,28 +559,21 @@ div.account-overview{
         padding-bottom: 0px;
         border-bottom: none;
     }
-
-    .celtic-events img{
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-    }
     
     .hearts{
         position: relative;
         top: -70px;
-        left: 120px;
+        left: 100px;
         font-size: 25px;
+    }
+
+    .presale{
+        /* width: 50%; */
     }
 
     .announced-events > div:nth-child(2){
        position: relative;
        left: 50px;
-    }
-
-    footer.footer{
-        text-align: center;
-        margin-top: 100px;
     }
 
 }
@@ -613,40 +588,4 @@ div.account-overview{
         margin-right: 25px;
     }
 
-    .less-md-block {
-        margin-left: 25px;
-        margin-right: 30px;
-    }
-
-    .hearts{
-        position: relative;
-        top: -100px;
-        left: 180px;
-    }
-
-}
-
-@media only screen and (min-width: 1200px){
-    .discover-events a.btn{
-        margin-left: 35px;
-        margin-right: 35px;
-    }
-
-    .less-md-block {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .hearts{
-        position: absolute;
-        top: 30px;
-        left: 250px;
-    }
-}
-
-@media only screen and (min-width: 1200px){
-    .hearts{
-        position: absolute;
-        left: 320px;
-    }
 }
