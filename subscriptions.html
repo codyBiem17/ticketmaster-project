@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriptions</title>
+
+    <!-- <link rel="stylesheet" href="css/sub-style2.css"> -->
+    <link rel="stylesheet" href="css/subscriptions.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
+
+    <style>
+        .container-fluid {
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row white-div">
+            <div class="col-12 hide-and-show" id="white-div-nav">
+                <nav class="navbar navbar-expand-lg row">
+
+                    <!-- first column of white nav -->
+                    <div class="col-8 col-sm-9 col-md-10 col-lg-9">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 white-div-tee">
+                                <a href="#" class="white-ticket-brand"> 
+                                    <!-- <em>t</em>  -->
+                                    <img src="images/tek-tickets.png" alt="logo" width="50" height="50">
+                                </a>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-lg-5 white-div-form">
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-6 col-xl-5">
+                                            <input class="form-control search" type="text" name="" id="white-navbar-input-field"
+                                                placeholder="Find millions of live experiences">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-3 large-screen-navlinks">
+                                <ul class="navbar-nav large-screen-menulinks">
+                                    <li class="nav-item user-sell-white-nav mr-3">
+                                        <a class="nav-link" href="#">Concert</a>
+                                    </li>
+                                    <li class="nav-item user-sell-white-nav mr-3">
+                                        <a class="nav-link" href="#">Sports</a>
+                                    </li>
+                                    <li class="nav-item dropdown user-sell-white-nav">
+                                        <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
+                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <a class="dropdown-item" href="#">Arts & Theater</a>
+                                            <a class="dropdown-item" href="#">Family</a>
+                                            <a class="dropdown-item" href="#">VIP</a>
+                                            <a class="dropdown-item" href="#">Deals</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+
+                        </div>
+                    </div>
+
+
+                    <!-- second column of white nav -->
+                    <div class="col-3 col-md-2 mb-3 navbar-icons">
+                        <div class="row">
+                            <div class="col-4 col-md-3 search-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <div class="col-4 col-md-3 col-lg-9 dropdown user-sell-white-nav user-icon">
+                                <div class="" data-toggle="dropdown">
+                                    <i class="far fa-user-circle"></i>
+                                    <span class="username">Maryam</span>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">My Account</a>
+                                    <a class="dropdown-item" href="#">My Tickets</a>
+                                    <a class="dropdown-item" href="#">My Listings</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Sell</a>
+                                    <a class="dropdown-item" href="#">Sign Out</a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 user-sell-white-nav help">
+                                Help
+                            </div>
+
+                            <div class="col-4 col-md-3 menu-items" type="button" data-toggle="collapse"
+                                data-target="#menu-items">
+                                <!-- <div class="row"> -->
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <!-- </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- white nav ends here -->
+
+        <!-- blue navbar -->
+        <div class="row blue-div">
+            <div class="col-12" id="blue-div-nav">
+                <nav class="navbar navbar-expand-lg row">
+
+                    <!-- first column of blue nav-->
+                    <div class="col-8 col-sm-9 col-md-10 col-lg-9 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-lg-3  blue-div-tee">
+                                <a href="#"> 
+                                    <img src="images/tek-tickets.jpg" alt="logo" width="50" height="50">
+                                    <!-- <em>ticketmaster <sup> <small id="copy">&copy;</small></sup> </em> -->
+                                 </a>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-lg-5 blue-div-form">
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-6 col-xl-5">
+                                            <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
+                                                placeholder="Search for artist, event or venue">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="">
+                                        
+                                    </div> -->
+                                </form>
+                            </div>
+
+                            <div id="expand-more" class="col-lg-3  large-screen-navlinks">
+                                <ul class="navbar-nav large-screen-menulinks">
+                                    <li class="nav-item user-sell-blue-nav mr-3">
+                                        <a class="nav-link" href="#">Concert</a>
+                                    </li>
+                                    <li class="nav-item user-sell-blue-nav mr-3">
+                                        <a class="nav-link" href="#">Sports</a>
+                                    </li>
+                                    <li class="nav-item dropdown user-sell-blue-nav">
+                                        <a class="nav-link more" href="#" data-toggle="">More</a>
+                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <a class="dropdown-item" href="#">Arts & Theater</a>
+                                            <a class="dropdown-item" href="#">Family</a>
+                                            <a class="dropdown-item" href="#">VIP</a>
+                                            <a class="dropdown-item" href="#">Deals</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- hide and show this header on >=medium devices -->
+                    </div>
+
+                    <!-- second column of blue nav-->
+                    <div class="col-3 col-md-2 mb-3 navbar-icons">
+                        <div class="row">
+                            <div class="col-4 col-md-3 search-icon blue-nav-right-content">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <div class="col-4 col-md-3 col-lg-9 dropdown user-sell-blue-nav user-icon blue-nav-right-content">
+                                <div class="" data-toggle="dropdown">
+                                    <i class="far fa-user-circle"></i>
+                                    <span class="username">Maryam</span>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">My Account</a>
+                                    <a class="dropdown-item" href="#">My Tickets</a>
+                                    <a class="dropdown-item" href="#">My Listings</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Sell</a>
+                                    <a class="dropdown-item" href="#">Sign Out</a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 user-sell-blue-nav help blue-nav-right-content">
+                                Help
+                            </div>
+
+                            <div class="col-4 col-md-3 menu-items blue-nav-right-content" type="button"
+                                data-toggle="collapse" data-target="#menu-items">
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <main>
+            <div class="row" id="my-events-listing">
+                <div class="col-9" id="my-events">
+                    <span>Account Settings</span>
+                </div>
+            </div>
+
+            <!-- nav tabs -->
+            <div id="nav-tabs">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="row nav" role="tablist">
+                            <li class="col-3 col-sm-2 nav-item" id="profile1">
+                                <a href="#profile" data-toggle="tab" class="active nav-link ">Profile</a>
+                            </li>
+                            <li class="col-9 col-sm-10 nav-item" id="subscriptions1">
+                                <a href="#subscriptions" data-toggle="tab" class="nav-link">Subscriptions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-11">
+                        <hr id="order-page-line">
+                    </div>
+                </div>
+
+                <div class="row tab-content">
+                    <div class="col-12 tab-pane active" id="profile">
+                        <div class="row">
+                            <div class="col-12 my-info">
+                                <span>My Info</span>
+                            </div>
+                            <div class="col-12">
+                                <form action="" class="acct-settings-form">
+                                    <div class="form-group">
+                                        <label for="firstname"> First Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastname"> Last Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <button type="button" class="col-12 btn btn-primary"> Update Details</button>
+                                    <hr id="acct-setting-horizontal">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 my-info">
+                                <span>Email Address</span>
+                            </div>
+                            <div class="col-12">
+                                <form action="" class="acct-settings-form">
+                                    <div class="form-group">
+                                        <label for="email"> Email</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <button type="button" class="col-12 btn btn-primary"> Update Email</button>
+                                    <hr id="acct-setting-horizontal">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 my-info">
+                                <span>Phone Number</span>
+                                <p id="account-security">
+                                    To keep your account secure, we’ll send you
+                                    an email with a unique link to update your
+                                    phone number. <br>
+                                    <a href="#">Why is this required?</a>
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <form action="" class="acct-settings-form">
+                                    <div class="form-group" id="phone-number">
+                                        <label for="phoneNos"> Phone Number </label>
+                                        <input type="text" class="form-control" placeholder="***_****_****" disabled>
+                                    </div>
+
+                                    <button type="button" class="col-12 btn btn-primary"> Update Number</button>
+                                    <hr id="acct-setting-horizontal">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 my-info">
+                                <span>Location</span>
+                                <p id="account-location">
+                                    Let us know the location you’re interested in
+                                    and we’ll send you personalized notifications
+                                    about events headed your way. Traveling? Add a
+                                    second zip code to never miss out on what’s
+                                    happening near you.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <form action="" class="acct-settings-form">
+                                    <div class="form-group">
+                                        <label for="country"> Country </label> <br>
+                                        <select name="" id="">
+                                            <option value="usa"> United States </option>
+                                            <option value="canada"> Canada </option>
+                                            <option value="other" selected> Other</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="button" class="col-12 btn btn-primary"> Update Locations</button>
+                                    <hr id="acct-setting-horizontal">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 my-info">
+                                <span>Update Password</span>
+                                <p id="forgot-password">
+                                    <a href="#">Forgot Password?</a>
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <form action="" class="acct-settings-form">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <label for="password"> Current Password </label>
+                                            <input type="password" class="form-control password" placeholder="Show">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password"> New Password</label>
+                                        <input type="password" class="form-control password" placeholder="Show">
+                                    </div>
+                                    <div class="form-group">
+                                        <span>Your password must include:</span>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="password-hint">
+                                            <label class="form-check-label" for="characters">6-32 characters</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="password-hint">
+                                            <label class="form-check-label" for="alphanumeric">at least one letter and
+                                                one number</label>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="col-12 btn btn-primary"> Update Password</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- first tab-pane ends here -->
+
+                    <!-- second tab-pane here -->
+                    <div class="col-12 tab-pane" id="subscriptions">
+                        <div class="row">
+
+                            <!-- first column here -->
+                            <div class="col-12 col-md-8">
+                                <div class="row">
+                                    <div class="col-12 my-sub">
+                                        <p>When you tell us who you love, we can tell you
+                                            what they’re up to. Subscribe to get the latest,
+                                            breaking news about all things live.
+                                        </p>
+                                        <p id="account-subscription">
+                                            Subscriptions will be sent to the following Ticketmaster account: <br>
+                                            <span id="email-account">you@example.com</span>
+                                            <a href="#" id="edit-profile">Edit Profile</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <form action="" class="form-live-alert">
+                                            <ul class="first-checklist">
+                                                <li class="form-check" id="">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label" for="list1">
+                                                        <a href="#" class="guide-alerts" id="first-guide-alert">Get All
+                                                            Live Guide Alerts</a>
+                                                    </label>
+                                                    <p class="alerts">
+                                                        Personalized emails that deliver the latest news and event
+                                                        details
+                                                        about all your favorite artist, teams, and venues.
+                                                    </p>
+
+                                                    <!-- nested list here -->
+                                                    <ul>
+                                                        <li class="form-check nested-list-alerts">
+                                                            <input class="form-check-input" type="checkbox">
+                                                            <label class="form-check-label" for="list1">
+                                                                <a href="#" class="nested-guide-alerts">Ticket Alert</a>
+                                                            </label>
+                                                            <p class="nested-alerts">
+                                                                Get a personalized list of
+                                                                upcoming events in your area.
+                                                            </p>
+                                                        </li>
+                                                        <li class="form-check nested-list-alerts">
+                                                            <input class="form-check-input" type="checkbox">
+                                                            <label class="form-check-label" for="list1">
+                                                                <a href="#" class="nested-guide-alerts">Team Alert</a>
+                                                            </label>
+                                                            <p class="nested-alerts">
+                                                                Read about your favorite teams
+                                                                and leagues that are playing near you.
+                                                            </p>
+                                                        </li>
+                                                        <li class="form-check nested-list-alerts">
+                                                            <input class="form-check-input" type="checkbox">
+                                                            <label class="form-check-label" for="list1">
+                                                                <a href="#" class="nested-guide-alerts">Venue Alert</a>
+                                                            </label>
+                                                            <p class="nested-alerts">
+                                                                Learn about the events
+                                                                happening at your favorite venues.
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- nested list ends here -->
+                                                </li>
+                                                <li class="form-check" id="">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label" for="list1">
+                                                        <a href="#" class="guide-alerts">Performer News</a>
+                                                    </label>
+                                                    <p class="alerts">
+                                                        Get emails that provide details about
+                                                        when to buy tickets for all your favorites.
+                                                    </p>
+                                                </li>
+                                                <li class="form-check" id="">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label" for="list1">
+                                                        <a href="#" class="guide-alerts">Spotlight News</a>
+                                                    </label>
+                                                    <p class="alerts">
+                                                        Get news that covers special events, new videos,
+                                                        and exciting artist and team announcements.
+                                                    </p>
+                                                </li>
+                                                <li class="form-check" id="">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label" for="list1">
+                                                        <a href="#" class="guide-alerts">Special Event Offers</a>
+                                                    </label>
+                                                    <p class="alerts">
+                                                        Take advantage of timely ticket discounts,
+                                                        gift with purchase offers, and much more.
+                                                    </p>
+                                                </li>
+                                            </ul>
+
+                                            <button type="button" class="col-12 btn btn-primary"> Update </button>
+                                            <hr id="acct-setting-horizontal">
+                                        </form>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <form action="" class="form-live-alert">
+                                            <ul class="first-checklist">
+                                                <li class="form-check" id="">
+                                                    <input class="form-check-input" type="checkbox" checked>
+                                                    <label class="form-check-label" for="list1">
+                                                        <a href="#" class="guide-alerts">Unsubscribe From All Marketing
+                                                            Newsletters</a>
+                                                    </label>
+                                                    <p class="alerts pt-3">
+                                                        We're Sorry to See You Go
+                                                        Come back any time to resubscribe so you'll
+                                                        always have the latest news about cool events, announcements,
+                                                        and ticket
+                                                        perks. Don't worry, you'll still receive purchase
+                                                        confirmation emails, order status emails, delivery,
+                                                        and eventn reminders.
+                                                    </p>
+                                                </li>
+                                            </ul>
+
+                                            <button type="button" class="col-12 btn btn-primary"> Update </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- first column ends -->
+
+                            <!-- second column here -->
+                            <div class="col-10 col-md-3 mx-auto  heart-shape-div">
+                                <div class="row mx-auto">
+                                    <div class="col-12 text-center">
+                                        <img src="images/heart-shape.png" alt="" width="150" height="150">
+                                    </div>
+                                    <div class="col-12">
+                                        <p id="favorite">My Favorites</p>
+                                        <p>Tell Us Who You Love</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col"></div>
+                                            <div class="col-4">
+                                                <hr>
+                                            </div>
+                                            <div class="col"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4 mb-2 manage-team">
+                                        Add and manage your favorite teams,
+                                        artists and more, to personalize your alerts.
+                                    </div>
+
+                                    <button class="col-11 col-md-9 col-xl-10 mx-auto btn btn-outline-primary my-4" type="button">Add
+                                        Favorites</button>
+                                </div>
+                            </div>
+                            <!-- second column ends here -->
+                        </div>
+                    </div>
+                </div>
+            </div><!-- nav tabs end here -->
+        </main>
+
+        <footer class="footer">
+            <div class="row">
+                <div class="col-12 ">
+                    By continuing past this page, you agree to our <span class="terms-policy"> Terms of Use. <br>
+            
+                        Privacy Policy</span> | © 1999-2020 Ticketmaster. All rights reserved. <br>
+            
+                    <span class="terms-policy">Do Not Sell My Information</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrapjs/bootstrap.min.js"></script>
+</body>
+
+</html>

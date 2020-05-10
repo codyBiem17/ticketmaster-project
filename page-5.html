@@ -1,151 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Overview</title>
-    <link rel="stylesheet" href="assets/bootstrap.css">
-    <link rel="stylesheet" href="css/fontawesome5/css/all.css">
+    <title>Subscriptions</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="css/subscriptions.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
+
     <style>
-        #blue-div-nav{
-            padding-top: 10px;
-            padding-bottom: 0px;
-      }
-
-      .bottom-left {
-          left: -1.0vw;
-          bottom: 5.5vw;
-      }
-
-      @media screen and (min-width: 993px) and (max-width: 1200px) {
-        .bottom-left {
-            bottom: 8vw;
-        }   
-        .wed-margin {
-            /* margin-left: -vw;
-            background-color: red; */
-            padding-left: 0.6vw;
-        } 
-      }
-
-      @media screen and (max-width: 992px) {
-        .bottom-left {
-            bottom: 8vw;
-        }   
-        .wed-margin {
-            margin-left: -10.5vw;
-        } 
-      }
-
-      @media screen and (max-width: 768px) {
-        .bottom-left {
-            bottom: 10vw;
-        }   
-        .wed-margin {
-            margin-left: -14vw;
-        } 
-      }
-
-      @media screen and (max-width: 757px) {
-        .bottom-left {
-            bottom: 12vw;
-            width: 15vw;
+        
+        .container-fluid {
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: auto;
+            margin-left: auto;
         }
-        .wed-margin {
-            margin-left: -15vw;
-        }     
-      }
-      @media screen and (max-width: 576px) {
-        .bottom-left {
-            bottom: 16vw;
-            width: 20vw;
-        }
-        .wed-margin {
-            margin-left: -10vw;
-
-        }   
-      }
-
-      @media screen and (min-width: 401px) and (max-width: 425px) {
-        .bottom-left {
-            width: 20vw;
-        }
-        .special-bottom-left {
-            bottom: 100px;
-        }
-        .wed-margin {
-            padding-left: 10px;
-            text-align: left;
-        }   
-      }
-
-      @media screen and (min-width: 320px) and (max-width: 425px) {
-        .bottom-left {
-            bottom: 24vw;
-            width: 30vw;
-            left: -4.0vw;
-        }
-        .wed-margin {
-            margin-left: -1vw;
-        }   
-      }
-
-      @media screen and (min-width: 375px) and (max-width: 400px) {
-        .bottom-left {
-            bottom: 20vw;
-            width: 25vw;
-        }
-        .wed-margin {
-            margin-left: -10vw;
-
-        }   
-      }
-
-      .footer-sm {
-          display: none;
-      }
-      .footer-lg {
-        display: block;
-      }
-      @media screen and (min-width: 320px) and (max-width: 375px) {
-        .footer-sm {
-            display: block;
-        }
-        .footer-lg {
-            display: none;
-        }
-      }
-
-      .bg-grey:hover {
-          background-color: #A5A5A5;
-      }
-      .grey-theme {
-        color: gray;
-      }
-footer {
-    background-color: #1F262D;
-    color: #9DB4B6;
-    line-height: 7px;
-}
-
-footer a {
-    color: white;
-}
-
-footer a:hover {
-    color: white;
-    text-decoration: none;
-}
-
-@media screen and (min-width: 1441px) {
-        .padd {
-            padding:0 580px;
-        }
-      }
     </style>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row white-div">
@@ -155,8 +30,8 @@ footer a:hover {
                     <!-- first column of white nav -->
                     <div class="col-8 col-sm-9 col-md-10 col-lg-9">
                         <div class="row">
-                            <div class="col-12 col-lg-3 white-div-tee ">
-                                <a href="#" class="white-ticket-brand"> 
+                            <div class="col-12 col-lg-3 white-div-tee">
+                                <a href="#" class="white-ticket-brand">
                                     <!-- <em>t</em>  -->
                                     <img src="images/tek-tickets.png" alt="logo" width="50" height="50">
                                 </a>
@@ -167,8 +42,9 @@ footer a:hover {
                                 <form class="" action="">
                                     <div class="form-row">
                                         <div class="col-lg-6 col-xl-5">
-                                            <input class="form-control search  pl-4 white" type="text" name="" id="white-navbar-input-field"
-                                                placeholder="Search for artist, event or venue">
+                                            <input class="form-control search" type="text" name=""
+                                                id="white-navbar-input-field"
+                                                placeholder="Find millions of live experiences">
                                             <i class="fas fa-search input-search-icon"></i>
                                         </div>
                                     </div>
@@ -251,19 +127,20 @@ footer a:hover {
                     <!-- first column of blue nav-->
                     <div class="col-8 col-sm-9 col-md-10 col-lg-9 mb-3">
                         <div class="row">
-                            <div class="col-12 col-lg-3  blue-div-tee   mt-n3">
-                                <a href="#"> 
+                            <div class="col-12 col-lg-3  blue-div-tee">
+                                <a href="#">
                                     <img src="images/tek-tickets.jpg" alt="logo" width="50" height="50">
                                     <!-- <em>ticketmaster <sup> <small id="copy">&copy;</small></sup> </em> -->
-                                 </a>
+                                </a>
                             </div>
 
                             <!-- hide and show this header on >=medium devices -->
                             <div class="col-lg-5 blue-div-form">
                                 <form class="" action="">
                                     <div class="form-row">
-                                        <div class="col-lg-6 col-xl-5   mt-n2">
-                                            <input class="form-control search  pl-4 white" type="text" name="" id="blue-navbar-input-field"
+                                        <div class="col-lg-6 col-xl-5">
+                                            <input class="form-control search" type="text" name=""
+                                                id="blue-navbar-input-field"
                                                 placeholder="Search for artist, event or venue">
                                             <i class="fas fa-search input-search-icon"></i>
                                         </div>
@@ -304,7 +181,8 @@ footer a:hover {
                                 <i class="fas fa-search"></i>
                             </div>
 
-                            <div class="col-4 col-md-3 col-lg-9 dropdown user-sell-blue-nav user-icon blue-nav-right-content">
+                            <div
+                                class="col-4 col-md-3 col-lg-9 dropdown user-sell-blue-nav user-icon blue-nav-right-content">
                                 <div class="" data-toggle="dropdown">
                                     <i class="far fa-user-circle"></i>
                                     <span class="username">Maryam</span>
@@ -330,25 +208,27 @@ footer a:hover {
                                 <div class="toggler-icon"></div>
                             </div>
                         </div>
+                        <!-- hide and show this header on >=medium devices -->
                     </div>
                 </nav>
             </div>
-
         </div>
-    <main class="padd">
-        <div class="container-fluid px-3 my-5">
+    </div>
+
+    <main>
+        <div class="container-fluid account-overview my-5">
             <h1 class="h1 font-w d-none d-md-block">Account Overview</h1>
             <h4 class="h4 font-w d-md-none">Account Overview</h4>
             <div class="row">
                 <div class="col-lg-3 col-md-4">
-                    <div class="shadow rounded mt-4">
-
+                    <div class="card-divs mt-4">
+    
                         <!-- For viewport less than medium (768px) -->
                         <div class="d-md-none mb-3">
                             <div class="row px-3">
                                 <div class="col-sm-9 col-6 pl-">
                                     <h2 class="h5 font-w  pt-3">John Doe</h2>
-                                    <small class=" pt-3 small-color">Fan since 2020</small>    
+                                    <small class=" pt-3 small-color">Fan since 2020</small>
                                 </div>
                                 <div class="col-sm-3 col-6 text-right my-3">
                                     <small class="color-theme my-3">Event Profile</small>
@@ -358,7 +238,7 @@ footer a:hover {
                             <div class="row px-3">
                                 <div class="col-9">
                                     <small class="grey-theme">Email Address</small><br>
-                                    <p>john.doe@example.com </p>   
+                                    <p>john.doe@example.com </p>
                                 </div>
                                 <div class="col-3 text-right">
                                     <small class="color-theme">Edit</small>
@@ -368,7 +248,7 @@ footer a:hover {
                             <div class="row px-3">
                                 <div class="col-sm-8 col-5">
                                     <small class="grey-theme">Phone Number</small><br>
-                                    <p>***-***-***</p>   
+                                    <p>***-***-***</p>
                                 </div>
                                 <div class="col-sm-4 col-7 text-right">
                                     <small class="color-theme font-12">Edit Phone Number</small>
@@ -376,33 +256,35 @@ footer a:hover {
                             </div>
                         </div>
                         <!-- For viewport less than medium (768px) ends -->
-
+    
                         <!-- For viewport larger than medium (768px)-->
                         <div class="d-none d-md-block">
                             <div class="text-center">
                                 <h2 class="h2 font-w  pt-3">John <br> Doe</h2>
                                 <small class=" pt-3 small-color">Fan since 2020</small><br>
-                                <button class="rounded  bg-white my-3 border border-primary color-theme event-info font-12">Event Profile</button>
+                                <button
+                                    class="rounded  bg-white my-3 border border-primary color-theme event-info font-12">Event
+                                    Profile</button>
                             </div>
                             <div class="dropdown-divider"></div>
                             <div class="text-left pl-4 py-1">
                                 <small class="grey-theme">Email Address</small><br>
                                 <p>john.doe@example.com <br>
-                                <small class="color-theme">Edit</small>
+                                    <small class="color-theme">Edit</small>
                                 </p>
                             </div>
                             <div class="dropdown-divider"></div>
                             <div class="text-left pl-4 py-1">
                                 <small class="grey-theme">Phone Number</small><br>
                                 <p>***-***-*** <br>
-                                <small class="color-theme">Edit Phone Number</small>
+                                    <small class="color-theme">Edit Phone Number</small>
                                 </p>
                             </div>
                         </div>
                         <!-- For viewport larger than medium (768px) ends -->
-
+    
                     </div>
-                    <div class="shadow rounded mt-4 d-none d-md-block">
+                    <div class="card-divs mt-4 d-none d-md-block">
                         <p class="color-theme pl-4 pt-3"><a href="#"> My Tickets</a></p>
                         <div class="dropdown-divider"></div>
                         <p class="color-theme pl-4"><a href="#"> My Listings</a></p>
@@ -416,228 +298,131 @@ footer a:hover {
                         <p class="color-theme pl-4"><a href="#"> Vouchers & Codes</a></p>
                         <div class="dropdown-divider"></div>
                     </div>
-                    <div class="shadow mt-4 p-4 rounded d-none d-md-block">
+                    <div class="card-divs mt-4 p-4 d-none d-md-block">
                         <h5 class="h5 pb-3">We're here to help</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, aut consequatur pariatur necessitatibus.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, aut consequatur
+                                pariatur necessitatibus.</p>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-8 px-">
                     <h5 class="my-4">Quick Tips</h5>
                     <div class="row">
-                        <div class="col-lg-4 col-md-12">
+                        <div class="col-xl-4 col-md-12">
                             <div class="row">
                                 <div class="col-3 col-sm-2 col-md-2 col-lg-3">
                                     <i class="color-theme fa fa-user fa-3x"></i>
                                 </div>
                                 <div class="col-9 col-sm-10 col-md-10 col-lg-9">
                                     <h6>Account Health Check-Up</h6>
-                                    <small class="line-h-17 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet.</small>
-                                    <button class="rounded  bg-white my-3 border border-primary color-theme event-info font-12">Update Password</button>
+                                    <small class="line-h-17 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Lorem ipsum dolor sit amet.</small>
+                                    <button
+                                        class="rounded  bg-white my-3 border border-primary color-theme event-info font-12">Update
+                                        Password</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12">
+                        <div class="col-xl-4 col-md-12">
                             <div class="row">
                                 <div class="col-3 col-sm-2 col-md-2 col-lg-3">
                                     <i class="color-theme fa fa-heart fa-3x"></i>
                                 </div>
                                 <div class="col-9 col-sm-10 col-md-10 col-lg-9">
                                     <h6>Pick Your Favorites</h6>
-                                    <small class="line-h-17">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet dolor.</small>
-                                    <button class="rounded my-3 border border-primary color-theme event-info font-12  bg-white">Pick Favorites</button>
+                                    <small class="line-h-17">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
+                                        ipsum dolor sit amet dolor.</small>
+                                    <button
+                                        class="rounded my-3 border border-primary color-theme event-info font-12  bg-white">Pick
+                                        Favorites</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12">
+                        <div class="col-xl-4 col-md-12">
                             <div class="row">
                                 <div class="col-3 col-sm-2 col-md-2 col-lg-3">
                                     <i class="color-theme fa fa-id-card fa-3x"></i>
                                 </div>
                                 <div class="col-9 col-sm-10 col-md-10 col-lg-9">
                                     <h6>Fast and Easy Checkout</h6>
-                                    <small class="line-h-17">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet.</small>
-                                    <button class="rounded my-3 border border-primary color-theme event-info font-12 bg-white">Update Payment</button>
+                                    <small class="line-h-17">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
+                                        ipsum dolor sit amet.</small>
+                                    <button
+                                        class="rounded my-3 border border-primary color-theme event-info font-12 bg-white">Update
+                                        Payment</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+    
                     <div class="row mt-5">
-                        <div class="col-lg-10 col-md-12 pl-4">
+                        <div class="col-xl-10 col-md-12 pl-4">
                             <h4>Sell Your Tickets</h4>
                         </div>
-                        <div class="col-lg-2 col-md-12 mt-n2">
+                        <div class="col-xl-2 col-md-12 mt-n2">
                             <a href="#" class="btn color-theme">View All</a>
                         </div>
                     </div>
-
-                    <div class="shadow mt-4 p-4">
+    
+                    <div class="card-divs mt-4 p-4">
                         <div class="row">
-                            <div class="col-lg-10 col-md-12">
+                            <div class="col-xl-10 col-md-12">
                                 <p class="font-27">The Safest Way to Sell Tickets. Only With Lorem.</p>
-                                <p class="font-18 grey-theme">Sell your tickets in a safe and simple way, and instantly reach millions of fans who need seats.</p>
+                                <p class="font-18 grey-theme">Sell your tickets in a safe and simple way, and instantly
+                                    reach millions of fans who need seats.</p>
                             </div>
-                            <div class="col-lg-2 col-md-12">
+                            <div class="col-xl-2 col-md-12">
                                 <a href="#" class="btn mt- bg-primary white font-14 font-w">Learn More</a>
                             </div>
                         </div>
                     </div>
-
+    
                     <div class="row mt-5">
-                        <div class="col-lg-9 col-md-12 pl-4">
-                            <h4 class="d-inline-block">Events We Think You’ll Love  <i class="fa fa-info-circle color-theme font-14"></i></h4> 
+                        <div class="col-xl-10 col-md-12 pl-4">
+                            <h4 class="d-inline-block">Events We Think You’ll Love <i
+                                    class="fa fa-info-circle color-theme font-14"></i></h4>
                         </div>
-                        <div class="col-lg-3 col-md-12 mt-n2">
+                        <div class="col-xl-2 col-md-12 mt-n2">
                             <a href="#" class="btn color-theme">Add Favorites</a>
                         </div>
                     </div>
-
+    
                     <div class="row mt-3">
-                        <div class="col-lg-4 col-md-12  col-12 ">
-                            <!-- <div class="card">
-                                <img class="card-img-top" src="https://via.placeholder.com/100x80" alt="Card image cap">
-                                <div class="card-body">
-                                  <div class="card-text relative">
-                                    <div class="row line-h-7">
-                                        <div class="col-6 col-md-7  col-lg-5">
-                                        <p class="text-left pl-2 color-theme">Jun 11</p>
-                                        <p class="grey-theme font-14 wed-margin">Wed <span class="font-5"> &#9899;  </span> 8:00PM</p>
-                                        </div>
-                                        <div class="col-6 col-md-5 col-lg-7 ">
-                                            <p>Lorem <span class="d-sm-inline-block d-md-none d-lg-inline-block">ipsum.</span></p>
-                                            <p class="grey-theme font-14">Lorem <span class="d-sm-inline-block d-md-none d-lg-inline-block">ipsuddm.</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="bottom-left special-bottom-left ml-2 mb-2 rounded">
-                                        <p class="font-w text-left mt-2">John Doe</p>
-                                        <p class="font-14 text-left">10 Events</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> -->
-                            <img class="" src="https://via.placeholder.com/100x80" alt="Card image cap" width="100%">
+                        <div class="col-xl-4 col-12 mb-3">
+                            <img class="" src="https://via.placeholder.com/100x80" alt="Card image cap" width="80%">
                         </div>
-
+    
                         <!-- For viewport less than medium (768px) -->
-                        <div class="col-lg-4 col-md-12  col-12 d-lg-none my-4">
-                            <!-- <div class="card">
-                                <img class="card-img-top" src="https://via.placeholder.com/100x80" alt="Card image cap">
-                                <div class="card-body">
-                                  <div class="card-text relative">
-                                    <div class="row line-h-7">
-                                        <div class="col-6">
-                                        <p class="text-left pl-2 color-theme">Jun 11</p>
-                                        <p class="grey-theme font-14 wed-margin">Wed <span class="font-5"> &#9899;  </span> 8:00PM</p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p>Lorem ipsum.</p>
-                                            <p class="grey-theme font-14">Lorem ipsuddm.</p>
-                                        </div>
-                                    </div>
-                                    <div class="bottom-left special-bottom-left ml-2 mb-2 rounded">
-                                        <p class="font-w text-left mt-2">John Doe</p>
-                                        <p class="font-14 text-left">10 Events</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> -->
-                            <img class="" src="https://via.placeholder.com/100x80" alt="Card image cap" width="100%">
+                        <div class="col-xl-4 col-12 mb-3">
+                            <img class="" src="https://via.placeholder.com/100x80" alt="Card image cap" width="80%">
                         </div>
-                        <!-- <div class="col-lg-4 col-md-12  col-12 d-md-none">
-                            <div class="card">
-                                <img class="card-img-top" src="https://via.placeholder.com/100x80" alt="Card image cap">
-                                <div class="card-body">
-                                  <div class="card-text relative">
-                                    <div class="row line-h-7">
-                                        <div class="col-6">
-                                        <p class="text-left pl-2 color-theme">Jun 11</p>
-                                        <p class="grey-theme font-14 wed-margin">Wed <span class="font-5"> &#9899;  </span> 8:00PM</p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p>Lorem ipsum.</p>
-                                            <p class="grey-theme font-14">Lorem ipsuddm.</p>
-                                        </div>
-                                    </div>
-                                    <div class="bottom-left ml-2 mb-2 rounded">
-                                        <p class="font-w text-left mt-2">John Doe</p>
-                                        <p class="font-14 text-left">10 Events</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                        </div> -->
-                        <!-- For viewport less than medium (768px) ends-->
-
-                        <div class="col-lg-4 col-sm-  col-12 d-none d-lg-block">
-                            <!-- <div class="card">
-                                <img class="card-img-top" src="https://via.placeholder.com/100x80" alt="Card image cap">
-                                <div class="card-body">
-                                  <div class="card-text relative">
-                                    <div class="row line-h-7">
-                                        <div class="col-6 col-lg-5">
-                                        <p class="text-left pl-2 color-theme">Jun 11</p>
-                                        <p class="grey-theme font-14">Wed <span class="font-5"> &#9899;  </span> 8:00PM</p>
-                                        </div>
-                                        <div class="col-6 col-lg-7">
-                                            <p>Lorem ipsum.</p>
-                                            <p class="grey-theme font-14">Lorem ipsuddm.</p>
-                                        </div>
-                                    </div>
-                                    <div class="bottom-left ml-2 mb-2 rounded">
-                                        <p class="font-w text-left mt-2">John Doe</p>
-                                        <p class="font-14 text-left">10 Events</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> -->
-                              <img class="" src="https://via.placeholder.com/100x80" alt="Card image cap" width="
-                              100%">
-                        </div>
-                        <div class="col-lg-4 col-sm- col-12">
-                            <!-- <div class="card">
-                                <img class="card-img-top" src="https://via.placeholder.com/100x80" alt="Card image cap">
-                                <div class="card-body">
-                                  <div class="card-text relative">
-                                    <div class="row line-h-7">
-                                        <div class="col-6 col-lg-5">
-                                        <p class="text-left pl-2 color-theme">Jun 11</p>
-                                        <p class="grey-theme font-14 wed-margin">Wed <span class="font-5"> &#9899;  </span> 8:00PM</p>
-                                        </div>
-                                        <div class="col-6 col-lg-7">
-                                            <p>Lorem ipsum.</p>
-                                            <p class="grey-theme font-14">Lorem ipsuddm.</p>
-                                        </div>
-                                    </div>
-                                    <div class="bottom-left ml-2 mb-2 rounded special-bottom-left">
-                                        <p class="font-w text-left mt-2">John Doe</p>
-                                        <p class="font-14 text-left">10 Events</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> -->
-                            <img class="" src="https://via.placeholder.com/100x80" alt="Card image cap" width="
-                            100%">
+                    
+                        <div class="col-xl-4 col-12 mb-3">
+                            <img class="" src="https://via.placeholder.com/100x80" alt="Card image cap" width="80%">
                         </div>
                     </div>
-
-                    <div class="shadow my-5 p-4 rounded bg-light">
+    
+                    <div class="card-divs my-5 p-4 bg-light">
                         <div class="row">
-                            <div class="col-lg-2 d-none d-lg-block text-center pl-4">
+                            <div class="col-xl-2 d-none d-xl-block text-center pl-4">
                                 <i class="fa fa-envelope fa-6x color-theme"></i>
                             </div>
-                            <div class="col-lg-6 col-md-12">
+                            <div class="col-xl-6 col-md-12">
                                 <small class="small-color">GET EVENT NEWS YOU WANT</small><br>
-                                <p class="pt-3">When you tell us who you love, we can tell you what they’re up to. Customize your subscriptions to get the latest, breaking news about all things live.</p>
+                                <p class="pt-3">When you tell us who you love, we can tell you what they’re up to. Customize
+                                    your subscriptions to get the latest, breaking news about all things live.</p>
                             </div>
-                            <div class="col-lg-4 col-md-12 mt-4">
-                                <a href="#" class="btn reverse-theme bg-light border border-primary font-14 font-w">Customize Subscription</a>
+                            <div class="col-xl-4 col-md-12 mt-4">
+                                <a href="#"
+                                    class="btn reverse-theme bg-light border border-primary font-14 font-w">Customize
+                                    Subscription</a>
                             </div>
                         </div>
                     </div>
-
+    
                     <div class="shadow mb-n4 mt-4 p-4 rounded d-md-none">
                         <h5 class="h5">We're here to help</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, aut consequatur pariatur necessitatibus.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, aut consequatur
+                                pariatur necessitatibus.</p>
                     </div>
                 </div>
             </div>
@@ -652,20 +437,23 @@ footer a:hover {
         </div>
     </main>
 
-    <footer class="text-left font-12 p-3 mt-5 footer-sm">
-        <p class="d-inline-block">By continuing past this page, you agree to our </p>
-        <p class="d-inline-block"><a href="#">Terms of Use.</a></p>
-        <p class="d-inline-block"> <a href="#">Privacy Policy</a> | © 1999-2020 Ticketmaster. All</p>
-        <p class="d-inline-block">rights reserved.</p>
-    </footer>
+    <div class="container-fluid">
+        <footer class="footer mt-5 py-4">
+            <div class="row">
+                <div class="col-12 ">
+                    By continuing past this page, you agree to our <span class="terms-policy"> Terms of Use. <br>
+    
+                        Privacy Policy</span> | © 1999-2020 Ticketmaster. All rights reserved. <br>
+    
+                    <span class="terms-policy">Do Not Sell My Information</span>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-    <footer class="text-center font-12 p-4 mt-5 footer-lg">
-        <p>By continuing past this page, you agree to our <a href="#">Terms of Use.</a></p>
-        <p> <a href="#">Privacy Policy</a> | © 1999-2020 Ticketmaster. All rights reserved.</p>
-    </footer>
-
-    <script src="assets/jquery-3.4.1.min.js"></script>
-    <script src="assets/bootstrap.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/bootstrapjs/bootstrap.min.js"></script>
 </body>
+
 </html>
