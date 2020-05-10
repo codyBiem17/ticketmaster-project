@@ -8,9 +8,6 @@ $(document).ready(function () {
             $('.hide-and-show').css({ display: "block", height: "70px"});
             $('#blue-div-nav').css({marginTop: '-70px'});
             $('.white-div').addClass('sticky-nav');
-            $('#white-div-nav .navbar-icons').addClass('navbar-icons-scroll');
-            $('#white-div-nav .navbar-icons').addClass('navbaricons-category-scroll')
-            
         }
         else {
             $('.hide-and-show').css({ display: "none" });

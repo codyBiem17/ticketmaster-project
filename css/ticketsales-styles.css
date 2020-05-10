@@ -42,7 +42,7 @@ html, body {
 }
 
 .toggler-icons{
-    width: 20px;
+    width: 18px;
     height: 3px;
     background-color: white;
     margin-bottom: 3px;
@@ -50,7 +50,13 @@ html, body {
 }
 
 .ticketmaster{
-  margin: 5px 0;
+  position: relative;
+  top: -2px;
+  /* left: -16px; */
+}
+
+.ticketmaster{
+  /* margin: 5px 0; */
 }
 
 .ticketmaster a em {
@@ -160,6 +166,8 @@ p#date-time{
 .spinner-footer{
   color: #8e8f90;
   font-size: 12px;
+  position: relative;
+  top: 530px;
 }
 
 .spinner-footer a{
@@ -548,7 +556,7 @@ footer button{
   }
 
   .spinner-footer{
-    margin: 170px 0;
+    /* margin: 170px 0; */
   }
 
   .ticket-sales-header{
@@ -644,6 +652,11 @@ footer button{
 @media only screen and (min-width: 1440px){
   .tickets-selection{
     margin: 0 10px;
+  }
+
+  .ticketmaster{
+    position: relative;
+    right: 90px;
   }
 
   .range-slider{

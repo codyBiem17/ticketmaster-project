@@ -34,12 +34,35 @@ a.slide-captions,
   /* padding: 5px 0px; */
 }
 
-#white-div-nav .navbar-icons {
-  /* margin-right: -20px; */
-  /* border: 1px solid red; */
+#white-div-nav .menu-items {
+    margin: 8px 0px;
+    /* padding: 0 2px; */
 }
 
-.blue-div-tee{
+#white-div-nav .toggler-icon {
+    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
+    width: 18px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 3px;
+    /* border: 1px solid red; */
+}
+
+#blue-div-nav .menu-items {
+    margin: 8px 0px;
+    /* border: 1px solid red; */
+    /* padding: 0 2px; */
+
+}
+
+#blue-div-nav .toggler-icon {
+    width: 18px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 3px;
+}
+
+.blue-div-tee {
   position: relative;
   top: -8px;
   left: -16px;
@@ -80,8 +103,8 @@ a.white-ticket-brand em {
 .blue-div {
   color: white;
   font-size: 20px;
-background: rgb(55,47,201);
-background: linear-gradient(90deg, rgba(55,47,201,1) 4%, rgba(30,56,224,0.7819502801120448) 53%, rgba(55,53,230,1) 97%);
+  background: rgb(55,47,201);
+  background: linear-gradient(90deg, rgba(55,47,201,1) 4%, rgba(30,56,224,0.7819502801120448) 53%, rgba(55,53,230,1) 97%);
 }
 
 .blue-div-nav {
@@ -175,17 +198,26 @@ select.concert-event-forms:hover,
   border: none;
 }
 
-.footer {
-  text-align: center;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
-  background: #1f262d;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 70px;
+footer.footer{
+    text-align: justify;
+    margin-top: 50px;
+    padding-left: 25px;
+    padding-right: 35px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    background: #1f262d;
+    line-height: 20px;
 }
 
-.terms-policy {
+
+footer div#privacy{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+footer span.terms-policy {
   font-weight: 600;
   color: white;
 }
@@ -295,8 +327,27 @@ select.concert-event-forms:hover,
 }
 
 .category-form-fields{
-  padding-left: 40px;
-  /* padding-right: 20px; */
+  /* margin-left: -5px; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: none;
+}
+
+.dropdown-menu{
+  width: 255px;
+}
+
+.dropdown-menu a{
+  padding-bottom: 15px;
+  color: #525151;;
+}
+
+.dropdown-menu a:hover{
+  background: #026ce5; 
+  color: white;
 }
 
 /* media queries */
@@ -304,34 +355,20 @@ select.concert-event-forms:hover,
 
   #blue-div-nav .navbar-icons{
     position: relative;
-    right: 9px;
-    /* border: 1px solid red; */
-    /* width: 200px; */
+    right: 10px;
   }
 
   #white-div-nav .navbar-icons {
     position: relative;
     /* right: 10px; */
-    /* width: 200px; */
+   
   }
 
   #blue-div-nav .menu-items, #white-div-nav .menu-items{
-      /* padding-left: 5px; */
-      position: relative;
-      left: 10px; 
-      /* i changed this part for subscription page */
-      /* border: 1px solid green; */
+    position: relative;
+    left: 10px; 
   } 
 
-  #white-div-nav .navbar-icons {
-    /* margin-right: -30px; */
-    /* border: 1px solid red; */
-  }
-
-  .hide-and-show {
-    /* padding-top: 20px;
-    padding-bottom: 50px; */
-  }
 }
 
 @media only screen and (min-width: 411px) and (max-width: 599px){
@@ -363,11 +400,8 @@ select.concert-event-forms:hover,
 }
 
 @media only screen and (max-width: 767px) {
-  .blue-div-form,
-  .white-div-form,
-  .white-div-input, #hide-div,
-  .help, #placeholder-side-image,
-  ul.large-screen-menulinks,
+  .blue-div-form, .white-div-form, .white-div-input, #hide-div,
+  .help, #placeholder-side-image, ul.large-screen-menulinks,
   #img-gallery, div.advert-section, .captions .live-button {
     display: none;
   }
@@ -417,12 +451,8 @@ select.concert-event-forms:hover,
   }
 
   #blue-div-nav .menu-items, #white-div-nav .menu-items{
-      /* margin:8px 10px !important; */
-      /* margin: 8px 10px !important; */
-      /* border: 1px solid red; */
-      /* padding-left: 23px; */
-      position: relative;
-      top: -5px;
+    position: relative;
+    top: -2px;
   } 
 
   .blue-div-form {
@@ -449,20 +479,16 @@ select.concert-event-forms:hover,
   /* for blue div */
 
   #blue-div-nav {
-    /* padding-top: 5px; */
     padding-bottom: 60px;
-  }
-
-  .carousel-item a img {
-    /* width:93%;
-    height: auto;
-    border-radius: 4px;
-    margin-left: 25px;
-    margin-right: 25px; */
   }
 
   #img-gallery div.captions{
     padding: 15px;
+  }
+
+  footer.footer{
+    text-align: center;
+    margin-top: 200px;
   }
 
 }
@@ -472,6 +498,11 @@ select.concert-event-forms:hover,
    .search-icon, .menu-items, .carousel, #hide-div {
     display: none;
   }
+
+  .dropdown:hover .dropdown-menu{
+    display: block;
+  }
+
 
   .blue-div a em{
     font-size: 22px;
@@ -590,7 +621,10 @@ select.concert-event-forms:hover,
 
   }
 
-  
+  footer.footer{
+    text-align: center;
+    margin-top: 200px;
+  }  
 
 }
 
@@ -633,6 +667,10 @@ select.concert-event-forms:hover,
 
 }
 @media only screen and (min-width: 1440px){
+  a.arts-dropdown,  a.family-dropdown{
+    display: none;
+  }
+
  .captions .live-button{
     position: relative;
     left: 25px;

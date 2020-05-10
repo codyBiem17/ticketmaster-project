@@ -175,7 +175,7 @@ select.concert-event-forms:hover,
   border: none;
 }
 
-.footer {
+/* .footer {
   text-align: center;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.7);
@@ -187,7 +187,7 @@ select.concert-event-forms:hover,
 .terms-policy {
   font-weight: 600;
   color: white;
-}
+} */
 
 .row.sticky-nav {
   position: fixed;
@@ -421,7 +421,7 @@ span.username{
 }
 
 .dropdown:hover .dropdown-menu{
-  display: block;
+  display: none;
 }
 
 .dropdown-menu{
@@ -495,8 +495,8 @@ span.username{
 
 #blue-div-nav .navbar-icons{
   padding: 5px 0;
-  /* position: relative; */
-  /* left: -4px; */
+  position: relative;
+  top: -5px;
   font-size: 22px;
   /* border: 1px solid red; */
   /* margin-left: 1px; */
@@ -816,12 +816,21 @@ footer.footer{
     padding-right: 35px;
     padding-top: 13px;
     padding-bottom: 13px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    background: #1f262d;
     line-height: 20px;
 }
 
+
 footer div#privacy{
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+footer span.terms-policy {
+  font-weight: 600;
+  color: white;
 }
 
 #order-page-line{
@@ -838,6 +847,7 @@ footer div#privacy{
 
   #blue-div-nav .navbar-icons{
     position: relative;
+    /* top: -5px; */
     right: 17px;
     /* border: 1px solid red; */
     /* width: 200px; */
@@ -908,10 +918,6 @@ footer div#privacy{
 
   .acct-events{
     padding-top: 15px;
-  }
-
-  .dropdown:hover .dropdown-menu{
-    display: none;
   }
 }
 
@@ -1000,9 +1006,6 @@ footer div#privacy{
     left: 30px;
   }
 
-  .dropdown:hover .dropdown-menu{
-    display: none;
-  }
 }
 
 /* media queries for large devices */
@@ -1011,6 +1014,11 @@ footer div#privacy{
   .menu-items, .carousel, #hide-div {
     display: none;
   }
+
+  .dropdown:hover .dropdown-menu{
+    display: block;
+  }
+
 
   .concert-ticket {
     position: relative;
@@ -1166,10 +1174,14 @@ footer div#privacy{
         display: inline-block;
     }
 
+    #blue-div-nav .navbar-icons{
+      position: relative;
+      left: 20px;
+    }
+
     #white-div-nav .navbar-icons{
-        position: relative;
-        /* left: 10px; */
-        padding-top: 20px;
+      position: relative;
+      left: 30px;
     }
 
     #white-div-nav .menu-items, 
@@ -1231,8 +1243,13 @@ footer div#privacy{
     }
 
     #blue-div-nav .navbar-icons {
-        position: relative;
-        left: 35px;
+      position: relative;
+      left: 35px;
+    }
+
+    #white-div-nav .navbar-icons {
+      position: relative;
+      left: 45px;
     }
 
     #blue-div-nav .user-icon, #white-div-nav .user-icon {
@@ -1252,12 +1269,6 @@ footer div#privacy{
 
     #white-div-nav .large-screen-menulinks{
        margin-left: -100px;
-    }
-
-    #white-div-nav .navbar-icons {
-        position: relative;
-        left: 35px;
-        /* top: 10px; */
     }
 
     #nav-tabs{
@@ -1314,8 +1325,8 @@ footer div#privacy{
     }
 
     #white-div-nav .large-screen-menulinks{
-        position: relative;
-        left: -110px;
+      position: relative;
+      left: -110px;
     }
 
     #blue-div-nav .user-icon {
@@ -1331,6 +1342,11 @@ footer div#privacy{
    #blue-div-nav .navbar-icons {
         position: relative;
         left: 40px;
+    }
+
+    #white-div-nav .navbar-icons {
+        position: relative;
+        left: 55px;
     }
     
 }
@@ -1372,7 +1388,7 @@ footer div#privacy{
 
    #white-div-nav .navbar-icons {
         position: relative;
-        left: 80px;
+        left: 95px;
     }
 
     #blue-div-nav .navbar-icons {
