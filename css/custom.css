@@ -1,114 +1,157 @@
-body{
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+body {
+  font: normal 100% "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* overflow-x: hidden; */
+  letter-spacing: 0.3px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  position: relative
+}
+
+html, body {
   overflow-x: hidden;
 }
 
-.blue-div a em, .home-div-concert, a.slide-captions, 
-.concert-category, .sell {
-   font-weight: 600;
+.blue-div a em,
+.home-div-concert,
+a.slide-captions,
+.concert-category,
+.sell {
+  font-weight: 600;
 }
 
-.hide-and-show{
+.hide-and-show {
   color: #4e4d4d;
   font-size: 19px;
-  background-color: white;
   display: none;
+  height: 60px;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
-  margin: -20px 0px;
+  border: 1px solid white;
+  /* margin: -20px 0px; */
   /* padding: 5px 0px; */
 }
 
-ul li.nav-item.user-sell-white-nav a{
+#white-div-nav .navbar-icons {
+  /* margin-right: -20px; */
+  /* border: 1px solid red; */
+}
+
+.blue-div-tee{
+  position: relative;
+  top: -8px;
+  left: -16px;
+}
+
+.white-div-tee {
+  position: relative !important;
+  top: -3px !important;
+  left: -30px !important; 
+}
+
+.white-div-tee a img{
+  border: 1px solid #dfa24c !important;
+  position: relative !important;
+  top: -5px !important;
+}
+
+ul li.nav-item.user-sell-white-nav a {
   color: #4e4d4d;
   font-weight: 600;
 }
 
-a.white-ticket-brand em{
+a.white-ticket-brand em {
   font-weight: 700;
   color: rgb(2, 108, 223);
   font-size: 45px;
 }
 
-.white-div a:hover, .blue-div a:hover{
+.white-div a:hover,
+.blue-div a:hover {
   text-decoration: none;
 }
 
-.user-sell-white-nav:hover{
+.user-sell-white-nav:hover {
   background: rgb(230, 230, 230);
 }
 
-.blue-div{
+.blue-div {
   color: white;
   font-size: 20px;
-  background: rgb(1,56,172);
-  background: linear-gradient(90deg, rgba(1,56,172,1) 0%, rgba(16,106,215,1) 56%, rgba(1,52,165,1) 100%);
+background: rgb(55,47,201);
+background: linear-gradient(90deg, rgba(55,47,201,1) 4%, rgba(30,56,224,0.7819502801120448) 53%, rgba(55,53,230,1) 97%);
 }
 
-.blue-div-nav{
+.blue-div-nav {
   /* margin-bottom: -5px; */
 }
 
-.blue-div a em{
+.blue-div a em {
   color: white;
   font-size: 25px;
 }
 
-.user-sell-blue-nav:hover{
+.user-sell-blue-nav:hover {
   background: rgba(38, 38, 38, 0.1);
+  /* padding: 10px; */
 }
 
-.user-icon{
+.user-icon {
   cursor: pointer;
 }
 
-ul li.nav-item.user-sell-blue-nav a{
+ul li.nav-item.user-sell-blue-nav a.nav-link {
   color: white;
   font-weight: 600;
 }
 
-div.white-icons.user-icon{
+div.white-icons.user-icon {
   /* padding: 19px 8px; */
 }
 
-.sell{
+.sell {
   /* cursor: default; */
 }
 
-
-.home-div-concert{
+.home-div-concert {
   margin-top: -15px;
   font-size: 12px;
 }
 
-div.white-icons{
+div.white-icons {
   /* padding: 10px; */
 }
 
-.concert-ticket{
+.concert-ticket {
   font-size: 24px;
 }
 
-.carousel-item a img{
+.carousel-item a img {
   max-width: 100%;
   width: 100%;
   height: auto;
 }
 
-a.slide-captions{
+
+
+a.slide-captions {
   color: rgb(1, 80, 167);
   font-size: 20px;
 }
 
-a.slide-captions:hover{
+a.slide-captions:hover {
   text-decoration: none;
   color: rgb(2, 108, 223);
 }
 
-.caption-text{
+.caption-text {
   font-weight: 400;
 }
 
-.caption-text, .concert-category{
+.caption-text,
+.concert-category {
   /* font-size: 16px; */
   /* color: #262626; */
 }
@@ -120,77 +163,89 @@ a.slide-captions:hover{
 .concert-category a:hover {
   color: rgb(2, 108, 223);
 }
-  
-.concert-event-forms select:hover, #sort-date:hover{
+
+select.concert-event-forms:hover,
+#sort-date:hover {
   border: 2px solid rgb(2, 108, 223);
   cursor: pointer;
 }
 
-#sort-date{
+#sort-date {
   border: none;
 }
 
-.footer{
+.footer {
   text-align: center;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.7);
   background: #1f262d;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.terms-policy{
+.terms-policy {
   font-weight: 600;
   color: white;
 }
 
-.sticky-nav{
-  position: sticky;
+.row.sticky-nav {
+  position: fixed;
+  margin-left: 0px;
+  margin-right: 0px;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   z-index: 100;
 }
 
 /* .white-div */
-  #white-navbar-input-field{
-    background-color: white;
-    border-color: #bfbfbf;
-  }
+#white-navbar-input-field {
+  background-color: white;
+  border-color: #bfbfbf;
+  width: 320px;
+}
 
-  #white-navbar-input-field:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 2px solid blue;
-  }
+#white-navbar-input-field:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 2px solid blue;
+}
 
-   #white-navbar-input-field::-webkit-input-placeholder, 
-  #white-navbar-input-field::placeholder{
-    color: #4e4d4d;
-    position: relative;
-    left: 15px;
-  }
+#white-navbar-input-field::-webkit-input-placeholder,
+#white-navbar-input-field::placeholder {
+  color: #4e4d4d;
+  position: relative;
+  left: 25px;
+}
 
-   .white-div-form i.input-search-icon{
-    z-index: 1;
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    color: #757070;
-    width: 0;
-  }
+.white-div-form{
+  position: relative;
+  left: 20px;
+  bottom: 15px;
+}
 
+.white-div-form i.input-search-icon {
+  z-index: 1;
+  position: absolute;
+  left: 17px;
+  top: 10px;
+  color: #757070;
+  width: 0;
+}
 
-   a.white-div-input em{
-    font-weight: 600;
-    font-size: 25px;
-    color: #026cdf;
-  }
-
+.white-div a.white-div-input em {
+  font-weight: 600;
+  font-size: 25px;
+  color: #026cdf;
+}
 
 /* blue div */
-#blue-navbar-input-field{
-    background-color: #3578d5;
-    border-color: #3578d5;
-  }
+#blue-navbar-input-field {
+  background-color: #3578d5;
+  border-color: #3578d5;
+  width: 320px;
+}
 
 #blue-navbar-input-field:focus {
   -webkit-box-shadow: none;
@@ -198,140 +253,405 @@ a.slide-captions:hover{
   border: 2px solid white;
 }
 
-.blue-div-form i.input-search-icon{
-    z-index: 1;
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    width: 0;
+.blue-div-form {
+  position: relative;
+  left: 20px;
+  top: 2px;
 }
 
- #blue-navbar-input-field::-webkit-input-placeholder, 
-  #blue-navbar-input-field::placeholder{
-    color: white;
-    position: relative;
-    left: 15px;
-  }
+
+.blue-div-form i.input-search-icon {
+  z-index: 1;
+  position: absolute;
+  left: 17px;
+  top: 10px;
+  width: 0;
+}
+
+#blue-navbar-input-field::-webkit-input-placeholder,
+#blue-navbar-input-field::placeholder {
+  color: white;
+  position: relative;
+  left: 25px;
+}
+
+.arts, .family{
+  display: none;
+}
+
+#img-gallery{
+  padding: 20px 30px;
+}
 
 
 
+#img-gallery .static-image1 img, #img-gallery .static-image2 img{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.category-form-fields{
+  padding-left: 40px;
+  /* padding-right: 20px; */
+}
 
 /* media queries */
-@media only screen and (max-width: 767px){
-  .blue-div-form, .white-div-form, .white-div-input, 
-  .help, ul.large-screen-menulinks{
+@media only screen and (min-width: 320px) and (max-width: 375px){
+
+  #blue-div-nav .navbar-icons{
+    position: relative;
+    right: 9px;
+    /* border: 1px solid red; */
+    /* width: 200px; */
+  }
+
+  #white-div-nav .navbar-icons {
+    position: relative;
+    right: 10px;
+    /* width: 200px; */
+  }
+
+  .navbaricons-category-scroll{
+    position: relative;
+    left: 2px;
+  }
+
+  #blue-div-nav .menu-items, #white-div-nav .menu-items{
+      /* padding-left: 5px; */
+      position: relative;
+      left: 10px; 
+      /* i changed this part for subscription page */
+      /* border: 1px solid green; */
+  } 
+
+  #white-div-nav .navbar-icons {
+    /* margin-right: -30px; */
+    /* border: 1px solid red; */
+  }
+
+  .hide-and-show {
+    /* padding-top: 20px;
+    padding-bottom: 50px; */
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .blue-div a em{
+    font-size: 30px;
+    /* border: 1px solid red; */
+  }
+
+  #white-div-nav .navbar-icons {
+    /* margin-right: -30px; */
+    /* border: 1px solid red; */
+  }
+
+  #blue-div-nav .navbar-icons {
+    /* margin-right: -15px; */
+    /* border: 1px solid red; */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .blue-div-form,
+  .white-div-form,
+  .white-div-input, #hide-div,
+  .help, #placeholder-side-image,
+  ul.large-screen-menulinks,
+  #img-gallery, div.advert-section, .captions .live-button {
     display: none;
   }
 
-  .user-sell-white-nav:hover{
-    padding: 30px 10px;
+  .user-sell-white-nav:hover {
+    /* padding: 30px 10px; */
     text-align: center;
   }
 
-  .user-sell-blue-nav:hover{
-    padding: 30px 10px;
+  .user-sell-blue-nav:hover {
+    /* padding: 30px 10px; */
     text-align: center;
   }
 }
 
-@media only screen and (max-width:991px) and (min-width: 768px) {
-  .search-icon, ul.large-screen-menulinks{
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .search-icon,
+  ul.large-screen-menulinks,
+  .carousel, .static-image3, div.advert-section, 
+  #placeholder-side-image, .captions .live-button {
     display: none;
   }
 
-  .concert-ticket{
+  .concert-ticket {
     font-size: 32px;
     font-weight: 600px;
   }
 
-  div.user-sell-blue-nav:hover{
-    padding: 50px 40px;
-    text-align: center;
-  }
-  .hide-and-show{
-    padding-top: 10px;
-  }
-  .white-div-form{
-    margin-top: 15px;
+  .blue-div a em{
+    font-size: 22px;
   }
 
-  input[type="text"].search{
-    /* font-family: "Font Awesome 5 Free", Roboto, sans-serif;
-    font-size: 1.3333333333333333em;
-    font-weight: 900; */
+  .white-div a.white-div-input em {
+    font-size: 22px;
+  }
+
+  #blue-div-nav .navbar-icons, 
+  #white-div-nav .navbar-icons {
+    font-size: 16px;
+    position: relative;
+    left: 35px;
+    /* border: 1px solid red; */
+  }
+
+  #blue-div-nav .menu-items, #white-div-nav .menu-items{
+      /* margin:8px 10px !important; */
+      /* margin: 8px 10px !important; */
+      /* border: 1px solid red; */
+      /* padding-left: 23px; */
+  } 
+
+  .blue-div-form {
+    position: relative;
+    left: -65px;
+  }
+  
+  .white-div-form {
+    margin-top: 15px;
+    position: relative;
+    left: -70px;
+  }
+
+  .white-div-tee {
+    /* border: 1px solid red; */
+    /* margin: -3px -30px; */
   }
 
   /* for white div */
-  .white-ticket-brand{
-    display: none;
+  .white-ticket-brand {
+    /* display: none; */
   }
 
- 
   /* for blue div */
- 
-#blue-div-nav{
-    padding-top: 10px;
+
+  #blue-div-nav {
+    /* padding-top: 5px; */
     padding-bottom: 60px;
   }
 
-
   .carousel-item a img {
-    width:93%;
-    height: auto;
-    border-radius: 4px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-
-  .carousel-item a img#image-slide2, .carousel-item a img#image-slide3 {
-    /* width:41.66%;
+    /* width:93%;
     height: auto;
     border-radius: 4px;
     margin-left: 25px;
     margin-right: 25px; */
   }
 
-  main{
+  #img-gallery div.captions{
+    padding: 15px;
+  }
+
+  .white-img-scroll{
     position: relative;
-    top: 20px;
+    /* left: -28px; */
   }
 }
 
 /* media queries for large devices */
 @media only screen and (min-width: 992px) {
- .concert-ticket{
-   font-size: 46px;
- }
-  .search-icon, .white-ticket-brand, .menu-items{
+   .search-icon, .menu-items, .carousel, #hide-div {
     display: none;
   }
+
+  .blue-div a em{
+    font-size: 22px;
+  }
+
+  .white-div a.white-div-input em {
+    font-size: 22px;
+  }
+
+  .concert-ticket {
+    position: relative;
+    bottom: 10px;
+    font-size: 46px;
+    font-weight: 600;
+  }
+ 
+  #blue-div-nav {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .blue-div, .hide-and-show{
+    font-size: 16px;
+  }
+
+  #blue-div-nav .navbar-icons {
+    position: relative;
+    left: -15px;
+    top: -5px;
+    /* font-size: 16px; */
+    /* border: 1px solid red; */
+  }
+
+  .menu-items {
+    display: none;
+  }
+
+  .white-div-tee {
+    position: relative;
+    left: -30px;
+    /* padding-top: 20px; */
+  }
+
+  .blue-div-form {
+    position: relative;
+    left: -75px;
+  }
+
+  .white-div-form {
+    position: relative;
+    top: 5px;
+    left: -85px;
+  }
+
+  #white-div-nav .navbar-icons {
+   position: relative;
+    left: -15px;
+    /* font-size: 16px; */
+    /* border: 1px solid red; */
+  }
+
+  #white-div-nav .large-screen-menulinks,
+  #blue-div-nav .large-screen-menulinks{
+    position: relative;
+    left: -95px;
+  }
+
+  div.advert-section{
+    background-color:#f6f6f6;
+  }
+
+  #advert-img-div{
+    padding: 10px 0px;
+  }
+
+  .static-image1 p.caption-text{
+    /* word-spacing: 0.7em;
+    font-size: 18px; */
+  }
+
+  .captions .live-button{
+    position: relative;
+    left: -30px;
+    top: 35px;
+  }
+
+  div.advert-section img{
+    /* margin: 0px auto; */
+    /* width: 100%;
+    height: auto; */
+  }
+
+  #img-gallery{
+    margin-top: 30px;
+  }
+
+ #img-gallery .static-image1 div.captions{
+    padding: 20px;
+  }
+
+  .category-form-fields{
+    /* border: 1px solid red; */
+    padding-left: 30px;
+    /* width: 100%; */
+    /* margin-right: 20px; */
+  }
+
+  select#sort-date{
+    /* margin-left: 10px; */
+  }
+
+  #placeholder-side-image{
+    position: relative;
+    bottom: 120px;
+    /* left: 30px; */
+
+  }
+
   
-  #blue-div-nav{
-    padding-top: 10px;
-    padding-bottom: 60px;
+
+}
+
+@media only screen and (min-width: 1200px) {
+ 
+  .blue-div-form, .white-div-form {
+    position: relative;
+    left: -85px;
+    top: 2px;
   }
 
-  .carousel-item a img {
-    max-width:70%;
-    height: auto;
-    border-radius: 4px;
-    margin: 30px 130px;
+  #blue-div-nav .large-screen-menulinks, 
+  #white-div-nav .large-screen-menulinks{
+    position: relative;
+    left: -135px;
   }
 
-  .carousel-item .captions{
-    text-align: center;
+   #placeholder-side-image{
+    position: relative;
+    left: 40px;
   }
 
-  .menu-items{
-    display: none;
+  #blue-div-nav .navbar-icons, 
+  #white-div-nav .navbar-icons{
+    position: relative;
+    left: 140px;
   }
 
-  .hide-and-show{
-    padding-top: 20px;
+  .captions .live-button{
+    position: relative;
+    left: -5px;
+    top: 35px;
   }
-  .white-div-form{
-    padding-top: 10px;
+
+}
+@media only screen and (min-width: 1440px){
+ .captions .live-button{
+    position: relative;
+    left: 25px;
+    top: 35px;
   }
+
+   .blue-div-form {
+    position: relative;
+    left: -115px;
+  }
+
+  .white-div-form {
+    position: relative;
+    left: -127px;
+  }
+
+  #blue-div-nav .large-screen-menulinks, 
+  #white-div-nav .large-screen-menulinks{
+    position: relative;
+    left: -240px;
+  }
+
+  .arts, .family{
+    display: block;
+  }
+
+  .static-image3{
+    position: relative;
+    top: 30px;
+  }
+
+}
+
+.white-img-scroll{
+  position: relative;
+  /* left: -15px; */
 }
 
 
