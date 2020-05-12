@@ -207,11 +207,11 @@ img {
 }
 
 img.card-img-top {
-    border-radius: 0;
+    /* border-radius: 0; */
 }
 
 a img {
-    border-radius: 0px;
+    /* border-radius: 0px; */
 }
 
 .bg-dropdown-theme:hover {
@@ -520,6 +520,70 @@ div.account-overview{
     padding-right: 40px;
 }
 
+/* page-3 styles */
+.artist-tickets{
+    margin-top: 5px;
+}
+
+.artist-name-page3{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.artist-name-page3 img{
+    margin-bottom: 20px;
+}
+
+.artist-name-page3 div > span:first-child{
+    font-weight: 300;
+    display: block;
+}
+
+#event-reviews > div:nth-child(2){
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#event-reviews a {
+    color: white;
+    font-size: 16px;
+}
+
+#event-reviews a.active::after{
+    content: "";
+    display: block;
+    border-bottom: 5px solid white;
+    max-width: 100%;
+    width: 85px;
+    position: relative;
+    top: 5px;
+}
+
+.list-calendar a{
+    border: 1px solid #007bff;
+    width: 50px;
+    height: 46px;
+}
+
+.list-calendar > a:first-child{
+    background-color: #007bff;
+    color: white;
+
+}
+
+i.fa-list{
+    }
+
+.align-text-left{
+    text-align: left;
+}
+
+.fans-views-images{
+    width: fit-content;
+}
+
 @media only screen and (min-width: 375px) and (max-width: 599px){
     .discover-events a.theater{
     position: relative;
@@ -529,7 +593,7 @@ div.account-overview{
 }
 
 @media only screen and (max-width: 767px){
-    .expand-at-medium, .expand-at-large, .questlove, .family.btn{
+    .expand-at-medium, .expand-at-large, .questlove, .family.btn, .expand-at-xl{
         display: none;
     }
 
@@ -540,7 +604,7 @@ div.account-overview{
 }
 
 @media only screen and (min-width: 768px){
-    .expand-at-large{
+    .expand-at-large, .hide-at-medium, .expand-at-xl{
         display: none;
     }
 
@@ -611,9 +675,46 @@ div.account-overview{
         margin-top: 100px;
     }
 
+    .positioning-at-medium{
+        position: relative;
+        right: 450px;
+        top: -120px;
+    }
+
+    .artist-name-page3 div > span:first-child{
+        display: inline-block;
+    }
+
+    #event-reviews > div:last-child{
+        position: relative;
+        top: -60px;
+        margin-top: -40px;
+        margin-bottom: -40px;
+    }
+
+    .event-dates{
+        margin: 0 15px;
+    }
+
+    .angle-down::before{
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size:20px;
+        color: #dfa24c;
+        display: inline-block;
+        position: relative;
+        top: 15px;
+    }
+
+
 }
 
 @media only screen and (min-width: 992px){
+    .expand-at-large{
+        display: block;
+    }
+
     .icon-links{
         position: relative;
         top: 0;
@@ -635,9 +736,23 @@ div.account-overview{
         left: 180px;
     }
 
+    .positioning-at-medium{
+        position: relative;
+        right: 660px;
+    }
+
 }
 
 @media only screen and (min-width: 1200px){
+    .expand-at-xl{
+        display: block;
+    }
+
+    .positioning-at-medium{
+        position: relative;
+        right: 900px;
+    }
+
     .discover-events a.btn{
         margin-left: 35px;
         margin-right: 35px;
@@ -655,9 +770,14 @@ div.account-overview{
     }
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1440px){
+    .positioning-at-medium{
+        position: relative;
+        right: 1080px;
+    }
+
     .hearts{
         position: absolute;
-        left: 320px;
+        left: 280px;
     }
 }
