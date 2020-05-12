@@ -64,20 +64,23 @@ a.slide-captions,
 
 .blue-div-tee {
   position: relative;
-  top: -8px;
-  left: -16px;
+  left: -20px;
+  margin-top: -20px;
+  margin-bottom: -20px;
 }
 
 .white-div-tee {
   position: relative;
-  top: -3px;
-  left: -32px; 
+  left: -35px; 
+  margin-top: -20px;
+  margin-bottom: -20px;
+  /* border: 1px solid red; */
 }
 
 .white-div-tee a img{
-  border: 1px solid #dfa24c;
-  position: relative;
-  top: -5px;
+  /* border: 1px solid #dfa24c; */
+  /* position: relative;
+  top: -5px; */
 }
 
 ul li.nav-item.user-sell-white-nav a {
@@ -350,6 +353,13 @@ footer span.terms-policy {
   color: white;
 }
 
+ .large-screen-padding {
+    max-width: 1296px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
 /* media queries */
 @media only screen and (min-width: 320px) and (max-width: 375px){
 
@@ -538,12 +548,6 @@ footer span.terms-policy {
 
   .menu-items {
     display: none;
-  }
-
-  .white-div-tee {
-    position: relative;
-    left: -30px;
-    /* padding-top: 20px; */
   }
 
   .blue-div-form {

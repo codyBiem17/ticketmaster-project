@@ -532,11 +532,21 @@ div.account-overview{
     .expand-at-medium, .expand-at-large, .questlove, .family.btn{
         display: none;
     }
+
+    .icon-links{
+        position: relative;
+        top: 5px;
+    }
 }
 
 @media only screen and (min-width: 768px){
     .expand-at-large{
         display: none;
+    }
+
+    .icon-links{
+        position: relative;
+        top: 5px;
     }
 
     .unforgettable{
@@ -604,8 +614,9 @@ div.account-overview{
 }
 
 @media only screen and (min-width: 992px){
-    #white-div-nav ul.large-screen-menulinks{
-        /* display: none; */
+    .icon-links{
+        position: relative;
+        top: 0;
     }
 
     .discover-events a.btn{
