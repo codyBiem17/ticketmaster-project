@@ -202,7 +202,7 @@ input {
     height: 46px;
 }
 
-img {
+img:not(.carousel-images) {
     border-radius: 5px;
 }
 
@@ -737,8 +737,7 @@ i.fa-list{
     }
 
     .positioning-at-medium{
-        position: relative;
-        right: 660px;
+        text-align: center;
     }
 
 }
@@ -746,11 +745,6 @@ i.fa-list{
 @media only screen and (min-width: 1200px){
     .expand-at-xl{
         display: block;
-    }
-
-    .positioning-at-medium{
-        position: relative;
-        right: 900px;
     }
 
     .discover-events a.btn{
@@ -771,11 +765,7 @@ i.fa-list{
 }
 
 @media only screen and (min-width: 1440px){
-    .positioning-at-medium{
-        position: relative;
-        right: 1080px;
-    }
-
+    
     .hearts{
         position: absolute;
         left: 280px;

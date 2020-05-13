@@ -34,7 +34,7 @@ a.slide-captions,
   /* padding: 5px 0px; */
 }
 
-#white-div-nav .menu-items {
+#white-div-nav .hamburger-icon {
     margin: 8px 0px;
     /* padding: 0 2px; */
 }
@@ -48,11 +48,8 @@ a.slide-captions,
     /* border: 1px solid red; */
 }
 
-#blue-div-nav .menu-items {
+#blue-div-nav .hamburger-icon {
     margin: 8px 0px;
-    /* border: 1px solid red; */
-    /* padding: 0 2px; */
-
 }
 
 #blue-div-nav .toggler-icon {
@@ -62,25 +59,18 @@ a.slide-captions,
     margin-bottom: 3px;
 }
 
-.blue-div-tee {
+.blue-div-logo {
   position: relative;
   left: -20px;
-  margin-top: -20px;
-  margin-bottom: -20px;
+  margin-top: -30px;
+  margin-bottom: -30px;
 }
 
-.white-div-tee {
+.white-div-logo {
   position: relative;
   left: -35px; 
-  margin-top: -20px;
-  margin-bottom: -20px;
-  /* border: 1px solid red; */
-}
-
-.white-div-tee a img{
-  /* border: 1px solid #dfa24c; */
-  /* position: relative;
-  top: -5px; */
+  margin-top: -57px;
+  margin-bottom: -57px;
 }
 
 ul li.nav-item.user-sell-white-nav a {
@@ -374,7 +364,7 @@ footer span.terms-policy {
    
   }
 
-  #blue-div-nav .menu-items, #white-div-nav .menu-items{
+  #blue-div-nav .hamburger-icon, #white-div-nav .hamburger-icon{
     position: relative;
     left: 10px; 
   } 
@@ -460,7 +450,7 @@ footer span.terms-policy {
     left: 50px;
   }
 
-  #blue-div-nav .menu-items, #white-div-nav .menu-items{
+  #blue-div-nav .hamburger-icon, #white-div-nav .hamburger-icon{
     position: relative;
     top: -2px;
   } 
@@ -476,14 +466,9 @@ footer span.terms-policy {
     left: -70px;
   }
 
-  .white-div-tee {
-    /* border: 1px solid red; */
-    /* margin: -3px -30px; */
-  }
-
-  /* for white div */
-  .white-ticket-brand {
-    /* display: none; */
+  .white-div-logo {
+    margin-top: -32px;
+    margin-bottom: -32px;
   }
 
   /* for blue div */
@@ -505,7 +490,7 @@ footer span.terms-policy {
 
 /* media queries for large devices */
 @media only screen and (min-width: 992px) {
-   .search-icon, .menu-items, .carousel, #hide-div {
+   .search-icon, .hamburger-icon, .carousel, #hide-div {
     display: none;
   }
 
@@ -538,6 +523,12 @@ footer span.terms-policy {
     font-size: 16px;
   }
 
+  .white-div-logo {
+    margin-top: -32px;
+    margin-bottom: -32px;
+  }
+
+
   #blue-div-nav .navbar-icons {
     position: relative;
     left: -15px;
@@ -546,7 +537,7 @@ footer span.terms-policy {
     /* border: 1px solid red; */
   }
 
-  .menu-items {
+  .hamburger-icon {
     display: none;
   }
 

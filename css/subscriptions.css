@@ -30,31 +30,20 @@ a.slide-captions,
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
   border: 1px solid white;
   background-color: white;
-  /* margin: -20px 0px; */
-  /* padding: 5px 0px; */
 }
 
-#white-div-nav .navbar-icons {
-  /* margin-right: -20px; */
-  /* border: 1px solid red; */
-}
-
-.blue-div-tee{
+.blue-div-logo{
   position: relative;
-  top: -8px;
-  left: -16px;
+  left: -20px;
+  margin-top: -53px;
+  margin-bottom: -53px;
 }
 
-.white-div-tee {
+.white-div-logo {
   position: relative;
-  top: -8px;
-  left: -32px; 
-}
-
-.white-div-tee a img{
-  border: 1px solid #dfa24c;
-  position: relative;
-  top: -5px;
+  left: -35px; 
+  margin-top: -62px;
+  margin-bottom: -62px;
 }
 
 ul li.nav-item.user-sell-white-nav a {
@@ -174,20 +163,6 @@ select.concert-event-forms:hover,
 #sort-date {
   border: none;
 }
-
-/* .footer {
-  text-align: center;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
-  background: #1f262d;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.terms-policy {
-  font-weight: 600;
-  color: white;
-} */
 
 .row.sticky-nav {
   position: fixed;
@@ -449,7 +424,7 @@ span.username{
     /* font-weight: 600; */
 }
 
-#white-div-nav .menu-items {
+#white-div-nav .hamburger-icon {
     margin: 8px 0px;
     padding: 0 2px;
 }
@@ -467,7 +442,7 @@ span.username{
     font-size: 23px;
 }
 
-#blue-div-nav .menu-items {
+#blue-div-nav .hamburger-icon {
     margin: 8px 0px;
     /* border: 1px solid red; */
     padding: 0 2px;
@@ -815,6 +790,13 @@ button.btn-outline-primary{
    font-weight: 600;
 }
 
+ .large-screen-padding {
+    max-width: 1296px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
 footer.footer{
     text-align: justify;
     margin-top: 50px;
@@ -848,7 +830,6 @@ footer span.terms-policy {
 
 
 /* media queries here */
-/* media queries */
 @media only screen and (min-width: 320px) and (max-width: 375px){
 
   #blue-div-nav .navbar-icons{
@@ -864,36 +845,17 @@ footer span.terms-policy {
     right:5px;
   }
 
-  #blue-div-nav .menu-items, #white-div-nav .menu-items{
+  #blue-div-nav .hamburger-icon, #white-div-nav .hamburger-icon{
       /* padding-left: 5px; */
       position: relative;
       left: 12px; 
   } 
 
-  #white-div-nav .navbar-icons {
-    /* margin-right: -30px; */
-    /* border: 1px solid red; */
-  }
-
-  .hide-and-show {
-    /* padding-top: 20px;
-    padding-bottom: 50px; */
-  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .blue-div a em{
     font-size: 30px;
-    /* border: 1px solid red; */
-  }
-
-  #white-div-nav .navbar-icons {
-    /* margin-right: -30px; */
-    /* border: 1px solid red; */
-  }
-
-  #blue-div-nav .navbar-icons {
-    /* margin-right: -15px; */
     /* border: 1px solid red; */
   }
 }
@@ -945,49 +907,13 @@ footer span.terms-policy {
 
   .white-div a.white-div-input em {
     font-size: 22px;
-  }
-
-  #blue-div-nav .navbar-icons {
-    /* position: relative; */
-    /* left: 15px; */
-    /* border: 1px solid red; */
-  }
-
-  #blue-div-nav .menu-items, #white-div-nav .menu-items{
-      /* margin:8px 10px !important; */
-      /* padding: 0 15px;
-      border: 1px solid red; */
   } 
-  
-  .white-div-form {
-    /* margin-top: 15px; */
-  }
-
-  .white-div-tee{
-    margin: -15px 0 0;
-    /* border: 1px solid red; */
-    /* position: relative; */
-    /* left: -10px !important; */
-}
-
-  /* for white div */
-  .white-ticket-brand {
-    display: none;
-  }
 
   /* for blue div */
 
   #blue-div-nav {
     /* padding-top: 5px; */
     padding-bottom: 60px;
-  }
-
-  .carousel-item a img {
-    /* width:93%;
-    height: auto;
-    border-radius: 4px;
-    margin-left: 25px;
-    margin-right: 25px; */
   }
 
   #img-gallery div.captions{
@@ -1017,7 +943,7 @@ footer span.terms-policy {
 /* media queries for large devices */
 @media only screen and (min-width: 992px) {
    .search-icon,
-  .menu-items, .carousel, #hide-div {
+  .hamburger-icon, .carousel, #hide-div {
     display: none;
   }
 
@@ -1045,35 +971,8 @@ footer span.terms-policy {
     /* border: 1px solid red; */
   }
 
-  /* .carousel-item a img {
-    max-width:70%;
-    height: auto;
-    border-radius: 4px;
-    margin: 30px 130px;
-  }
-
-  .carousel-item .captions{
-    text-align: center;
-  } */
-
-  .menu-items {
+  .hamburger-icon {
     display: none;
-  }
-
-  .white-div-form {
-    position: relative;
-    /* top: 5px; */
-    /* left: -10px; */
-  }
-
-  #white-div-nav .navbar-icons {
-    /* position: relative;
-    left: 25px; */
-    /* border: 1px solid red; */
-  }
-
-  #white-div-nav .large-screen-menulinks{
-    /* margin-left: 10px; */
   }
 
   div.advert-section{
@@ -1093,41 +992,7 @@ footer span.terms-policy {
     position: relative;
     left: 280px;
     top: 5px;
-  }
-
-  div.advert-section img{
-    /* margin: 0px auto; */
-    /* width: 100%;
-    height: auto; */
-  }
-
-  #img-gallery{
-    margin-top: 30px;
-  }
-
- #img-gallery div.captions{
-    /* padding: 25px; */
-  }
-
-  .category-form-fields{
-    /* border: 1px solid red; */
-    padding-left: 30px;
-    /* width: 100%; */
-    /* margin-right: 20px; */
-  }
-
-  select#sort-date{
-    /* margin-left: 10px; */
-  }
-
-  #placeholder-side-image{
-    position: relative;
-    bottom: 120px;
-    /* left: 30px; */
-
-  }
-
-  
+  } 
 
 }
 
@@ -1190,8 +1055,8 @@ footer span.terms-policy {
       left: 30px;
     }
 
-    #white-div-nav .menu-items, 
-    #blue-div-nav .menu-items {
+    #white-div-nav .hamburger-icon, 
+    #blue-div-nav .hamburger-icon {
         padding: 0 15px;
     }
 
@@ -1237,6 +1102,20 @@ footer span.terms-policy {
         height: 30px !important;
     }
 
+    .blue-div-logo{
+      position: relative;
+      left: -20px;
+      margin-top: -30px;
+      margin-bottom: -30px;
+    }
+
+  .white-div-logo {
+    position: relative;
+    left: -35px; 
+    margin-top: -35px;
+    margin-bottom: -35px;
+  }
+
    .blue-div-form {
         position: relative;
         left: -120px;
@@ -1261,16 +1140,6 @@ footer span.terms-policy {
     #blue-div-nav .user-icon, #white-div-nav .user-icon {
         position: relative;
         left:30px;
-    }
-
-    .white-div-tee{
-      margin: 5px 0;
-    }
-
-    .white-div-form {
-        position: relative;
-        /* left: -120px;
-        bottom: 5px; */
     }
 
     #white-div-nav .large-screen-menulinks{

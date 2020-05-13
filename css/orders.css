@@ -34,40 +34,28 @@ a.slide-captions,
   /* padding: 5px 0px; */
 }
 
-#white-div-nav .navbar-icons {
-  /* margin-right: -20px; */
-  /* border: 1px solid red; */
-}
 
-.white-div-tee {
-  /* margin: 0px -2px;  */
-}
-
-.blue-div-tee{
+.blue-div-logo{
   position: relative;
-  top: -8px;
-  left: -16px;
+  left: -20px;
+  margin-top: -53px;
+  margin-bottom: -53px;
 }
 
-.white-div-tee {
+.white-div-logo {
   position: relative;
-  top: -9px;
-  left: -32px; 
+  left: -35px; 
+  margin-top: -62px;
+  margin-bottom: -62px;
 }
 
-.white-div-tee a img{
-  border: 1px solid #dfa24c;
-  position: relative;
-  top: -5px;
-}
 
-#white-div-nav .menu-items {
+#white-div-nav .hamburger-icon {
     margin: 8px 0px;
     padding: 0 2px;
 }
 
 #white-div-nav .toggler-icon {
-    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
     width: 18px;
     height: 3px;
     background-color: black;
@@ -79,7 +67,7 @@ a.slide-captions,
     font-size: 23px;
 }
 
-#blue-div-nav .menu-items {
+#blue-div-nav .hamburger-icon {
     margin: 8px 0px;
     /* border: 1px solid red; */
     padding: 0 2px;
@@ -93,9 +81,6 @@ a.slide-captions,
     margin-bottom: 3px;
 }
 
-.white-div-tee{
-   /* border: 1px solid red; */
-}
 
 #white-div-nav .navbar-icons{
     /* position: relative;
@@ -108,14 +93,6 @@ a.slide-captions,
 
 #blue-div-nav{
     height: 60px !important;
-}
-
-.blue-div-tee, .white-div-tee{
-    /* margin: -10px 0; */
-    /* border: 1px solid red; */
-    /* max-width: 50%; */
-    /* position: relative; */
-    /* left: -10px !important; */
 }
 
 #blue-div-nav .navbar-icons{
@@ -307,7 +284,12 @@ footer span.terms-policy {
   left: 25px;
 }
 
-
+.large-screen-padding {
+  max-width: 1296px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
 
 
 
@@ -329,7 +311,7 @@ footer span.terms-policy {
     /* width: 200px; */
   }
 
-  #blue-div-nav .menu-items, #white-div-nav .menu-items{
+  #blue-div-nav .hamburger-icon, #white-div-nav .hamburger-icon{
       /* padding-left: 5px; */
       position: relative;
       left: 12px; 
@@ -407,7 +389,7 @@ a.my-account::after, a.my-listings::after{
   padding-bottom: 15px;
 }
 
-#my-events{
+#my-events, #my-ticket-listings{
         /* font-weight: 600; */
     display: -ms-flexbox;
     display: flex;
@@ -480,7 +462,7 @@ hr#order-page-line{
   /* margin-bottom: -50px; */
 }
 
-.tab-pane #svg-img{
+.tab-pane .svg-img{
   padding-top: 50px;
   padding-bottom: 30px;
 }
@@ -544,10 +526,14 @@ span.username{
     position: relative;
     left: -3px;
   }
+
+  #seven-eight-footer{
+    /* margin: 60px 0 30px; */
+  }
 }
 
 @media only screen and (max-width: 320px){
-    #my-events{
+    #my-events, #my-ticket-listings{
         flex-wrap: wrap;
     }
 }
@@ -575,8 +561,8 @@ span.username{
     display: inline-block;
   }
 
-  #white-div-nav .menu-items, 
-  #blue-div-nav .menu-items {
+  #white-div-nav .hamburger-icon, 
+  #blue-div-nav .hamburger-icon {
     padding: 0 15px;
   }
 
@@ -605,14 +591,14 @@ span.username{
 
   footer.footer{
       text-align: center;
-      margin-top: 257px;
+      margin: 250px 0;
   }
 }
 
 /* media queries for large devices */
 @media only screen and (min-width: 992px) {
    .search-icon,
-  .menu-items{
+  .hamburger-icon{
     display: none;
   }
 
@@ -623,6 +609,20 @@ span.username{
 
   .white-div a.white-div-input em{
     font-size: 23px;
+  }
+
+  .blue-div-logo{
+    position: relative;
+    left: -20px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+  }
+
+  .white-div-logo {
+    position: relative;
+    left: -35px; 
+    margin-top: -35px;
+    margin-bottom: -35px;
   }
  
   .blue-div-form {
@@ -745,16 +745,7 @@ span.username{
 }
 
 @media only screen and (min-width: 1440px){
-    /* .blue-div-tee{
-        position: relative;
-        left: 30px
-    }
-
-    .white-div-tee{
-        position: relative;
-        left: 55px  
-    } */
-
+  
     .blue-div-form{
         position: relative;
         left: -210px
@@ -812,6 +803,7 @@ span.username{
     .large-screen-navlinks .dropdown .dropdown-menu {
         position: absolute;
         top: -5px;
+        left: -20px;
         border: none;
         background-color: transparent;
     }
@@ -827,8 +819,62 @@ span.username{
     
 }
 
+/*part of page 7 styles */
 
+.ticket-div {
+  width: 150px;
+  height: 150px;
+  background-color: #DFE4E7;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 0;
+}
 
+.ticket-container {
+    background-color: #F6F6F6;
+}
+.ticket-div .first {
+  color: #59656E;
+  position: relative;
+  left: -20px;
+  z-index: 3;
+}
 
+.ticket-div .second {
+  color: #768692;
+  position: relative;
+  left: 20px;
+  z-index: 1;
+}
+
+i.fa-ticket-alt{
+  margin: 50px auto;
+  font-size: 48px;
+  transform: rotate(140deg);
+}
+
+#my-ticket-listings h4{
+  line-height: 45px;
+  color: #262626;
+  font-weight: 600;
+  padding: 0 20px
+}
+
+#nav-tabs li.ticket-list a.active::after{
+  content: "";
+  border-bottom: 4px solid #026cdf;
+  display: block;
+  width: 80px;
+  position: relative;
+  top: 5px;
+  margin: 0 -15px;
+}
+
+.ticket-lists-comment{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
 
 
