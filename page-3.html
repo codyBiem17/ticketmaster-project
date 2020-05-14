@@ -12,6 +12,10 @@
     
     <style>
 
+        #blue-div-nav{
+            height: 60px;
+        }
+
         .hover-effect:hover {
             background-color: #E7EEF9;
         }
@@ -21,19 +25,19 @@
 
         @media screen and (max-width: 1023px) {
             .custom-w {
-                width: 100%;
+                /* width: 100%; */
             }
         }
 
         @media screen and (min-width: 1024px) {
             .custom-w {
-                width: 50%;
+                /* width: 50%; */
             }
         }
 
         @media screen and (min-width: 768px) {
             .custom-mt {
-                margin-top:60px;
+                /* margin-top:60px; */
                 /* margin-bottom: -20px; */
             }
         }
@@ -246,14 +250,14 @@
     
             <div id="event-reviews" class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-7 custom-mt col-lg-8 col-xl-9">
+                    <div class="col-12 col-sm-7 col-md-7 custom-mt col-lg-8 col-xl-9">
                         <div class="row">
                             <div class="col-12 font-14">
                                 Home / Concert Tickets / Rock / 
                                 <span class="expand-at-medium">
                                     John Doe Tickets
                                 </span>
-                                <span class="ml-2 p-1 border border-white">
+                                <span class="star-span">
                                     <i class="fa fa-star"></i>
                                     4.5
                                 </span>
@@ -261,14 +265,18 @@
                             <div class="col-12 font-14 artist-tickets hide-at-medium">
                                 John Doe Tickets
                             </div>
+                            <div class="col-12 hide-at-xsm show-at-sm">
+                                John Doe
+                                <span class="">Tickets</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 artist-name-page3">
+                    <div class="col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3 artist-name-page3">
                         <div class="row">
                             <div class="col-12">
                                 <img class="" src="https://via.placeholder.com/300x200" alt="" width="100%">
                             </div>
-                            <div class="col-12 positioning-at-medium">
+                            <div class="col-12 hide-from-small">
                                 John Doe
                                 <span class="">Tickets</span>
                             </div>
@@ -315,7 +323,7 @@
                                 </a>
                             </div>
                             
-                            <div class="col-lg-4 col-md-5 col-12">
+                            <div class="col-lg-4 col-sm-5 col-12">
                                 <form action="">
                                     <div class="form-row">
                                         <div class="col-12 mb-2 mr-2">
@@ -329,7 +337,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-lg-5 col-md-2 align-text-left mt-2 expand-at-medium">
+                            <div class="col-lg-5 col-sm-2 align-text-left mt-2 expand-at-small">
                                 <span class="color-theme ml-n3 h5 mt-2">Reset</span>
                             </div>
                         </div>
@@ -725,7 +733,7 @@
                             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                                 <img class="" src="https://via.placeholder.com/300x150" alt="">
                             </div>
-                            <div class="col-lg-3 col-md-4 expand-at-medium">
+                            <div class="col-lg-3 col-md-4 col-sm-6 hide-at-xsm">
                                 <img class="" src="https://via.placeholder.com/300x150" alt="">
                             </div>
                             <div class="col-lg-3 col-md-4 expand-at-medium">

@@ -474,12 +474,15 @@ img{
 .discover-events a.btn{
     margin-left: 5px;
     margin-right: 5px;
+    font-size: 14px;
 }
 
 .discover-events a.theater{
     position: relative;
-    top: -37px;
-    left: 182px;
+    left: 10px;
+    /* margin-top: -5px; */
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 .less-md-block{
@@ -523,6 +526,17 @@ div.account-overview{
 /* page-3 styles */
 .artist-tickets{
     margin-top: 5px;
+}
+
+.show-at-sm{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+.show-at-sm > span:first-child{
+    font-weight: 300;
+    display: block;
 }
 
 .artist-name-page3{
@@ -573,9 +587,6 @@ div.account-overview{
 
 }
 
-i.fa-list{
-    }
-
 .align-text-left{
     text-align: left;
 }
@@ -584,16 +595,39 @@ i.fa-list{
     width: fit-content;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 599px){
-    .discover-events a.theater{
-    position: relative;
-    top: 0px;
-    left: 2px;
+.star-span{
+    border: 1px solid white;
+    margin-left: 8px;
+    padding: 4px;
 }
+
+@media only screen and (min-width: 320px) and (max-width:574px) {
+    .hide-at-xsm, .expand-at-small{
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 575px) and (max-width:767px) {
+    .hide-from-small{
+        display: none;
+    }
+    .discover-events .family.btn{
+        display: inline-block;
+        position: relative;
+        left: 8px;
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+
+    .discover-events, footer.footer{
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 767px){
-    .expand-at-medium, .expand-at-large, .questlove, .family.btn, .expand-at-xl{
+    .expand-at-medium, .expand-at-large, .questlove,
+    .expand-at-xl{
         display: none;
     }
 
@@ -604,7 +638,8 @@ i.fa-list{
 }
 
 @media only screen and (min-width: 768px){
-    .expand-at-large, .hide-at-medium, .expand-at-xl{
+    .expand-at-large, .hide-at-medium,
+    .expand-at-xl, .hide-from-small {
         display: none;
     }
 
@@ -622,23 +657,25 @@ i.fa-list{
         font-weight: 600;
     }
 
-    .discover-events{
+    .artist-name-page3 img{
+        margin-bottom: 30px;
+    }
+
+   .discover-events{
         text-align: center;
     }
 
-    .discover-events a.btn{
-        margin-left: 10px;
-        margin-right: 10px;
+    .discover-events-buttons{
+        width: fit-content;
+        margin: 0 auto;
     }
 
-    .discover-events a.theater{
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    .family.btn{
+    .discover-events .family.btn{
         display: inline-block;
+        position: relative;
+        left: 8px;
+        margin-left: 19px;
+        margin-right: 19px;
     }
 
     .less-md-block {
@@ -720,11 +757,6 @@ i.fa-list{
         top: 0;
     }
 
-    .discover-events a.btn{
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
     .less-md-block {
         margin-left: 25px;
         margin-right: 30px;
@@ -745,11 +777,6 @@ i.fa-list{
 @media only screen and (min-width: 1200px){
     .expand-at-xl{
         display: block;
-    }
-
-    .discover-events a.btn{
-        margin-left: 35px;
-        margin-right: 35px;
     }
 
     .less-md-block {
