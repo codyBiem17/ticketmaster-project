@@ -1,9 +1,6 @@
 .bg-theme {
     /* background-color: #0165D4; */
-    color: white;
-    background: rgb(55,47,201);
-    background: linear-gradient(90deg, rgba(55,47,201,1) 4%,
-    rgba(30,56,224,0.7819502801120448) 53%, rgba(55,53,230,1) 97%);
+    /* background-color: rgb(25, 11, 160); */
 }
 
 .small-color {
@@ -15,11 +12,11 @@ i.color-theme{
 }
 
 .color-theme {
-    color: #0165D4;
+    color: #190ba0;
 }
 
 .color-theme:hover {
-    color: #0165D4;
+    color: #190ba0;
 }
 
 .grey-theme {
@@ -127,11 +124,11 @@ color: #000;
 
 #locationDropdown:hover {
     text-decoration: none;
-    border: #0150A7 solid 2px;
+    border: #190ba0 solid 2px;
     color: black
 }
 .account-bg {
-    background-color: #0150A7;
+    background-color: #190ba0;
 }
 
 .account-bg:hover {
@@ -215,7 +212,7 @@ a img {
 }
 
 .bg-dropdown-theme:hover {
-    background-color: #0136AA;
+    background-color: #190ba0;
     color: white;
 }
 
@@ -234,12 +231,12 @@ a img {
 
 .reverse-theme {
     background-color: white;
-    color: #0165D4;
+    color: #190ba0;
 }
 
 .event-info:hover {
     background-color: #D6E7FA;
-    color: #0165D4;
+    color: #190ba0;
 }
 /* 
 footer {
@@ -366,16 +363,16 @@ footer a:hover {
 }
 
 .blue:hover {
-    color: #0165D4;
+    color: #190ba0;
 }
 
 .bg-primary:hover {
-    background-color: #026CDF;
+    background-color: #190ba0;
     color: white;
 }
 
 .dropdown-item:hover {
-    background-color: #0165D4;
+    background-color: #190ba0;
 }
 
 @media screen and (max-width: 992px) {
@@ -415,7 +412,7 @@ footer a:hover {
 }
 
 .carousel-indicators .active{
-    background: rgb(2, 108, 223);
+    background: #190ba0;
 }
 
 .dropdown-menu{
@@ -576,13 +573,13 @@ div.account-overview{
 }
 
 .list-calendar a{
-    border: 1px solid #007bff;
+    border: 1px solid #190ba0;
     width: 50px;
     height: 46px;
 }
 
 .list-calendar > a:first-child{
-    background-color: #007bff;
+    background-color: #190ba0;
     color: white;
 
 }

@@ -14,6 +14,13 @@ html, body {
   overflow-x: hidden;
 }
 
+.button-color{
+  border: 1px solid #190ba0;
+  background-color: #190ba0;
+  color: white;
+}
+
+
 .blue-div a em,
 .home-div-concert,
 a.slide-captions,
@@ -134,10 +141,9 @@ a.white-ticket-brand em {
 .blue-div {
   color: white;
   font-size: 20px;
-  background: rgb(1, 56, 172);
   background: linear-gradient(
-    90deg,rgba(1, 56, 172, 1) 0%,rgba(16, 106, 215, 1) 56%,
-    rgba(1, 52, 165, 1) 100%
+    90deg,rgba(25, 11, 160, 1) 0%,rgba(33, 19, 168, 1) 56%,
+    rgba(25, 11, 160, 1) 100%
   );
 }
 
@@ -175,7 +181,7 @@ div.white-icons.user-icon {
 
 footer.footer{
     text-align: justify;
-    margin-top: 50px;
+    margin-top: 31px;
     padding-left: 25px;
     padding-right: 35px;
     padding-top: 13px;
@@ -218,7 +224,7 @@ footer span.terms-policy {
 #white-navbar-input-field:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 2px solid blue;
+  border: 2px solid #190ba0;
 }
 
 #white-navbar-input-field::-webkit-input-placeholder,
@@ -412,7 +418,7 @@ a.my-account::after, a.my-listings::after{
 a.my-listings{
   font-size: 14px;
   font-weight: 600;
-  color: #026cdf;
+  color: #190ba0;
   line-height: 20px;
   /* color: #262626;
   word-spacing: 5px;
@@ -421,7 +427,7 @@ a.my-listings{
 
 a.my-listings:hover, .tab-pane a:hover{
   text-decoration: none;
-  color: #026cdf;
+  color: #190ba0;
 }
 
 #nav-tabs ul li a{
@@ -441,7 +447,7 @@ a.my-listings:hover, .tab-pane a:hover{
 
 #nav-tabs li a.active::after{
   content: "";
-  border-bottom: 4px solid #026cdf;
+  border-bottom: 4px solid #190ba0;
   display: block;
   width: 80px;
   position: relative;
@@ -476,7 +482,7 @@ hr#order-page-line{
 #nav-tabs .tab-pane a{
   font-size: 16px;
   font-weight: 600;
-  color: #026cdf;
+  color: #190ba0;
   line-height: 20px;
 }
 
@@ -500,13 +506,32 @@ span.username{
 }
 
 .dropdown-menu a:hover{
-  background: #026ce5; 
+  background: #190ba0; 
   color: white;
 }
 
 .my-listings{
     position: relative;
     left: -10px
+}
+
+@media only screen and (max-width: 320px){
+    #my-events, #my-ticket-listings{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 395px) {
+  footer.footer {
+    text-align: center;
+    margin-top: 51px;
+  }
+}
+
+@media only screen and (min-width:408px) {
+  footer.footer {
+    margin-top: 71px;
+  }
 }
 
 
@@ -527,15 +552,6 @@ span.username{
     left: -3px;
   }
 
-  #seven-eight-footer{
-    /* margin: 60px 0 30px; */
-  }
-}
-
-@media only screen and (max-width: 320px){
-    #my-events, #my-ticket-listings{
-        flex-wrap: wrap;
-    }
 }
 
 @media only screen and (max-width:767px){
@@ -589,10 +605,6 @@ span.username{
       display: none;
   }
 
-  footer.footer{
-      text-align: center;
-      margin: 250px 0;
-  }
 }
 
 /* media queries for large devices */
@@ -665,18 +677,18 @@ span.username{
   }
 
   #nav-tabs{
-    padding: 0px 20px 0px 5px;
+    /* padding: 0px 20px 0px 5px; */
   }
 
   #my-events-listing{
-    padding-top: 60px;
-    padding-bottom: 35px;
+    /* padding-top: 60px;
+    padding-bottom: 35px; */
   }
 
-  footer.footer{
-    text-align: center;
-    margin-top: 419px;
+  footer.footer {
+    /* margin-top: 131px; */
   }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -730,16 +742,6 @@ span.username{
 
     #my-events h2{
         font-size: 46px;
-    }
-
-    #my-events-listing{
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-
-    footer.footer{
-        text-align: center;
-        margin-top: 464px;
     }
 
 }
@@ -863,7 +865,7 @@ i.fa-ticket-alt{
 
 #nav-tabs li.ticket-list a.active::after{
   content: "";
-  border-bottom: 4px solid #026cdf;
+  border-bottom: 4px solid #190ba0;
   display: block;
   width: 80px;
   position: relative;

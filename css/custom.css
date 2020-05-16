@@ -14,6 +14,12 @@ html, body {
   overflow-x: hidden;
 }
 
+.button-color{
+  border: 1px solid #190ba0;
+  background-color: #190ba0;
+  color: white;
+}
+
 .blue-div a em,
 .home-div-concert,
 a.slide-captions,
@@ -96,8 +102,11 @@ a.white-ticket-brand em {
 .blue-div {
   color: white;
   font-size: 20px;
-  background: rgb(55,47,201);
-  background: linear-gradient(90deg, rgba(55,47,201,1) 4%, rgba(30,56,224,0.7819502801120448) 53%, rgba(55,53,230,1) 97%);
+  /* background: rgb(25, 11, 160); */
+  background: linear-gradient(
+    90deg,rgba(25, 11, 160, 1) 0%,rgba(33, 19, 168, 1) 56%,
+    rgba(25, 11, 160, 1) 100%
+  );
 }
 
 .blue-div-nav {
@@ -153,13 +162,13 @@ div.white-icons {
 
 
 a.slide-captions {
-  color: rgb(1, 80, 167);
+  color: #190ba0;
   font-size: 20px;
 }
 
 a.slide-captions:hover {
   text-decoration: none;
-  color: rgb(2, 108, 223);
+  color: #190ba0;
 }
 
 .caption-text {
@@ -178,12 +187,12 @@ a.slide-captions:hover {
 }
 
 .concert-category a:hover {
-  color: rgb(2, 108, 223);
+  color: #190ba0;
 }
 
 select.concert-event-forms:hover,
 #sort-date:hover {
-  border: 2px solid rgb(2, 108, 223);
+  border: 2px solid #190ba0;
   cursor: pointer;
 }
 
@@ -236,7 +245,7 @@ footer span.terms-policy {
 #white-navbar-input-field:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 2px solid blue;
+  border: 2px solid #190ba0;
 }
 
 #white-navbar-input-field::-webkit-input-placeholder,
@@ -264,7 +273,7 @@ footer span.terms-policy {
 .white-div a.white-div-input em {
   font-weight: 600;
   font-size: 25px;
-  color: #026cdf;
+  color: #190ba0;
 }
 
 /* blue div */
@@ -339,7 +348,7 @@ footer span.terms-policy {
 }
 
 .dropdown-menu a:hover{
-  background: #026ce5; 
+  background: #190ba0; 
   color: white;
 }
 
@@ -396,6 +405,12 @@ footer span.terms-policy {
   #blue-div-nav .navbar-icons {
     /* margin-right: -15px; */
     /* border: 1px solid red; */
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  footer.footer {
+    text-align: center;
   }
 }
 
@@ -479,11 +494,6 @@ footer span.terms-policy {
 
   #img-gallery div.captions{
     padding: 15px;
-  }
-
-  footer.footer{
-    text-align: center;
-    margin-top: 200px;
   }
 
 }
@@ -615,12 +625,7 @@ footer span.terms-policy {
     /* left: 30px; */
 
   }
-
-  footer.footer{
-    text-align: center;
-    margin-top: 200px;
-  }  
-
+  
 }
 
 @media only screen and (min-width: 1200px) {

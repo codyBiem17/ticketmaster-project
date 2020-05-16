@@ -18,18 +18,19 @@ html, body {
   color: white;
   font-size: 20px;
   padding: 10px;
-  background: rgb(1, 56, 172);
   background: linear-gradient(
-    90deg,rgba(1, 56, 172, 1) 0%,rgba(16, 106, 215, 1) 56%,
-    rgba(1, 52, 165, 1) 100%
+    90deg,rgba(25, 11, 160, 1) 0%,rgba(33, 19, 168, 1) 56%,
+    rgba(25, 11, 160, 1) 100%
   );
   height: 180px;
-  /* width: 500px; */
   padding: 0;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; */
+}
+
+select.btn-color-theme, button.btn-color-theme{
+  color: #190ba0;
+  border: 1px solid #190ba0;
+  background-color: transparent;
+    /* background-color: #190ba0; */
 }
 
 .company-logo a:hover, p#diamond-tour a:hover{
@@ -157,15 +158,14 @@ p#date-time{
 }
 
 .spinner-icons i.fas.fa-plus{
-  color: #046ddf;
+  color: #190ba0;
   font-size: 20px;
 }
 
 .spinner-footer{
   color: #8e8f90;
   font-size: 12px;
-  position: relative;
-  top: 530px;
+  margin: 250px 0;
 }
 
 .spinner-footer a{
@@ -178,7 +178,7 @@ p#date-time{
 }
 
 form select option[value="*"]{
-  color: #026ce5;
+  color: #190ba0;
 }
 
 div select{
@@ -249,7 +249,7 @@ input[type="range"]{
   width: 150px;
   height: 10px;
   border-radius:5px;
-  background: rgb(2, 108, 223);
+  background: #190ba0;
 }
 
 input[type="range"]::-webkit-slider-runnable-track{
@@ -317,7 +317,7 @@ li a.active{
 
 li a#price-link.active{
   content: "";
-  border-bottom: 3px solid #026cdf;
+  border-bottom: 3px solid #190ba0;
   display: block;
   /* width: 80px; */
   position: relative;
@@ -331,12 +331,12 @@ li a#seat-link.active{
 }
 
 .none-active{
-  color: #0056b3;
+  color: #190ba0;
   font-weight: 400;
 }
 
 tr.table-head{
-  background: #fdf1e7;
+  background: #f8e4d4;
 }
 
 tr.table-head:hover{
@@ -350,11 +350,11 @@ td a {
 
 i.fa-star{
   text-align: center;
-  border: 2px solid #eb730a;
+  border: 2px solid #dfa24c;
   border-radius: 50%;
   padding: 5px 5px 7px;
   font-size: 10px;
-  color: #eb730a;
+  color: #dfa24c;
   background: white;
   /* width: 23px; */
 }

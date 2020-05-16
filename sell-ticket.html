@@ -10,12 +10,18 @@
     <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
 
     <style>
-        
+        a {
+            color: #190ba0;
+        }
+
+        .form-control:focus {
+            /* background-color: #190ba0; */
+            border: 1px solid #190ba0 ;
+            box-shadow: none;
+            color: #190ba0;
+        }
+
         .tab-pane {
-            /* border: 1px solid red; */
-            /* padding-left: 0px;
-            padding-right: 0px; */
-            /* margin-left: ;*/
             position: relative;
             left: 15px;
             padding-right: 0;
@@ -23,7 +29,7 @@
         }
 
         thead {
-            border-bottom: 1px solid #eb730a;
+            border-bottom: 1px solid #dfa24c;
         }
 
         tbody tr{
@@ -143,7 +149,7 @@
                             <form class="" action="">
                                 <div class="form-row mb-2">
                                     <div class="col-8 col-sm-10 col-lg-9">
-                                        <select class="btn-outline-primary form-control" name="" id="ticket-purchase">
+                                        <select class="btn-color-theme form-control" name="" id="ticket-purchase">
                                             <option value="one">1 Ticket</option>
                                             <option value="two" selected>2 Tickets</option>
                                             <option value="three">3 Tickets</option>
@@ -156,7 +162,7 @@
                                     </div>
                                 
                                     <div class="col-2 col-lg-3">
-                                        <button class="btn btn-outline-primary" type="button" id="filters">Filters
+                                        <button class="btn btn-color-theme" type="button" id="filters">Filters
                                         </button>
                                     </div>
                                     
