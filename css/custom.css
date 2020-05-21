@@ -68,15 +68,15 @@ a.slide-captions,
 .blue-div-logo {
   position: relative;
   left: -20px;
-  margin-top: -30px;
-  margin-bottom: -30px;
+  margin-top: -17px;
+  margin-bottom: -17px;
 }
 
 .white-div-logo {
   position: relative;
   left: -35px; 
-  margin-top: -57px;
-  margin-bottom: -57px;
+  margin-top: -17px;
+  margin-bottom: -17px;
 }
 
 ul li.nav-item.user-sell-white-nav a {
@@ -258,7 +258,8 @@ footer span.terms-policy {
 .white-div-form{
   position: relative;
   left: 20px;
-  bottom: 15px;
+  bottom: 5px;
+  /* margin: -8px 0 0; */
 }
 
 .white-div-form i.input-search-icon {
@@ -292,7 +293,8 @@ footer span.terms-policy {
 .blue-div-form {
   position: relative;
   left: 20px;
-  top: 2px;
+  margin: 8px 0;
+  /* top: 2px; */
 }
 
 
@@ -482,8 +484,8 @@ footer span.terms-policy {
   }
 
   .white-div-logo {
-    margin-top: -32px;
-    margin-bottom: -32px;
+    /* margin-top: -32px;
+    margin-bottom: -32px; */
   }
 
   /* for blue div */
@@ -534,8 +536,8 @@ footer span.terms-policy {
   }
 
   .white-div-logo {
-    margin-top: -32px;
-    margin-bottom: -32px;
+    /* margin-top: -32px;
+    margin-bottom: -32px; */
   }
 
 
@@ -558,8 +560,9 @@ footer span.terms-policy {
 
   .white-div-form {
     position: relative;
-    top: 3px;
+    /* top: 3px; */
     left: -85px;
+    margin: 15px 0;
   }
 
   #white-div-nav .navbar-icons {
@@ -573,6 +576,7 @@ footer span.terms-policy {
   #blue-div-nav .large-screen-menulinks{
     position: relative;
     left: -95px;
+    margin: 8px 0;
   }
 
   div.advert-section{
@@ -639,7 +643,7 @@ footer span.terms-policy {
   .white-div-form {
     position: relative;
     left: -95px;
-    top: 2px;
+    /* top: 2px; */
   }
 
   #blue-div-nav .large-screen-menulinks, 

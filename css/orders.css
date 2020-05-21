@@ -45,15 +45,15 @@ a.slide-captions,
 .blue-div-logo{
   position: relative;
   left: -20px;
-  margin-top: -53px;
-  margin-bottom: -53px;
+  margin-top: -23px;
+  margin-bottom: -23px;
 }
 
 .white-div-logo {
   position: relative;
   left: -35px; 
-  margin-top: -62px;
-  margin-bottom: -62px;
+  margin-top: -42px;
+  margin-bottom: -42px;
 }
 
 
@@ -626,15 +626,15 @@ span.username{
   .blue-div-logo{
     position: relative;
     left: -20px;
-    margin-top: -30px;
-    margin-bottom: -30px;
+    margin-top: -25px;
+    margin-bottom: -25px;
   }
 
   .white-div-logo {
     position: relative;
     left: -35px; 
-    margin-top: -35px;
-    margin-bottom: -35px;
+    margin-top: -17px;
+    margin-bottom: -17px;
   }
  
   .blue-div-form {
@@ -646,6 +646,7 @@ span.username{
   #blue-div-nav .large-screen-menulinks{
     position: relative;
     left: -100px;
+    margin: 5px 0;
   }
 
   #blue-div-nav .navbar-icons {
@@ -668,6 +669,7 @@ span.username{
   #white-div-nav .large-screen-menulinks{
     position: relative;
     left: -100px;
+    margin: 8px 0;
   }
 
   #white-div-nav .navbar-icons {
@@ -692,7 +694,10 @@ span.username{
 }
 
 @media only screen and (min-width: 1200px) {
- 
+  .blue-div-logo{
+    margin-top: -23px;
+    margin-bottom: -23px;
+  }
   #blue-div-nav .large-screen-menulinks{
     padding-left: 0;
     padding-right: 0;
