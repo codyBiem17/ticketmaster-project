@@ -84,6 +84,11 @@ ul li.nav-item.user-sell-white-nav a {
   font-weight: 600;
 }
 
+.hide-and-show a, .hide-and-show a:hover {
+   color: #4e4d4d;
+}
+
+
 a.white-ticket-brand em {
   font-weight: 700;
   color: rgb(2, 108, 223);
@@ -113,9 +118,9 @@ a.white-ticket-brand em {
   /* margin-bottom: -5px; */
 }
 
-.blue-div a em {
+.blue-div a, .blue-div a:hover{
   color: white;
-  font-size: 25px;
+  /* font-size: 25px; */
 }
 
 .user-sell-blue-nav:hover {
@@ -145,10 +150,6 @@ div.white-icons.user-icon {
   font-size: 12px;
 }
 
-div.white-icons {
-  /* padding: 10px; */
-}
-
 .concert-ticket {
   font-size: 24px;
 }
@@ -163,7 +164,8 @@ div.white-icons {
 
 a.slide-captions {
   color: #190ba0;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 a.slide-captions:hover {
@@ -175,10 +177,8 @@ a.slide-captions:hover {
   font-weight: 400;
 }
 
-.caption-text,
 .concert-category {
-  /* font-size: 16px; */
-  /* color: #262626; */
+  margin: 0 15px;
 }
 
 .concert-category a {
@@ -345,11 +345,13 @@ footer span.terms-policy {
 }
 
 .dropdown-menu a{
+  padding-top: 15px;
   padding-bottom: 15px;
   color: #525151;;
 }
 
-.dropdown-menu a:hover{
+.hide-and-show .dropdown-menu a:hover, 
+.blue-div .dropdown-menu a:hover{
   background: #190ba0; 
   color: white;
 }
@@ -501,6 +503,12 @@ footer span.terms-policy {
 }
 
 /* media queries for large devices */
+@media only screen and (max-width: 991px){
+  .row.expand-at-large, hr.expand-at-large{
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 992px) {
    .search-icon, .hamburger-icon, .carousel, #hide-div {
     display: none;
@@ -612,22 +620,57 @@ footer span.terms-policy {
     padding: 20px;
   }
 
+  #img-gallery .static-image2 div.captions,
+  #img-gallery .static-image3 div.captions{
+    padding: 0px;
+    margin: auto -10px;
+  }
+
   .category-form-fields{
     /* border: 1px solid red; */
-    padding-left: 30px;
+    /* padding-left: 30px; */
     /* width: 100%; */
     /* margin-right: 20px; */
   }
 
   select#sort-date{
-    /* margin-left: 10px; */
+    position: relative;
+    margin: auto 15px;
   }
 
   #placeholder-side-image{
     position: relative;
     bottom: 120px;
-    /* left: 30px; */
+  }
 
+  footer header{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+  footer .helpful-links div{
+    margin-bottom: 16px;
+  }
+
+  footer a{
+    font-size: 14px;
+    color: white;
+  }
+
+  footer a:hover{
+    color: #190ba0;
+  }
+
+  footer hr{
+    border: 1px solid #8f9396;
+  }
+  footer.footer{
+    text-align: justify;
+  }
+
+  footer div.center-at-lg{
+    text-align: center;
   }
   
 }
@@ -669,7 +712,27 @@ footer span.terms-policy {
     top: 35px;
   }
 
+  footer section.large-footer-padding{
+    min-width: 1200px;
+    width: 100%;
+    padding-left: 64px;
+    padding-right: 64px;
+    box-sizing: border-box;
+    margin: 0px auto;
+    text-align: center;
+  }
+
 }
+
+
+
+@media only screen and (max-width: 1295px){
+  .home-concert-divs{
+    position: relative;
+    margin: 0 10px;
+  }
+}
+
 @media only screen and (min-width: 1440px){
   a.arts-dropdown,  a.family-dropdown{
     display: none;
@@ -706,6 +769,14 @@ footer span.terms-policy {
     top: 30px;
   }
 
+  footer section.large-footer-padding{
+    max-width: 1296px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    margin: 0px auto;
+  }
 }
 
-
+ 

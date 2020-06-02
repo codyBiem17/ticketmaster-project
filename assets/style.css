@@ -23,16 +23,20 @@ i.color-theme{
     color: gray;
 }
 
-.header-search-options{
-    text-align: center;
+.header-search-options .search-links{
+    display: flex;
+    justify-content: center;
+    margin: -30px 0px 0px;
 }
 
 .header-search-options a {
-    width: 200px;
+    /* width: 150px; */
     color: white;
     border: 1px solid white;
-    padding: 10px;
+    /* padding: 10px; */
     margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bolder;
@@ -85,9 +89,9 @@ i.color-theme{
 
 
 .wide {
-    display: inline-block;
-    width: 80vw;
-    height: 60px;
+    /* display: inline-block; */
+    width: 87vw;
+    height: 50px;
 }
 
 .wide-top {
@@ -201,14 +205,6 @@ input {
 
 img:not(.carousel-images) {
     border-radius: 5px;
-}
-
-img.card-img-top {
-    /* border-radius: 0; */
-}
-
-a img {
-    /* border-radius: 0px; */
 }
 
 .bg-dropdown-theme:hover {
@@ -329,34 +325,23 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
-#see-all {
-    display: none;
-}
-
-.celtic-events > :nth-child(2){
-    display: none;
-}
-}
-
-@media screen and (max-width: 1140px) {
-    .drop-1 {
+    #see-all {
         display: none;
     }
-}
 
-@media screen and (min-width: 1141px) {
-    .drop-1 {
-        display: inline-block;
-    }
-}
-
-@media screen and (max-width: 910px) {
-    .drop-2 {
+    .celtic-events > :nth-child(2){
         display: none;
     }
+
+    .wide{
+        position: relative;
+        width:100%;
+    }
+
 }
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 410px) {
     .drop-3 {
         display: none;
     }
@@ -415,6 +400,11 @@ footer a:hover {
     background: #190ba0;
 }
 
+.carousel-item .captions{
+    margin-left: 10px;
+    line-height: 1.5;
+}
+
 .dropdown-menu{
     width: 200px;
 }
@@ -422,14 +412,21 @@ footer a:hover {
 /* new styles start below */
 
 .header-search-field{
+    position: relative;
     margin-top: -5px;
-    text-align: center;
+    margin-left: 22px;
+    margin-right: 22px;
+    /* text-align: center; */
 }
 
-.container-fluid.announcement-div{
-    margin: 20px 0;
-    text-align: justify;
-    padding: 0px 30px;
+a.search-box-button{
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    /* right: -115px; */
+    top: 6px;
+    /* padding: 12px; */
+    /* margin: auto -100px; */
 }
 
 img{
@@ -437,21 +434,34 @@ img{
     height: auto;
 }
 
-.announcement-div > div.row:not(:first-child){
-    border: 1px solid rgb(235, 235, 235);
-    padding: 20px 3px;
-    /* margin-bottom: -25px; */
+.container-fluid.announcement-div{
+    margin: 25px 0;
+    text-align: justify;
+}
 
+.container-fluid.announcement-div h3{
+    padding: 0px 10px;
+}
+
+.announced-events-section .row.announced-events{
+    border: 1px solid rgb(235, 235, 235);
+    margin: auto 10px;
+    padding: 20px 3px;
 }
 .announcement-div > div.row:nth-of-type(2){
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
 
+.row.announced-events button{
+    border: 1px solid #190ba0;;
+    margin-top: 16px;
+}
+
 .presale{
     background-color: #dfa24c;
     padding: 3px 8px;
-    /* width: fit-content; */
+    width: fit-content;
     font-size: 10px;
     color: white;
     font-weight: bolder;
@@ -464,22 +474,35 @@ img{
 }
 
 .discover-events{
-    text-align: justify;
+    text-align: center;
     font-weight: 600;
+    margin: 35px auto;
+}
+
+.discover-events-buttons{
+    display: flex;
+    justify-content: center;
+    /* margin: auto -10px; */
+}
+
+.discover-events-buttons a.btn{
+    border: 1px solid #190ba0;
+    margin: auto 3px;
+    padding: 5px 5px;
 }
 
 .discover-events a.btn{
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 14px;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    /* font-size: 14px; */
 }
 
 .discover-events a.theater{
     position: relative;
-    left: 10px;
-    /* margin-top: -5px; */
+    /* left: 10px;
+    margin-top: -5px;
     margin-left: -5px;
-    margin-right: -5px;
+    margin-right: -5px; */
 }
 
 .less-md-block{
@@ -490,11 +513,26 @@ img{
 }
 
 .less-md-block #popular{
+    margin: 30px auto 0px;
     font-size: 24px;
+}
+
+.popular-concert-section{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0px 5px 0px 3px; */
 }
 
 .less-md-block .popular-events{
     font-size: 20px;
+}
+
+.see-all-concerts{
+    margin: auto 25px;
+}
+
+#see-all {
+    /* margin: auto -5px; */
 }
 
 .celtic-events{
@@ -502,12 +540,12 @@ img{
     padding-bottom: 10px;
     border-bottom: 1px solid #dfe4e7;
     width: 95%;
-    margin: 0 -5px;
+    /* margin: 0 -5px; */
 }
 
 .hearts{
     position: relative;
-    left: -40px;
+    left: 10px;
 }
 
 .card-divs{
@@ -605,20 +643,45 @@ div.account-overview{
     
 }
 
+@media only screen and (min-width:375px) and (max-width:408px){
+    .search-links a.btn{
+        /* padding: 5px; */
+    }
+}
+
+@media only screen and (min-width: 360px)  and (max-width: 410px) {
+    .discover-events-buttons a.btn{
+        padding: 5px 10px;
+    }
+
+    .hearts{
+        position: relative;
+        left: 20px;
+    }
+}
+
+@media only screen and (min-width: 411px) {
+    .search-links a.btn{
+        padding: 10px 7px;
+    }
+
+    .discover-events-buttons a.btn{
+        margin: auto 6px;
+    }
+
+    .discover-events .family.btn{
+        /* display: inline-flex; */
+        position: relative;
+    }
+}
+
 @media only screen and (min-width: 575px) and (max-width:767px) {
     .hide-from-small{
         display: none;
     }
-    .discover-events .family.btn{
-        display: inline-block;
-        position: relative;
-        left: 8px;
-        margin-left: 19px;
-        margin-right: 19px;
-    }
 
-    .discover-events, footer.footer{
-        text-align: center;
+    footer.footer{
+        /* text-align: center; */
     }
 }
 
@@ -636,7 +699,7 @@ div.account-overview{
 
 @media only screen and (min-width: 768px){
     .expand-at-large, .hide-at-medium,
-    .expand-at-xl, .hide-from-small {
+    .expand-at-xl, .hide-from-small, .hearts {
         display: none;
     }
 
@@ -646,38 +709,101 @@ div.account-overview{
     }
 
     .unforgettable{
-        /* margin-top: -15px;
-        margin-bottom: -15px; */
         position: relative;
         top: -20px;
         text-align: center;
         font-weight: 600;
     }
 
+    .search-links a.btn{
+        padding: 15px 20px;
+    }
+
     .artist-name-page3 img{
         margin-bottom: 30px;
     }
 
+    .container-fluid.announcement-div{
+        margin: -50px 0 0;
+        text-align: justify;
+    }
+
    .discover-events{
-        text-align: center;
+       margin: 50px auto;
+    }
+
+   .discover-events-buttons{
+        display: flex;
+        justify-content: center
+        /* margin: auto 50px; */
+    }
+
+    .discover-events-buttons a.btn{
+        margin: auto 10px;
+        padding: 10px 15px;
     }
 
     .discover-events-buttons{
-        width: fit-content;
-        margin: 0 auto;
+        /* width: fit-content;
+        margin: 0 auto; */
     }
 
     .discover-events .family.btn{
-        display: inline-block;
+        /* display: inline-block;
         position: relative;
         left: 8px;
         margin-left: 19px;
-        margin-right: 19px;
+        margin-right: 19px; */
     }
 
     .less-md-block {
         margin-left: 20px;
         margin-right: 30px;
+    }
+
+    .concert-artists-imgs{
+        margin: 0 15px;
+        /* margin-left: 10px; */
+    }
+
+    .concert-artists-imgs > div.row > div.col-md-4
+    {
+        display: flex;
+        margin-left: -5px ;
+        margin-right: -5px;
+    }
+
+
+    .concert-artists-imgs .col-md-4{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0px;
+        padding-right: 0px;
+        /* position: relative;
+        left: 15px; */
+
+    }
+
+    .celtic-events div.artist-label-img{
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+        max-width: 60%;
+        width: 100%;
+        background: rgba(38, 38, 38, 0.35);
+        padding: 4px 8px;
+    }
+
+    .artist-label-img a{
+        text-decoration: none;
+        padding: 4px 0px;
+        color: white;
+    }
+
+    .see-all-concerts{
+        margin: auto 40px;
     }
 
     .celtic-events{
@@ -693,10 +819,10 @@ div.account-overview{
     }
     
     .hearts{
-        position: relative;
+        /* position: relative;
         top: -70px;
         left: 120px;
-        font-size: 25px;
+        font-size: 25px; */
     }
 
     .announced-events > div:nth-child(2){
@@ -705,7 +831,7 @@ div.account-overview{
     }
 
     footer.footer{
-        text-align: center;
+        /* text-align: center; */
         margin-top: 100px;
     }
 
@@ -758,15 +884,80 @@ div.account-overview{
         margin-left: 25px;
         margin-right: 30px;
     }
-
-    .hearts{
-        position: relative;
-        top: -100px;
-        left: 180px;
+    
+    .header-search-field{
+        width: 90%;
+        margin-left: 90px;
+        margin-right: 90px;
     }
 
-    .positioning-at-medium{
-        text-align: center;
+    .search-links a.btn{
+        padding: 10px 30px;
+    }
+
+    .container-fluid.announcement-div h3{
+        padding: 0px 15px;
+    }
+
+    .announced-events > div:nth-child(2){
+       position: relative;
+       /* left: 0px; */
+    }
+
+    .row.announced-events button{
+        margin-top: 32px;
+    }
+
+    .announced-events-section{
+        display: flex;
+        justify-content: center;
+    }
+
+    .announced-events-section .row.announced-events{
+        border-top: none;
+        /* border-width: 0px 10px; */
+        /* margin: auto 0px;
+        padding: 0px; */
+        /* margin-left: 20px;
+        margin-right: 20px;
+        padding: 30px;
+        max-width: 400px;; */
+    }
+
+    .first-column .row.announced-events, 
+    .second-column .row.announced-events{
+        border-left: none;
+        border-right: none;
+        
+    }
+
+    .first-column .row.announced-events:last-child,
+    .second-column .row.announced-events:last-child{
+        border-bottom: none;
+    }
+
+    .first-column{
+        margin-left: -25px;
+        /* margin-right: -20px; */
+    }
+
+    .row .first-column::before{
+        content: "";
+        border: 1px solid #ebebeb;
+        display: inline-block;
+        position: absolute;
+        left: 49%;
+        height: 562px;
+    }
+
+    .second-column{
+        margin-left: -20px;
+        margin-right: -25px;
+    }
+
+    .announcement-div > div.row:nth-child(2){
+        border: 1px solid rgb(235, 235, 235);
+        margin: 0px 10px;
     }
 
 }
@@ -781,17 +972,16 @@ div.account-overview{
         margin-right: 30px;
     }
 
-    .hearts{
-        position: absolute;
-        top: 30px;
-        left: 250px;
+    .header-search-field{
+        margin-left: 115px;
+        margin-right: 115px;
     }
 }
 
 @media only screen and (min-width: 1440px){
     
     .hearts{
-        position: absolute;
-        left: 280px;
+        /* position: absolute;
+        left: 280px; */
     }
 }

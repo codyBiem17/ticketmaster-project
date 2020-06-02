@@ -345,14 +345,6 @@ footer span.terms-policy {
   }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-  ul.large-screen-menulinks
-  {
-    display: none;
-  }
-
-}
-
 
 /* 
 ---------------------------------------------
@@ -367,8 +359,8 @@ small#copy{
 .acct-events{
   word-spacing: 5px;
   padding-top: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 15px;
+  margin-right: 10px;
 }
 
 
@@ -412,7 +404,7 @@ a.my-account::after, a.my-listings::after{
   line-height: 45px;
   color: #262626;
   font-weight: 600;
-  padding: 0 20px;
+  margin: 0 15px;
 }
 
 a.my-listings{
@@ -464,8 +456,14 @@ hr#order-page-line{
   padding-bottom: 120px;
 }
 
-#nav-tabs .tab-content{
-  /* margin-bottom: -50px; */
+li a#past-events{
+  position: relative;
+  margin: 0px -10px;
+}
+
+li a#sold-tickets{
+  position: relative;
+  margin: 0px -20px;
 }
 
 .tab-pane .svg-img{
@@ -552,6 +550,16 @@ span.username{
     left: -3px;
   }
 
+  li a#past-events{
+    position: relative;
+    margin: 0px -40px;
+  }
+
+  li a#sold-tickets{
+    position: relative;
+    margin: 0px -60px;
+  }
+
 }
 
 @media only screen and (max-width:767px){
@@ -568,8 +576,27 @@ span.username{
     }
 }
 
+@media only screen and (min-width: 600px){
+  li a#past-events{
+    position: relative;
+    margin: 0px -40px;
+  }
+
+  li a#sold-tickets{
+    position: relative;
+    margin: 0px -70px;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .row.expand-at-large, hr.expand-at-large{
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .blue-div-form, .white-div-form, .white-div-input, .help, .username{
+  .blue-div-form, .white-div-form, .white-div-input, .help,
+  .username, ul.large-screen-menulinks{
       display: none;
   }
 
@@ -601,6 +628,17 @@ span.username{
       font-size: 20px;
   }
 
+  li a#past-events{
+    position: relative;
+    margin: 0px -70px;
+  }
+
+  li a#sold-tickets{
+    position: relative;
+    margin: 0px -110px;
+  }
+
+  
   .dropdown:hover .dropdown-menu{
       display: none;
   }
@@ -678,17 +716,45 @@ span.username{
       top: 10px;
   }
 
-  #nav-tabs{
-    /* padding: 0px 20px 0px 5px; */
+  li a#past-events{
+    position: relative;
+    right: 10%;
+    margin: 0 -70px;
   }
 
-  #my-events-listing{
-    /* padding-top: 60px;
-    padding-bottom: 35px; */
+  li a#sold-tickets{
+    position: relative;
+    right: 13%;
   }
 
-  footer.footer {
-    /* margin-top: 131px; */
+  footer header{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+  footer .helpful-links div{
+    margin-bottom: 16px;
+  }
+
+  footer a{
+    font-size: 14px;
+    color: white;
+  }
+
+  footer a:hover{
+    color: #190ba0;
+  }
+
+  footer hr{
+    border: 1px solid #8f9396;
+  }
+  footer.footer{
+    text-align: justify;
+  }
+
+  footer div.center-at-lg{
+    text-align: center;
   }
 
 }
@@ -748,6 +814,27 @@ span.username{
     #my-events h2{
         font-size: 46px;
     }
+
+    li a#past-events{
+      position: relative;
+      right: 13%;
+      margin: 0 -70px;
+    }
+
+    li a#sold-tickets{
+      position: relative;
+      right: 16%;
+    }
+
+    footer section.large-footer-padding{
+      min-width: 1200px;
+      width: 100%;
+      padding-left: 64px;
+      padding-right: 64px;
+      box-sizing: border-box;
+      margin: 0px auto;
+      text-align: center;
+  }
 
 }
 
@@ -809,7 +896,7 @@ span.username{
 
     .large-screen-navlinks .dropdown .dropdown-menu {
         position: absolute;
-        top: -5px;
+        top: 5px;
         left: -20px;
         border: none;
         background-color: transparent;
@@ -822,6 +909,26 @@ span.username{
 
         #white-div-nav .large-screen-navlinks .dropdown .dropdown-menu a{
         padding-right: 3px;
+    }
+
+    li a#past-events{
+      position: relative;
+      right: 15%;
+      margin: 0 -70px;
+    }
+
+    li a#sold-tickets{
+      position: relative;
+      right: 18%;
+    }
+
+    footer section.large-footer-padding{
+      max-width: 1296px;
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+      box-sizing: border-box;
+      margin: 0px auto;
     }
     
 }
@@ -865,7 +972,7 @@ i.fa-ticket-alt{
   line-height: 45px;
   color: #262626;
   font-weight: 600;
-  padding: 0 20px
+  padding: 0 15px
 }
 
 #nav-tabs li.ticket-list a.active::after{
