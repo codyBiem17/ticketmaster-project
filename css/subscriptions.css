@@ -39,6 +39,10 @@ a.slide-captions,
   background-color: white;
 }
 
+.hide-and-show a, .hide-and-show a:hover {
+   color: #4e4d4d;
+}
+
 .blue-div-logo{
   position: relative;
   left: -20px;
@@ -82,8 +86,8 @@ a.white-ticket-brand em {
   );
 }
 
-.blue-div-nav {
-  /* margin-bottom: -5px; */
+.blue-div a, .blue-div a:hover{
+  color: white;
 }
 
 .blue-div a em {
@@ -902,6 +906,12 @@ footer span.terms-policy {
 }
 
 /* media queries for large devices */
+@media only screen and (max-width: 991px){
+  .row.expand-at-large, hr.expand-at-large{
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 992px) {
    .search-icon,
   .hamburger-icon, .carousel, #hide-div {
@@ -921,8 +931,8 @@ footer span.terms-policy {
   }
  
   #blue-div-nav {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    /* margin-top: 10px;
+    margin-bottom: 30px; */
   }
 
   #blue-div-nav .navbar-icons {
@@ -1060,10 +1070,6 @@ footer span.terms-policy {
         font-size: 16px;
     }
 
-    #blue-div-nav{
-        height: 30px !important;
-    }
-
     .blue-div-logo{
       position: relative;
       left: -20px;
@@ -1132,10 +1138,44 @@ footer span.terms-policy {
 
 
     .heart-shape-div{
-        height: 100%;
-        position: relative;
-        bottom: 70px;
+      height: 100%;
+      position: relative;
+      bottom: 70px;
     }
+
+    footer.footer{
+      margin: 130px 0;
+    }
+
+    footer header{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+  footer .helpful-links div{
+    margin-bottom: 16px;
+  }
+
+  footer a{
+    font-size: 14px;
+    color: white;
+  }
+
+  footer a:hover{
+    color: #190ba0;
+  }
+
+  footer hr{
+    border: 1px solid #8f9396;
+  }
+  footer.footer{
+    text-align: justify;
+  }
+
+  footer div.center-at-lg{
+    text-align: center;
+  }
 
 
 }
@@ -1183,6 +1223,16 @@ footer span.terms-policy {
     #white-div-nav .navbar-icons {
         position: relative;
         left: 55px;
+    }
+
+    footer section.large-footer-padding{
+      min-width: 1200px;
+      width: 100%;
+      padding-left: 64px;
+      padding-right: 64px;
+      box-sizing: border-box;
+      margin: 0px auto;
+      text-align: center;
     }
     
 }
@@ -1257,6 +1307,15 @@ footer span.terms-policy {
 
     #white-div-nav .large-screen-navlinks .dropdown .dropdown-menu a{
       padding-right: 3px;
+    }
+
+    footer section.large-footer-padding{
+      max-width: 1296px;
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+      box-sizing: border-box;
+      margin: 0px auto;
     }
     
 }

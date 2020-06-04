@@ -9,12 +9,6 @@
     <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
 
     <style>
-        /* body {
-            overflow-x: hidden;
-            text-align: center;
-            font-family: "Open Sans", sans-serif;
-        } */
-    
         .container-fluid {
             padding-right: 0;
             padding-left: 0;
@@ -54,7 +48,7 @@
                 <nav class="navbar navbar-expand-lg row">
                     
                     <!-- first column of white nav -->
-                    <div class="col-6 col-sm-8 col-lg-10 col-xl-9">
+                    <div class="col-4 col-sm-8 col-lg-9 mb-3">
                         <div class="row">
                             <div class="col-12 col-md-3 col-lg-2 white-div-logo">
                                 <a href="#" class="white-ticket-brand">
@@ -77,20 +71,30 @@
                             
                             <div class="col-lg-5">
                                 <ul class="navbar-nav large-screen-menulinks">
-                                    <li class="nav-item user-sell-white-nav mr-3">
-                                        <a class="nav-link" href="#">Concert</a>
+                                    <li class="nav-item menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Concert</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item user-sell-white-nav mr-3">
-                                        <a class="nav-link" href="#">Sports</a>
+                                    <li class="nav-item menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Sports</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item arts user-sell-white-nav mr-3">
-                                        <a class="nav-link" href="#">Arts</a>
+                                    <li class="nav-item arts menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Arts</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item family user-sell-white-nav mr-3">
-                                        <a class="nav-link" href="#">Family</a>
+                                    <li class="nav-item family menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Family</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item dropdown user-sell-white-nav">
-                                        <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                    <li class="nav-item dropdown menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                        </div>
                                         <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
                                             <a class="dropdown-item arts-dropdown" href="#">Arts & Theater</a>
                                             <a class="dropdown-item family-dropdown" href="#">Family</a>
@@ -110,36 +114,44 @@
                         
                         
                     <!-- second column of white nav -->
-                    <div class="col-6 col-sm-4 col-lg-2 col-xl-2 mb-3 navbar-icons">
+                    <div class="col-8 col-sm-4 col-lg-3 mb-3 navbar-icons">
                         <div class="row">
-                            <div class="col-3 search-icon">
-                                <a href="#"> <i class="fas fa-search"></i> </a>
+                            <div class="col-3 search-icon menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> <i class="fas fa-search"></i> </a>
+                                </div>
                             </div>
-                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown user-sell-white-nav user-icon">
-                                    <div class="" data-toggle="dropdown">
-                                        <a href="#"> <i class="far fa-user-circle"></i> </a>
-                                    </div>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a class="dropdown-item" href="#">My Account</a>
-                                        <a class="dropdown-item" href="#">My Tickets</a>
-                                        <a class="dropdown-item" href="#">My Listings</a>
-                                        <a class="dropdown-item" href="#">Settings</a>
-                                        <a class="dropdown-item" href="#">Sell</a>
-                                        <a class="dropdown-item" href="#">Sign Out</a>
-                                    </div>
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown menu-links-outer-div user-icon">
+                                <div class="menu-links-inner-div" data-toggle="dropdown">
+                                    <a href="#"> <i class="far fa-user-circle"></i> </a>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">My Account</a>
+                                    <a class="dropdown-item" href="#">My Tickets</a>
+                                    <a class="dropdown-item" href="#">My Listings</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Sell</a>
+                                    <a class="dropdown-item" href="#">Sign Out</a>
+                                </div>
                             </div>
-                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 user-sell-white-nav sell">
-                                <span> <a href="#"> Sell </a></span> 
+                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div">
+                                <div class="menu-links-inner-div sell">
+                                    <a href="#"> Sell </a>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-lg-4 col-xl-3 user-sell-white-nav help">
-                                <a href="#"> Help </a>
+                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div help">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> Help </a>
+                                </div>
                             </div>
-                            <div class="col-3 col-md-3 hamburger-icon" type="button" data-toggle="collapse" data-target="#menu-items">
-                                <!-- <div class="row"> -->
+                            <div class="col-3 col-md-3 hamburger-outer-div">
+                                <div class="hamburger-icon" type="button">
+                                    <!-- <div class="row"> -->
                                     <div class="toggler-icon"></div>
                                     <div class="toggler-icon"></div>
                                     <div class="toggler-icon"></div>
-                                <!-- </div> -->
+                                    <!-- </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -154,7 +166,7 @@
                 <nav class="navbar navbar-expand-lg row">
                     
                     <!-- first column of blue nav-->
-                    <div class="col-6 col-sm-8 col-lg-10 col-xl-9 mb-3">
+                    <div class="col-4 col-sm-8 col-lg-9 mb-3">
                         <div class="row">
                             <div class="col-12 col-md-3 col-lg-2 blue-div-logo">
                                 <a href="#">
@@ -177,20 +189,30 @@
 
                             <div class="col-lg-5">
                                 <ul class="navbar-nav large-screen-menulinks">
-                                    <li class="nav-item user-sell-blue-nav mr-3">
-                                        <a class="nav-link" href="#">Concert</a>
+                                    <li class="nav-item menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Concert</a>
+                                        </div>   
                                     </li>
-                                    <li class="nav-item user-sell-blue-nav mr-3">
-                                        <a class="nav-link" href="#">Sports</a>
+                                    <li class="nav-item menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Sports</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item arts user-sell-blue-nav mr-3">
-                                        <a class="nav-link" href="#">Arts</a>
+                                    <li class="nav-item arts menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Arts</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item family user-sell-blue-nav mr-3">
-                                        <a class="nav-link" href="#">Family</a>
+                                    <li class="nav-item family menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Family</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item dropdown user-sell-blue-nav">
-                                        <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                    <li class="nav-item dropdown menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                        </div>
                                         <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
                                             <a class="dropdown-item arts-dropdown" href="#">Arts & Theater</a>
                                             <a class="dropdown-item family-dropdown" href="#">Family</a>
@@ -207,13 +229,15 @@
                     </div>
                     
                     <!-- second column of blue nav-->
-                    <div class="col-6 col-sm-4 col-lg-2 col-xl-2 mb-3 navbar-icons">
+                    <div class="col-8 col-sm-4 col-lg-3 mb-4 navbar-icons">
                         <div class="row">
-                            <div class="col-3 search-icon blue-nav-right-content">
-                                <a href="#"> <i class="fas fa-search"></i> </a>
+                            <div class="col-3 search-icon menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> <i class="fas fa-search"></i> </a>
+                                </div>
                             </div>
-                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown user-sell-blue-nav user-icon blue-nav-right-content">
-                                <div class="" data-toggle="dropdown">
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown menu-links-outer-div user-icon">
+                                <div class="menu-links-inner-div" data-toggle="dropdown">
                                    <a href="#"> <i class="far fa-user-circle"></i> </a> 
                                 </div>
                                 <div class="dropdown-menu dropdown-menu-right">
@@ -225,25 +249,31 @@
                                     <a class="dropdown-item" href="#">Sign Out</a>
                                 </div>
                             </div>
-                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 user-sell-blue-nav sell blue-nav-right-content">
-                                <span> <a href="#"> Sell </a></span> 
+                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div">
+                                <div class="menu-links-inner-div sell">
+                                    <a href="#"> Sell </a>
+                                </div> 
                             </div>
-                            <div class="col-md-3 col-lg-4 col-xl-3 user-sell-blue-nav help blue-nav-right-content">
-                                <a href="#"> Help </a>
+                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div help">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> Help </a>
+                                </div>
                             </div>
-                            <div class="col-3 col-md-3 hamburger-icon blue-nav-right-content" type="button" data-toggle="collapse" data-target="#menu-items">
-                                <!-- <div class="row"> -->
-                                <div class="toggler-icon"></div>
-                                <div class="toggler-icon"></div>
-                                <div class="toggler-icon"></div>
-                                <!-- </div> -->
-                            </div>
+                            <div class="col-3 col-md-3 hamburger-outer-div">
+                                <div class="hamburger-icon" type="button">
+                                    <!-- <div class="row"> -->
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                    <!-- </div> -->
+                                </div>
+                            </div>  
                         </div>
                     </div> 
                 </nav>
             </div>
 
-            <div class="pb-2 home-concert-divs large-screen-padding">
+            <div class="pb-2 header-text-divs large-screen-padding">
                 <div class="row">
                     <div class="col-12 mx-3 pb-2 home-div-concert">
                         Home / Concert Tickets

@@ -37,8 +37,10 @@ a.slide-captions,
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
   border: 1px solid white;
   background-color: white;
-  /* margin: -20px 0px; */
-  /* padding: 5px 0px; */
+}
+
+.hide-and-show a, .hide-and-show a:hover {
+   color: #4e4d4d;
 }
 
 
@@ -147,13 +149,8 @@ a.white-ticket-brand em {
   );
 }
 
-.blue-div-nav {
-  /* margin-bottom: -5px; */
-}
-
-.blue-div a em {
+.blue-div a, .blue-div a:hover{
   color: white;
-  font-size: 25px;
 }
 
 .user-sell-blue-nav:hover {

@@ -30,7 +30,6 @@ select.btn-color-theme, button.btn-color-theme{
   color: #190ba0;
   border: 1px solid #190ba0;
   background-color: transparent;
-    /* background-color: #190ba0; */
 }
 
 .company-logo a:hover, p#diamond-tour a:hover{
@@ -39,8 +38,6 @@ select.btn-color-theme, button.btn-color-theme{
 
 .hamburger-icon{
   margin: 8px 0px;
-  /* padding-top: 12px; */
-  /* border: 1px solid red; */
 }
 
 #ticket-sales-icons .toggler-icon{
@@ -73,7 +70,12 @@ small#copy{
 
 #ticket-sales-icons{
   position: relative;
+  margin: 10px 0;
   left: 15px;
+}
+
+#ticket-sales-icons a{
+  color: white;
 }
 
 #ticket-sales-icons i.fas, #ticket-sales-icons i.far{
@@ -165,7 +167,7 @@ p#date-time{
 .spinner-footer{
   color: #8e8f90;
   font-size: 12px;
-  margin: 250px 0;
+  margin: 530px 0;
 }
 
 .spinner-footer a{
@@ -401,11 +403,7 @@ footer button{
 
 
 @media only screen and (min-width:360px) and (max-width: 375px){
-  div button#filters{
-    position: relative;
-    /* right: 20px; */
-  }
-
+ 
   #ticket-sales-icons{
     position: relative;
     left: 30px;

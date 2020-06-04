@@ -11,48 +11,64 @@
     <link rel="stylesheet" href="css/fontawesome5/css/all.css">
 
     <style>
-
-        .dropdown-menu{
+        .dropdown-menu {
             width: 200px;
             margin: 0px;
             padding: 0px;
         }
 
-        .dropdown-item{
+        .dropdown-item {
             padding-top: 0;
         }
 
-        @media only screen and (min-width: 768px){
-            #blue-div-nav ul.large-screen-menulinks{
+         .blue-div-form{
+                display: none;
+            }
+
+        @media only screen and (min-width: 768px) and (max-width: 992px) {
+            #blue-div-nav ul.large-screen-menulinks {
                 display: flex;
+                flex-direction: row;
                 position: relative;
                 left: -60px;
-                margin: 5px 0;
+                margin: -10px 0;
             }
-            #blue-div-nav .arts{
-                display: block;
+
+            #blue-div-nav .more{
+                display: none;
             }
         }
 
-        @media only screen and (min-width: 768px){
-            .captions .live-button{
+        @media only screen and (min-width: 768px) {
+            .captions .live-button {
                 position: relative;
                 margin: -20px auto;
                 left: 20%;
             }
-        }
 
-        @media only screen and (min-width: 992px){
-            .expand-at-large{
-                display: flex;
+           #blue-div-nav .arts, #blue-div-nav .family{
+                display: block;
             }
         }
-        
 
-        @media only screen and (min-width: 1200px){
-            .captions .live-button{
+        @media only screen and (min-width: 1200px) {
+            .captions .live-button {
                 left: 35%;
             }
+
+            #blue-div-nav .large-screen-menulinks {
+                position: relative;
+                left: -100px;
+                margin: -10px 0;
+            } 
+        }
+
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            #blue-div-nav .large-screen-menulinks {
+                position: relative;
+                
+                margin: -15px 0;
+            } 
         }
     </style>
 </head>
@@ -61,47 +77,56 @@
     <div class="container-fluid">
         <div class="row white-div">
             <div class="col-12 hide-and-show" id="white-div-nav">
-                <nav class="navbar navbar-expand-md row">
-
-                    <!-- first column of blue nav -->
-                    <div class="col-6 col-sm-8 col-lg-10 col-xl-9">
+                <nav class="navbar navbar-expand-lg row">
+        
+                    <!-- first column of white nav -->
+                    <div class="col-5 col-sm-8 col-lg-9 mb-3">
                         <div class="row">
                             <div class="col-12 col-md-3 col-lg-2 white-div-logo">
                                 <a href="#" class="white-ticket-brand">
                                     <img src="images/tek-tickets.png" alt="logo" width="100" height="100">
                                 </a>
                             </div>
-
+        
                             <!-- hide and show this header on >=medium devices -->
                             <div class="col-md-9 col-lg-5 white-div-form">
                                 <form class="" action="">
                                     <div class="form-row">
                                         <div class="col">
-                                            <input class="form-control search" type="text" name=""
-                                                id="white-navbar-input-field"
+                                            <input class="form-control search" type="text" name="" id="white-navbar-input-field"
                                                 placeholder="Find millions of live experiences">
                                             <i class="fas fa-search input-search-icon"></i>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-
+        
                             <div class="col-lg-5">
                                 <ul class="navbar-nav large-screen-menulinks">
-                                    <li class="nav-item user-sell-white-nav mr-3">
-                                        <a class="nav-link" href="#">Concert</a>
+                                    <li class="nav-item menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Concert</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item user-sell-white-nav mr-3">
-                                        <a class="nav-link" href="#">Sports</a>
+                                    <li class="nav-item menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Sports</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item arts user-sell-white-nav mr-3">
-                                        <a class="nav-link" href="#">Arts</a>
+                                    <li class="nav-item arts menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Arts</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item family user-sell-white-nav mr-3">
-                                        <a class="nav-link" href="#">Family</a>
+                                    <li class="nav-item family menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Family</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item dropdown user-sell-white-nav">
-                                        <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                    <li class="nav-item dropdown menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                        </div>
                                         <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
                                             <a class="dropdown-item arts-dropdown" href="#">Arts & Theater</a>
                                             <a class="dropdown-item family-dropdown" href="#">Family</a>
@@ -113,21 +138,23 @@
                                     </li>
                                 </ul>
                             </div>
-
+        
                             <!-- hide and show this header on >=medium devices -->
-
+        
                         </div>
                     </div>
-
-
+        
+        
                     <!-- second column of white nav -->
-                    <div class="col-6 col-sm-4 col-lg-2 col-xl-2 mb-3 navbar-icons">
+                    <div class="col-7 col-sm-4 col-lg-3 mb-3 navbar-icons">
                         <div class="row">
-                            <div class="col-3 search-icon icon-links">
-                                <a href="#"> <i class="fas fa-search"></i> </a>
+                            <div class="col-3 search-icon menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> <i class="fas fa-search"></i> </a>
+                                </div>
                             </div>
-                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown user-sell-white-nav user-icon icon-links">
-                                <div class="" data-toggle="dropdown">
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown menu-links-outer-div user-icon">
+                                <div class="menu-links-inner-div" data-toggle="dropdown">
                                     <a href="#"> <i class="far fa-user-circle"></i> </a>
                                 </div>
                                 <div class="dropdown-menu dropdown-menu-right">
@@ -139,19 +166,24 @@
                                     <a class="dropdown-item" href="#">Sign Out</a>
                                 </div>
                             </div>
-                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 user-sell-white-nav icon-links sell">
-                                <span> <a href="#"> Sell</a></span>
+                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div">
+                                <div class="menu-links-inner-div sell">
+                                    <a href="#"> Sell </a>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-lg-4 col-xl-3 user-sell-white-nav icon-links help">
-                                <a href="#"> Help </a>
+                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div help">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> Help </a>
+                                </div>
                             </div>
-                            <div class="col-3 col-md-3 hamburger-icon" type="button" data-toggle="collapse"
-                                data-target="#menu-items">
-                                <!-- <div class="row"> -->
-                                <div class="toggler-icon"></div>
-                                <div class="toggler-icon"></div>
-                                <div class="toggler-icon"></div>
-                                <!-- </div> -->
+                            <div class="col-3 col-md-3 hamburger-outer-div">
+                                <div class="hamburger-icon" type="button">
+                                    <!-- <div class="row"> -->
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                    <!-- </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,39 +191,60 @@
             </div>
         </div>
         <!-- white nav ends here -->
-
+        
         <!-- blue navbar -->
         <div class="row blue-div">
             <div class="col-12" id="blue-div-nav">
-                <nav class="navbar navbar-expand-md row">
-
+                <nav class="navbar navbar-expand-lg row">
+        
                     <!-- first column of blue nav-->
-                    <div class="col-6 col-sm-8 col-lg-10 col-xl-9 mb-3">
+                    <div class="col-5 col-sm-8 col-lg-9 mb-3">
                         <div class="row">
-                            <div class="col-12 col-md-3 col-lg-2 blue-div-logo" id="logo">
+                            <div class="col-12 col-md-3 col-lg-2 blue-div-logo">
                                 <a href="#">
                                     <img src="images/tek-tickets.png" alt="logo" width="100" height="100">
                                 </a>
                             </div>
-
-                           
-
-                            <div class="col-md-9">
+        
+                            <!-- hide and show this header on >=medium devices -->
+                            <!-- <div class="col-md-9 col-lg-5 blue-div-form">
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
+                                                placeholder="Find millions of live experiences">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div> -->
+        
+                            <div class="col-md-9 col-lg-5">
                                 <ul class="navbar-nav large-screen-menulinks">
-                                    <li class="nav-item user-sell-blue-nav mr-3">
-                                        <a class="nav-link" href="#">Concert</a>
+                                    <li class="nav-item menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Concert</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item user-sell-blue-nav mr-3">
-                                        <a class="nav-link" href="#">Sports</a>
+                                    <li class="nav-item menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Sports</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item arts user-sell-blue-nav mr-3">
-                                        <a class="nav-link" href="#">Arts</a>
+                                    <li class="nav-item arts menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Arts</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item family user-sell-blue-nav mr-3">
-                                        <a class="nav-link" href="#">Family</a>
+                                    <li class="nav-item family menu-links-outer-div mr-3">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Family</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item dropdown user-sell-blue-nav">
-                                        <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                    <li class="nav-item dropdown menu-links-outer-div">
+                                        <div class="menu-links-inner-div more">
+                                            <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                        </div>
                                         <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
                                             <a class="dropdown-item arts-dropdown" href="#">Arts & Theater</a>
                                             <a class="dropdown-item family-dropdown" href="#">Family</a>
@@ -206,15 +259,17 @@
                         </div>
                         <!-- hide and show this header on >=medium devices -->
                     </div>
-
+        
                     <!-- second column of blue nav-->
-                    <div class="col-6 col-sm-4 col-lg-2 col-xl-2 mb-3 navbar-icons">
+                    <div class="col-7 col-sm-4 col-lg-3 mb-3 navbar-icons">
                         <div class="row">
-                            <div class="col-3 search-icon icon-links">
-                                <a href="#"> <i class="fas fa-search"></i> </a>
+                            <div class="col-3 search-icon menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> <i class="fas fa-search"></i> </a>
+                                </div>
                             </div>
-                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown user-sell-blue-nav user-icon icon-links">
-                                <div class="" data-toggle="dropdown">
+                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown menu-links-outer-div user-icon">
+                                <div class="menu-links-inner-div" data-toggle="dropdown">
                                     <a href="#"> <i class="far fa-user-circle"></i> </a>
                                 </div>
                                 <div class="dropdown-menu dropdown-menu-right">
@@ -226,19 +281,24 @@
                                     <a class="dropdown-item" href="#">Sign Out</a>
                                 </div>
                             </div>
-                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 user-sell-blue-nav sell icon-links">
-                                <span> <a href="#"> Sell </a></span>
+                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div">
+                                <div class="menu-links-inner-div sell">
+                                    <a href="#"> Sell </a>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-lg-4 col-xl-3 user-sell-blue-nav help icon-links">
-                                <a href="#"> Help </a>
+                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div help">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> Help </a>
+                                </div>
                             </div>
-                            <div class="col-3 col-md-3 hamburger-icon" type="button"
-                                data-toggle="collapse" data-target="#menu-items">
-                                <!-- <div class="row"> -->
-                                <div class="toggler-icon"></div>
-                                <div class="toggler-icon"></div>
-                                <div class="toggler-icon"></div>
-                                <!-- </div> -->
+                            <div class="col-3 col-md-3 hamburger-outer-div">
+                                <div class="hamburger-icon" type="button">
+                                    <!-- <div class="row"> -->
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                    <!-- </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -266,7 +326,7 @@
                         </div>
                     </div>
                 </div>
-                
+
 
                 <div class="row mb-3 header-search-options">
                     <div class="col col-md-12 search-links">
@@ -289,15 +349,16 @@
             <div class="container-fluid">
                 <div class="row advert-section">
                     <div class="col-lg-8 col-xl-6 mx-auto" id="advert-img-div">
-                        <img src="https://tpc.googlesyndication.com/simgad/3861415721932990274" alt="" width="728" height="90">
+                        <img src="https://tpc.googlesyndication.com/simgad/3861415721932990274" alt="" width="728"
+                            height="90">
                     </div>
                 </div>
             </div>
         </section>
         <!-- advert section ends here -->
-        
+
         <!-- main section of the body here -->
-        <section  class="large-screen-padding main-content-section">
+        <section class="large-screen-padding main-content-section">
             <div class="container-fluid ">
                 <div class="row">
                     <div id="slides-indicators" class="col-12 carousel slide" data-ride="carousel">
@@ -340,7 +401,7 @@
                                 </div>
                             </div>
                         </div>
-            
+
                         <!-- Indicators -->
                         <!-- <div class="row">
                                                             <div class="col-12 my-3"> -->
@@ -354,7 +415,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="container-fluid expand-at-medium">
                 <div class="row">
                     <div class="col-md-12" id="img-gallery">
@@ -371,7 +432,8 @@
                                         <div class="row">
                                             <div class="col-md-12 col-lg-9">
                                                 <a href="#" class="slide-captions">Live From Home</a>
-                                                <p class="caption-text"> Your virtual hub updated daily with live streams
+                                                <p class="caption-text"> Your virtual hub updated daily with live
+                                                    streams
                                                     from your
                                                     favorite artists and more
                                                 </p>
@@ -385,26 +447,27 @@
                                     </div>
                                 </div>
                             </div>
-            
+
                             <div class="col-md-6 col-lg-4 static-image2">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="row">
-            
+
                                             <div class="col-md-12 col-lg-7">
                                                 <a href="#"> <img
                                                         src="https://s1.ticketm.net/dam/a/f19/6811475b-29a2-4be3-927f-9fd5ff1d9f19_1202251_RETINA_PORTRAIT_16_9.jpg"
                                                         alt="artist1" width="926" height="464" id="image-slide2">
                                                 </a>
                                             </div>
-            
+
                                             <div class="col-md-11 col-lg-5 mb-5 captions">
                                                 <a href="#" class="slide-captions">Kane Brown</a>
-                                                <p class="caption-text"> Worldwide Beautiful Tour - tickets on sale! </p>
+                                                <p class="caption-text"> Worldwide Beautiful Tour - tickets on sale!
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-            
+
                                     <div class="col-lg-12 static-image3">
                                         <div class="row">
                                             <div class="col-lg-7">
@@ -413,7 +476,7 @@
                                                         alt="artist2" width="926" height="464" id="image-slide3">
                                                 </a>
                                             </div>
-            
+
                                             <div class="col-lg-5 mb-5 captions">
                                                 <a href="#" class="slide-captions">Tim McGraw</a>
                                                 <p class="caption-text"> Here On Earth Tour is here! </p>
@@ -426,7 +489,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="container-fluid announcement-div">
                 <div class="row">
                     <div class="col-12">
@@ -479,7 +542,7 @@
                                     <button class="btn color-theme event-info">Event Info</button>
                                 </div>
                             </div>
-                            
+
                             <div class="row announced-events">
                                 <div class="col-6 col-md-3 col-lg-4">
                                     <img class="" src="https://via.placeholder.com/200x150" alt="">
@@ -523,7 +586,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- second column  -->
                         <div class="second-column expand-at-large">
                             <div class="row announced-events mt-2">
@@ -547,7 +610,7 @@
                                     <button class="btn color-theme event-info">Event Info</button>
                                 </div>
                             </div>
-                        
+
                             <div class="row announced-events">
                                 <div class="col-6 col-md-3 col-lg-4">
                                     <img class="" src="https://via.placeholder.com/200x150" alt="">
@@ -569,7 +632,7 @@
                                     <button class="btn color-theme event-info">Event Info</button>
                                 </div>
                             </div>
-                        
+
                             <div class="row announced-events">
                                 <div class="col-6 col-md-3 col-lg-4">
                                     <img class="" src="https://via.placeholder.com/200x150" alt="">
@@ -616,7 +679,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="container-fluid discover-events">
                 <div class="row">
                     <div class="col-11 mx-auto">
@@ -626,20 +689,20 @@
                         <div class="row mx-auto">
                             <div class="col discover-events-buttons">
                                 <a href="#" class="btn color-theme event-info">Concerts</a>
-                                
+
                                 <a href="#" class="btn color-theme event-info">Sports</a>
-                                
+
                                 <a href="#" class="btn theater color-theme event-info">Arts &
                                     Theatre
                                 </a>
-                                
+
                                 <a href="#" class="btn family color-theme event-info">Family</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="container-fluid less-md-block">
                 <div class="row">
                     <div class="col-12" id="popular">
@@ -657,7 +720,7 @@
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="row">
                     <div class="col-12 concert-artists-imgs">
                         <div class="row">
@@ -665,7 +728,7 @@
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
                                         <img height="10" class="" src="https://via.placeholder.com/150x70" alt="">
-                                        
+
                                         <div class="expand-at-medium artist-label-img">
                                             <a href="#">Artist name</a>
                                             <a href="#">30 Events</a>
@@ -691,7 +754,7 @@
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
                                         <img height="10" class="" src="https://via.placeholder.com/150x70" alt="">
-                            
+
                                         <div class="artist-label-img expand-at-medium">
                                             <a href="#">Artist name</a>
                                             <a href="#">30 Events</a>
@@ -712,7 +775,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -736,8 +799,8 @@
                                         <i class="far fa-heart"></i>
                                     </div>
                                 </div>
-                            </div>      
-                        </div> 
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col-12 col-md-4">
@@ -764,7 +827,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -789,7 +852,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -817,8 +880,8 @@
                         </div>
                     </div>
                 </div>
-            
-            
+
+
                 <!-- sport section -->
                 <div class="row mt-5">
                     <div class="col-12 popular-concert-section">
@@ -858,7 +921,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -883,7 +946,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -909,7 +972,7 @@
                                 </div>
                             </div>
                         </div>
-                
+
                         <div class="row">
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
@@ -935,7 +998,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -960,7 +1023,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -988,7 +1051,7 @@
                         </div>
                     </div>
                 </div>
-            
+
                 <!-- theater section -->
                 <div class="row mt-5">
                     <div class="col-12 popular-concert-section">
@@ -1028,7 +1091,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12  col-sm-5 col-4">
@@ -1053,7 +1116,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -1079,7 +1142,7 @@
                                 </div>
                             </div>
                         </div>
-                
+
                         <div class="row">
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
@@ -1105,7 +1168,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -1130,7 +1193,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -1158,8 +1221,8 @@
                         </div>
                     </div>
                 </div>
-            
-            
+
+
                 <!-- family section -->
                 <div class="row mt-5">
                     <div class="col-12 popular-concert-section">
@@ -1199,7 +1262,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12  col-sm-5 col-4">
@@ -1224,7 +1287,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -1250,7 +1313,7 @@
                                 </div>
                             </div>
                         </div>
-                
+
                         <div class="row">
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
@@ -1276,7 +1339,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -1301,7 +1364,7 @@
                                     </div>
                                 </div>
                             </div>
-                
+
                             <div class="col-12 col-md-4">
                                 <div class="row mt-4 celtic-events">
                                     <div class="col-md-12 col-sm-5 col-4">
@@ -1438,7 +1501,7 @@
                                 <a href="#">My Accounts</a>
                             </div>
                             <div class="col-12">
-                
+
                             </div>
                             <div class="col-12">
                                 <a href="#">My Accounts</a>
@@ -1446,15 +1509,15 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <hr class="expand-at-large">
-                
+
                 <div class="row center-at-lg">
                     <div class="col-12 ">
                         By continuing past this page, you agree to our <span class="terms-policy"> Terms of Use. <br>
-                
+
                             Privacy Policy</span> | © 1999-2020 Ticketmaster. All rights reserved. <br>
-                
+
                         <span class="terms-policy">Do Not Sell My Information</span>
                     </div>
                 </div>

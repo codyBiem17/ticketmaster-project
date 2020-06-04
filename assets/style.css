@@ -1,6 +1,5 @@
-.bg-theme {
-    /* background-color: #0165D4; */
-    /* background-color: rgb(25, 11, 160); */
+#blue-div-nav .hamburger-icon, #white-div-nav .hamburger-icon{
+    margin: 3px 0px;
 }
 
 .small-color {
@@ -27,6 +26,21 @@ i.color-theme{
     display: flex;
     justify-content: center;
     margin: -30px 0px 0px;
+}
+
+.events-reviews-bio{
+    display: flex;
+    justify-content: center;
+    margin: 0 -15px;
+}
+
+.events-reviews-bio a{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#load-more{
+    border: 1px solid #190ba0;;
 }
 
 .header-search-options a {
@@ -220,11 +234,6 @@ img:not(.carousel-images) {
     color: white!important;
 }
 
-.nav-link:hover {
-    /* background-color: #1148AC;
-    color: white; */
-}
-
 .reverse-theme {
     background-color: white;
     color: #190ba0;
@@ -234,19 +243,6 @@ img:not(.carousel-images) {
     background-color: #D6E7FA;
     color: #190ba0;
 }
-/* 
-footer {
-    margin-top: 20px;
-} */
-
-/* footer a {
-    color: white;
-}
-
-footer a:hover {
-    color: white;
-    text-decoration: none;
-} */
 
 .relative {
     position: relative;
@@ -454,7 +450,7 @@ img{
 }
 
 .row.announced-events button{
-    border: 1px solid #190ba0;;
+    border: 1px solid #190ba0;
     margin-top: 16px;
 }
 
@@ -489,20 +485,6 @@ img{
     border: 1px solid #190ba0;
     margin: auto 3px;
     padding: 5px 5px;
-}
-
-.discover-events a.btn{
-    /* margin-left: 5px;
-    margin-right: 5px; */
-    /* font-size: 14px; */
-}
-
-.discover-events a.theater{
-    position: relative;
-    /* left: 10px;
-    margin-top: -5px;
-    margin-left: -5px;
-    margin-right: -5px; */
 }
 
 .less-md-block{
@@ -602,12 +584,13 @@ div.account-overview{
 
 #event-reviews a.active::after{
     content: "";
-    display: block;
+    display: inline-flex;
     border-bottom: 5px solid white;
     max-width: 100%;
-    width: 85px;
-    position: relative;
-    top: 5px;
+    width: 85px;    
+    position: absolute;
+    top: 25px;
+    margin: auto -85px;
 }
 
 .list-calendar a{
@@ -628,6 +611,24 @@ div.account-overview{
 
 .fans-views-images{
     width: fit-content;
+}
+
+.fans-views-images div.artist-label-img{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    max-width: 60%;
+    width: 100%;
+    background: rgba(38, 38, 38, 0.35);
+    padding: 4px 8px;
+}
+
+.artist-label-img a{
+    text-decoration: none;
+    padding: 4px 0px;
+    color: white;
 }
 
 .star-span{
@@ -665,6 +666,12 @@ div.account-overview{
         padding: 10px 7px;
     }
 
+    .events-reviews-bio{
+        position: relative;
+        right: 15%;
+        margin: 0 auto;
+    }
+
     .discover-events-buttons a.btn{
         margin: auto 6px;
     }
@@ -691,9 +698,25 @@ div.account-overview{
         display: none;
     }
 
+    .sell{
+        position: relative;
+        left: -3px;
+    }
+
     .icon-links{
         position: relative;
         top: 5px;
+    }
+
+    .header-text-divs{
+        position: relative;
+        margin: 30px 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #blue-div-nav .navbar-icons {
+        margin: -15px auto;
     }
 }
 
@@ -701,6 +724,18 @@ div.account-overview{
     .expand-at-large, .hide-at-medium,
     .expand-at-xl, .hide-from-small, .hearts {
         display: none;
+    }
+
+    
+
+    .menu-links-outer-div, .hamburger-outer-div{
+        padding: 19px 8px;
+        position: relative;
+        text-align: center;
+    }
+
+    .white-div-form{
+        margin: 10px auto;
     }
 
     .icon-links{
@@ -743,19 +778,6 @@ div.account-overview{
         padding: 10px 15px;
     }
 
-    .discover-events-buttons{
-        /* width: fit-content;
-        margin: 0 auto; */
-    }
-
-    .discover-events .family.btn{
-        /* display: inline-block;
-        position: relative;
-        left: 8px;
-        margin-left: 19px;
-        margin-right: 19px; */
-    }
-
     .less-md-block {
         margin-left: 20px;
         margin-right: 30px;
@@ -784,7 +806,7 @@ div.account-overview{
 
     }
 
-    .celtic-events div.artist-label-img{
+    .celtic-events div.artist-label-img {
         position: absolute;
         bottom: 10px;
         display: flex;
@@ -816,13 +838,6 @@ div.account-overview{
         max-width: 100%;
         width: 100%;
         height: auto;
-    }
-    
-    .hearts{
-        /* position: relative;
-        top: -70px;
-        left: 120px;
-        font-size: 25px; */
     }
 
     .announced-events > div:nth-child(2){
@@ -867,12 +882,68 @@ div.account-overview{
         top: 15px;
     }
 
+    .header-text-divs{
+        position: relative;
+        margin: 50px 0px;
+    }
+
+    .move-at-medium{
+        margin: 25px auto 0;
+    }
+
+    .show-at-sm{
+        margin: 20px auto;
+    }
+
+    .events-reviews-bio{
+        position: relative;
+        right: 31%;
+        top: 55px;
+    }
 
 }
 
 @media only screen and (min-width: 992px){
     .expand-at-large{
         display: block;
+    }
+
+    .white-div-logo img{
+        position: relative;
+        top: -8px;
+    }
+
+    #blue-div-nav {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #blue-div-nav .navbar-icons {
+        position: relative;
+        margin: auto 5px;
+        top: 5px;
+    }
+
+    #white-div-nav .navbar-icons{
+        position: relative;
+        bottom: 10px;
+        /* margin: -10px auto; */
+    }
+
+
+    .blue-div-form{
+        position: relative;
+        margin: 5px auto;
+    }
+
+    .white-div-form{
+        margin: -10px auto;
+    }
+
+    #white-div-nav .large-screen-menulinks {
+        position: relative;
+        
+        margin: -35px 0;
     }
 
     .icon-links{
@@ -913,17 +984,6 @@ div.account-overview{
         justify-content: center;
     }
 
-    .announced-events-section .row.announced-events{
-        border-top: none;
-        /* border-width: 0px 10px; */
-        /* margin: auto 0px;
-        padding: 0px; */
-        /* margin-left: 20px;
-        margin-right: 20px;
-        padding: 30px;
-        max-width: 400px;; */
-    }
-
     .first-column .row.announced-events, 
     .second-column .row.announced-events{
         border-left: none;
@@ -934,11 +994,6 @@ div.account-overview{
     .first-column .row.announced-events:last-child,
     .second-column .row.announced-events:last-child{
         border-bottom: none;
-    }
-
-    .first-column{
-        margin-left: -25px;
-        /* margin-right: -20px; */
     }
 
     .row .first-column::before{
@@ -960,11 +1015,71 @@ div.account-overview{
         margin: 0px 10px;
     }
 
+    .header-text-divs{
+        position: relative;
+        top: -50px;
+        margin: 50px 0 0px;
+        left: 10px;
+    }
+
+    .reduce-at-lg img{
+        margin: 0 17px;
+        height: 70%;
+    }
+
+   .events-reviews-bio{
+       position: relative;
+       margin: -20px -33px 0;
+   }
+
+   .from-artiste .side-img-captions{
+        padding: 0px;
+   }
+
+   footer div.expand-at-large{
+        display: flex;
+    }
+
+
 }
 
 @media only screen and (min-width: 1200px){
     .expand-at-xl{
         display: block;
+    } 
+
+    .blue-div-logo img{
+        margin: 8px auto;
+    }
+
+    #blue-div-nav .navbar-icons{
+        margin: -15px auto;
+    }
+
+    .blue-div-form{
+        position: relative;
+        margin: 15px auto;
+    }
+
+    #blue-div-nav .large-screen-menulinks {
+        position: relative;
+        /* left: -100px; */
+        margin: -10px 0;
+    } 
+
+    .white-div-logo img{
+        position: relative;
+        top: 3px;
+    }
+
+     .white-div-form{
+        margin: 5px auto;
+    }
+
+    #white-div-nav .large-screen-menulinks {
+        position: relative;
+        
+        margin: -5px 0;
     }
 
     .less-md-block {
@@ -973,15 +1088,57 @@ div.account-overview{
     }
 
     .header-search-field{
-        margin-left: 115px;
-        margin-right: 115px;
+        margin-left: 110px;
+        margin-right: 110px;
+    }
+
+    .header-text-divs{
+        position: relative;
+        margin: 70px 0 0px;
+        left: 10px;
+    }
+
+    .reduce-at-lg{
+        top: -30px;
+    }
+
+    .reduce-at-lg img{
+        margin: 0 50px;
+        max-width: 100%;
+        width: 100%;
+        height: 90%;
+    }
+
+   .events-reviews-bio{
+       position: relative;
+       margin: 0px -75px 0;
+   }
+
+   .show-at-sm > span:first-child{
+        display: inline-block;
+    }
+
+    .from-artiste{
+        position: relative;
+        left: -10px;
     }
 }
 
 @media only screen and (min-width: 1440px){
+
+    #blue-div-nav .large-screen-menulinks {
+        position: relative;
+        margin: -5px 0;
+    }
     
-    .hearts{
-        /* position: absolute;
-        left: 280px; */
+    .header-text-divs {
+        max-width: 1296px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 70px auto;
+    }
+
+    .events-reviews-bio{
+        margin: 0 -100px;
     }
 }
