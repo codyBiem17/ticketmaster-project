@@ -44,11 +44,6 @@ a.slide-captions,
   font-weight: 600;
 }
 
-.hide-and-show a:hover{
-   background: rgb(230, 230, 230);
-}
-
-
 .blue-div-logo{
   position: relative;
   left: -20px;
@@ -62,7 +57,6 @@ a.slide-captions,
   margin-top: -18px;
   margin-bottom: -18px;
 }
-
 
 #white-div-nav .hamburger-icon {
     margin: 8px 0px;

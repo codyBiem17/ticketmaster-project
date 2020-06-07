@@ -30,7 +30,7 @@ a.slide-captions,
 
 .sell{
   position: relative;
-  left: -5px;
+  /* left: -5px; */
 }
 
 .hide-and-show {
@@ -51,12 +51,10 @@ a.slide-captions,
 }
 
 #white-div-nav .toggler-icon {
-    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
-    width: 18px;
-    height: 3px;
-    background-color: black;
-    margin-bottom: 3px;
-    /* border: 1px solid red; */
+  width: 18px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 3px;
 }
 
 #blue-div-nav .hamburger-icon {
@@ -106,20 +104,25 @@ a.slide-captions,
 
 .blue-div a, .blue-div a:hover{
   color: white;
+  font-weight: 600;
+}
+
+#white-div-nav .navbar-icons{
+  position: relative;
+  left: -5px;
+  font-size: 20px;
+  margin: -10px auto;
 }
 
 #blue-div-nav .navbar-icons{
-  margin: -10px 0;
-}
-
-.menu-links-outer-div, .hamburger-outer-div{
-  padding: 15px 8px;
   position: relative;
-  text-align: center;
-}
+  /* left: 5px; */
+  font-size: 20px;
+  margin: -15px auto;
+} 
 
-ul li .menu-links-outer-div {
-  padding: 15px 16px;
+ul li.menu-links-outer-div, .hamburger-outer-div {
+  padding: 15px 13px;
   position: relative;
 }
 
@@ -354,33 +357,28 @@ footer span.terms-policy {
 
   .hide-and-show .navbar-icons{
     position: relative;
-    left: 10px;
-    margin: -10px 0;
+    /* left: 10px;
+    margin: -10px 0; */
   }
 
   #blue-div-nav .hamburger-icon, #white-div-nav .hamburger-icon{
     position: relative;
-    left: 5px; 
+    /* left: 5px;  */
   } 
 
 }
 
 @media only screen and (min-width: 411px) and (max-width: 599px){
-  #blue-div-nav .navbar-icons {
-    position: relative;
-    left: 20px;
-  }
-
   #white-div-nav .navbar-icons {
     position: relative;
-    left: 30px;
-    top: -5px;
+    left: 55px;
   }
 
-  .sell{
+  #blue-div-nav .navbar-icons {
     position: relative;
-    left: 0px;
+    left: 60px;
   }
+
 }
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .blue-div a em{
