@@ -54,8 +54,8 @@ a.slide-captions,
 .white-div-logo {
   position: relative;
   left: -35px; 
-  margin-top: -18px;
-  margin-bottom: -18px;
+  margin-top: -24px;
+  margin-bottom: -24px;
 }
 
 #white-div-nav .hamburger-icon {
@@ -83,9 +83,6 @@ a.slide-captions,
     background-color: white;
     margin-bottom: 3px;
 }
-#blue-div-nav{
-    height: 60px;
-}
 
 #white-div-nav .navbar-icons{
   position: relative;
@@ -109,6 +106,7 @@ a.slide-captions,
 .blue-div {
   color: white;
   font-size: 20px;
+  height: 60px;
   background: linear-gradient(
     90deg,rgba(25, 11, 160, 1) 0%,rgba(33, 19, 168, 1) 56%,
     rgba(25, 11, 160, 1) 100%
@@ -197,7 +195,7 @@ footer span.terms-policy {
 .white-div-form{
   position: relative;
   left: -110px;
-  top: 10px;
+  top: 3px;
 }
 
 .white-div-form i.input-search-icon {
@@ -230,7 +228,7 @@ footer span.terms-policy {
 
 .blue-div-form {
   position: relative;
-  top: 2px;
+  top: 4px;
   left: -100px;
 }
 
@@ -551,7 +549,7 @@ span.username{
 
 /* media queries for large devices */
 @media only screen and (min-width: 992px) {
-  .search-icon, .hamburger-icon{
+ .hamburger-icon{
     display: none;
   }
 
@@ -562,17 +560,17 @@ span.username{
 
   .blue-div-logo{
     position: relative;
-    left: -20px;
+    /* left: -20px;
     margin-top: -25px;
-    margin-bottom: -25px;
+    margin-bottom: -25px; */
   }
 
   .white-div-logo {
     position: relative;
-    top: -13px;
+    /* top: -13px;
     left: -35px; 
     margin-top: -5px;
-    margin-bottom: -5px;
+    margin-bottom: -5px; */
   }
 
   #blue-div-nav .large-screen-menulinks{
@@ -581,16 +579,16 @@ span.username{
     left: -120px;
   }
 
+  #white-div-nav .large-screen-menulinks{
+    position: relative;
+    left: -120px;
+    top: -15px;
+  }
+
   #blue-div-nav .navbar-icons {
     position: relative;
     left: 80px;
     margin: -30px auto;
-  }
-
-  #white-div-nav .large-screen-menulinks{
-    position: relative;
-    left: -120px;
-    margin: -5px 0;
   }
 
   #white-div-nav .navbar-icons {
@@ -644,8 +642,8 @@ span.username{
 
 @media only screen and (min-width: 1200px) {
   .blue-div-logo{
-    margin-top: -23px;
-    margin-bottom: -23px;
+    /* margin-top: -23px;
+    margin-bottom: -23px; */
   }
 
   .blue-div-form{
@@ -740,7 +738,7 @@ span.username{
 
  
 
-  .large-screen-navlinks ul.navbar-nav > li.menu-links-outer-div:last-child:hover
+  /* .large-screen-navlinks ul.navbar-nav > li.menu-links-outer-div:last-child:hover
   {
     background: none;
   }
@@ -764,14 +762,13 @@ span.username{
 
   #white-div-nav a.nav-link.more, #blue-div-nav a.nav-link.more{
       display: none;
-  }
+  } */
 
-  #blue-div-nav .large-screen-navlinks .dropdown .dropdown-menu {
+  /* #blue-div-nav .large-screen-navlinks .dropdown .dropdown-menu {
     position: absolute;
     display: flex;
     flex-direction: row;
     top: -15px;
-    /* left: -20px; */
     border: none;
     background: none;
   }
@@ -781,7 +778,6 @@ span.username{
     display: flex;
     flex-direction: row;
     top: -3px;
-    /* left: -20px; */
     border: none;
     background: none;
   }
@@ -808,7 +804,7 @@ span.username{
   li a#sold-tickets{
     position: relative;
     right: 18%;
-  }
+  } */
 
   footer section.large-footer-padding{
     max-width: 1296px;

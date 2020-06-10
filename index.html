@@ -21,10 +21,6 @@
             padding-top: 0;
         }
 
-         .blue-div-form{
-                display: none;
-            }
-
         @media only screen and (min-width: 768px) and (max-width: 992px) {
             #blue-div-nav ul.large-screen-menulinks {
                 display: flex;
@@ -58,8 +54,8 @@
 
             #blue-div-nav .large-screen-menulinks {
                 position: relative;
-                left: -100px;
-                margin: -10px 0;
+                /* left: -100px;
+                margin: -10px 0; */
             } 
         }
 
@@ -67,7 +63,7 @@
             #blue-div-nav .large-screen-menulinks {
                 position: relative;
                 
-                margin: -15px 0;
+                /* margin: -15px 0; */
             } 
         }
     </style>
@@ -80,10 +76,10 @@
                 <nav class="navbar navbar-expand-lg row">
         
                     <!-- first column of white nav -->
-                    <div class="col-5 col-sm-8 col-lg-9 mb-3">
+                    <div class="col-4 col-sm-8 col-lg-9 mb-3">
                         <div class="row">
                             <div class="col-12 col-md-3 col-lg-2 white-div-logo">
-                                <a href="#" class="white-ticket-brand">
+                                <a href="#">
                                     <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
                                 </a>
                             </div>
@@ -92,7 +88,7 @@
                             <div class="col-md-9 col-lg-5 white-div-form">
                                 <form class="" action="">
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col-md-12">
                                             <input class="form-control search" type="text" name="" id="white-navbar-input-field"
                                                 placeholder="Find millions of live experiences">
                                             <i class="fas fa-search input-search-icon"></i>
@@ -101,91 +97,116 @@
                                 </form>
                             </div>
         
-                            <div class="col-lg-5">
+                            <div class="col-lg-5 large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
-                                    <li class="nav-item menu-links-outer-div mr-3">
+                                    <li class="nav-item menu-links-outer-div">
                                         <div class="menu-links-inner-div">
                                             <a class="nav-link" href="#">Concert</a>
                                         </div>
                                     </li>
-                                    <li class="nav-item menu-links-outer-div mr-3">
+                                    <li class="nav-item menu-links-outer-div">
                                         <div class="menu-links-inner-div">
                                             <a class="nav-link" href="#">Sports</a>
                                         </div>
                                     </li>
-                                    <li class="nav-item arts menu-links-outer-div mr-3">
-                                        <div class="menu-links-inner-div">
-                                            <a class="nav-link" href="#">Arts</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item family menu-links-outer-div mr-3">
-                                        <div class="menu-links-inner-div">
-                                            <a class="nav-link" href="#">Family</a>
-                                        </div>
-                                    </li>
                                     <li class="nav-item dropdown menu-links-outer-div">
                                         <div class="menu-links-inner-div">
-                                            <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                            <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
                                         </div>
-                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
-                                            <a class="dropdown-item arts-dropdown" href="#">Arts & Theater</a>
-                                            <a class="dropdown-item family-dropdown" href="#">Family</a>
-                                            <a class="dropdown-item" href="#">VIP</a>
-                                            <a class="dropdown-item" href="#">Deals</a>
-                                            <a class="dropdown-item" href="#">Entertainment Guides</a>
-                                            <!-- <a class="dropdown-item" href="#">For You</a> -->
-                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Arts & Theater</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Family</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">VIP</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Deals</a>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
-        
-                            <!-- hide and show this header on >=medium devices -->
-        
                         </div>
+                        <!-- hide and show this header on >=medium devices -->
                     </div>
         
-        
-                    <!-- second column of white nav -->
-                    <div class="col-7 col-sm-4 col-lg-3 mb-3 navbar-icons">
-                        <div class="row">
-                            <div class="col-3 search-icon menu-links-outer-div">
+                    <!-- second column of white nav-->
+                    <div class="navbar-expand col-8 col-sm-4 col-lg-3 mb-3 navbar-icons">
+                        <ul class="navbar-nav">
+                            <li class="nav-item menu-links-outer-div search-icon">
                                 <div class="menu-links-inner-div">
                                     <a href="#"> <i class="fas fa-search"></i> </a>
                                 </div>
-                            </div>
-                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown menu-links-outer-div user-icon">
-                                <div class="menu-links-inner-div" data-toggle="dropdown">
-                                    <a href="#"> <i class="far fa-user-circle"></i> </a>
+                            </li>
+                            <li class="nav-item dropdown menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a href="#" data-toggle="dropdown">
+                                        <i class="far fa-user-circle"></i>
+                                    </a>
                                 </div>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">My Account</a>
-                                    <a class="dropdown-item" href="#">My Tickets</a>
-                                    <a class="dropdown-item" href="#">My Listings</a>
-                                    <a class="dropdown-item" href="#">Settings</a>
-                                    <a class="dropdown-item" href="#">Sell</a>
-                                    <a class="dropdown-item" href="#">Sign Out</a>
-                                </div>
-                            </div>
-                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div">
-                                <div class="menu-links-inner-div sell">
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Account</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Tickets</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Listings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Settings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sell</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sign Out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  menu-links-outer-div sell">
+                                <div class="menu-links-inner-div">
                                     <a href="#"> Sell </a>
                                 </div>
-                            </div>
-                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div help">
+                            </li>
+                            <li class="nav-item  menu-links-outer-div help">
                                 <div class="menu-links-inner-div">
                                     <a href="#"> Help </a>
                                 </div>
-                            </div>
-                            <div class="col-3 col-md-3 hamburger-outer-div">
+                            </li>
+                            <li class="nav-item  hamburger-outer-div">
                                 <div class="hamburger-icon" type="button">
-                                    <!-- <div class="row"> -->
                                     <div class="toggler-icon"></div>
                                     <div class="toggler-icon"></div>
                                     <div class="toggler-icon"></div>
-                                    <!-- </div> -->
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -198,7 +219,7 @@
                 <nav class="navbar navbar-expand-lg row">
         
                     <!-- first column of blue nav-->
-                    <div class="col-5 col-sm-8 col-lg-9 mb-3">
+                    <div class="col-4 col-sm-8 col-lg-9 mb-3">
                         <div class="row">
                             <div class="col-12 col-md-3 col-lg-2 blue-div-logo">
                                 <a href="#">
@@ -207,52 +228,56 @@
                             </div>
         
                             <!-- hide and show this header on >=medium devices -->
-                            <!-- <div class="col-md-9 col-lg-5 blue-div-form">
+                            <div class="col-md-9 col-lg-5 blue-div-form">
                                 <form class="" action="">
                                     <div class="form-row">
-                                        <div class="col">
+                                        <div class="col-md-12">
                                             <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
-                                                placeholder="Find millions of live experiences">
+                                                placeholder="Search for artist, event or venue">
                                             <i class="fas fa-search input-search-icon"></i>
                                         </div>
                                     </div>
                                 </form>
-                            </div> -->
+                            </div>
         
-                            <div class="col-md-9 col-lg-5">
+                            <div class="col-lg-5 large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
-                                    <li class="nav-item menu-links-outer-div mr-3">
+                                    <li class="nav-item menu-links-outer-div">
                                         <div class="menu-links-inner-div">
                                             <a class="nav-link" href="#">Concert</a>
                                         </div>
                                     </li>
-                                    <li class="nav-item menu-links-outer-div mr-3">
+                                    <li class="nav-item menu-links-outer-div">
                                         <div class="menu-links-inner-div">
                                             <a class="nav-link" href="#">Sports</a>
                                         </div>
                                     </li>
-                                    <li class="nav-item arts menu-links-outer-div mr-3">
-                                        <div class="menu-links-inner-div">
-                                            <a class="nav-link" href="#">Arts</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item family menu-links-outer-div mr-3">
-                                        <div class="menu-links-inner-div">
-                                            <a class="nav-link" href="#">Family</a>
-                                        </div>
-                                    </li>
                                     <li class="nav-item dropdown menu-links-outer-div">
-                                        <div class="menu-links-inner-div more">
-                                            <a class="nav-link" href="#" data-toggle="dropdown">More</a>
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
                                         </div>
-                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
-                                            <a class="dropdown-item arts-dropdown" href="#">Arts & Theater</a>
-                                            <a class="dropdown-item family-dropdown" href="#">Family</a>
-                                            <a class="dropdown-item" href="#">VIP</a>
-                                            <a class="dropdown-item" href="#">Deals</a>
-                                            <a class="dropdown-item" href="#">Entertainment Guides</a>
-                                            <!-- <a class="dropdown-item" href="#">For You</a> -->
-                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item arts-dropdown" href="#">Arts & Theater</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item family-dropdown" href="#">Family</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">VIP</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Deals</a>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
@@ -261,49 +286,74 @@
                     </div>
         
                     <!-- second column of blue nav-->
-                    <div class="col-7 col-sm-4 col-lg-3 mb-3 navbar-icons">
-                        <div class="row">
-                            <div class="col-3 search-icon menu-links-outer-div">
+                    <div class="navbar-expand col-8 col-sm-4 col-lg-3 mb-4 navbar-icons">
+                        <ul class="navbar-nav">
+                            <li class="nav-item menu-links-outer-div search-icon">
                                 <div class="menu-links-inner-div">
                                     <a href="#"> <i class="fas fa-search"></i> </a>
                                 </div>
-                            </div>
-                            <div class="col-3 col-md-2 col-lg-4 col-xl-3 dropdown menu-links-outer-div user-icon">
-                                <div class="menu-links-inner-div" data-toggle="dropdown">
-                                    <a href="#"> <i class="far fa-user-circle"></i> </a>
+                            </li>
+                            <li class="nav-item dropdown menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a href="#" data-toggle="dropdown">
+                                        <i class="far fa-user-circle"></i>
+                                    </a>
                                 </div>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">My Account</a>
-                                    <a class="dropdown-item" href="#">My Tickets</a>
-                                    <a class="dropdown-item" href="#">My Listings</a>
-                                    <a class="dropdown-item" href="#">Settings</a>
-                                    <a class="dropdown-item" href="#">Sell</a>
-                                    <a class="dropdown-item" href="#">Sign Out</a>
-                                </div>
-                            </div>
-                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div">
-                                <div class="menu-links-inner-div sell">
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Account</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Tickets</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Listings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Settings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sell</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sign Out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item menu-links-outer-div sell">
+                                <div class="menu-links-inner-div">
                                     <a href="#"> Sell </a>
                                 </div>
-                            </div>
-                            <div class="col-3 col-md-3 col-lg-4 col-xl-3 menu-links-outer-div help">
+                            </li>
+                            <li class="nav-item menu-links-outer-div help">
                                 <div class="menu-links-inner-div">
                                     <a href="#"> Help </a>
                                 </div>
-                            </div>
-                            <div class="col-3 col-md-3 hamburger-outer-div">
+                            </li>
+                            <li class="nav-item  hamburger-outer-div">
                                 <div class="hamburger-icon" type="button">
-                                    <!-- <div class="row"> -->
                                     <div class="toggler-icon"></div>
                                     <div class="toggler-icon"></div>
                                     <div class="toggler-icon"></div>
-                                    <!-- </div> -->
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
+  
 
             <div class="container-fluid unforgettable">
                 <div class="row expand-at-medium">
@@ -333,9 +383,6 @@
                         <a href="#" class="btn">Dashboard </a>
                         <a href="#" class="btn">Questlove Concert</a>
                         <a href="#" class="btn drop-3">Lovelytheband</a>
-                        <!-- <a href="#" class="btn drop-2">Phish</a>
-                        <a href="#" class="btn drop-2">Artists</a>
-                        <a href="#" class="btn drop-2">Echosmith</a> -->
                     </div>
                 </div>
             </div>

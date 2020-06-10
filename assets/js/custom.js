@@ -5,7 +5,7 @@ $(document).ready(function () {
     var stickyWhiteDiv = function () {
         var scrollTop = $(window).scrollTop();
         if (scrollTop > offsetBlueDiv) {
-            $('.hide-and-show').css({ display: "block", height: "70px"});
+            $('.hide-and-show').css({ display: "block"});
             $('#blue-div-nav').css({marginTop: '-70px'});
             $('.white-div').addClass('sticky-nav');
         }
