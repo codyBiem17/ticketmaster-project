@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="assets/css/orders.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="assets/css/fontawesome5/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row blue-div">
+            <div class="col-12" id="blue-div-nav">
+                <nav class="navbar row">
+
+                    <!-- first column of blue nav-->
+                    <div class="col-12 blue-div-logo mb-3">
+                        <a href="#">
+                            <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row full-screen">
+            <!-- hide this on small screen  -->
+            <div class="col-lg-5 side-bg absolute-div">
+                <div class="row">
+                    <div class="col-12 text-on-image">
+                        <h1 class="page-desc">Welcome Back</h1>
+                        <p id="welcome-back-note">
+                            This is it — millions of live events, 
+                            up to the minute alerts for your favorite artists 
+                            and teams and, of course, always safe, secure ticketing.
+                        </p>
+                    </div>
+                    <div class="col-4 hr-class">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row img-div">
+                    <div class="col-12">
+                        <img src="assets/images/tek-tickets.jpg" alt="logo" width="70" height="70">
+                    </div>
+                </div>
+
+            </div>
+            <!-- hide on small screen ends here -->
+
+
+            <div class="col-12 col-md-12 col-lg-7 add-padding">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 id="sign-in-text">Sign Up</h2>
+                    </div>
+                    <div class="col-12">
+                        <p>Already have a Ticketmaster Account? <a href="signin.html">Sign In</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 ">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="email" class="col-form-label">Email Address</label>
+                                    <input type="email" class="form-control" name="email" id="email">
+                                </div>
+
+
+                                <div class="form-group col-12">
+                                    <label for="password" class="col-form-label">Password</label>
+                                    <input type="password" class="form-control" name="email" id="password">
+                                    <span id="show"><a href="#">SHOW</a></span>
+                                </div>
+
+                                <div class="form-group col-6">
+                                    <label for="firstname" class="col-form-label">First Name</label>
+                                    <input type="text" class="form-control" name="firstname" id="firstname">
+                                </div>
+
+                                <div class="form-group col-6">
+                                    <label for="lastname" class="col-form-label">Last Name</label>
+                                    <input type="text" class="form-control" name="lastname" id="lastname">
+                                </div>
+
+                                <div class="form-group col-6">
+                                    <label for="country" class="col-form-label">Country of Residence</label>
+                                    <select id="country" class="form-control">
+                                        <option selected>United States</option>
+                                        <option>Canada</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-6">
+                                    <label for="postalCode" class="col-form-label">Zip/Postal Code</label>
+                                    <input type="text" class="form-control" name="lastname" id="lastname">
+                                </div>
+
+                                <div class="col flex-this">
+                                    <!-- <div class="form-row"> -->
+                                    <div class="form-group">
+                                        <input class="" type="checkbox" name="remember-me" id="remember-me">
+                                        <label class="">Remember Me</label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <a href="resetpassword.html">Forgot Password?</a>
+                                    </div>
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="row policy-terms-text">
+                    <div class="col-12">
+                        By continuing past this page, you agree to the <span class="terms-policy"> <a href="#">Terms of
+                                Use</a> </span>. and understand that information will be used as described in
+                        our <span class="terms-policy"> <a href="#">Privacy Policy</a> </span>
+                    </div>
+                </div>
+
+
+
+                <button type="button" class="my-3 col-12 col-md-2 btn button-color proceed">Sign in</button>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/bootstrapjs/bootstrap.min.js"></script>
+</body>
+
+</html>

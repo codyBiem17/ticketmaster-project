@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orders</title>
-    <link rel="stylesheet" href="css/orders.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/orders.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome5/css/all.min.css">
 
     <style>
         .container-fluid {
@@ -16,6 +16,17 @@
             margin-right: auto;
             margin-left: auto;
         }
+
+        .dropdown-menu{
+            width: 200px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .dropdown-item{
+            padding-top: 0;
+        }
+
     </style>
 </head>
 
@@ -26,25 +37,19 @@
                 <nav class="navbar navbar-expand-lg row">
 
                     <!-- first column of white nav -->
-                    <div class="col-8 col-sm-9 col-md-10 col-lg-9">
+                    <div class="col-4 col-lg-8  mb-3">
                         <div class="row">
-                            <div class="col-12 col-lg-3 white-div-tee">
+                            <div class="col-12 col-lg-3 white-div-logo">
                                 <a href="#"> 
-                                    <img src="images/tek-tickets.png" alt="logo" width="50" height="50">
+                                    <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
                                 </a>
-                                <!-- <a href="#" class="white-div-input">
-                                    <img src="images/tek-tickets.png" alt="logo" width="50" height="50"> -->
-                                    <!-- <em>ticketmaster
-                                        <sup> <small id="copy">&copy;</small></sup>
-                                    </em> -->
-                                <!-- </a> -->
                             </div>
                     
                             <!-- hide and show this header on >=medium devices -->
-                            <div class="col-lg-5 white-div-form">
+                            <div class="col-lg-6 col-xl-4 white-div-form">
                                 <form class="" action="">
                                     <div class="form-row">
-                                        <div class="col-lg-6 col-xl-5">
+                                        <div class="col-lg-12">
                                             <input class="form-control search" type="text" name="" id="white-navbar-input-field"
                                                 placeholder="Find millions of live experiences">
                                             <i class="fas fa-search input-search-icon"></i>
@@ -53,67 +58,112 @@
                                 </form>
                             </div>
                     
-                            <div class="col-lg-3 large-screen-navlinks">
+                            <div id="expand-more" class="col-lg-3 col-xl-5 large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
-                                    <li class="nav-item user-sell-white-nav mr-3">
-                                        <a class="nav-link" href="#">Concert</a>
-                                    </li>
-                                    <li class="nav-item user-sell-white-nav mr-3">
-                                        <a class="nav-link" href="#">Sports</a>
-                                    </li>
-                                    <li class="nav-item dropdown user-sell-white-nav">
-                                        <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
-                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
-                                            <a class="dropdown-item" href="#">Arts & Theater</a>
-                                            <a class="dropdown-item" href="#">Family</a>
-                                            <a class="dropdown-item" href="#">VIP</a>
-                                            <a class="dropdown-item" href="#">Deals</a>
+                                    <li class="nav-item menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Concert</a>
                                         </div>
+                                    </li>
+                                    <li class="nav-item menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Sports</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Arts & Theater</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Family</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">VIP</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Deals</a>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
-                    
-                            <!-- hide and show this header on >=medium devices -->
-                    
                         </div>
+                        <!-- hide and show this header on >=medium devices -->
                     </div>
                     
-                    
-                    <!-- second column of white nav -->
-                    <div class="col-3 col-md-2 mb-3 navbar-icons">
-                        <div class="row">
-                            <div class="col-4 col-md-3 search-icon">
-                                <i class="fas fa-search"></i>
-                            </div>
-                    
-                            <div class="col-4 col-md-3 col-lg-9 dropdown user-sell-white-nav user-icon">
-                                <div class="" data-toggle="dropdown">
-                                    <i class="far fa-user-circle"></i>
-                                    <span class="username">Maryam</span>
+                    <!-- second column of white nav-->
+                    <div class="navbar-expand col-5 col-md-3 col-lg-4 mb-3 navbar-icons">
+                        <ul class="navbar-nav">
+                            <li class="nav-item menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> <i class="fas fa-search"></i> </a>
                                 </div>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">My Account</a>
-                                    <a class="dropdown-item" href="#">My Tickets</a>
-                                    <a class="dropdown-item" href="#">My Listings</a>
-                                    <a class="dropdown-item" href="#">Settings</a>
-                                    <a class="dropdown-item" href="#">Sell</a>
-                                    <a class="dropdown-item" href="#">Sign Out</a>
+                            </li>
+                            <li class="nav-item dropdown menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a href="#" data-toggle="dropdown">
+                                        <i class="far fa-user-circle"></i>
+                                        <span class="username">Maryam</span>
+                                    </a>
                                 </div>
-                            </div>
-                    
-                            <div class="col-lg-3 user-sell-white-nav help">
-                                Help
-                            </div>
-                    
-                            <div class="col-4 col-md-3 menu-items" type="button" data-toggle="collapse" data-target="#menu-items">
-                                <!-- <div class="row"> -->
-                                <div class="toggler-icon"></div>
-                                <div class="toggler-icon"></div>
-                                <div class="toggler-icon"></div>
-                                <!-- </div> -->
-                            </div>
-                    
-                        </div>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Account</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Tickets</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Listings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Settings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sell</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sign Out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  menu-links-outer-div help">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> Help </a>
+                                </div>
+                            </li>
+                            <li class="nav-item  hamburger-outer-div">
+                                <div class="hamburger-icon" type="button">
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -126,19 +176,16 @@
                 <nav class="navbar navbar-expand-lg row">
         
                     <!-- first column of blue nav-->
-                    <div class="col-8 col-sm-9 col-md-10 col-lg-9 mb-3">
+                    <div class="col-4 col-lg-8 col-xl-9 mb-3">
                         <div class="row">
-                            <div class="col-12 col-lg-3  blue-div-tee">
+                            <div class="col-12 col-lg-3 blue-div-logo">
                                 <a href="#"> 
-                                    <img src="images/tek-tickets.jpg" alt="logo" width="50" height="50">
-                                    <!-- <em>ticketmaster  -->
-                                    <!-- <sup> <small id="copy">&copy;</small> -->
-                                    <!-- </sup> </em>  -->
+                                    <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
                                 </a>
                             </div>
         
                             <!-- hide and show this header on >=medium devices -->
-                            <div class="col-lg-5 blue-div-form">
+                            <div class="col-lg-6 col-xl-4 blue-div-form">
                                 <form class="" action="">
                                     <div class="form-row">
                                         <div class="col-lg-6 col-xl-5">
@@ -147,28 +194,47 @@
                                             <i class="fas fa-search input-search-icon"></i>
                                         </div>
                                     </div>
-                                    <!-- <div class="">
-                                                
-                                            </div> -->
                                 </form>
                             </div>
         
-                            <div id="expand-more" class="col-lg-3  large-screen-navlinks">
+                            <div id="expand-more" class="col-lg-3 col-xl-5  large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
-                                    <li class="nav-item user-sell-blue-nav mr-3">
-                                        <a class="nav-link" href="#">Concert</a>
-                                    </li>
-                                    <li class="nav-item user-sell-blue-nav mr-3">
-                                        <a class="nav-link" href="#">Sports</a>
-                                    </li>
-                                    <li class="nav-item dropdown user-sell-blue-nav">
-                                        <a class="nav-link more" href="#" data-toggle="">More</a>
-                                        <div class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
-                                            <a class="dropdown-item" href="#">Arts & Theater</a>
-                                            <a class="dropdown-item" href="#">Family</a>
-                                            <a class="dropdown-item" href="#">VIP</a>
-                                            <a class="dropdown-item" href="#">Deals</a>
+                                    <li class="nav-item menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Concert</a>
                                         </div>
+                                    </li>
+                                    <li class="nav-item menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Sports</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <li class="nav-item sub-list-div" >
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Arts & Theater</a>
+                                                </div>                                                
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Family</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">VIP</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Deals</a>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
@@ -177,44 +243,72 @@
                     </div>
         
                     <!-- second column of blue nav-->
-                    <div class="col-3 col-md-2 mb-3 navbar-icons">
-                        <div class="row">
-                            <div class="col-4 col-md-3 search-icon blue-nav-right-content">
-                                <i class="fas fa-search"></i>
-                            </div>
-        
-                            <div class="col-4 col-md-3 col-lg-9 dropdown user-sell-blue-nav user-icon blue-nav-right-content">
-                                <div class="" data-toggle="dropdown">
-                                    <i class="far fa-user-circle"></i>
-                                    <span class="username">Maryam</span>
+                    <div class="navbar-expand col-5 col-md-3 col-lg-4 col-xl-3 mb-3 navbar-icons">
+                        <ul class="navbar-nav">
+                            <li class="nav-item menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> <i class="fas fa-search"></i> </a>
                                 </div>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">My Account</a>
-                                    <a class="dropdown-item" href="#">My Tickets</a>
-                                    <a class="dropdown-item" href="#">My Listings</a>
-                                    <a class="dropdown-item" href="#">Settings</a>
-                                    <a class="dropdown-item" href="#">Sell</a>
-                                    <a class="dropdown-item" href="#">Sign Out</a>
+                            </li>
+                            <li class="nav-item dropdown menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a href="#" data-toggle="dropdown">
+                                        <i class="far fa-user-circle"></i>
+                                        <span class="username">Maryam</span>
+                                    </a>
                                 </div>
-                            </div>
-        
-                            <div class="col-lg-3 user-sell-blue-nav help blue-nav-right-content">
-                                Help
-                            </div>
-        
-                            <div class="col-4 col-md-3 menu-items blue-nav-right-content" type="button" data-toggle="collapse"
-                                data-target="#menu-items">
-                                <div class="toggler-icon"></div>
-                                <div class="toggler-icon"></div>
-                                <div class="toggler-icon"></div>
-                            </div>
-                        </div>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Account</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Tickets</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Listings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Settings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sell</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sign Out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  menu-links-outer-div help">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> Help </a>
+                                </div>
+                            </li>
+                            <li class="nav-item  hamburger-outer-div">
+                                <div class="hamburger-icon" type="button">
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                    <div class="toggler-icon"></div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
         </div>
 
-        <main>
+        <main class="large-screen-padding">
             <div class="row">
                 <div class="col-11 acct-events">
                     <a href="#" class="my-account"> <span>My Account</span> </a>
@@ -227,9 +321,6 @@
                     <h2>My Events</h2> 
                     <a href="#" class="my-listings"> <span>View My Listings</span> </a>
                 </div>
-                <!-- <div class="col-4 col-sm-4 col-md-3 col-lg-2" id="listing-div"> -->
-                    <!-- <a href="#" class="my-listings"> <span>View My Listings</span> </a> -->
-                <!-- </div> -->
             </div>
 
             <!-- nav tabs -->
@@ -237,10 +328,10 @@
                 <div class="row">
                     <div class="col-12">
                         <ul class="row nav" role="tablist">
-                            <li class="col-3 col-sm-2 nav-item">
+                            <li class="col-4 col-sm-3 nav-item">
                                 <a href="#upcoming" data-toggle="tab" class="nav-link active" id="upcoming-event">Upcoming</a>
                             </li>
-                            <li class="col-9 col-sm-10 nav-item">
+                            <li class="col-8 col-sm-9 nav-item">
                                 <a href="#pasts" data-toggle="tab" class="nav-link" id="past-events">Past Events</a>
                             </li>
                         </ul>
@@ -253,8 +344,8 @@
                 <div class="row tab-content">
                     <div class="col-12 active tab-pane text-center" id="upcoming">
                         <div class="row">
-                            <div class="col-12" id="svg-img">
-                                <img src="images/card-img.svg" alt="" width="160" height="160">
+                            <div class="col-12 svg-img">
+                                <img src="assets/images/card-img.svg" alt="" width="160" height="160">
                             </div>
                 
                             <div class="col-12">
@@ -269,8 +360,8 @@
                 
                     <div class="col-12 tab-pane text-center" id="pasts">
                         <div class="row">
-                            <div class="col-12" id="svg-img">
-                                <img src="images/card-img.svg" alt="" width="160" height="160">
+                            <div class="col-12 svg-img">
+                                <img src="assets/images/card-img.svg" alt="" width="160" height="160">
                             </div>
                 
                             <div class="col-12">
@@ -291,21 +382,136 @@
         </main>
 
         <footer class="footer">
-            <div class="row">
-                <div class="col-12">
-                    By continuing past this page, you agree to our <span class="terms-policy"> Terms of Use. </span>
+            <section class="large-footer-padding">
+                <div class="row py-4 expand-at-large">
+                    <div class="col-lg-3">
+                        <header>Helpful Links</header>
+                        <div class="row helpful-links">
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <header>Our Network</header>
+                        <div class="row helpful-links">
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <header>About Us</header>
+                        <div class="row helpful-links">
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <header>Friends & Partners </header>
+                        <div class="row helpful-links">
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12" id="privacy">
-                    <span class="terms-policy"> Privacy Policy</span> | © 1999-2020 Ticketmaster. All rights reserved.
+                
+                <hr class="expand-at-large">
+
+                <div class="row center-at-lg">
+                    <div class="col-12 ">
+                        By continuing past this page, you agree to our <span class="terms-policy"> Terms of Use. <br>
+                
+                            Privacy Policy</span> | © 1999-2020 Ticketmaster. All rights reserved. <br>
+                
+                        <span class="terms-policy">Do Not Sell My Information</span>
+                    </div>
                 </div>
-            </div>
+            </section>
         </footer>
     </div>
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/bootstrapjs/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/bootstrapjs/bootstrap.min.js"></script>
 
 </body>
 

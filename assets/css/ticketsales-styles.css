@@ -18,30 +18,29 @@ html, body {
   color: white;
   font-size: 20px;
   padding: 10px;
-  background: rgb(1, 56, 172);
   background: linear-gradient(
-    90deg,rgba(1, 56, 172, 1) 0%,rgba(16, 106, 215, 1) 56%,
-    rgba(1, 52, 165, 1) 100%
+    90deg,rgba(25, 11, 160, 1) 0%,rgba(33, 19, 168, 1) 56%,
+    rgba(25, 11, 160, 1) 100%
   );
   height: 180px;
-  /* width: 500px; */
   padding: 0;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; */
 }
 
-.ticketmaster a:hover, p#diamond-tour a:hover{
+select.btn-color-theme, button.btn-color-theme{
+  color: #190ba0;
+  border: 1px solid #190ba0;
+  background-color: transparent;
+}
+
+.company-logo a:hover, p#diamond-tour a:hover{
   text-decoration: none;
 }
 
 .hamburger-icon{
-  padding-top: 12px;
-  /* border: 1px solid red; */
+  margin: 8px 0px;
 }
 
-.toggler-icons{
+#ticket-sales-icons .toggler-icon{
     width: 18px;
     height: 3px;
     background-color: white;
@@ -49,17 +48,14 @@ html, body {
     /* border: 1px solid maroon; */
 }
 
-.ticketmaster{
-  position: relative;
-  top: -2px;
-  /* left: -16px; */
+.company-logo{
+ position: relative;
+  left: -20px;
+  margin-top: -17px;
+  margin-bottom: -17px;
 }
 
-.ticketmaster{
-  /* margin: 5px 0; */
-}
-
-.ticketmaster a em {
+.company-logo a em {
   color: white;
   font-size: 25px;
   font-weight: 600;
@@ -74,7 +70,12 @@ small#copy{
 
 #ticket-sales-icons{
   position: relative;
+  margin: 10px 0;
   left: 15px;
+}
+
+#ticket-sales-icons a{
+  color: white;
 }
 
 #ticket-sales-icons i.fas, #ticket-sales-icons i.far{
@@ -159,15 +160,14 @@ p#date-time{
 }
 
 .spinner-icons i.fas.fa-plus{
-  color: #046ddf;
+  color: #190ba0;
   font-size: 20px;
 }
 
 .spinner-footer{
   color: #8e8f90;
   font-size: 12px;
-  position: relative;
-  top: 530px;
+  margin: 530px 0;
 }
 
 .spinner-footer a{
@@ -180,7 +180,7 @@ p#date-time{
 }
 
 form select option[value="*"]{
-  color: #026ce5;
+  color: #190ba0;
 }
 
 div select{
@@ -251,7 +251,7 @@ input[type="range"]{
   width: 150px;
   height: 10px;
   border-radius:5px;
-  background: rgb(2, 108, 223);
+  background: #190ba0;
 }
 
 input[type="range"]::-webkit-slider-runnable-track{
@@ -319,7 +319,7 @@ li a.active{
 
 li a#price-link.active{
   content: "";
-  border-bottom: 3px solid #026cdf;
+  border-bottom: 3px solid #190ba0;
   display: block;
   /* width: 80px; */
   position: relative;
@@ -333,12 +333,12 @@ li a#seat-link.active{
 }
 
 .none-active{
-  color: #0056b3;
+  color: #190ba0;
   font-weight: 400;
 }
 
 tr.table-head{
-  background: #fdf1e7;
+  background: #f8e4d4;
 }
 
 tr.table-head:hover{
@@ -352,11 +352,11 @@ td a {
 
 i.fa-star{
   text-align: center;
-  border: 2px solid #eb730a;
+  border: 2px solid #dfa24c;
   border-radius: 50%;
   padding: 5px 5px 7px;
   font-size: 10px;
-  color: #eb730a;
+  color: #dfa24c;
   background: white;
   /* width: 23px; */
 }
@@ -403,11 +403,7 @@ footer button{
 
 
 @media only screen and (min-width:360px) and (max-width: 375px){
-  div button#filters{
-    position: relative;
-    /* right: 20px; */
-  }
-
+ 
   #ticket-sales-icons{
     position: relative;
     left: 30px;
@@ -481,15 +477,6 @@ footer button{
     display: none;
   }
   
-  .ticketmaster{
-    position: relative;
-    /* right: 20px; */
-  }
-
-  footer button{
-    position: relative;
-    /* left: 50px; */
-  }
 }
 
 @media only screen and (min-width: 768px){
@@ -497,17 +484,6 @@ footer button{
     display: none;
   }
 
-  .ticketmaster{
-    position: relative;
-    right: 35px;
-  }
-
-  #ticket-sales-icons{
-    position: relative;
-    left: 60px;
-    /* border: 1px solid red; */
-  }
-  
   i.fas, i.far{
     font-size: 16px;
   }
@@ -519,7 +495,14 @@ footer button{
 
   #sync-icon{
     position: relative;
-    left: 20px;
+    left: 80px;
+    /* border: 1px solid red; */
+  }
+  
+  #user-icon {
+    position: relative;
+    left: 40px;
+    /* border: 1px solid red; */
   }
 
   .tickets-selection{
@@ -555,28 +538,13 @@ footer button{
     display: inline-block;
   }
 
-  .spinner-footer{
-    /* margin: 170px 0; */
-  }
-
   .ticket-sales-header{
     height: 150px;
   }
 
-  .ticketmaster{
-    position: relative;
-    right: 50px;
-  }
-
   #ticket-sales-icons{
     position: relative;
-    left: 80px;
-    /* border: 1px solid red; */
-  }
-
-  #sync-icon{
-    position: relative;
-    left: 40px;
+    left: 13%;
     /* border: 1px solid red; */
   }
 
@@ -622,19 +590,13 @@ footer button{
 @media only screen and (min-width: 1200px){
    #sync-icon{
     position: relative;
-    left: 60px;
+    /* left: 60px; */
     /* border: 1px solid yellow; */
-  }
-
-  .ticketmaster{
-    position: relative;
-    right: 70px;
   }
 
   #ticket-sales-icons{
     position: relative;
-    left: 120px;
-    /* border: 1px solid red; */
+    left: 19%;
   }
 
   div#artist-tour{
@@ -650,13 +612,13 @@ footer button{
 }
 
 @media only screen and (min-width: 1440px){
-  .tickets-selection{
-    margin: 0 10px;
+  #ticket-sales-icons{
+    position: relative;
+    left: 20%;
   }
 
-  .ticketmaster{
-    position: relative;
-    right: 90px;
+  .tickets-selection{
+    margin: 0 10px;
   }
 
   .range-slider{

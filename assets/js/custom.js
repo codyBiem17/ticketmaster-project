@@ -5,7 +5,7 @@ $(document).ready(function () {
     var stickyWhiteDiv = function () {
         var scrollTop = $(window).scrollTop();
         if (scrollTop > offsetBlueDiv) {
-            $('.hide-and-show').css({ display: "block", height: "70px"});
+            $('.hide-and-show').css({ display: "block"});
             $('#blue-div-nav').css({marginTop: '-70px'});
             $('.white-div').addClass('sticky-nav');
         }
@@ -14,29 +14,6 @@ $(document).ready(function () {
             $('#blue-div-nav').css({ marginTop: '0px' });
             $('.white-div').removeClass('sticky-nav');
         }
-            // if ($(document).scrollTop() > offsetBlueDiv) {
-            //     $('.hide-and-show').css({ display: "block", paddingTop: '30px', paddingBottom: '30px', height: '90px'});
-            //     $('#blue-div-nav').css({marginTop: '-70px'});
-            //     $('.white-div').addClass('sticky-nav');
-            // }
-            // else {
-            //     $('.hide-and-show').css({ display: "none"});
-            //     $('#blue-div-nav').css({ marginTop: '0px' });
-            //     $('.white-div').removeClass('sticky-nav');
-            // }
-        
-
-      
-        // if (scrollTop > offsetBlueDiv) {
-        //     $('.hide-and-show').css({ display: "block", paddingTop: '30px', paddingBottom: '30px', height:'90px' });
-        //     $('#blue-div-nav').css({marginTop: '-70px'});
-        //     $('.white-div').addClass('sticky-nav');
-        // }
-        // else {
-        //     $('.hide-and-show').css({ display: "none" });
-        //     $('#blue-div-nav').css({ marginTop: '0px' });
-        //     $('.white-div').removeClass('sticky-nav');
-        // }
     };
 
     stickyWhiteDiv();
@@ -57,13 +34,19 @@ $(document).ready(function () {
             $('hr').removeClass('medium-screen-horizontal');
             // $('.medium-screen-horizontal').not(this).removeClass('medium-screen-horizontal')
         })
-
-        
-            
-        
     }
-
     profilePage()
 
+
+    // mouseover on menulinks
+
+    // $(".user-sell-blue-nav").hover(function () {
+    //     $(this).toggleClass('menu-links');
+        // $('.user-sell-blue-nav').not(this).css({margin: "30px 0"})
+    // })
+   
+    // document.querySelector('.user-sell-blue-nav').mouseover(() => {
+    //     document.querySelector('.user-sell-blue-nav a').addClass('menu-links');
+    // })
 })
 

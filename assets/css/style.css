@@ -1,5 +1,5 @@
 #blue-div-nav .hamburger-icon, #white-div-nav .hamburger-icon{
-    margin: 3px 0px;
+    /* margin: 3px 0px; */
 }
 
 .small-color {
@@ -44,10 +44,8 @@ i.color-theme{
 }
 
 .header-search-options a {
-    /* width: 150px; */
     color: white;
     border: 1px solid white;
-    /* padding: 10px; */
     margin-top: 40px;
     margin-left: 5px;
     margin-right: 5px;
@@ -85,7 +83,6 @@ i.color-theme{
     border-radius: 50%;
     display: inline-block;
     padding: 40px;
-    /* margin-top: -50px;     */
 }
 
 .ticket-container {
@@ -103,7 +100,6 @@ i.color-theme{
 
 
 .wide {
-    /* display: inline-block; */
     width: 87vw;
     height: 50px;
 }
@@ -190,12 +186,10 @@ input[type='radio'] {
 
 .line-h-7 {
     line-height: 7px;
-    /* display: inline-block; */
 }
 
 .line-h-10 {
     line-height: 10px;
-    /* display: inline-block; */
 }
 
 .line-h-17 {
@@ -295,7 +289,6 @@ img:not(.carousel-images) {
 }
 
 .experience-block {
-    /* display: block; */
     text-align: justify;
     font-size: 16px;
     width: 70%;
@@ -412,22 +405,18 @@ img:not(.carousel-images) {
     margin-top: -5px;
     margin-left: 22px;
     margin-right: 22px;
-    /* text-align: center; */
 }
 
 a.search-box-button{
     position: absolute;
     z-index: 1;
     right: 10px;
-    /* right: -115px; */
     top: 6px;
-    /* padding: 12px; */
-    /* margin: auto -100px; */
 }
 
 img{
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%;
+    height: auto; */
 }
 
 .container-fluid.announcement-div{
@@ -478,7 +467,6 @@ img{
 .discover-events-buttons{
     display: flex;
     justify-content: center;
-    /* margin: auto -10px; */
 }
 
 .discover-events-buttons a.btn{
@@ -488,7 +476,6 @@ img{
 }
 
 .less-md-block{
-    /* text-align: justify; */
     font-weight: 600;
     margin-left: 15px;
     margin-right: 15px;
@@ -502,7 +489,6 @@ img{
 .popular-concert-section{
     display: flex;
     justify-content: space-between;
-    /* margin: 0px 5px 0px 3px; */
 }
 
 .less-md-block .popular-events{
@@ -644,11 +630,6 @@ div.account-overview{
     
 }
 
-@media only screen and (min-width:375px) and (max-width:408px){
-    .search-links a.btn{
-        /* padding: 5px; */
-    }
-}
 
 @media only screen and (min-width: 360px)  and (max-width: 410px) {
     .discover-events-buttons a.btn{
@@ -716,7 +697,7 @@ div.account-overview{
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     #blue-div-nav .navbar-icons {
-        margin: -15px auto;
+        /* margin: -15px auto; */
     }
 }
 
@@ -728,7 +709,7 @@ div.account-overview{
 
     
 
-    .menu-links-outer-div, .hamburger-outer-div{
+    /* .menu-links-outer-div, .hamburger-outer-div{
         padding: 19px 8px;
         position: relative;
         text-align: center;
@@ -736,7 +717,7 @@ div.account-overview{
 
     .white-div-form{
         margin: 10px auto;
-    }
+    } */
 
     .icon-links{
         position: relative;
@@ -910,28 +891,28 @@ div.account-overview{
 
     .white-div-logo img{
         position: relative;
-        top: -8px;
+        /* top: -8px; */
     }
 
     #blue-div-nav {
-        margin-top: 10px;
-        margin-bottom: 30px;
+        /* margin-top: 10px;
+        margin-bottom: 30px; */
     }
 
     #blue-div-nav .navbar-icons {
         position: relative;
-        margin: auto 5px;
-        top: 5px;
+        /* margin: auto 5px;
+        top: 5px; */
     }
 
     #white-div-nav .navbar-icons{
         position: relative;
-        bottom: 10px;
+        /* bottom: 10px; */
         /* margin: -10px auto; */
     }
 
 
-    .blue-div-form{
+    /* .blue-div-form{
         position: relative;
         margin: 5px auto;
     }
@@ -944,7 +925,7 @@ div.account-overview{
         position: relative;
         
         margin: -35px 0;
-    }
+    } */
 
     .icon-links{
         position: relative;
@@ -1048,7 +1029,7 @@ div.account-overview{
         display: block;
     } 
 
-    .blue-div-logo img{
+    /* .blue-div-logo img{
         margin: 8px auto;
     }
 
@@ -1059,11 +1040,10 @@ div.account-overview{
     .blue-div-form{
         position: relative;
         margin: 15px auto;
-    }
+    } */
 
-    #blue-div-nav .large-screen-menulinks {
+    /* #blue-div-nav .large-screen-menulinks {
         position: relative;
-        /* left: -100px; */
         margin: -10px 0;
     } 
 
@@ -1080,7 +1060,7 @@ div.account-overview{
         position: relative;
         
         margin: -5px 0;
-    }
+    } */
 
     .less-md-block {
         margin-left: 30px;
@@ -1126,10 +1106,10 @@ div.account-overview{
 
 @media only screen and (min-width: 1440px){
 
-    #blue-div-nav .large-screen-menulinks {
+    /* #blue-div-nav .large-screen-menulinks {
         position: relative;
         margin: -5px 0;
-    }
+    } */
     
     .header-text-divs {
         max-width: 1296px;

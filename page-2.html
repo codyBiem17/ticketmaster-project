@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscriptions</title>
-    <link rel="stylesheet" href="assets/css/subscriptions.css">
+    <title>Category Details</title>
+    <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome5/css/all.min.css">
 
@@ -17,7 +16,21 @@
             margin-left: auto;
         }
 
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }
+
+        .carousel-indicators .active{
+            background: rgb(2, 108, 223);
+        }
+        .carousel-indicators li{
+            background: rgb(191, 191, 191);
+        }
+
         .dropdown-menu{
+            width: 200px;
             margin: 0px;
             padding: 0px;
         }
@@ -28,7 +41,6 @@
 
     </style>
 </head>
-
 <body>
     <div class="container-fluid">
         <div class="row white-div">
@@ -36,9 +48,9 @@
                 <nav class="navbar navbar-expand-lg row">
         
                     <!-- first column of white nav -->
-                    <div class="col-4 col-lg-8  mb-3">
+                    <div class="col-4 col-lg-8 mb-3">
                         <div class="row">
-                            <div class="col-12 col-lg-3 white-div-logo">
+                            <div class="col-12 col-md-3 col-lg-2 white-div-logo">
                                 <a href="#">
                                     <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
                                 </a>
@@ -56,8 +68,8 @@
                                     </div>
                                 </form>
                             </div>
-        
-                            <div id="expand-more" class="col-lg-3 col-xl-5 large-screen-navlinks">
+                            
+                            <div id="expand-more" class="col-lg-4 col-xl-5 large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
                                     <li class="nav-item menu-links-outer-div">
                                         <div class="menu-links-inner-div">
@@ -103,16 +115,16 @@
                     </div>
         
                     <!-- second column of white nav-->
-                    <div class="navbar-expand col-5 col-md-3 col-lg-4 mb-3 navbar-icons">
+                    <div class="navbar-expand col-5 col-md-3 col-lg-4 col-xl-3 mb-3 navbar-icons">
                         <ul class="navbar-nav">
                             <li class="nav-item menu-links-outer-div">
                                 <div class="menu-links-inner-div">
-                                    <a href="#"> <i class="fas fa-search"></i> </a>
+                                    <a class="nav-link" href="#"> <i class="fas fa-search"></i> </a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown menu-links-outer-div">
                                 <div class="menu-links-inner-div">
-                                    <a href="#" data-toggle="dropdown">
+                                    <a class="nav-link" href="#" data-toggle="dropdown">
                                         <i class="far fa-user-circle"></i>
                                         <span class="username">Maryam</span>
                                     </a>
@@ -150,9 +162,14 @@
                                     </li>
                                 </ul>
                             </li>
+                            <!-- <li class="nav-item  menu-links-outer-div sell">
+                                <div class="menu-links-inner-div">
+                                    <a href="#"> Sell </a>
+                                </div>
+                            </li> -->
                             <li class="nav-item  menu-links-outer-div help">
                                 <div class="menu-links-inner-div">
-                                    <a href="#"> Help </a>
+                                    <a class="nav-link" href="#"> Help </a>
                                 </div>
                             </li>
                             <li class="nav-item  hamburger-outer-div">
@@ -177,7 +194,7 @@
                     <!-- first column of blue nav-->
                     <div class="col-4 col-lg-8 col-xl-9 mb-3">
                         <div class="row">
-                            <div class="col-12 col-lg-3 blue-div-logo">
+                            <div class="col-12 col-md-3 col-lg-2 blue-div-logo">
                                 <a href="#">
                                     <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
                                 </a>
@@ -195,8 +212,8 @@
                                     </div>
                                 </form>
                             </div>
-        
-                            <div id="expand-more" class="col-lg-3 col-xl-5  large-screen-navlinks">
+                            
+                            <div id="expand-more" class="col-lg-4 col-xl-5  large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
                                     <li class="nav-item menu-links-outer-div">
                                         <div class="menu-links-inner-div">
@@ -242,16 +259,16 @@
                     </div>
         
                     <!-- second column of blue nav-->
-                    <div class="navbar-expand col-5 col-md-3 col-lg-4 col-xl-3 mb-3 navbar-icons">
+                    <div class="navbar-expand col-5 col-md-3 col-lg-4 col-xl-3 mb-4 navbar-icons">
                         <ul class="navbar-nav">
                             <li class="nav-item menu-links-outer-div">
                                 <div class="menu-links-inner-div">
-                                    <a href="#"> <i class="fas fa-search"></i> </a>
+                                    <a class="nav-link" href="#"> <i class="fas fa-search"></i> </a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown menu-links-outer-div">
                                 <div class="menu-links-inner-div">
-                                    <a href="#" data-toggle="dropdown">
+                                    <a class="nav-link" href="#" data-toggle="dropdown">
                                         <i class="far fa-user-circle"></i>
                                         <span class="username">Maryam</span>
                                     </a>
@@ -289,9 +306,14 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item  menu-links-outer-div help">
+                            <!-- <li class="nav-item menu-links-outer-div sell">
                                 <div class="menu-links-inner-div">
-                                    <a href="#"> Help </a>
+                                    <a href="#"> Sell </a>
+                                </div>
+                            </li> -->
+                            <li class="nav-item menu-links-outer-div help">
+                                <div class="menu-links-inner-div">
+                                    <a class="nav-link" href="#"> Help </a>
                                 </div>
                             </li>
                             <li class="nav-item  hamburger-outer-div">
@@ -305,328 +327,235 @@
                     </div>
                 </nav>
             </div>
-        </div>
-
-        <main class="large-screen-padding">
-            <div class="row" id="my-events-listing">
-                <div class="col-9" id="my-events">
-                    <span>Account Settings</span>
+        
+            <div class="pb-2 header-text-divs large-screen-padding">
+                <div class="row">
+                    <div class="col-12 mx-3 pb-2 home-div-concert">
+                        Home / Concert Tickets
+                    </div>
+                    <div class="col-12 mx-3  concert-ticket">
+                        Concerts <span style="font-weight: 300;"> Tickets </span>
+                    </div>
                 </div>
             </div>
+            
+        </div>
+            
+        <main>
+            <!-- advert section here -->
+            <section class="section-for-advert">
+                <div class="row advert-section">
+                    <div class="col-lg-8 col-xl-6 mx-auto" id="advert-img-div">
+                        <img src="https://tpc.googlesyndication.com/simgad/3861415721932990274" alt="" width="728" height="90">
+                    </div>
+                </div>
+            </section>
+            <!-- advert section ends here  -->
 
-            <!-- nav tabs -->
-            <div id="nav-tabs">
+            <!-- main section of the body here -->
+            <section class="large-screen-padding main-content-section">
                 <div class="row">
-                    <div class="col-12">
-                        <ul class="row nav" role="tablist">
-                            <li class="col-3 col-sm-2 nav-item" id="profile1">
-                                <a href="#profile" data-toggle="tab" class="active nav-link ">Profile</a>
-                            </li>
-                            <li class="col-9 col-sm-10 nav-item" id="subscriptions1">
-                                <a href="#subscriptions" data-toggle="tab" class="nav-link">Subscriptions</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-11">
-                        <hr id="order-page-line">
-                    </div>
-                </div>
-
-                <div class="row tab-content">
-                    <div class="col-12 col-lg-8 tab-pane active" id="profile">
-                        <div class="row">
-                            <div class="col-12 my-info">
-                                <span>My Info</span>
-                            </div>
-                            <div class="col-12">
-                                <form action="" class="acct-settings-form">
-                                    <div class="form-group">
-                                        <label for="firstname"> First Name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="lastname"> Last Name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <button type="button" class="col-12 btn button-color"> Update Details</button>
-                                    <hr id="acct-setting-horizontal">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 my-info">
-                                <span>Email Address</span>
-                            </div>
-                            <div class="col-12">
-                                <form action="" class="acct-settings-form">
-                                    <div class="form-group">
-                                        <label for="email"> Email</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <button type="button" class="col-12 btn button-color"> Update Email</button>
-                                    <hr id="acct-setting-horizontal">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 my-info">
-                                <span>Phone Number</span>
-                                <p id="account-security">
-                                    To keep your account secure, we’ll send you
-                                    an email with a unique link to update your
-                                    phone number. <br>
-                                    <a href="#">Why is this required?</a>
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <form action="" class="acct-settings-form">
-                                    <div class="form-group" id="phone-number">
-                                        <label for="phoneNos"> Phone Number </label>
-                                        <input type="text" class="form-control" placeholder="***_****_****" disabled>
-                                    </div>
-
-                                    <button type="button" class="col-12 btn button-color"> Update Number</button>
-                                    <hr id="acct-setting-horizontal">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 my-info">
-                                <span>Location</span>
-                                <p id="account-location">
-                                    Let us know the location you’re interested in
-                                    and we’ll send you personalized notifications
-                                    about events headed your way. Traveling? Add a
-                                    second zip code to never miss out on what’s
-                                    happening near you.
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <form action="" class="acct-settings-form">
-                                    <div class="form-group">
-                                        <label for="country"> Country </label> <br>
-                                        <select name="" id="">
-                                            <option value="usa"> United States </option>
-                                            <option value="canada"> Canada </option>
-                                            <option value="other" selected> Other</option>
-                                        </select>
-                                    </div>
-
-                                    <button type="button" class="col-12 btn button-color"> Update Locations</button>
-                                    <hr id="acct-setting-horizontal">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 my-info">
-                                <span>Update Password</span>
-                                <p id="forgot-password">
-                                    <a href="#">Forgot Password?</a>
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <form action="" class="acct-settings-form">
-                                    <div class="form-group">
-                                        <div class="form-group">
-                                            <label for="password"> Current Password </label>
-                                            <input type="password" class="form-control password" placeholder="Show">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="password"> New Password</label>
-                                        <input type="password" class="form-control password" placeholder="Show">
-                                    </div>
-                                    <div class="form-group">
-                                        <span>Your password must include:</span>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="password-hint">
-                                            <label class="form-check-label" for="characters">6-32 characters</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="password-hint">
-                                            <label class="form-check-label" for="alphanumeric">at least one letter and
-                                                one number</label>
-                                        </div>
-                                    </div>
-
-                                    <button type="button" class="col-12 btn button-color"> Update Password</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- first tab-pane ends here -->
-
-                    <!-- second tab-pane here -->
-                    <div class="col-12 tab-pane" id="subscriptions">
-                        <div class="row">
-
-                            <!-- first column here -->
-                            <div class="col-12 col-md-8">
+                    <div id="slides-indicators" class="col-12 carousel slide" data-ride="carousel">
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="#"> <img
+                                        src="https://www.ticketmaster.com/api/native/image/0b1f9545332f4d5cb473f85a5bea3df1.jpg"
+                                        alt="artist2" width="826" height="464" id="image-slide3">
+                                </a>
                                 <div class="row">
-                                    <div class="col-12 my-sub">
-                                        <p>When you tell us who you love, we can tell you
-                                            what they’re up to. Subscribe to get the latest,
-                                            breaking news about all things live.
-                                        </p>
-                                        <p id="account-subscription">
-                                            Subscriptions will be sent to the following Ticketmaster account: <br>
-                                            <span id="email-account">you@example.com</span>
-                                            <a href="#" id="edit-profile">Edit Profile</a>
-                                        </p>
-                                    </div>
-                                    <div class="col-12">
-                                        <form action="" class="form-live-alert">
-                                            <ul class="first-checklist">
-                                                <li class="form-check" id="">
-                                                    <input class="form-check-input" type="checkbox">
-                                                    <label class="form-check-label" for="list1">
-                                                        <a href="#" class="guide-alerts" id="first-guide-alert">Get All
-                                                            Live Guide Alerts</a>
-                                                    </label>
-                                                    <p class="alerts">
-                                                        Personalized emails that deliver the latest news and event
-                                                        details
-                                                        about all your favorite artist, teams, and venues.
-                                                    </p>
-
-                                                    <!-- nested list here -->
-                                                    <ul>
-                                                        <li class="form-check nested-list-alerts">
-                                                            <input class="form-check-input" type="checkbox">
-                                                            <label class="form-check-label" for="list1">
-                                                                <a href="#" class="nested-guide-alerts">Ticket Alert</a>
-                                                            </label>
-                                                            <p class="nested-alerts">
-                                                                Get a personalized list of
-                                                                upcoming events in your area.
-                                                            </p>
-                                                        </li>
-                                                        <li class="form-check nested-list-alerts">
-                                                            <input class="form-check-input" type="checkbox">
-                                                            <label class="form-check-label" for="list1">
-                                                                <a href="#" class="nested-guide-alerts">Team Alert</a>
-                                                            </label>
-                                                            <p class="nested-alerts">
-                                                                Read about your favorite teams
-                                                                and leagues that are playing near you.
-                                                            </p>
-                                                        </li>
-                                                        <li class="form-check nested-list-alerts">
-                                                            <input class="form-check-input" type="checkbox">
-                                                            <label class="form-check-label" for="list1">
-                                                                <a href="#" class="nested-guide-alerts">Venue Alert</a>
-                                                            </label>
-                                                            <p class="nested-alerts">
-                                                                Learn about the events
-                                                                happening at your favorite venues.
-                                                            </p>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- nested list ends here -->
-                                                </li>
-                                                <li class="form-check" id="">
-                                                    <input class="form-check-input" type="checkbox">
-                                                    <label class="form-check-label" for="list1">
-                                                        <a href="#" class="guide-alerts">Performer News</a>
-                                                    </label>
-                                                    <p class="alerts">
-                                                        Get emails that provide details about
-                                                        when to buy tickets for all your favorites.
-                                                    </p>
-                                                </li>
-                                                <li class="form-check" id="">
-                                                    <input class="form-check-input" type="checkbox">
-                                                    <label class="form-check-label" for="list1">
-                                                        <a href="#" class="guide-alerts">Spotlight News</a>
-                                                    </label>
-                                                    <p class="alerts">
-                                                        Get news that covers special events, new videos,
-                                                        and exciting artist and team announcements.
-                                                    </p>
-                                                </li>
-                                                <li class="form-check" id="">
-                                                    <input class="form-check-input" type="checkbox">
-                                                    <label class="form-check-label" for="list1">
-                                                        <a href="#" class="guide-alerts">Special Event Offers</a>
-                                                    </label>
-                                                    <p class="alerts">
-                                                        Take advantage of timely ticket discounts,
-                                                        gift with purchase offers, and much more.
-                                                    </p>
-                                                </li>
-                                            </ul>
-
-                                            <button type="button" class="col-12 btn button-color"> Update </button>
-                                            <hr id="acct-setting-horizontal">
-                                        </form>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <form action="" class="form-live-alert">
-                                            <ul class="first-checklist">
-                                                <li class="form-check" id="">
-                                                    <input class="form-check-input" type="checkbox" checked>
-                                                    <label class="form-check-label" for="list1">
-                                                        <a href="#" class="guide-alerts">Unsubscribe From All Marketing
-                                                            Newsletters</a>
-                                                    </label>
-                                                    <p class="alerts pt-3">
-                                                        We're Sorry to See You Go
-                                                        Come back any time to resubscribe so you'll
-                                                        always have the latest news about cool events, announcements,
-                                                        and ticket
-                                                        perks. Don't worry, you'll still receive purchase
-                                                        confirmation emails, order status emails, delivery,
-                                                        and eventn reminders.
-                                                    </p>
-                                                </li>
-                                            </ul>
-
-                                            <button type="button" class="col-12 btn button-color"> Update </button>
-                                        </form>
+                                    <div class="col-11 mb-5 mx-auto pt-3 captions">
+                                        <a href="#" class="slide-captions">Live From Home</a>
+                                        <p class="caption-text"> Your virtual hub updated daily with
+                                            live streams from your favorite artists and more </p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- first column ends -->
-
-                            <!-- second column here -->
-                            <div class="col-10 col-md-3 mx-auto  heart-shape-div">
-                                <div class="row mx-auto">
-                                    <div class="col-12 text-center">
-                                        <img src="assets/images/heart-shape.png" alt="" width="150" height="150">
+                            <div class="carousel-item">
+                                <a href="#"> <img
+                                        src="https://s1.ticketm.net/dam/a/f19/6811475b-29a2-4be3-927f-9fd5ff1d9f19_1202251_RETINA_PORTRAIT_16_9.jpg"
+                                        alt="artist1" width="826" height="464" id="image-slide2"> </a>
+                                <div class="row">
+                                    <div class="col-11 mb-5 mx-auto pt-3 captions">
+                                        <a href="#" class="slide-captions">Kane Brown</a>
+                                        <p class="caption-text"> Worldwide Beautiful Tour - tickets on sale! </p>
                                     </div>
-                                    <div class="col-12">
-                                        <p id="favorite">My Favorites</p>
-                                        <p>Tell Us Who You Love</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href=""> <img
+                                        src="https://s1.ticketm.net/dam/a/17d/8a37fd67-784c-40e8-b46d-c6f0ee59317d_1287541_RETINA_PORTRAIT_16_9.jpg"
+                                        alt="artist2" width="826" height="464" id="image-slide3">
+                                </a>
+                                <div class="row">
+                                    <div class="col-11 mb-5 mx-auto pt-3 captions">
+                                        <a href="#" class="slide-captions">Tim McGraw</a>
+                                        <p class="caption-text"> Here On Earth Tour is here! </p>
                                     </div>
-                                    <div class="col-12">
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Indicators -->
+                        <!-- <div class="row">
+                                                    <div class="col-12 my-3"> -->
+                        <ul class="carousel-indicators my-3">
+                            <li data-target="#slides-indicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#slides-indicators" data-slide-to="1"></li>
+                            <li data-target="#slides-indicators" data-slide-to="2"></li>
+                        </ul>
+                        <!-- </div>
+                                    </div> -->
+                    </div>
+                
+                    <div class="col-md-12" id="img-gallery">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-8 static-image1">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="#"> <img
+                                                src="https://www.ticketmaster.com/api/native/image/0b1f9545332f4d5cb473f85a5bea3df1.jpg"
+                                                alt="artist2" width="926" height="464" id="image-slide3">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 mb-5 captions">
                                         <div class="row">
-                                            <div class="col"></div>
-                                            <div class="col-4">
-                                                <hr>
+                                            <div class="col-md-12 col-lg-10">
+                                                <a href="#" class="slide-captions">Live From Home</a>
+                                                <p class="caption-text"> Your virtual hub updated daily with live streams from your
+                                                    favorite artists and more
+                                                </p>
                                             </div>
-                                            <div class="col"></div>
+                                            <div class="col-lg-2">
+                                                <button class="btn button-color live-button" type="button">
+                                                    Go Live now
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 mt-4 mb-2 manage-team">
-                                        Add and manage your favorite teams,
-                                        artists and more, to personalize your alerts.
-                                    </div>
-
-                                    <button class="col-11 col-md-9 col-xl-10 mx-auto btn btn-outline-primary my-4" type="button">Add
-                                        Favorites</button>
                                 </div>
                             </div>
-                            <!-- second column ends here -->
+                
+                            <div class="col-md-6 col-lg-4 static-image2">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                
+                                            <div class="col-md-12 col-lg-7">
+                                                <a href="#"> <img
+                                                        src="https://s1.ticketm.net/dam/a/f19/6811475b-29a2-4be3-927f-9fd5ff1d9f19_1202251_RETINA_PORTRAIT_16_9.jpg"
+                                                        alt="artist1" width="926" height="464" id="image-slide2">
+                                                </a>
+                                            </div>
+                
+                                            <div class="col-md-11 col-lg-5 mb-5 captions">
+                                                <a href="#" class="slide-captions">Kane Brown</a>
+                                                <p class="caption-text"> Worldwide Beautiful Tour - tickets on sale! </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-lg-12 static-image3">
+                                        <div class="row">
+                                            <div class="col-lg-7">
+                                                <a href="#"> <img
+                                                        src="https://s1.ticketm.net/dam/a/17d/8a37fd67-784c-40e8-b46d-c6f0ee59317d_1287541_RETINA_PORTRAIT_16_9.jpg"
+                                                        alt="artist2" width="926" height="464" id="image-slide3">
+                                                </a>
+                                            </div>
+                
+                                            <div class="col-lg-5 mb-5 captions">
+                                                <a href="#" class="slide-captions">Tim McGraw</a>
+                                                <p class="caption-text"> Here On Earth Tour is here! </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                            </div>
+                
                         </div>
                     </div>
                 </div>
-            </div><!-- nav tabs end here -->
+                
+                <div class="row">
+                    <div class="col-11 my-3 concert-category">
+                        All Concerts Events
+                        <a href="#">(select your city)</a> (0)
+                    </div>
+                </div>
+                <div class="row category-form-fields">
+                    <div class="col-12 col-lg-10">
+                        <form>
+                            <div class="form-row">
+                                <div class="col-12 col-md-3 mb-2 mr-2">
+                                    <select class="form-control concert-event-forms" id="genre">
+                                        <option hidden>Select Your Genre</option>
+                                        <option>All Genres</option>
+                                        <option>Alternative</option>
+                                        <option>Ballads/Romantic</option>
+                                        <option>Blues</option>
+                                        <option>Chanson Francaise</option>
+                                        <option>Children's Music</option>
+                                        <option>Classical</option>
+                                        <option>Folk</option>
+                                    </select>
+                                </div>
+                
+                                <div class="col-12 col-md-3 mb-2 mr-2">
+                                    <select class="form-control concert-event-forms" id="all-dates">
+                                        <option hidden>Select Your Dates</option>
+                                        <option>All Dates</option>
+                                        <option>This Weekend</option>
+                                        <option>Date Range</option>
+                                    </select>
+                                </div>
+                
+                                <div class="col-12 col-md-3 mb-2 ">
+                                    <select class="concert-event-forms form-control" id="distance">
+                                        <option hidden>Select Your Distance</option>
+                                        <option>10 mi</option>
+                                        <option>25 mi</option>
+                                        <option>50 mi</option>
+                                        <option>75 mi</option>
+                                        <option>100 mi</option>
+                                    </select>
+                                </div>
+                            </div>
+                
+                            <div class="form-row">
+                                <div class="col-3 col-md-3 mb-2 "></div>
+                                <div class="col-3 col-md-3 mb-2 "></div>
+                                <div class="col-md-3 mb-2" id="hide-div"></div>
+                                <div class="form-group col-12 col-md-3 mb-2">
+                                    <select class="concert-event-forms form-control" id="sort-date">
+                                        <option hidden>Sort By: Date</option>
+                                        <option>Most Popular</option>
+                                        <option>Date</option>
+                                        <option>Distance</option>
+                                        <option>Name A-Z</option>
+                                        <option>Name Z-A</option>
+                                    </select>
+                                </div>
+                            </div>
+                
+                        </form>
+                    </div>
+                
+                </div>
+                
+                <div class="row mx-auto">
+                    <div class="col-11 col-lg-8 my-3 sorry-text">
+                        Sorry... there are currently no upcoming events.
+                    </div>
+                    <div class="col-lg-4" id="placeholder-side-image">
+                        <img src="assets/images/business-cards-right.jpg" alt="">
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer py-4">
             <section class="large-footer-padding">
                 <div class="row py-4 expand-at-large">
                     <div class="col-lg-3">
@@ -759,10 +688,11 @@
             </section>
         </footer>
     </div>
-
+    
+    
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/bootstrapjs/bootstrap.min.js"></script>
+    
 </body>
-
 </html>

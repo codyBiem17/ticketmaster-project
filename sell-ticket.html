@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket Sales</title>
-    <link rel="stylesheet" href="css/ticketsales-styles.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/ticketsales-styles.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome5/css/all.min.css">
 
     <style>
-        
+        a {
+            color: #190ba0;
+        }
+
+        .form-control:focus {
+            border: 1px solid #190ba0 ;
+            box-shadow: none;
+            color: #190ba0;
+        }
+
         .tab-pane {
-            /* border: 1px solid red; */
-            /* padding-left: 0px;
-            padding-right: 0px; */
-            /* margin-left: ;*/
             position: relative;
             left: 15px;
             padding-right: 0;
@@ -23,12 +28,9 @@
         }
 
         thead {
-            border-bottom: 1px solid #eb730a;
-            /* height: 10px; */
-            /* margin-bottom: 5px; */
+            border-bottom: 1px solid #dfa24c;
         }
 
-       
         tbody tr{
            margin: -5px 0;
         }
@@ -59,29 +61,30 @@
         <header>
             <div class="row ticket-sales-header">
 
-                <div  class="col-1 hamburger-icon">
+                
+                <div class="col-7 col-md-5 company-logo">
                     <a href="#">
-                        <div class="toggler-icons"></div>
-                        <div class="toggler-icons"></div>
-                        <div class="toggler-icons"></div>
+                        <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
                     </a>
                 </div>
-                <div class="col-7 col-md-5 col-lg-6 ticketmaster">
-                    <a href="#">
-                        <img src="images/tek-tickets.jpg" alt="logo" width="40" height="40">
-                    </a>
-                </div>
-                <div class="col-3 col-md-6 col-lg-5" id="ticket-sales-icons">
+                <div class="col-4 col-md-7 col-xl-6" id="ticket-sales-icons">
                     <div class="row">
-                        <div class="col-5 col-md-5 col-lg-5" id="sync-icon">
-                            <a href="#"><i class="fas fa-sync"></i></a>
-                            <span class="sell-signin" id="sell-ticket">Sell Tickets</span>
+                        <div class="col-4 col-md-5 col-lg-4" id="sync-icon">
+                            <a href="#"> <i class="fas fa-sync"></i> 
+                                <span class="sell-signin" id="sell-ticket">Sell Tickets</span>
+                            </a>
                         </div>
-                        <div class="col-5 col-md-5 col-lg-6">
-                            <i class="far fa-user-circle"></i>
-                            <span class="sell-signin" id="signin">
-                                <a href="#">Hi, Maryam</a>
-                            </span>
+                        <div class="col-4 col-md-5 col-lg-4" id="user-icon">
+                            <a href="#"> <i class="far fa-user-circle"></i>
+                                <span class="sell-signin" id="signin">
+                                    Hi, Maryam
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-2 hamburger-icon" type="button" data-toggle="collapse" data-target="#menu-items">
+                            <div class="toggler-icon"></div>
+                            <div class="toggler-icon"></div>
+                            <div class="toggler-icon"></div>
                         </div>
                     </div>
                 </div>
@@ -94,7 +97,7 @@
             <div class="row artist-schedule">
                 <div class="col-md-3" id="artist-img">
                     <a href="#">
-                        <img src="images/artist-img.png" alt="artist-image" width="150" height="73">
+                        <img src="assets/images/artist-img.png" alt="artist-image" width="150" height="73">
                     </a>
                 </div>
                 <div class="col-12 col-md-7" id="artist-tour">
@@ -123,7 +126,7 @@
                 <div class="col-lg-7 col-xl-8" id="spinner">
                     <div class="row mx-auto">
                         <div class="col-lg-10 p-4 text-center">
-                            <img src="images/spinner-wheel.png" alt="" width="400" height="350">
+                            <img src="assets/images/spinner-wheel.png" alt="" width="400" height="350">
                         </div>
                         <div class="col-lg-2">
                             <div class="row">
@@ -133,8 +136,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12 text-center mx-auto spinner-footer">
+                    <div class="row spinner-footer">
+                        <div class="col-lg-12 text-center mx-auto">
                             By continuing past this page, you agree to our
                             <a href="#">Terms of use. </a> | &copy; Ticketmaster. All rights reserved
                         </div>
@@ -147,7 +150,7 @@
                             <form class="" action="">
                                 <div class="form-row mb-2">
                                     <div class="col-8 col-sm-10 col-lg-9">
-                                        <select class="btn-outline-primary form-control" name="" id="ticket-purchase">
+                                        <select class="btn-color-theme form-control" name="" id="ticket-purchase">
                                             <option value="one">1 Ticket</option>
                                             <option value="two" selected>2 Tickets</option>
                                             <option value="three">3 Tickets</option>
@@ -160,7 +163,7 @@
                                     </div>
                                 
                                     <div class="col-2 col-lg-3">
-                                        <button class="btn btn-outline-primary" type="button" id="filters">Filters
+                                        <button class="btn btn-color-theme" type="button" id="filters">Filters
                                         </button>
                                     </div>
                                     
@@ -565,8 +568,8 @@
         </footer>
     </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/bootstrapjs/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/bootstrapjs/bootstrap.min.js"></script>
 </body>
 </html>
