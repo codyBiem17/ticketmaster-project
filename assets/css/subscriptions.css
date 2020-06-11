@@ -41,7 +41,6 @@ a.slide-captions,
 
 .hide-and-show a, .hide-and-show a:hover {
    color: #4e4d4d;
-   font-weight: 600;
 }
 
 .blue-div-logo{
@@ -63,6 +62,10 @@ a.slide-captions,
   text-decoration: none;
 }
 
+.user-sell-white-nav:hover {
+  background: rgb(230, 230, 230);
+}
+
 .blue-div {
   color: white;
   font-size: 20px;
@@ -75,31 +78,44 @@ a.slide-captions,
 
 .blue-div a, .blue-div a:hover{
   color: white;
-  font-weight: 600;
 }
 
+<<<<<<< HEAD:assets/css/subscriptions.css
 .menu-links-outer-div, .hamburger-outer-div{
   /* padding: 15px 8px;
   position: relative;
   text-align: center; */
 }
 
-ul li.menu-links-outer-div, .hamburger-outer-div {
-  padding: 15px 16px;
-  position: relative;
-}
-
-#blue-div-nav .menu-links-outer-div:hover{
+.user-sell-blue-nav:hover {
   background: rgba(38, 38, 38, 0.1);
+  /* padding: 10px; */
 }
 
-#white-div-nav .menu-links-outer-div:hover{
-  background: rgb(230, 230, 230);
+.user-icon {
+  cursor: pointer;
+}
+
+ul li.nav-item.user-sell-blue-nav a.nav-link {
+  color: white;
+  font-weight: 600;
+}
+
+div.white-icons.user-icon {
+  /* padding: 19px 8px; */
+}
+
+.sell {
+  /* cursor: default; */
 }
 
 .home-div-concert {
   margin-top: -15px;
   font-size: 12px;
+}
+
+div.white-icons {
+  /* padding: 10px; */
 }
 
 .concert-ticket {
@@ -111,6 +127,8 @@ ul li.menu-links-outer-div, .hamburger-outer-div {
   width: 100%;
   height: auto;
 }
+
+
 
 a.slide-captions {
   color: #190ba0;
@@ -124,6 +142,12 @@ a.slide-captions:hover {
 
 .caption-text {
   font-weight: 400;
+}
+
+.caption-text,
+.concert-category {
+  /* font-size: 16px; */
+  /* color: #262626; */
 }
 
 .concert-category a {
@@ -177,6 +201,7 @@ select.concert-event-forms:hover,
 
 .white-div-form{
   position: relative;
+<<<<<<< HEAD:assets/css/subscriptions.css
   left: -110px;
   top: 3px;
 }
@@ -214,6 +239,7 @@ select.concert-event-forms:hover,
   top: 4px;
   left: -100px;
 }
+
 
 .blue-div-form i.input-search-icon {
   z-index: 1;
@@ -398,8 +424,14 @@ span.username{
   color: white!important; 
 }
 
+/* added new css from above here */
+#blue-div-nav .navbar-icons{
+    /* font-weight: 600; */
+}
+
 #white-div-nav .hamburger-icon {
-  margin: 8px 0px;
+    margin: 8px 0px;
+    padding: 0 2px;
 }
 
 #white-div-nav .toggler-icon {
@@ -422,12 +454,15 @@ span.username{
 }
 
 #white-div-nav .navbar-icons{
-  position: relative;
-  left: 5px;
-  font-size: 20px;
-  margin: -10px auto;
+    /* position: relative; */
+    /* left: -8px; */
+    /* top: 15px; */
+    padding: 5px 0;
+    font-size: 22px;
+    /* border: 1px solid red; */
 }
 
+<<<<<<< HEAD:assets/css/subscriptions.css
 #blue-div-nav .navbar-icons{
   position: relative;
   left: 5px;
@@ -742,6 +777,9 @@ footer span.terms-policy {
   }
 }
 
+
+} */
+
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .blue-div a em{
     font-size: 30px;
@@ -832,6 +870,11 @@ footer span.terms-policy {
     font-size: 46px;
     font-weight: 600;
   }
+ 
+  #blue-div-nav {
+    /* margin-top: 10px;
+    margin-bottom: 30px; */
+  }
 
   div.advert-section{
     background-color:#f6f6f6;
@@ -854,6 +897,30 @@ footer span.terms-policy {
 
 }
 
+@media only screen and (min-width: 1200px) {
+ 
+  .blue-div-form {
+    /* position: relative;
+    left: 10px;
+    top: 2px; */
+  }
+
+  #blue-div-nav .large-screen-menulinks{
+    /* position: relative;
+    right: 180px; */
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    /* margin-left: 60px; */
+  }
+
+   #placeholder-side-image{
+    position: relative;
+    left: 40px;
+  }
+
+}
 
 @media only screen and (min-width: 575px) {
   footer.footer {
@@ -869,63 +936,98 @@ footer span.terms-policy {
     position: relative;
     left: 55px;
   }
+=======
+    #blue-div-nav .user-icon, #white-div-nav .user-icon{
+        position: relative;
+        left: -5px;
+    }
+
+     #white-div-nav .navbar-icons {
+      position: relative;
+      left: 15px;
+    }
+>>>>>>> parent of 792658e... updates:css/subscriptions.css
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
-  .blue-div-form, .white-div-form, .white-div-input, .help{
-      display: none;
-  }
+    .blue-div-form, .white-div-form, .white-div-input, .help{
+        display: none;
+    }
 
  #white-div-nav .navbar-icons {
     position: relative;
     left: 30px;
     margin: -15px 10px;
   }
+=======
+    .search-icon, .white-ticket-brand{
+        display: inline-block;
+    }
 
-  #blue-div-nav .navbar-icons {
-    position: relative;
-    left: 30px;
-    margin: -15px 10px;
-  }
+    #blue-div-nav .navbar-icons{
+      position: relative;
+      left: 20px;
+    }
+>>>>>>> parent of 792658e... updates:css/subscriptions.css
 
-  #my-events span{
-    font-size: 46px;
-  }
+    #white-div-nav .navbar-icons{
+      position: relative;
+      left: 30px;
+    }
 
-  #nav-tabs li#profile1 a.active::after{
-      width: 60px;
-  }
+    #white-div-nav .hamburger-icon, 
+    #blue-div-nav .hamburger-icon {
+        padding: 0 15px;
+    }
 
-  #nav-tabs li#subscriptions1 a.active::after{
-      width: 120px;
-  }
+    #my-events span{
+        font-size: 46px;
+    }
 
-  .medium-screen-horizontal{
-      width: 66.66%;
-      margin-left: -3px;
-  }
+    #nav-tabs li#profile1 a.active::after{
+        width: 60px;
+    }
+
+    #nav-tabs li#subscriptions1 a.active::after{
+        width: 120px;
+    }
+
+    .medium-screen-horizontal{
+        width: 66.66%;
+        margin-left: -3px;
+    }
 
 
-  .heart-shape-div{
-    height: 100%;
-    position: relative;
-    bottom: 70px;
-  }
+    .heart-shape-div{
+        height: 100%;
+        position: relative;
+        bottom: 70px;
+        /* border: 1px solid red; */
+    }
     
 }
 
 @media only screen and (min-width: 992px) {
-  .blue-div, .blue-div a em, #blue-div-nav .navbar-icons,
-  .hide-and-show, .white-div a em, #white-div-nav .navbar-icons  {
-      font-size: 16px;
-  }
+    .blue-div, .blue-div a em, #blue-div-nav .navbar-icons,
+    .hide-and-show, .white-div a em, #white-div-nav .navbar-icons  {
+        font-size: 16px;
+    }
 
+<<<<<<< HEAD:assets/css/subscriptions.css
   .blue-div-logo{
     position: relative;
     /* left: -20px;
     margin-top: -25px;
     margin-bottom: -25px; */
   }
+=======
+    .blue-div-logo{
+      position: relative;
+      left: -20px;
+      margin-top: -25px;
+      margin-bottom: -25px;
+    }
+>>>>>>> parent of 792658e... updates:css/subscriptions.css
 
   .white-div-logo {
     position: relative;
@@ -945,43 +1047,58 @@ footer span.terms-policy {
     left: -120px;
     top: -15px;
   }
+=======
+   .blue-div-form {
+        position: relative;
+        left: -120px;
+        top: 2px;
+    }
 
-  #blue-div-nav .navbar-icons {
-    position: relative;
-    left: 80px;
-    margin: -30px auto;
-  }
+    #blue-div-nav .large-screen-menulinks{
+        position: relative;
+        left: -100px;
+        margin: 5px 0;
+    }
+>>>>>>> parent of 792658e... updates:css/subscriptions.css
 
-  #white-div-nav .navbar-icons {
+    #blue-div-nav .navbar-icons {
       position: relative;
+      left: 35px;
+    }
+
+    #white-div-nav .navbar-icons {
+      position: relative;
+<<<<<<< HEAD:assets/css/subscriptions.css
       left: 80px;
       margin: -30px auto;
   }
+=======
+      left: 45px;
+    }
+>>>>>>> parent of 792658e... updates:css/subscriptions.css
 
-  #nav-tabs{
-        padding: 0px 20px 0px 5px;
-  }
+    #blue-div-nav .user-icon, #white-div-nav .user-icon {
+        position: relative;
+        left:30px;
+    }
 
-  #my-events-listing{
-      padding-top: 60px;
-      padding-bottom: 35px;
-  }
+    #white-div-nav .large-screen-menulinks{
+       margin-left: -100px;
+       margin-top: 8px;
+       margin-bottom: 8px;
+    }
 
-  #my-events span{
-      font-size: 46px;
-  }
+    #nav-tabs{
+         padding: 0px 20px 0px 5px;
+    }
 
-  .medium-screen-horizontal{
-      width: 75%;
-      margin-left: -3px;
-  }
+    #my-events-listing{
+        padding-top: 60px;
+        padding-bottom: 35px;
+    }
 
-  .heart-shape-div{
-    height: 100%;
-    position: relative;
-    bottom: 70px;
-  }
 
+<<<<<<< HEAD:assets/css/subscriptions.css
   footer.footer{
     margin-top: 130px;
     /* margin: 130px 0; */
@@ -1020,25 +1137,46 @@ footer span.terms-policy {
 
 }
 @media only screen and (min-width: 1200px){
-   .blue-div-form{
-    position: relative;
-    left: -160px
-  }
+    .blue-div-form{
+        position: relative;
+        left: -160px
+    }
 
-  .white-div-form{
-    position: relative;
-    left: -145px
-  }
+    .white-div-form{
+        position: relative;
+        left: -170px
+        /* border: 1px solid red; */
+    }
 
-  #blue-div-nav .large-screen-menulinks{
-    position: relative;
-    margin: 0 -20px;
-  }
+    #white-navbar-input-field, #blue-navbar-input-field {
+        /* width: 400px; */
+    }
 
-  #white-div-nav .large-screen-menulinks{
-    position: relative;
-    left: -90px;
+    #blue-div-nav .large-screen-menulinks{
+        position: relative;
+        left: -210px;
+    }
+
+<<<<<<< HEAD:assets/css/subscriptions.css
+   #blue-div-nav .navbar-icons {
+      position: relative;
+      margin: -30px;
+    }
+
+    #white-div-nav .navbar-icons {
+      position: relative;
+      left: 155px;
+    }
+
+  /* .large-screen-navlinks ul.navbar-nav > li.menu-links-outer-div:last-child:hover
+  {
+    background: none;
   }
+=======
+    #white-div-nav .large-screen-menulinks{
+      position: relative;
+      left: -110px;
+    }
 
    #blue-div-nav .navbar-icons {
       position: relative;
