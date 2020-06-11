@@ -40,17 +40,10 @@ a.slide-captions,
 }
 
 .hide-and-show a, .hide-and-show a:hover {
-<<<<<<< HEAD:assets/css/orders.css
   color: #4e4d4d;
   font-weight: 600;
 }
 
-=======
-   color: #4e4d4d;
-}
-
-
->>>>>>> parent of 792658e... updates:css/orders.css
 .blue-div-logo{
   position: relative;
   left: -20px;
@@ -67,7 +60,7 @@ a.slide-captions,
 
 #white-div-nav .hamburger-icon {
     margin: 8px 0px;
-    padding: 0 2px;
+    /* padding: 0 2px; */
 }
 
 #white-div-nav .toggler-icon {
@@ -78,14 +71,9 @@ a.slide-captions,
     /* border: 1px solid red; */
 }
 
-#blue-div-nav a em, .white-div a.white-div-input em{
-    font-size: 23px;
-}
-
 #blue-div-nav .hamburger-icon {
-    margin: 8px 0px;
-    /* border: 1px solid red; */
-    padding: 0 2px;
+  margin: 8px 0px;
+  /* padding: 0 2px; */
 
 }
 
@@ -96,55 +84,23 @@ a.slide-captions,
     margin-bottom: 3px;
 }
 
->>>>>>> parent of 792658e... updates:css/orders.css
-
 #white-div-nav .navbar-icons{
-    /* position: relative;
-    left: -8px; */
-    /* top: 15px; */
-    padding: 5px 0;
-    font-size: 22px;
-    /* border: 1px solid red; */
-}
-
-#blue-div-nav{
-    height: 60px !important;
+  position: relative;
+  left: 5px;
+  font-size: 20px;
+  margin: -10px auto;
 }
 
 #blue-div-nav .navbar-icons{
-  padding: 5px 0;
-  /* position: relative;
-  left: -8px; */
-  font-size: 22px;
-  /* border: 1px solid red; */
-  /* margin-left: 1px; */
+  position: relative;
+  left: 5px;
+  font-size: 20px;
+  margin: -15px auto;
 } 
-
-.hide-and-show{
-    /* padding: 30px 0px 60px; */
-    /* padding-top: 40px; */
-    /* padding-bottom: 30px; */
-    /* height: 90px; */
-}
-
-ul li.nav-item.user-sell-white-nav a {
-  color: #4e4d4d;
-  font-weight: 600;
-}
-
-a.white-ticket-brand em {
-  font-weight: 700;
-  color: rgb(2, 108, 223);
-  font-size: 45px;
-}
 
 .white-div a:hover,
 .blue-div a:hover {
   text-decoration: none;
-}
-
-.user-sell-white-nav:hover {
-  background: rgb(230, 230, 230);
 }
 
 .blue-div {
@@ -159,30 +115,27 @@ a.white-ticket-brand em {
 
 .blue-div a, .blue-div a:hover{
   color: white;
-}
-
-.user-sell-blue-nav:hover {
-  background: rgba(38, 38, 38, 0.1);
-  /* padding: 10px; */
-}
-
-.user-icon {
-  cursor: pointer;
-}
-
-ul li.nav-item.user-sell-blue-nav a.nav-link {
-  color: white;
   font-weight: 600;
 }
 
-div.white-icons.user-icon {
-  /* padding: 19px 8px; */
+.menu-links-outer-div, .hamburger-outer-div{
+  padding: 15px 8px;
+  position: relative;
+  text-align: center;
 }
 
-.sell {
-  /* cursor: default; */
+ul li.menu-links-outer-div, .hamburger-outer-div {
+  padding: 15px 16px;
+  position: relative;
 }
 
+#blue-div-nav .menu-links-outer-div:hover{
+  background: rgba(38, 38, 38, 0.1);
+}
+
+#white-div-nav .menu-links-outer-div:hover{
+  background: rgb(230, 230, 230);
+}
 
 footer.footer{
     text-align: justify;
@@ -241,7 +194,6 @@ footer span.terms-policy {
 
 .white-div-form{
   position: relative;
-<<<<<<< HEAD:assets/css/orders.css
   left: -110px;
   top: 3px;
 }
@@ -307,29 +259,9 @@ footer span.terms-policy {
 
 
 /* media queries */
-@media only screen and (min-width: 320px) and (max-width: 375px){
+/* @media only screen and (min-width: 320px) and (max-width: 375px){
 
-  #blue-div-nav .navbar-icons{
-    position: relative;
-    right: 20px;
-    /* border: 1px solid red; */
-    /* width: 200px; */
-  }
-
-  #white-div-nav .navbar-icons {
-    position: relative;
-    right:10px;
-    /* border: 1px solid red; */
-    /* width: 200px; */
-  }
-
-  #blue-div-nav .hamburger-icon, #white-div-nav .hamburger-icon{
-      /* padding-left: 5px; */
-      position: relative;
-      left: 12px; 
-  } 
-
-}
+} */
 
 @media only screen and (max-width: 767px) {
   .blue-div-form,
@@ -338,16 +270,6 @@ footer span.terms-policy {
   .help, #placeholder-side-image,
   ul.large-screen-menulinks {
     display: none;
-  }
-
-  .user-sell-white-nav:hover {
-    /* padding: 30px 10px; */
-    text-align: center;
-  }
-
-  .user-sell-blue-nav:hover {
-    /* padding: 30px 10px; */
-    text-align: center;
   }
 }
 
@@ -418,9 +340,6 @@ a.my-listings{
   font-weight: 600;
   color: #190ba0;
   line-height: 20px;
-  /* color: #262626;
-  word-spacing: 5px;
-  font-size: 13px; */
 }
 
 a.my-listings:hover, .tab-pane a:hover{
@@ -504,12 +423,12 @@ span.username{
   width: 255px;
 }
 
-.dropdown-menu a{
-  padding-bottom: 15px;
-  color: #525151;;
+#blue-div-nav ul.dropdown-menu li a{
+  padding: 15px;
+  color: #525151;
 }
 
-.dropdown-menu a:hover{
+#blue-div-nav ul.dropdown-menu li a:hover{
   background: #190ba0; 
   color: white;
 }
@@ -541,19 +460,9 @@ span.username{
 
 @media only screen and (min-width:411px) and (max-width: 599px){
 
-  #blue-div-nav .user-icon, #white-div-nav .user-icon{
+  #white-div-nav .navbar-icons, #blue-div-nav .navbar-icons {
     position: relative;
-    left: -5px;
-  }
-
-  #white-div-nav .navbar-icons {
-    position: relative;
-    left: 10px;
-  }
-
-  #blue-div-nav .navbar-icons {
-    position: relative;
-    left: -3px;
+    left: 55px;
   }
 
   li a#past-events{
@@ -569,17 +478,13 @@ span.username{
 }
 
 @media only screen and (max-width:767px){
-    .username{
-        display: none;
-    }
-
-    .user-sell-blue-nav:hover, .user-sell-white-nav:hover{
-        background: none;
-    }
-
-    .dropdown:hover .dropdown-menu{
-        display: none;
-    }
+  .username{
+      display: none;
+  }
+  
+  .dropdown:hover .dropdown-menu{
+      display: none;
+  }
 }
 
 @media only screen and (min-width: 600px){
@@ -610,28 +515,20 @@ span.username{
     display: inline-block;
   }
 
-  #white-div-nav .hamburger-icon, 
-  #blue-div-nav .hamburger-icon {
-    padding: 0 15px;
-  }
-
   #white-div-nav .navbar-icons {
     position: relative;
-    left: 10px;
+    left: 30px;
+    margin: -15px 10px;
   }
 
   #blue-div-nav .navbar-icons {
     position: relative;
-    left: 15px;
+    left: 30px;
+    margin: -15px 10px;
   }
-
-  .user-sell-blue-nav:hover, .user-sell-white-nav:hover{
-      background: none;
-  }
-
 
   #nav-tabs ul li a {
-      font-size: 20px;
+      /* font-size: 20px; */
   }
 
   li a#past-events{
@@ -644,7 +541,6 @@ span.username{
     margin: 0px -110px;
   }
 
-  
   .dropdown:hover .dropdown-menu{
       display: none;
   }
@@ -653,17 +549,13 @@ span.username{
 
 /* media queries for large devices */
 @media only screen and (min-width: 992px) {
-  .search-icon, .hamburger-icon{
+ .hamburger-icon{
     display: none;
   }
 
   .blue-div, .blue-div a em, #blue-div-nav .navbar-icons,
     .hide-and-show, .white-div a em, #white-div-nav .navbar-icons  {
     font-size: 16px;
-  }
-
-  .white-div a.white-div-input em{
-    font-size: 23px;
   }
 
   .blue-div-logo{
@@ -680,25 +572,11 @@ span.username{
     margin-top: -5px;
     margin-bottom: -5px; */
   }
- 
-  .blue-div-form {
-    position: relative;
-    left: -120px;
-    top: 2px;
->>>>>>> parent of 792658e... updates:css/orders.css
-  }
 
   #blue-div-nav .large-screen-menulinks{
     position: relative;
-    left: -100px;
-    margin: 5px 0;
-  }
-
-  #white-div-nav .large-screen-menulinks{
-    position: relative;
-<<<<<<< HEAD:assets/css/orders.css
-    left: -120px;
     top: -15px;
+    left: -120px;
   }
 
   #white-div-nav .large-screen-menulinks{
@@ -711,14 +589,12 @@ span.username{
     position: relative;
     left: 80px;
     margin: -30px auto;
-=======
-    left: 35px;
   }
 
   #white-div-nav .navbar-icons {
       position: relative;
-      left: 35px;
-      top: 10px;
+      left: 80px;
+      margin: -30px auto;
   }
 
   li a#past-events{
@@ -769,51 +645,35 @@ span.username{
     /* margin-top: -23px;
     margin-bottom: -23px; */
   }
-  #blue-div-nav .large-screen-menulinks{
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
 
   .blue-div-form{
-        position: relative;
-        left: -160px
-    }
+    position: relative;
+    left: -160px
+  }
 
-    .white-div-form{
-        position: relative;
-        left: -160px
-        /* border: 1px solid red; */
-    }
+  .white-div-form{
+    position: relative;
+    left: -145px
+  }
 
-    #white-navbar-input-field, #blue-navbar-input-field {
-        /* width: 400px; */
-    }
+  #blue-div-nav .large-screen-menulinks{
+    position: relative;
+    margin: 0 -20px;
+  }
 
-    #blue-div-nav .large-screen-menulinks{
-        position: relative;
-        left: -210px;
-    }
-
-    #white-div-nav .large-screen-menulinks{
-        position: relative;
-        left: -210px;
-    }
-
-    #blue-div-nav .user-icon {
-        position: relative;
-        left: 50px;
-    }
-
-    #white-div-nav .user-icon {
-        position: relative;
-        left: 50px;
-    }
+  #white-div-nav .large-screen-menulinks{
+    position: relative;
+    left: -90px;
+  }
 
    #blue-div-nav .navbar-icons {
-        position: relative;
-        left: 40px;
+      position: relative;
+      margin: -30px;
+    }
+
+    #white-div-nav .navbar-icons {
+      position: relative;
+      left: 155px;
     }
 
     #my-events h2{
@@ -845,24 +705,25 @@ span.username{
 
 @media only screen and (min-width: 1440px){
   
-    .blue-div-form{
-        position: relative;
-        left: -210px
-    }
+  .blue-div-form{
+    position: relative;
+    left: -205px
+  }
 
-    .white-div-form{
-        position: relative;
-        left: -210px
-    }
+  .white-div-form{
+    position: relative;
+    left: -185px
+  }
 
-    #white-navbar-input-field, #blue-navbar-input-field {
-        /* width: 400px; */
-    }
+  #blue-div-nav .large-screen-menulinks{
+    position: relative;
+    left: -230px;
+  }
 
-    #blue-div-nav .large-screen-menulinks{
-        position: relative;
-        left: -330px;
-    }
+  #white-div-nav .large-screen-menulinks{
+    position: relative;
+    left: -185px;
+  }
 
   #blue-div-nav .navbar-icons {
     position: relative;
@@ -881,34 +742,24 @@ span.username{
   {
     background: none;
   }
-=======
-    #white-div-nav .large-screen-menulinks{
-        position: relative;
-        left: -330px;
-    }
->>>>>>> parent of 792658e... updates:css/orders.css
 
-    #blue-div-nav .user-icon {
-        position: relative;
-        left: 90px;
-    }
+  .large-screen-navlinks ul li.sub-list-div{
+    padding: 15px 16px;
+    position: relative;
+  }
 
-    #white-div-nav .user-icon {
-        position: relative;
-        left: 89px;
-    }
+  #blue-div-nav .large-screen-navlinks li.sub-list-div:hover{
+    background: rgba(38, 38, 38, 0.1);
+  }
 
-   #white-div-nav .navbar-icons {
-        position: relative;
-        left: 80px;
-    }
+  #white-div-nav .large-screen-navlinks li.sub-list-div:hover{
+    background: rgb(230, 230, 230);
+  }
 
-    #blue-div-nav .navbar-icons {
-        position: relative;
-        left: 80px;
-    }
+  .large-screen-navlinks .dropdown-menu a:hover{
+    background: none;
+  }
 
-<<<<<<< HEAD:assets/css/orders.css
   #white-div-nav a.nav-link.more, #blue-div-nav a.nav-link.more{
       display: none;
   } */
@@ -930,55 +781,39 @@ span.username{
     border: none;
     background: none;
   }
-=======
-    #white-div-nav a.nav-link.more, #blue-div-nav a.nav-link.more{
-        display: none;
-    }
 
-    #white-div-nav li.nav-item .dropdown-menu, #blue-div-nav li.nav-item .dropdown-menu{
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-    }
+  #blue-div-nav .large-screen-navlinks .dropdown-menu a{
+    color: white;
+    position: relative;
+    top: 8px;
+    margin: auto -10px;
+  }
 
-    .large-screen-navlinks .dropdown .dropdown-menu {
-        position: absolute;
-        top: 5px;
-        left: -20px;
-        border: none;
-        background-color: transparent;
-    }
->>>>>>> parent of 792658e... updates:css/orders.css
+  #white-div-nav .large-screen-navlinks .dropdown-menu a{
+    position: relative;
+    top: 8px;
+    margin: auto -20px;
+  }
 
-    #blue-div-nav .large-screen-navlinks .dropdown .dropdown-menu a{
-        color: white;
-        padding-right: 5px;
-    }
+  li a#past-events{
+    position: relative;
+    right: 15%;
+    margin: 0 -70px;
+  }
 
-        #white-div-nav .large-screen-navlinks .dropdown .dropdown-menu a{
-        padding-right: 3px;
-    }
-
-    li a#past-events{
-      position: relative;
-      right: 15%;
-      margin: 0 -70px;
-    }
-
-<<<<<<< HEAD:assets/css/orders.css
   li a#sold-tickets{
     position: relative;
     right: 18%;
   } */
 
-    footer section.large-footer-padding{
-      max-width: 1296px;
-      width: 100%;
-      padding-left: 100px;
-      padding-right: 100px;
-      box-sizing: border-box;
-      margin: 0px auto;
-    }
+  footer section.large-footer-padding{
+    max-width: 1296px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    margin: 0px auto;
+  }
     
 }
 

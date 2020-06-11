@@ -697,7 +697,7 @@ div.account-overview{
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     #blue-div-nav .navbar-icons {
-        /* margin: -15px auto; */
+        margin: -15px auto;
     }
 }
 
@@ -709,7 +709,7 @@ div.account-overview{
 
     
 
-    /* .menu-links-outer-div, .hamburger-outer-div{
+    .menu-links-outer-div, .hamburger-outer-div{
         padding: 19px 8px;
         position: relative;
         text-align: center;
@@ -717,7 +717,7 @@ div.account-overview{
 
     .white-div-form{
         margin: 10px auto;
-    } */
+    }
 
     .icon-links{
         position: relative;
@@ -891,28 +891,28 @@ div.account-overview{
 
     .white-div-logo img{
         position: relative;
-        /* top: -8px; */
+        top: -8px;
     }
 
     #blue-div-nav {
-        /* margin-top: 10px;
-        margin-bottom: 30px; */
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
 
     #blue-div-nav .navbar-icons {
         position: relative;
-        /* margin: auto 5px;
-        top: 5px; */
+        margin: auto 5px;
+        top: 5px;
     }
 
     #white-div-nav .navbar-icons{
         position: relative;
-        /* bottom: 10px; */
+        bottom: 10px;
         /* margin: -10px auto; */
     }
 
 
-    /* .blue-div-form{
+    .blue-div-form{
         position: relative;
         margin: 5px auto;
     }
@@ -925,7 +925,7 @@ div.account-overview{
         position: relative;
         
         margin: -35px 0;
-    } */
+    }
 
     .icon-links{
         position: relative;
@@ -1029,7 +1029,7 @@ div.account-overview{
         display: block;
     } 
 
-    /* .blue-div-logo img{
+    .blue-div-logo img{
         margin: 8px auto;
     }
 
@@ -1040,10 +1040,11 @@ div.account-overview{
     .blue-div-form{
         position: relative;
         margin: 15px auto;
-    } */
+    }
 
-    /* #blue-div-nav .large-screen-menulinks {
+    #blue-div-nav .large-screen-menulinks {
         position: relative;
+        /* left: -100px; */
         margin: -10px 0;
     } 
 
@@ -1060,7 +1061,7 @@ div.account-overview{
         position: relative;
         
         margin: -5px 0;
-    } */
+    }
 
     .less-md-block {
         margin-left: 30px;
@@ -1106,10 +1107,10 @@ div.account-overview{
 
 @media only screen and (min-width: 1440px){
 
-    /* #blue-div-nav .large-screen-menulinks {
+    #blue-div-nav .large-screen-menulinks {
         position: relative;
         margin: -5px 0;
-    } */
+    }
     
     .header-text-divs {
         max-width: 1296px;
