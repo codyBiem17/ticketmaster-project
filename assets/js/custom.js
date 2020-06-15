@@ -38,15 +38,20 @@ $(document).ready(function () {
     profilePage()
 
 
-    // mouseover on menulinks
+    function modalContainer() {
+        $('.hamburger-outer-div').click(() => {
+            $('.modal-nav-container').addClass('open');
+            $('#image-slides.slide').carousel('pause');
+            $('ul.carousel-indicators').css({ display: 'none' });
+        })
 
-    // $(".user-sell-blue-nav").hover(function () {
-    //     $(this).toggleClass('menu-links');
-        // $('.user-sell-blue-nav').not(this).css({margin: "30px 0"})
-    // })
-   
-    // document.querySelector('.user-sell-blue-nav').mouseover(() => {
-    //     document.querySelector('.user-sell-blue-nav a').addClass('menu-links');
-    // })
+        $('#close-btn').click(() => {
+            $('.modal-nav-container').removeClass('open');
+            $('#image-slides.slide').carousel('cycle');
+            $('ul.carousel-indicators').css({ display: 'flex' });
+        })
+    }
+    modalContainer()
+    
 })
 

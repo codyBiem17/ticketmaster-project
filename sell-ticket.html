@@ -8,125 +8,382 @@
     <link rel="stylesheet" href="assets/css/ticketsales-styles.css">
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome5/css/all.min.css">
-
     <style>
-        a {
-            color: #190ba0;
-        }
-
-        .form-control:focus {
-            border: 1px solid #190ba0 ;
-            box-shadow: none;
-            color: #190ba0;
-        }
-
-        .tab-pane {
-            position: relative;
-            left: 15px;
+        .container-fluid {
             padding-right: 0;
             padding-left: 0;
+            margin-right: auto;
+            margin-left: auto;
         }
 
-        thead {
-            border-bottom: 1px solid #dfa24c;
+        .dropdown-menu {
+            margin: 0px;
+            padding: 0px;
         }
 
-        tbody tr{
-           margin: -5px 0;
-        }
-
-        hr{
-            margin-top: -1px;
-            border-color: #dddddd;
-            width: 100%;
-        }
-
-        @media only screen and (min-width: 320px) and (max-width: 767px) {
-            a#hide-show-medium{
-                display: none;
-            }
-        }
-        @media only screen and (min-width: 768px) {
-            a#hide-medium-show{
-                display: none;
-            }
+        .dropdown-item {
+            padding-top: 0;
         }
     </style>
 </head>
 
 <body>
-
     <div class="container-fluid">
-        <!-- header section -->
-        <header>
-            <div class="row ticket-sales-header">
+        <div class="row white-div">
+            <div class="col-12 hide-and-show" id="white-div-nav">
+                <nav class="navbar navbar-expand-lg row">
 
-                
-                <div class="col-7 col-md-5 company-logo">
-                    <a href="#">
-                        <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
-                    </a>
-                </div>
-                <div class="col-4 col-md-7 col-xl-6" id="ticket-sales-icons">
-                    <div class="row">
-                        <div class="col-4 col-md-5 col-lg-4" id="sync-icon">
-                            <a href="#"> <i class="fas fa-sync"></i> 
-                                <span class="sell-signin" id="sell-ticket">Sell Tickets</span>
-                            </a>
+                    <!-- first column of white nav -->
+                    <div class="col-4 col-lg-7 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-lg-2 white-div-logo">
+                                <a href="#">
+                                    <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
+                                </a>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-lg-6 col-xl-4 white-div-form">
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-12">
+                                            <input class="form-control search" type="text" name=""
+                                                id="white-navbar-input-field"
+                                                placeholder="Find millions of live experiences">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div id="expand-more" class="col-lg-3 col-xl-5 large-screen-navlinks">
+                                <ul class="navbar-nav large-screen-menulinks">
+                                    <li class="nav-item menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Concert</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Sports</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Arts & Theater</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Family</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">VIP</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Deals</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-4 col-md-5 col-lg-4" id="user-icon">
-                            <a href="#"> <i class="far fa-user-circle"></i>
-                                <span class="sell-signin" id="signin">
-                                    Hi, Maryam
-                                </span>
-                            </a>
-                        </div>
-                        <div class="col-4 col-md-2 hamburger-icon" type="button" data-toggle="collapse" data-target="#menu-items">
-                            <div class="toggler-icon"></div>
-                            <div class="toggler-icon"></div>
-                            <div class="toggler-icon"></div>
+                        <!-- hide and show this header on >=medium devices -->
+                    </div>
+
+                    <!-- second column of white nav-->
+                    <div class="navbar-expand col-5 col-md-3 col-lg-5 col-xl-4 mb-3 navbar-icons">
+                        <ul class="navbar-nav">
+                            <li class="nav-item menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a class="nav-link" href="#"> <i class="fas fa-search"></i> </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a class="nav-link" href="#" data-toggle="dropdown">
+                                        <i class="far fa-user-circle"></i>
+                                        <span class="username">Maryam</span>
+                                    </a>
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Account</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Tickets</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Listings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Settings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sell</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sign Out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  menu-links-outer-div help">
+                                <div class="menu-links-inner-div">
+                                    <a class="nav-link" href="#"> Help </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="hamburger-outer-div">
+                            <div class="hamburger-icon" type="button">
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-
-
+                </nav>
             </div>
+        </div>
+        <!-- white nav ends here -->
 
-            <!-- div overlay -->
-            <div class="row artist-schedule">
-                <div class="col-md-3" id="artist-img">
-                    <a href="#">
-                        <img src="assets/images/artist-img.png" alt="artist-image" width="150" height="73">
-                    </a>
-                </div>
-                <div class="col-12 col-md-7" id="artist-tour">
-                    <p id="diamond-tour">
-                        <a href="#" id="hide-medium-show">
-                            Janet Jackson: Black Diam...
-                            <button class="btn btn-outline-light" type="button" id="more-info"> More Info</button>
-                        </a>
-                        <a href="#" id="hide-show-medium">
-                            Janet Jackson: Black Diamond Tour
-                            <button class="btn btn-outline-light" type="button" id="more-info"> More Info</button>
-                        </a>
-                    </p>
-                    <p id="date-time">
-                        Fri. Apr 17. 8:00PM <br>
-                        AmericanAirlines Arena, Miami, FL
-                    </p>
+        <!-- blue navbar -->
+        <div class="row blue-div">
+            <div class="col-12" id="blue-div-nav">
+                <nav class="navbar navbar-expand-lg row">
+
+                    <!-- first column of blue nav-->
+                    <div class="col-4 col-lg-7 mb-3">
+                        <div class="row">
+                            <div class="col-12 col-lg-2 blue-div-logo">
+                                <a href="#">
+                                    <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
+                                </a>
+                            </div>
+
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-lg-6 col-xl-4 blue-div-form">
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-12">
+                                            <input class="form-control search" type="text" name=""
+                                                id="blue-navbar-input-field"
+                                                placeholder="Search for artist, event or venue">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div id="expand-more" class="col-lg-3 col-xl-5  large-screen-navlinks">
+                                <ul class="navbar-nav large-screen-menulinks">
+                                    <li class="nav-item menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Concert</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link" href="#">Sports</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown menu-links-outer-div">
+                                        <div class="menu-links-inner-div">
+                                            <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Arts & Theater</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Family</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">VIP</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item sub-list-div">
+                                                <div class="sub-list-link">
+                                                    <a class="dropdown-item" href="#">Deals</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- hide and show this header on >=medium devices -->
+                    </div>
+
+                    <!-- second column of blue nav-->
+                    <div class="navbar-expand col-5 col-md-3 col-lg-5 col-xl-4 mb-3 navbar-icons">
+                        <ul class="navbar-nav">
+                            <li class="nav-item menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a class="nav-link" href="#"> <i class="fas fa-search"></i> </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown menu-links-outer-div">
+                                <div class="menu-links-inner-div">
+                                    <a class="nav-link" href="#" data-toggle="dropdown">
+                                        <i class="far fa-user-circle"></i>
+                                        <span class="username">Maryam</span>
+                                    </a>
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Account</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Tickets</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">My Listings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Settings</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sell</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item sub-list-div">
+                                        <div class="sub-list-link">
+                                            <a class="dropdown-item" href="#">Sign Out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  menu-links-outer-div help">
+                                <div class="menu-links-inner-div">
+                                    <a class="nav-link" href="#"> Help </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="hamburger-outer-div">
+                            <div class="hamburger-icon" type="button">
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                                <div class="toggler-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- show modal conatiner until large screen -->
+        <div id="modal-nav-box">
+            <div class="modal-nav-container">
+                <div class="modal-nav-content">
+                    <div class="modal-nav-header">
+                        <!-- <span class="modal-content-header"> -->
+                        <div id="modal-user-name"> Maryam </div>
+                        <div id="close-btn">
+                            <button type="button" class="close">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+        
+                        <!-- </span> -->
+                    </div>
+                    <div class="modal-nav-body">
+                        <a class="list-link-heading" href="#">Discover</a>
+                        <ul class="nav modal-list-links">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Concert </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Sport </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Art </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> VIP </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Deals </a>
+                            </li>
+                        </ul>
+        
+                        <hr class="modal-horizontal-line">
+        
+                        <a class="list-link-heading" href="#">My Account</a>
+                        <ul class="nav modal-list-links">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> My Tickets </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> My Listings </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Settings </a>
+                            </li>
+                        </ul>
+        
+                        <a class="list-link-heading" href="#">Learn About Verified Tickets</a>
+                        <ul class="nav modal-list-links">
+                            <li class="nav-item app-buttons">
+                                <a class="nav-link" href="#">
+                                    <img src="assets/images/app-store-btn.png" alt="" width="130">
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <img src="assets/images/google-play-btn.png" alt="" width="130">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Not Maryam? Sign Out </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </header>
+        </div>
         <!-- end of header section -->
 
         <!-- main page content -->
-        <main id="main-content">
+        <main class="large-screen-padding" id="main-content">
             <div class="row">
-                <div class="col-lg-7 col-xl-8" id="spinner">
+                <div class="col-lg-7 col-xl-8 event-image" id="spinner">
                     <div class="row mx-auto">
-                        <div class="col-lg-10 p-4 text-center">
-                            <img src="assets/images/spinner-wheel.png" alt="" width="400" height="350">
+                        <div class="col-lg-10 text-center ">
+                            <!-- <img src="assets/images/event-image.jpg" alt="" width="" height=""> -->
                         </div>
                         <div class="col-lg-2">
                             <div class="row">
@@ -136,16 +393,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row spinner-footer">
+                    <!-- <div class="row spinner-footer">
                         <div class="col-lg-12 text-center mx-auto">
                             By continuing past this page, you agree to our
                             <a href="#">Terms of use. </a> | &copy; Ticketmaster. All rights reserved
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="col-12 col-lg-5 col-xl-4" id="seat-calculator">
-                    <div class="row">
+                    <!-- first row starts here -->
+                    <div class="row mx-auto">
                         <div class="col-12 my-3 tickets-selection">
                             <form class="" action="">
                                 <div class="form-row mb-2">
@@ -186,10 +444,14 @@
                             </form>
                             
                         </div>
-                        
+                    </div>
+                    <!-- first row ends here -->
+
+                    <!-- second row starts here -->
+                    <div class="row">    
                         <div class="col-12">
                             <!-- nav tabs -->
-                            <ul class="nav col-12 text-center" role="tablist">
+                            <ul class="nav text-center price-and-seat" role="tablist">
                                 <li class="nav-item">
                                     <a href="#prices" id="price-link" class="nav-link active tab-links" data-toggle="tab"> Lowest Price</a>
                                 </li>
@@ -204,7 +466,7 @@
                                     <table class="row table table-hover">
                                         <thead class="col-12">
                                             <tr class="row  table-head">
-                                                <td class="col-8 col-md-9">
+                                                <th class="">
                                                     <div class="row">
                                                         <span class="col-1 col-lg-2 circle-star">
                                                             <i class="fas fa-star"></i>
@@ -213,16 +475,15 @@
                                                             <span class="money-range">$299.00-$499.00</span> 
                                                         </span>
                                                     </div>
-                                                </td>
-                                                <td class="col-4 col-md-3">
+                                                </th>
+                                                <th class="">
                                                     <a href="#href">More Info</a>
-                                                </td>
+                                                </th>
                                             </tr>
                                         </thead>
                                         <tbody class="col-12">
-                                            <tr class="row">
-
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec 306, Row 1</span> <br>
@@ -230,12 +491,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-
-                                                <td class="col-3"> <a href="#" class="seat-price">$45.95 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$45.95 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                            
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec 306, Row 2</span> <br>
@@ -243,12 +502,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$45.95 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$45.95 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                            
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec 306, Row 3</span> <br>
@@ -256,12 +513,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$45.95 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$45.95 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                            
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec 306, Row 9</span> <br>
@@ -269,12 +524,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$45.95 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$45.95 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                            
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec 306, Row 10</span> <br>
@@ -282,12 +535,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$45.95 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$45.95 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                            
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec 306, Row 11</span> <br>
@@ -295,12 +546,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$45.95 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$45.95 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                            
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec 306, Row 12</span> <br>
@@ -308,12 +557,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$45.95 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$45.95 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                            
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec 306, Row 12</span> <br>
@@ -321,12 +568,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$45.95 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$45.95 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                            
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec 306, Row 12</span> <br>
@@ -334,12 +579,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$45.95 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$45.95 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                            
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec 306, Row 12</span> <br>
@@ -347,12 +590,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$45.95 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$45.95 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                            
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec 306, Row 12</span> <br>
@@ -360,8 +601,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$45.95 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$45.95 ea</a> </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -370,8 +610,8 @@
                                 <div class="col-12 tab-pane" id="seats">
                                     <table class="row table table-hover">
                                         <thead class="col-12">
-                                            <tr class="row  table-head">
-                                                <td class="col-9">
+                                            <tr class="row table-head">
+                                                <td class="">
                                                     <div class="row">
                                                         <span class="col-1 circle-star">
                                                             <i class="fas fa-star"></i>
@@ -381,15 +621,14 @@
                                                         </span>
                                                     </div>
                                                 </td>
-                                                <td class="col-3">
+                                                <td class="">
                                                     <a href="#href">More Info</a>
                                                 </td>
                                             </tr>
                                         </thead>
                                         <tbody class="col-12">
-                                            <tr class="row">
-                                
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec FL1, Row 1</span> <br>
@@ -397,12 +636,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                
-                                                <td class="col-3"> <a href="#" class="seat-price">$1,900.01 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$1,900.01 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec FL1, Row 2</span> <br>
@@ -410,12 +647,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                
-                                                <td class="col-3"> <a href="#" class="seat-price">$1,100.00 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$1,100.00 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec FL1, Row 2</span> <br>
@@ -423,12 +658,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                
-                                                <td class="col-3"> <a href="#" class="seat-price">$980.00 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$980.00 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec FL1, Row 2</span> <br>
@@ -436,12 +669,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                
-                                                <td class="col-3"> <a href="#" class="seat-price">$955.01 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$955.01 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec FL1, Row 3</span> <br>
@@ -449,12 +680,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                
-                                                <td class="col-3"> <a href="#" class="seat-price">$830.00 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$830.00 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                         <span class="number-rows">Sec FL1, Row 3</span> <br>
@@ -462,11 +691,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                
-                                                <td class="col-3"> <a href="#" class="seat-price">$840.00 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$840.00 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec FL3, Row 2</span> <br>
@@ -474,11 +702,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                
-                                                <td class="col-3"> <a href="#" class="seat-price">$995.00 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$995.00 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec FL3, Row 2</span> <br>
@@ -486,11 +713,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$995.00 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$995.00 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec FL3, Row 2</span> <br>
@@ -498,11 +724,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$995.00 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$995.00 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec FL3, Row 2</span> <br>
@@ -510,11 +735,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$995.00 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$995.00 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec FL3, Row 2</span> <br>
@@ -522,11 +746,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$995.00 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$995.00 ea</a> </td>
                                             </tr>
-                                            <tr class="row">
-                                                <td class="col-9">
+                                            <tr class="row table-content">
+                                                <td class="">
                                                     <div class="row">
                                                         <div class="col-12 packages">
                                                             <span class="number-rows">Sec FL3, Row 2</span> <br>
@@ -534,8 +757,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            
-                                                <td class="col-3"> <a href="#" class="seat-price">$995.00 ea</a> </td>
+                                                <td class=""> <a href="#" class="seat-price">$995.00 ea</a> </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -549,7 +771,133 @@
 
         </main>
 
-        <footer class="row mx-auto fixed-bottom">
+        <footer class="footer py-4">
+            <section class="large-footer-padding">
+                <div class="row py-4 expand-at-large">
+                    <div class="col-lg-3">
+                        <header>Helpful Links</header>
+                        <div class="row helpful-links">
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <header>Our Network</header>
+                        <div class="row helpful-links">
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <header>About Us</header>
+                        <div class="row helpful-links">
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <header>Friends & Partners </header>
+                        <div class="row helpful-links">
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                            <div class="col-12">
+        
+                            </div>
+                            <div class="col-12">
+                                <a href="#">My Accounts</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <hr class="expand-at-large">
+        
+                <div class="row center-at-lg">
+                    <div class="col-12 ">
+                        By continuing past this page, you agree to our <span class="terms-policy"> Terms of Use. <br>
+        
+                            Privacy Policy</span> | © 1999-2020 Ticketmaster. All rights reserved. <br>
+        
+                        <span class="terms-policy">Do Not Sell My Information</span>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <!-- <footer class="row mx-auto fixed-bottom">
             <div class="col-12 footer-section">
                 <div class="row">
                     <div class="col-12 ticket-limit">
@@ -565,7 +913,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </div>
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>

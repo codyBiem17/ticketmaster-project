@@ -20,8 +20,6 @@ html, body {
   color: white;
 }
 
-
-.blue-div a em,
 .home-div-concert,
 a.slide-captions,
 .concert-category,
@@ -31,7 +29,7 @@ a.slide-captions,
 
 .hide-and-show {
   color: #4e4d4d;
-  font-size: 19px;
+  font-size: 20px;
   display: none;
   height: 60px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
@@ -74,12 +72,6 @@ a.slide-captions,
 .blue-div a, .blue-div a:hover{
   color: white;
   font-weight: 600;
-}
-
-.menu-links-outer-div, .hamburger-outer-div{
-  /* padding: 15px 8px;
-  position: relative;
-  text-align: center; */
 }
 
 ul li.menu-links-outer-div, .hamburger-outer-div {
@@ -398,6 +390,8 @@ span.username{
 
 #white-div-nav .hamburger-icon {
   margin: 16px 0px;
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;
 }
 
 #white-div-nav .toggler-icon {
@@ -410,6 +404,8 @@ span.username{
 
 #blue-div-nav .hamburger-icon {
   margin: 16px 0px;
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;
 }
 
 #blue-div-nav .toggler-icon {
@@ -423,14 +419,12 @@ span.username{
   position: relative;
   top: -30px;
   left: -70px;
-  font-size: 20px;
 }
 
 #blue-div-nav .navbar-icons{
   position: relative;
   top: -30px;
   left: -70px;
-  font-size: 20px;
 } 
     
 #nav-tabs{
@@ -701,16 +695,16 @@ button.btn-outline-primary{
   }
 
 footer.footer{
-    text-align: justify;
-    margin-top: 50px;
-    padding-left: 25px;
-    padding-right: 35px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.7);
-    background: #1f262d;
-    line-height: 20px;
+  text-align: justify;
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-right: 35px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  background: #1f262d;
+  line-height: 20px;
 }
 
 
@@ -740,13 +734,6 @@ footer span.terms-policy {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-  .blue-div a em{
-    font-size: 30px;
-    /* border: 1px solid red; */
-  }
-}
-
 @media only screen and (max-width: 767px) {
   .blue-div-form,
   .white-div-form,
@@ -755,11 +742,6 @@ footer span.terms-policy {
   ul.large-screen-menulinks,
   #img-gallery, div.advert-section {
     display: none;
-  }
-
-  .user-sell-white-nav:hover {
-    /* padding: 30px 10px; */
-    text-align: center;
   }
 
   .username{
@@ -815,7 +797,7 @@ footer span.terms-policy {
 }
 
 @media only screen and (min-width: 992px) {
-  .hamburger-icon, .carousel, #hide-div {
+  .hamburger-outer-div, .carousel, #hide-div {
     display: none;
   }
 
@@ -913,40 +895,14 @@ footer span.terms-policy {
 }
 
 @media only screen and (min-width: 992px) {
-  .blue-div, .blue-div a em, #blue-div-nav .navbar-icons,
-  .hide-and-show, .white-div a em, #white-div-nav .navbar-icons  {
-      font-size: 16px;
-  }
-
-  .blue-div-logo{
-    position: relative;
-    /* left: -20px;
-    margin-top: -25px;
-    margin-bottom: -25px; */
-  }
-
-  .white-div-logo {
-    position: relative;
-    /* left: -35px; 
-    margin-top: -17px;
-    margin-bottom: -17px; */
-  }
-
-  ul li.menu-links-outer-div, .hamburger-outer-div {
-    padding: 10px 16px;
-    position: relative;
-  }
-
-  .navbar-icons li.menu-links-outer-div,  
-   .navbar-icons .hamburger-outer-div {
-    /* padding: 20px 16px; */
-    position: relative;
+  .blue-div, .hide-and-show  {
+    font-size: 16px;
   }
 
   #blue-div-nav .large-screen-menulinks, 
   #white-div-nav .large-screen-menulinks {
     position: relative;
-    left: 5px;
+    /* left: 5px; */
     top: -8px;
   }
 
@@ -1139,5 +1095,116 @@ footer span.terms-policy {
     margin: 0px auto;
   }
 
+}
+
+
+/* styling for modal container */
+@media only screen and (max-width: 991px){
+
+  .navbar-icons{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+.modal-nav-container{
+  background-color: rgb(31, 38, 45);
+  color: rgb(255, 255, 255);
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;
+}
+
+.modal-nav-container.open{
+  visibility: visible;
+  opacity: 1;
+  transform: translateZ(0px);
+}
+
+.modal-nav-content{
+  display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modal-nav-body{
+  padding: 16px 16px 64px;
+}
+
+.modal-nav-header{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 60px;
+  color: white;
+  /* font-size: 20px; */
+  height: 60px;
+  background: linear-gradient(
+    90deg,rgba(25, 11, 160, 1) 0%,rgba(33, 19, 168, 1) 56%,
+    rgba(25, 11, 160, 1) 100%
+  );
+  padding: 15px;
+}
+
+a.list-link-heading{
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+ul.modal-list-links{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+ul.modal-list-links li.app-buttons{
+  display: flex;
+  flex-direction: row;
+  margin: auto -10px;
+}
+
+li.app-buttons a:last-child{
+  margin: auto -15px;
+}
+
+ul.modal-list-links li a{
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+div#close-btn button.close i.fa-times{
+  color: white;
+  text-shadow: none;
+  font-size: 1em;
+}
+
+button.close{
+   opacity: 1;
+   /* transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s; */
+}
+
+hr.modal-horizontal-line{
+  background: rgba(255, 255, 255, 0.4);
+  border-width: 1px;
+  height: 1px;
 }
 
