@@ -405,7 +405,7 @@ button#filters::before{
 }
 
 #seat-calculator{
-  border-left: 1px solid #dbe2e8;
+  /* border-left: 1px solid #dbe2e8; */
   /* background: white; */
 }
 
@@ -655,7 +655,7 @@ hr{
 .event-image{
   background-image: url("../images/event-image.jpg");
   background-color: #cccccc;
-  height: 90vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -906,15 +906,18 @@ footer span.terms-policy {
     left: 12%;
   }
 
+  #seat-calculator{
+    margin: 0 -15px;
+    padding-right: 0px;
+  }
+
   #spinner{
     display: inline-block;
     position: relative;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
     z-index: -1;
-    height: 90vh;
+    /* height: 90vh; */
     width: 100%;
   }
 
@@ -966,7 +969,7 @@ footer span.terms-policy {
   }
 
   footer.footer{
-    margin-top: -5px;
+    margin-top: -17px;
   }
 
   footer header{
