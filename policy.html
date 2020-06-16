@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticketmaster: Page 1</title>
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/fontawesome5/css/all.css">
+    <title>Listings</title>
+    <link rel="stylesheet" href="assets/css/orders.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome5/css/all.min.css">
 
     <style>
+        .container-fluid {
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
         .dropdown-menu {
             width: 200px;
             margin: 0px;
@@ -20,10 +26,6 @@
         .dropdown-item {
             padding-top: 0;
         }
-
-        #blue-div-nav{
-            height: 60px;
-        }
     </style>
 </head>
 
@@ -31,18 +33,31 @@
     <div class="container-fluid">
         <div class="row white-div">
             <div class="col-12 hide-and-show" id="white-div-nav">
-                <nav class="navbar navbar-expand-md row">
-
+                <nav class="navbar navbar-expand-lg row">
+        
                     <!-- first column of white nav -->
-                    <div class="col-4 col-md-9 col-lg-7 mb-3">
+                    <div class="col-4 col-lg-7 mb-3">
                         <div class="row">
-                            <div class="col-12 col-md-3 col-lg-2 white-div-logo">
+                            <div class="col-12 col-lg-2 white-div-logo">
                                 <a href="#">
                                     <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
                                 </a>
                             </div>
-
-                            <div id="expand-more" class="col-md-9 large-screen-navlinks">
+        
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-lg-6 col-xl-4 white-div-form">
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-12">
+                                            <input class="form-control search" type="text" name="" id="white-navbar-input-field"
+                                                placeholder="Find millions of live experiences">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+        
+                            <div id="expand-more" class="col-lg-3 col-xl-5 large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
                                     <li class="nav-item menu-links-outer-div">
                                         <div class="menu-links-inner-div">
@@ -54,27 +69,17 @@
                                             <a class="nav-link" href="#">Sports</a>
                                         </div>
                                     </li>
-                                    <li class="nav-item menu-links-outer-div arts">
-                                        <div class="menu-links-inner-div">
-                                            <a class="nav-link" href="#">Arts</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item menu-links-outer-div family">
-                                        <div class="menu-links-inner-div">
-                                            <a class="nav-link" href="#">Family</a>
-                                        </div>
-                                    </li>
                                     <li class="nav-item dropdown menu-links-outer-div">
                                         <div class="menu-links-inner-div">
                                             <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
                                         </div>
                                         <ul class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
-                                            <li class="nav-item sub-list-div arts-dropdown">
+                                            <li class="nav-item sub-list-div">
                                                 <div class="sub-list-link">
-                                                    <a class="dropdown-item" href="#">Arts</a>
+                                                    <a class="dropdown-item" href="#">Arts & Theater</a>
                                                 </div>
                                             </li>
-                                            <li class="nav-item sub-list-div family-dropdown">
+                                            <li class="nav-item sub-list-div">
                                                 <div class="sub-list-link">
                                                     <a class="dropdown-item" href="#">Family</a>
                                                 </div>
@@ -96,7 +101,7 @@
                         </div>
                         <!-- hide and show this header on >=medium devices -->
                     </div>
-
+        
                     <!-- second column of white nav-->
                     <div class="navbar-expand col-5 col-md-3 col-lg-5 col-xl-4 mb-3 navbar-icons">
                         <ul class="navbar-nav">
@@ -163,22 +168,35 @@
             </div>
         </div>
         <!-- white nav ends here -->
-
+        
         <!-- blue navbar -->
         <div class="row blue-div">
             <div class="col-12" id="blue-div-nav">
-                <nav class="navbar navbar-expand-md row">
-
+                <nav class="navbar navbar-expand-lg row">
+        
                     <!-- first column of blue nav-->
-                    <div class="col-4 col-md-9 col-lg-7 mb-3">
+                    <div class="col-4 col-lg-7 mb-3">
                         <div class="row">
-                            <div class="col-12 col-md-3 col-lg-2 blue-div-logo">
+                            <div class="col-12 col-lg-2 blue-div-logo">
                                 <a href="#">
                                     <img src="assets/images/tek-tickets.png" alt="logo" width="100" height="100">
                                 </a>
                             </div>
-
-                            <div id="expand-more" class="col-md-9 large-screen-navlinks">
+        
+                            <!-- hide and show this header on >=medium devices -->
+                            <div class="col-lg-6 col-xl-4 blue-div-form">
+                                <form class="" action="">
+                                    <div class="form-row">
+                                        <div class="col-lg-12">
+                                            <input class="form-control search" type="text" name="" id="blue-navbar-input-field"
+                                                placeholder="Search for artist, event or venue">
+                                            <i class="fas fa-search input-search-icon"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+        
+                            <div id="expand-more" class="col-lg-3 col-xl-5  large-screen-navlinks">
                                 <ul class="navbar-nav large-screen-menulinks">
                                     <li class="nav-item menu-links-outer-div">
                                         <div class="menu-links-inner-div">
@@ -190,27 +208,17 @@
                                             <a class="nav-link" href="#">Sports</a>
                                         </div>
                                     </li>
-                                    <li class="nav-item menu-links-outer-div arts">
-                                        <div class="menu-links-inner-div">
-                                            <a class="nav-link" href="#">Arts</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item menu-links-outer-div family">
-                                        <div class="menu-links-inner-div">
-                                            <a class="nav-link" href="#">Family</a>
-                                        </div>
-                                    </li>
                                     <li class="nav-item dropdown menu-links-outer-div">
                                         <div class="menu-links-inner-div">
                                             <a class="nav-link more" href="#" data-toggle="dropdown">More</a>
                                         </div>
                                         <ul class="dropdown-menu dropdown-menu-left" id="more-dropdown-div">
-                                            <li class="nav-item sub-list-div arts-dropdown">
+                                            <li class="nav-item sub-list-div">
                                                 <div class="sub-list-link">
-                                                    <a class="dropdown-item" href="#">Arts</a>
+                                                    <a class="dropdown-item" href="#">Arts & Theater</a>
                                                 </div>
                                             </li>
-                                            <li class="nav-item sub-list-div family-dropdown">
+                                            <li class="nav-item sub-list-div">
                                                 <div class="sub-list-link">
                                                     <a class="dropdown-item" href="#">Family</a>
                                                 </div>
@@ -232,7 +240,7 @@
                         </div>
                         <!-- hide and show this header on >=medium devices -->
                     </div>
-
+        
                     <!-- second column of blue nav-->
                     <div class="navbar-expand col-5 col-md-3 col-lg-5 col-xl-4 mb-3 navbar-icons">
                         <ul class="navbar-nav">
@@ -243,7 +251,7 @@
                             </li>
                             <li class="nav-item dropdown menu-links-outer-div">
                                 <div class="menu-links-inner-div">
-                                    <a class="nav-link" data-toggle="dropdown">
+                                    <a class="nav-link" href="#" data-toggle="dropdown">
                                         <i class="far fa-user-circle"></i>
                                         <span class="username">Maryam</span>
                                     </a>
@@ -298,38 +306,113 @@
                 </nav>
             </div>
         </div>
-    </div>
-
-    <main>
-    
-        <!-- main section of the body here -->
-        <section class="large-screen-padding main-content-section">
-            <div class="container-fluid ">
-                <div class="row my-5 mx-auto">
-                    <div class="col-12">
-                        <p>
-                            This Policy describes how we treat personal information we collect both online and offline. This includes on our
-                            websites and in our apps. It also includes at our box offices or in phone or email interactions you have with us. If you
-                            live in Canada, please read our Canadian Privacy Policy.
-                            Our Privacy Notice has been designed with you in mind. How the notice applies to you will depend on the way in which you
-                            interact with us. For example, if you:
-                            
-                            Purchase a ticket from us, we will use the information you provide us to fulfill our obligations to you in delivering
-                            that service, and, where permitted, keep you up to date about other events that may be of interest to you; and
-                            When you browse our sites, we use cookies to tailor your experience and hopefully provide you with a seamless
-                            experience.
-                            Your choices and rights under each scenario are explained in more detail below. Click on "Learn More" under each icon
-                            for more information or scroll down to read the full policy.
-                        </p>
+        
+        <!-- show modal conatiner until large screen -->
+        <div id="modal-nav-box">
+            <div class="modal-nav-container">
+                <div class="modal-nav-content">
+                    <div class="modal-nav-header">
+                        <!-- <span class="modal-content-header"> -->
+                        <div id="modal-user-name"> Maryam </div>
+                        <div id="close-btn">
+                            <button type="button" class="close">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+        
+                        <!-- </span> -->
+                    </div>
+                    <div class="modal-nav-body">
+                        <a class="list-link-heading" href="#">Discover</a>
+                        <ul class="nav modal-list-links">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Concert </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Sport </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Art </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> VIP </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Deals </a>
+                            </li>
+                        </ul>
+        
+                        <hr class="modal-horizontal-line">
+        
+                        <a class="list-link-heading" href="#">My Account</a>
+                        <ul class="nav modal-list-links">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> My Tickets </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> My Listings </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Settings </a>
+                            </li>
+                        </ul>
+        
+                        <a class="list-link-heading" href="#">Learn About Verified Tickets</a>
+                        <ul class="nav modal-list-links">
+                            <li class="nav-item app-buttons">
+                                <a class="nav-link" href="#">
+                                    <img src="assets/images/app-store-btn.png" alt="" width="130">
+                                </a>
+                                <a class="nav-link" href="#">
+                                    <img src="assets/images/google-play-btn.png" alt="" width="130">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Not Maryam? Sign Out </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    
-    
-    
-    <div class="container-fluid">
+        </div>
+        <!-- end of header section -->
+        
+        <main>
+        
+            <!-- main section of the body here -->
+            <section class="large-screen-padding main-content-section">
+                <div class="container-fluid ">
+                    <div class="row my-5 mx-auto">
+                        <div class="col-12">
+                            <p>
+                                This Policy describes how we treat personal information we collect both online and offline. This
+                                includes on our
+                                websites and in our apps. It also includes at our box offices or in phone or email interactions
+                                you have with us. If you
+                                live in Canada, please read our Canadian Privacy Policy.
+                                Our Privacy Notice has been designed with you in mind. How the notice applies to you will depend
+                                on the way in which you
+                                interact with us. For example, if you:
+        
+                                Purchase a ticket from us, we will use the information you provide us to fulfill our obligations
+                                to you in delivering
+                                that service, and, where permitted, keep you up to date about other events that may be of
+                                interest to you; and
+                                When you browse our sites, we use cookies to tailor your experience and hopefully provide you
+                                with a seamless
+                                experience.
+                                Your choices and rights under each scenario are explained in more detail below. Click on "Learn
+                                More" under each icon
+                                for more information or scroll down to read the full policy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
         <footer class="footer py-4">
             <section class="large-footer-padding">
                 <div class="row py-4 expand-at-large">
@@ -433,7 +516,7 @@
                                 <a href="#">My Accounts</a>
                             </div>
                             <div class="col-12">
-    
+
                             </div>
                             <div class="col-12">
                                 <a href="#">My Accounts</a>
@@ -441,15 +524,15 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <hr class="expand-at-large">
-    
+
                 <div class="row center-at-lg">
                     <div class="col-12 ">
                         By continuing past this page, you agree to our <span class="terms-policy"> Terms of Use. <br>
-    
+
                             Privacy Policy</span> | © 1999-2020 Ticketmaster. All rights reserved. <br>
-    
+
                         <span class="terms-policy">Do Not Sell My Information</span>
                     </div>
                 </div>
@@ -457,9 +540,11 @@
         </footer>
     </div>
 
-    <script src="assets/jquery-3.4.1.min.js"></script>
-    <script src="assets/bootstrap.js"></script>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/bootstrapjs/bootstrap.min.js"></script>
+
 </body>
 
 </html>
