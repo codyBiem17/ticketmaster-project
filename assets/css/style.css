@@ -442,7 +442,7 @@ a.search-box-button{
 }
 
 .container-fluid.announcement-div h3{
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
 }
 
 .announced-events-section .row.announced-events{
@@ -970,7 +970,7 @@ div.account-overview{
     }
 
     .container-fluid.announcement-div h3{
-        padding: 0px 15px;
+        /* padding: 0px 15px; */
     }
 
     .announced-events > div:nth-child(2){
@@ -984,38 +984,39 @@ div.account-overview{
 
     .announced-events-section{
         display: flex;
-        justify-content: center;
+        /* align-content: center; */
+        /* justify-content: space-around; */
     }
 
     .first-column .row.announced-events, 
     .second-column .row.announced-events{
-        border-left: none;
-        border-right: none;
+        /* border-left: none;
+        border-right: none; */
         
     }
 
     .first-column .row.announced-events:last-child,
     .second-column .row.announced-events:last-child{
-        border-bottom: none;
+        /* border-bottom: none; */
     }
 
     .row .first-column::before{
-        content: "";
+        /* content: "";
         border: 1px solid #ebebeb;
         display: inline-block;
         position: absolute;
         left: 49%;
-        height: 562px;
+        height: 562px; */
     }
 
     .second-column{
         margin-left: -20px;
-        margin-right: -25px;
+        /* margin-right: -25px; */
     }
 
     .announcement-div > div.row:nth-child(2){
-        border: 1px solid rgb(235, 235, 235);
-        margin: 0px 10px;
+        /* border: 1px solid rgb(235, 235, 235); */
+        /* margin-right: 10px; */
     }
 
     .header-text-divs{
@@ -1128,6 +1129,10 @@ div.account-overview{
 }
 
 @media only screen and (min-width: 1440px){
+
+    .container-fluid.announcement-div h3{
+        padding: 0px 10px;
+    }
 
     /* #blue-div-nav .large-screen-menulinks {
         position: relative;
