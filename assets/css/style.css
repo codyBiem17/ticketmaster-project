@@ -471,8 +471,12 @@ a.search-box-button{
 }
 
 .inner-text-style{
-    margin-left: -12px;
-    margin-right: -12px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    /* line-height: 2em; */
+    /* margin-left: -12px;
+    margin-right: -12px; */
 }
 
 .discover-events{
@@ -988,8 +992,10 @@ div.account-overview{
         /* justify-content: space-around; */
     }
 
-    .first-column .row.announced-events, 
-    .second-column .row.announced-events{
+    .first-column, .second-column{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
         /* border-left: none;
         border-right: none; */
         
