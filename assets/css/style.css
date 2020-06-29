@@ -992,6 +992,11 @@ div.account-overview{
         /* justify-content: space-around; */
     }
 
+    .announced-events img.fit-image {
+        max-width: 100%;
+        height: auto;
+    }
+
     .first-column, .second-column{
         max-width: 100%;
         width: 100%;
